@@ -104,9 +104,9 @@ def main() -> None:
         "matchups": build_matchups(hero_ids, args.sleep) if args.with_matchups else {},
         "ally_synergy": {},
         "weights": {
-            "meta": 38,
-            "counter": 42,
-            "team": 20,
+            "meta": 24,
+            "counter": 34,
+            "team": 42,
         },
     }
 

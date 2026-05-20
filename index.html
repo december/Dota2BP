@@ -696,18 +696,18 @@
           <div class="weights">
             <div class="range-row">
               <span>英雄强度</span>
-              <input id="metaWeight" type="range" min="0" max="100" value="38">
-              <strong id="metaWeightLabel">38%</strong>
+              <input id="metaWeight" type="range" min="0" max="100" value="24">
+              <strong id="metaWeightLabel">24%</strong>
             </div>
             <div class="range-row">
               <span>克制对位</span>
-              <input id="counterWeight" type="range" min="0" max="100" value="42">
-              <strong id="counterWeightLabel">42%</strong>
+              <input id="counterWeight" type="range" min="0" max="100" value="34">
+              <strong id="counterWeightLabel">34%</strong>
             </div>
             <div class="range-row">
               <span>阵容适配</span>
-              <input id="teamWeight" type="range" min="0" max="100" value="20">
-              <strong id="teamWeightLabel">20%</strong>
+              <input id="teamWeight" type="range" min="0" max="100" value="42">
+              <strong id="teamWeightLabel">42%</strong>
             </div>
           </div>
 
@@ -721,7 +721,7 @@
           </div>
 
           <div class="notes">
-            <p><strong>当前模型说明：</strong>基础胜率来自 OpenDota heroStats；敌方克制优先使用 OpenDota hero matchups，并在选择敌方英雄时按需抓取。真实对位数据尚未返回时，会先用英雄角色、攻击距离和阵容关系做即时估算，避免推荐列表僵住。GitHub Pages 不能常驻后台，因此队友真实双人胜率会通过仓库里的定时训练脚本逐步补齐；当前线上版先使用角色覆盖、阵容缺口、友方协同和重复核心惩罚估算协同。</p>
+            <p><strong>当前模型说明：</strong>基础胜率来自 OpenDota heroStats；敌方克制优先使用 OpenDota hero matchups，并在选择敌方英雄时按需抓取。真实对位数据尚未返回时，会先用英雄角色、攻击距离和阵容关系做即时估算。阵容适配会推断 1-5 号位缺口，友方辅助过多时优先推荐核心，核心过多时优先推荐辅助、控制和前排。</p>
             <p id="modelNote">尚未载入模型快照。</p>
           </div>
         </div>
@@ -747,7 +747,7 @@
       bracket: "pub",
       role: "all",
       query: "",
-      weights: { meta: 38, counter: 42, team: 20 },
+      weights: { meta: 24, counter: 34, team: 42 },
       modelSnapshot: null,
       dataSource: "none",
       lastUpdated: null
@@ -771,6 +771,22 @@
       Durable: 0.9,
       Nuker: 0.72,
       Pusher: 0.55
+    };
+
+    const positionLabels = {
+      1: "1号位核心",
+      2: "2号位中单",
+      3: "3号位劣单",
+      4: "4号位游走",
+      5: "5号位辅助"
+    };
+
+    const positionBuckets = {
+      1: ["Anti-Mage", "Arc Warden", "Bloodseeker", "Chaos Knight", "Clinkz", "Drow Ranger", "Faceless Void", "Gyrocopter", "Juggernaut", "Kez", "Lifestealer", "Lone Druid", "Luna", "Lycan", "Medusa", "Meepo", "Monkey King", "Morphling", "Muerta", "Naga Siren", "Nature's Prophet", "Phantom Assassin", "Phantom Lancer", "Razor", "Riki", "Slark", "Sniper", "Spectre", "Sven", "Templar Assassin", "Terrorblade", "Troll Warlord", "Ursa", "Weaver", "Wraith King"],
+      2: ["Alchemist", "Arc Warden", "Batrider", "Broodmother", "Death Prophet", "Dragon Knight", "Ember Spirit", "Huskar", "Invoker", "Kez", "Kunkka", "Leshrac", "Lina", "Lone Druid", "Meepo", "Monkey King", "Necrophos", "Outworld Devourer", "Pangolier", "Puck", "Pudge", "Queen of Pain", "Razor", "Shadow Fiend", "Sniper", "Storm Spirit", "Templar Assassin", "Tinker", "Tiny", "Viper", "Visage", "Void Spirit", "Windranger", "Zeus"],
+      3: ["Abaddon", "Axe", "Batrider", "Beastmaster", "Brewmaster", "Bristleback", "Broodmother", "Centaur Warrunner", "Dark Seer", "Dawnbreaker", "Death Prophet", "Doom", "Dragon Knight", "Elder Titan", "Enigma", "Legion Commander", "Lycan", "Magnus", "Marci", "Mars", "Nature's Prophet", "Necrophos", "Night Stalker", "Omniknight", "Pangolier", "Primal Beast", "Pudge", "Razor", "Sand King", "Slardar", "Spirit Breaker", "Tidehunter", "Timbersaw", "Tiny", "Underlord", "Undying", "Venomancer", "Viper", "Visage", "Windranger", "Wraith King"],
+      4: ["Bane", "Bounty Hunter", "Clockwerk", "Dark Willow", "Earth Spirit", "Earthshaker", "Elder Titan", "Grimstroke", "Hoodwink", "Io", "Keeper of the Light", "Lion", "Marci", "Mirana", "Nyx Assassin", "Phoenix", "Pudge", "Rubick", "Sand King", "Shadow Demon", "Skywrath Mage", "Snapfire", "Spirit Breaker", "Techies", "Tiny", "Treant Protector", "Tusk", "Vengeful Spirit", "Venomancer", "Windranger", "Winter Wyvern"],
+      5: ["Abaddon", "Ancient Apparition", "Bane", "Chen", "Crystal Maiden", "Dark Willow", "Dazzle", "Disruptor", "Enchantress", "Grimstroke", "Hoodwink", "Io", "Jakiro", "Keeper of the Light", "Largo", "Lich", "Lion", "Ogre Magi", "Omniknight", "Oracle", "Phoenix", "Pugna", "Ring Master", "Rubick", "Shadow Demon", "Shadow Shaman", "Silencer", "Skywrath Mage", "Snapfire", "Treant Protector", "Undying", "Vengeful Spirit", "Visage", "Warlock", "Winter Wyvern", "Witch Doctor"]
     };
 
     const qs = (selector) => document.querySelector(selector);
@@ -851,6 +867,111 @@
       return roleSet(hero).has(role);
     }
 
+    function emptyPositionProfile() {
+      return { 1: 0, 2: 0, 3: 0, 4: 0, 5: 0 };
+    }
+
+    function inferPositionProfile(hero) {
+      const profile = emptyPositionProfile();
+      const roles = roleSet(hero);
+      const add = (position, value) => {
+        profile[position] += value;
+      };
+
+      if (roles.has("Carry")) {
+        add(1, 0.72);
+        add(2, 0.34);
+        add(3, 0.22);
+      }
+      if (roles.has("Support")) {
+        add(4, 0.48);
+        add(5, 0.64);
+      }
+      if (roles.has("Initiator")) {
+        add(3, 0.46);
+        add(4, 0.22);
+      }
+      if (roles.has("Durable")) {
+        add(3, 0.48);
+        add(1, 0.12);
+      }
+      if (roles.has("Disabler")) {
+        add(4, 0.34);
+        add(5, 0.18);
+        add(3, 0.16);
+      }
+      if (roles.has("Nuker")) {
+        add(2, 0.44);
+        add(4, 0.22);
+      }
+      if (roles.has("Escape")) {
+        add(2, 0.3);
+        add(1, 0.16);
+      }
+      if (roles.has("Pusher")) {
+        add(1, 0.2);
+        add(3, 0.22);
+        add(5, 0.08);
+      }
+
+      Object.entries(positionBuckets).forEach(([position, names]) => {
+        if (names.includes(hero.localized_name)) {
+          add(position, 1.85);
+        }
+      });
+
+      if (hero.attack_type === "Ranged") {
+        add(2, 0.08);
+        add(5, 0.08);
+      } else if (hero.attack_type === "Melee") {
+        add(1, 0.08);
+        add(3, 0.08);
+      }
+
+      const total = Object.values(profile).reduce((sum, value) => sum + value, 0) || 1;
+      Object.keys(profile).forEach((position) => {
+        profile[position] = profile[position] / total;
+      });
+      profile.primary = Number(Object.entries(profile)
+        .filter(([position]) => position !== "primary")
+        .sort((a, b) => b[1] - a[1])[0][0]);
+      return profile;
+    }
+
+    function positionText(hero) {
+      const profile = hero.positionProfile || inferPositionProfile(hero);
+      return Object.entries(profile)
+        .filter(([position, value]) => position !== "primary" && value >= 0.16)
+        .sort((a, b) => b[1] - a[1])
+        .slice(0, 2)
+        .map(([position]) => positionLabels[position])
+        .join(" / ");
+    }
+
+    function positionOccupancy(heroIds) {
+      const occupancy = emptyPositionProfile();
+      heroIds.map((id) => state.heroById.get(id)).filter(Boolean).forEach((hero) => {
+        const profile = hero.positionProfile || inferPositionProfile(hero);
+        for (let position = 1; position <= 5; position += 1) {
+          occupancy[position] += profile[position] || 0;
+        }
+      });
+      return occupancy;
+    }
+
+    function positionNeeds(heroIds = state.selected.ally) {
+      const occupancy = positionOccupancy(heroIds);
+      const demand = emptyPositionProfile();
+      for (let position = 1; position <= 5; position += 1) {
+        demand[position] = clamp(1 - occupancy[position], 0, 1.25);
+      }
+      const open = Object.entries(demand)
+        .sort((a, b) => b[1] - a[1])
+        .filter(([, value]) => value > 0.38)
+        .map(([position]) => Number(position));
+      return { occupancy, demand, open };
+    }
+
     function addHero(side, heroId) {
       if (selectedSet().has(heroId)) {
         removeHero(heroId);
@@ -908,18 +1029,53 @@
       const needed = Object.keys(roleTargets).filter((role) => (counts[role] || 0) < roleTargets[role]);
       const filled = needed.filter((role) => (hero.roles || []).includes(role));
       const synergy = allySynergyHeuristic(hero);
-      let term = (withHero - before) * 42;
-      term += filled.reduce((sum, role) => sum + (roleImportance[role] || 1), 0) * 1.8;
-      term += synergy.term;
-      if ((counts.Carry || 0) >= 1 && (hero.roles || []).includes("Carry")) term -= 7;
-      if ((counts.Carry || 0) >= 2 && (hero.roles || []).includes("Carry")) term -= 6;
-      if ((counts.Support || 0) >= 2 && (hero.roles || []).includes("Support")) term -= 4;
-      if (state.selected.ally.length >= 3 && (counts.Support || 0) === 0 && !(hero.roles || []).includes("Support")) term -= 5;
+      const position = positionFit(hero);
+      let term = position.term;
+      if (state.selected.ally.length) {
+        term += (withHero - before) * 22;
+        term += filled.reduce((sum, role) => sum + (roleImportance[role] || 1), 0) * 1.05;
+        term += synergy.term * 0.7;
+        if (state.selected.ally.length >= 3 && (counts.Support || 0) === 0 && !(hero.roles || []).includes("Support")) term -= 5;
+      }
       return {
-        term: clamp(term, -18, 24),
+        term: clamp(term, -30, 34),
         filled,
         synergy,
+        position,
         quality: withHero
+      };
+    }
+
+    function positionFit(hero) {
+      const profile = hero.positionProfile || inferPositionProfile(hero);
+      const { occupancy, demand, open } = positionNeeds();
+      if (!state.selected.ally.length) {
+        return {
+          term: 0,
+          fit: 0,
+          overfill: 0,
+          open,
+          primary: profile.primary,
+          label: positionLabels[profile.primary]
+        };
+      }
+
+      let fit = 0;
+      let overfill = 0;
+      for (let position = 1; position <= 5; position += 1) {
+        const value = profile[position] || 0;
+        fit += value * demand[position];
+        overfill += value * Math.max(0, occupancy[position] - 0.72);
+      }
+      const neutral = Object.values(demand).reduce((sum, value) => sum + value, 0) / 5;
+      const term = (fit - neutral) * 74 - overfill * 28;
+      return {
+        term: clamp(term, -24, 28),
+        fit,
+        overfill,
+        open,
+        primary: profile.primary,
+        label: positionLabels[profile.primary]
       };
     }
 
@@ -1075,6 +1231,10 @@
           why.push("对位数据暂不可用");
         }
       }
+      if (fit.position.open.length) {
+        why.push(`补位 ${fit.position.open.slice(0, 3).map((position) => positionLabels[position]).join(" / ")}`);
+      }
+      why.push(`定位 ${fit.position.label}`);
       if (fit.filled.length) why.push(`补足 ${fit.filled.slice(0, 3).join(" / ")}`);
       if (fit.synergy.tags.length) why.push(`协同 ${fit.synergy.tags.join(" / ")}`);
       if (matchup.tags.length) why.push(`克制 ${matchup.tags.join(" / ")}`);
@@ -1142,7 +1302,11 @@
     function setHeroes(heroes) {
       state.heroes = heroes
         .filter((hero) => hero && hero.id && hero.localized_name)
-        .map((hero) => ({ ...hero, id: Number(hero.id) }))
+        .map((hero) => {
+          const normalized = { ...hero, id: Number(hero.id) };
+          normalized.positionProfile = inferPositionProfile(normalized);
+          return normalized;
+        })
         .sort((a, b) => a.localized_name.localeCompare(b.localized_name));
       state.heroById = new Map(state.heroes.map((hero) => [hero.id, hero]));
     }
@@ -1265,7 +1429,7 @@
             </div>
             <div class="hero-meta">
               <div class="hero-name" title="${hero.localized_name}">${hero.localized_name}</div>
-              <div class="role-line">${(hero.roles || []).slice(0, 4).join(" / ")}</div>
+              <div class="role-line">${positionText(hero)}<br>${(hero.roles || []).slice(0, 3).join(" / ")}</div>
               <div class="hero-actions">
                 <button class="action ally ${isAlly ? "active" : ""}" type="button" data-side="ally" data-id="${hero.id}" ${isEnemy ? "disabled" : ""}>友方</button>
                 <button class="action enemy ${isEnemy ? "active" : ""}" type="button" data-side="enemy" data-id="${hero.id}" ${isAlly ? "disabled" : ""}>敌方</button>
@@ -1308,6 +1472,7 @@
               <div class="metrics">
                 <span class="metric ${baseClass}">基础 ${pct(base.rate)}</span>
                 <span class="metric ${counterClass}">对位 ${state.selected.enemy.length ? (matchup.ready ? pct(matchup.avg) : matchup.estimated ? `${pct(matchup.avg)}估` : matchup.loading ? "载入中" : "暂无") : "待选择"}</span>
+                <span class="metric ${fitClass}">${fit.position.label}</span>
                 <span class="metric ${fitClass}">适配 ${fit.term.toFixed(1)}</span>
               </div>
               <p class="why">${row.why.join("；")}</p>
