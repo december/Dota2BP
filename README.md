@@ -45,6 +45,7 @@ Build the team model:
 python scripts/build_team_model.py `
   --player "https://steamcommunity.com/profiles/76561198182670383/" `
   --player "https://steamcommunity.com/profiles/76561198320148933/" `
+  --player "https://steamcommunity.com/profiles/76561198287146196/" `
   --player "https://steamcommunity.com/id/amituofo6666/" `
   --player "https://steamcommunity.com/profiles/76561198146231486/" `
   --player "https://steamcommunity.com/profiles/76561198106506910/" `
