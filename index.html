@@ -696,18 +696,23 @@
           <div class="weights">
             <div class="range-row">
               <span>英雄强度</span>
-              <input id="metaWeight" type="range" min="0" max="100" value="24">
-              <strong id="metaWeightLabel">24%</strong>
+              <input id="metaWeight" type="range" min="0" max="100" value="18">
+              <strong id="metaWeightLabel">18%</strong>
             </div>
             <div class="range-row">
               <span>克制对位</span>
-              <input id="counterWeight" type="range" min="0" max="100" value="34">
-              <strong id="counterWeightLabel">34%</strong>
+              <input id="counterWeight" type="range" min="0" max="100" value="28">
+              <strong id="counterWeightLabel">28%</strong>
             </div>
             <div class="range-row">
               <span>阵容适配</span>
-              <input id="teamWeight" type="range" min="0" max="100" value="42">
-              <strong id="teamWeightLabel">42%</strong>
+              <input id="teamWeight" type="range" min="0" max="100" value="34">
+              <strong id="teamWeightLabel">34%</strong>
+            </div>
+            <div class="range-row">
+              <span>个人熟练</span>
+              <input id="personalWeight" type="range" min="0" max="100" value="20">
+              <strong id="personalWeightLabel">20%</strong>
             </div>
           </div>
 
@@ -721,8 +726,9 @@
           </div>
 
           <div class="notes">
-            <p><strong>当前模型说明：</strong>基础胜率来自 OpenDota heroStats；敌方克制优先使用 OpenDota hero matchups，并在选择敌方英雄时按需抓取。真实对位数据尚未返回时，会先用英雄角色、攻击距离和阵容关系做即时估算。阵容适配会推断 1-5 号位缺口，友方辅助过多时优先推荐核心，核心过多时优先推荐辅助、控制和前排。</p>
+            <p><strong>当前模型说明：</strong>基础胜率来自 OpenDota heroStats；敌方克制优先使用 OpenDota hero matchups，并在选择敌方英雄时按需抓取。真实对位数据尚未返回时，会先用英雄角色、攻击距离和阵容关系做即时估算。阵容适配会推断 1-5 号位缺口，友方辅助过多时优先推荐核心，核心过多时优先推荐辅助、控制和前排。个人模型会读取你的聚合战绩，只用英雄胜率、场次、近期表现等统计，不需要公开逐场记录。</p>
             <p id="modelNote">尚未载入模型快照。</p>
+            <p id="personalNote">尚未载入个人模型。</p>
           </div>
         </div>
       </aside>
@@ -735,6 +741,7 @@
     const HERO_STATS_URL = "https://api.opendota.com/api/heroStats";
     const MATCHUP_URL = (heroId) => `https://api.opendota.com/api/heroes/${heroId}/matchups`;
     const MODEL_URL = "data/model.json";
+    const PERSONAL_MODEL_URL = "data/player_model.json";
     const STEAM_CDN = "https://cdn.cloudflare.steamstatic.com";
     const CACHE_TTL = 1000 * 60 * 60 * 12;
 
@@ -747,8 +754,9 @@
       bracket: "pub",
       role: "all",
       query: "",
-      weights: { meta: 24, counter: 34, team: 42 },
+      weights: { meta: 18, counter: 28, team: 34, personal: 20 },
       modelSnapshot: null,
+      playerModel: null,
       dataSource: "none",
       lastUpdated: null
     };
@@ -817,11 +825,12 @@
     }
 
     function normalizedWeights() {
-      const total = state.weights.meta + state.weights.counter + state.weights.team || 1;
+      const total = state.weights.meta + state.weights.counter + state.weights.team + state.weights.personal || 1;
       return {
         meta: state.weights.meta / total,
         counter: state.weights.counter / total,
-        team: state.weights.team / total
+        team: state.weights.team / total,
+        personal: state.weights.personal / total
       };
     }
 
@@ -1030,11 +1039,20 @@
       const filled = needed.filter((role) => (hero.roles || []).includes(role));
       const synergy = allySynergyHeuristic(hero);
       const position = positionFit(hero);
+      const profile = hero.positionProfile || inferPositionProfile(hero);
       let term = position.term;
       if (state.selected.ally.length) {
         term += (withHero - before) * 22;
         term += filled.reduce((sum, role) => sum + (roleImportance[role] || 1), 0) * 1.05;
         term += synergy.term * 0.7;
+        const supportProfile = (profile[5] || 0) + (profile[4] || 0) * 0.65;
+        const coreProfile = (profile[1] || 0) + (profile[2] || 0) * 0.8;
+        const frontlineProfile = profile[3] || 0;
+        if ((counts.Support || 0) >= 2 && supportProfile > 0.34) term -= 16 * supportProfile;
+        if ((counts.Support || 0) >= 3 && supportProfile > 0.25) term -= 12;
+        if ((counts.Carry || 0) >= 2 && coreProfile > 0.36) term -= 14 * coreProfile;
+        if ((counts.Support || 0) >= 2 && coreProfile > 0.3) term += 9 * coreProfile;
+        if ((counts.Support || 0) >= 2 && frontlineProfile > 0.24) term += 5 * frontlineProfile;
         if (state.selected.ally.length >= 3 && (counts.Support || 0) === 0 && !(hero.roles || []).includes("Support")) term -= 5;
       }
       return {
@@ -1074,6 +1092,8 @@
         fit,
         overfill,
         open,
+        demand,
+        occupancy,
         primary: profile.primary,
         label: positionLabels[profile.primary]
       };
@@ -1206,16 +1226,48 @@
       };
     }
 
+    function personalFit(hero) {
+      const heroStats = state.playerModel?.heroes?.[hero.id] || state.playerModel?.heroes?.[String(hero.id)];
+      if (!heroStats || !heroStats.games) {
+        return { ready: false, term: 0, games: 0, winRate: null, confidence: 0, label: "无个人样本" };
+      }
+
+      const games = Number(heroStats.games) || 0;
+      const wins = Number(heroStats.wins) || 0;
+      const winRate = Number(heroStats.win_rate) || wins / Math.max(games, 1);
+      const recentGames = Number(heroStats.recent_games) || 0;
+      const recentWins = Number(heroStats.recent_wins) || 0;
+      const recentRate = recentGames ? recentWins / recentGames : winRate;
+      const confidence = clamp(games / 28, 0, 1);
+      const mastery = clamp(Math.log10(games + 1) / 2.25, 0, 1);
+      const winTerm = (winRate - 0.5) * 74 * confidence;
+      const recentTerm = (recentRate - 0.5) * 28 * clamp(recentGames / 10, 0, 1);
+      const comfortTerm = mastery * 9;
+      const term = clamp(winTerm + recentTerm + comfortTerm - 4, -18, 24);
+      return {
+        ready: true,
+        term,
+        games,
+        winRate,
+        recentGames,
+        recentRate,
+        confidence,
+        label: `${games}局 ${pct(winRate)}`
+      };
+    }
+
     function scoreHero(hero) {
       const base = heroWinRate(hero);
       const matchup = matchupForCandidate(hero.id);
       const fit = teamFit(hero);
+      const personal = personalFit(hero);
       const weights = normalizedWeights();
       const baseTerm = clamp((base.rate - 0.5) * 100, -12, 12);
       const total = 50
         + weights.meta * baseTerm * 2.15
         + weights.counter * matchup.term * 2.35
-        + weights.team * fit.term * 1.75;
+        + weights.team * fit.term * 1.75
+        + weights.personal * personal.term * 1.9;
 
       const why = [];
       why.push(`基础胜率 ${pct(base.rate)}`);
@@ -1238,6 +1290,8 @@
       if (fit.filled.length) why.push(`补足 ${fit.filled.slice(0, 3).join(" / ")}`);
       if (fit.synergy.tags.length) why.push(`协同 ${fit.synergy.tags.join(" / ")}`);
       if (matchup.tags.length) why.push(`克制 ${matchup.tags.join(" / ")}`);
+      if (personal.ready) why.push(`个人 ${personal.label}`);
+      if (state.selected.ally.length && (roleCounts(state.selected.ally).Support || 0) >= 2 && fit.position.primary >= 4) why.push("辅助位已偏多，已降权");
       if (!fit.filled.length && state.selected.ally.length) why.push("阵容适配中性");
 
       return {
@@ -1246,6 +1300,7 @@
         base,
         matchup,
         fit,
+        personal,
         why
       };
     }
@@ -1288,6 +1343,24 @@
         }
       } catch (error) {
         qs("#modelNote").textContent = "未找到静态模型快照，将直接拉取 OpenDota 实时数据。";
+      }
+    }
+
+    async function loadPersonalModel() {
+      try {
+        const model = await loadJson(PERSONAL_MODEL_URL, 8000);
+        state.playerModel = model;
+        const player = model.player || {};
+        const heroCount = model.heroes ? Object.keys(model.heroes).length : 0;
+        const generated = model.generated_at ? new Date(model.generated_at).toLocaleString("zh-CN") : "未知时间";
+        if (model.status === "ready" && heroCount) {
+          qs("#personalNote").textContent = `个人模型已载入：${player.personaname || "Steam 账号"}，公开样本 ${model.summary?.games || 0} 局，覆盖 ${heroCount} 个英雄，生成于 ${generated}。`;
+        } else {
+          const reason = (model.errors || []).slice(0, 2).join("；") || "等待公开数据或 Steam Web API key。";
+          qs("#personalNote").textContent = `个人模型已建立但暂无可用战绩：${reason}`;
+        }
+      } catch (error) {
+        qs("#personalNote").textContent = "未找到个人模型，将使用通用 BP 推荐。";
       }
     }
 
@@ -1370,9 +1443,11 @@
       const updated = state.lastUpdated ? new Date(state.lastUpdated).toLocaleString("zh-CN") : "未知";
       const loading = state.matchupLoading.size;
       const loaded = state.selected.enemy.filter((id) => state.matchupCache.has(id)).length;
+      const personal = state.playerModel?.status === "ready" ? "个人模型" : "通用模型";
       statusBar.innerHTML = `
         <span class="pill ${state.heroes.length ? "good" : "warn"}">${state.heroes.length || 0} 个英雄</span>
         <span class="pill">${data}</span>
+        <span class="pill ${state.playerModel?.status === "ready" ? "good" : ""}">${personal}</span>
         <span class="pill">更新 ${updated}</span>
         <span class="pill ${loading ? "warn" : "good"}">对位 ${loaded}/${state.selected.enemy.length}${loading ? " 载入中" : ""}</span>
       `;
@@ -1457,10 +1532,11 @@
         return;
       }
       recommendations.innerHTML = rows.map((row, index) => {
-        const { hero, base, matchup, fit } = row;
+        const { hero, base, matchup, fit, personal } = row;
         const counterClass = !state.selected.enemy.length ? "" : matchup.avg >= 0.515 ? "good" : matchup.avg <= 0.485 ? "bad" : "";
         const baseClass = base.rate >= 0.515 ? "good" : base.rate <= 0.485 ? "bad" : "";
         const fitClass = fit.term > 5 ? "good" : fit.term < -3 ? "bad" : "";
+        const personalClass = personal.ready ? personal.winRate >= 0.54 ? "good" : personal.winRate <= 0.46 ? "bad" : "" : "";
         return `
           <article class="rec-card">
             <img src="${imgUrl(hero)}" alt="${hero.localized_name}">
@@ -1474,6 +1550,7 @@
                 <span class="metric ${counterClass}">对位 ${state.selected.enemy.length ? (matchup.ready ? pct(matchup.avg) : matchup.estimated ? `${pct(matchup.avg)}估` : matchup.loading ? "载入中" : "暂无") : "待选择"}</span>
                 <span class="metric ${fitClass}">${fit.position.label}</span>
                 <span class="metric ${fitClass}">适配 ${fit.term.toFixed(1)}</span>
+                <span class="metric ${personalClass}">个人 ${personal.ready ? personal.label : "无样本"}</span>
               </div>
               <p class="why">${row.why.join("；")}</p>
             </div>
@@ -1486,6 +1563,7 @@
       qs("#metaWeightLabel").textContent = `${state.weights.meta}%`;
       qs("#counterWeightLabel").textContent = `${state.weights.counter}%`;
       qs("#teamWeightLabel").textContent = `${state.weights.team}%`;
+      qs("#personalWeightLabel").textContent = `${state.weights.personal}%`;
     }
 
     function render() {
@@ -1510,7 +1588,7 @@
         state.role = event.target.value;
         renderHeroGrid();
       });
-      [["#metaWeight", "meta"], ["#counterWeight", "counter"], ["#teamWeight", "team"]].forEach(([selector, key]) => {
+      [["#metaWeight", "meta"], ["#counterWeight", "counter"], ["#teamWeight", "team"], ["#personalWeight", "personal"]].forEach(([selector, key]) => {
         qs(selector).addEventListener("input", (event) => {
           state.weights[key] = Number(event.target.value);
           renderRecommendations();
@@ -1532,6 +1610,7 @@
       bindEvents();
       render();
       await loadModelSnapshot();
+      await loadPersonalModel();
       render();
       try {
         await loadLiveHeroStats();

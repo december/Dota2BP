@@ -28,11 +28,19 @@ jobs:
           else
             python scripts/build_model.py --out data/model.json
           fi
+      - name: Build personal model
+        env:
+          STEAM_API_KEY: ${{ secrets.STEAM_API_KEY }}
+        run: |
+          python scripts/build_player_model.py \
+            --steam-profile "https://steamcommunity.com/profiles/76561198182670383/" \
+            --out data/player_model.json \
+            --max-matches 300
       - name: Commit updated data
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/model.json
+          git add data/model.json data/player_model.json
           if git diff --cached --quiet; then
             echo "No data changes"
           else
