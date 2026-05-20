@@ -752,23 +752,23 @@
           <div class="weights">
             <div class="range-row">
               <span>英雄强度</span>
-              <input id="metaWeight" type="range" min="0" max="100" value="18">
-              <strong id="metaWeightLabel">18%</strong>
+              <input id="metaWeight" type="range" min="0" max="100" value="12">
+              <strong id="metaWeightLabel">12%</strong>
             </div>
             <div class="range-row">
               <span>克制对位</span>
-              <input id="counterWeight" type="range" min="0" max="100" value="28">
-              <strong id="counterWeightLabel">28%</strong>
+              <input id="counterWeight" type="range" min="0" max="100" value="42">
+              <strong id="counterWeightLabel">42%</strong>
             </div>
             <div class="range-row">
               <span>阵容适配</span>
-              <input id="teamWeight" type="range" min="0" max="100" value="34">
-              <strong id="teamWeightLabel">34%</strong>
+              <input id="teamWeight" type="range" min="0" max="100" value="30">
+              <strong id="teamWeightLabel">30%</strong>
             </div>
             <div class="range-row">
               <span>个人熟练</span>
-              <input id="personalWeight" type="range" min="0" max="100" value="20">
-              <strong id="personalWeightLabel">20%</strong>
+              <input id="personalWeight" type="range" min="0" max="100" value="16">
+              <strong id="personalWeightLabel">16%</strong>
             </div>
           </div>
 
@@ -811,7 +811,7 @@
       bracket: "pub",
       role: "all",
       query: "",
-      weights: { meta: 18, counter: 28, team: 34, personal: 20 },
+      weights: { meta: 12, counter: 42, team: 30, personal: 16 },
       modelSnapshot: null,
       playerModel: null,
       teamModel: null,
@@ -897,6 +897,11 @@
       const g = Number(games) || 0;
       const w = Number(wins) || 0;
       return (w + prior * priorGames) / (g + priorGames);
+    }
+
+    function signedPower(value, power) {
+      if (!Number.isFinite(value) || value === 0) return 0;
+      return Math.sign(value) * Math.pow(Math.abs(value), power);
     }
 
     function heroWinRate(hero) {
@@ -1238,8 +1243,8 @@
       add(c.has("Pusher") && e.has("Initiator"), -1.2, "推进风险");
 
       return {
-        rate: clamp(0.5 + term / 100, 0.42, 0.6),
-        term: clamp(term, -8, 10),
+        rate: clamp(0.5 + term / 82, 0.39, 0.63),
+        term: clamp(term * 1.35, -14, 16),
         tags: Array.from(tags).slice(0, 3)
       };
     }
@@ -1291,13 +1296,24 @@
       });
 
       const avg = weightTotal ? weighted / weightTotal : 0.5;
+      const rates = details.map((item) => item.rate).filter(Number.isFinite);
+      const best = rates.length ? Math.max(...rates) : avg;
+      const worst = rates.length ? Math.min(...rates) : avg;
+      const avgDelta = (avg - 0.5) * 100;
+      const bestBonus = Math.max(0, (best - 0.5) * 100);
+      const worstPenalty = Math.max(0, (0.5 - worst) * 100);
+      const enemyPressure = 1 + Math.max(0, state.selected.enemy.length - 1) * 0.1;
+      const avgTerm = signedPower(avgDelta, 1.32) * 1.75;
+      const tailTerm = Math.pow(bestBonus, 1.18) * 0.65 - Math.pow(worstPenalty, 1.18) * 0.95;
       return {
         ready,
         loading,
         estimated,
         avg,
+        best,
+        worst,
         games: details.reduce((sum, item) => sum + (item.games || 0), 0),
-        term: clamp((avg - 0.5) * 100, -18, 18),
+        term: clamp((avgTerm + tailTerm) * enemyPressure, -34, 36),
         details,
         tags: Array.from(tags).slice(0, 3)
       };
@@ -1341,11 +1357,13 @@
       const personal = personalFit(hero);
       const weights = normalizedWeights();
       const baseTerm = clamp((base.rate - 0.5) * 100, -12, 12);
+      const enemyDraftPressure = state.selected.enemy.length ? 1 + Math.min(state.selected.enemy.length, 5) * 0.08 : 1;
+      const stableDamp = state.selected.enemy.length ? 0.92 - Math.min(state.selected.enemy.length, 4) * 0.03 : 1;
       const total = 50
-        + weights.meta * baseTerm * 2.15
-        + weights.counter * matchup.term * 2.35
-        + weights.team * fit.term * 1.75
-        + weights.personal * personal.term * 1.9;
+        + weights.meta * baseTerm * 1.8 * stableDamp
+        + weights.counter * matchup.term * 3.2 * enemyDraftPressure
+        + weights.team * fit.term * 1.65
+        + weights.personal * personal.term * 1.55 * stableDamp;
 
       const why = [];
       why.push(`基础胜率 ${pct(base.rate)}`);
@@ -1359,6 +1377,13 @@
           why.push("对位数据载入中");
         } else {
           why.push("对位数据暂不可用");
+        }
+      }
+      if (state.selected.enemy.length && matchup.details.length > 1) {
+        const bestDetail = matchup.details.reduce((bestItem, item) => item.rate > bestItem.rate ? item : bestItem, matchup.details[0]);
+        const worstDetail = matchup.details.reduce((worstItem, item) => item.rate < worstItem.rate ? item : worstItem, matchup.details[0]);
+        if (bestDetail.enemy && worstDetail.enemy && bestDetail.enemy.id !== worstDetail.enemy.id) {
+          why.push(`强打 ${bestDetail.enemy.localized_name} ${pct(bestDetail.rate)} / 避免 ${worstDetail.enemy.localized_name} ${pct(worstDetail.rate)}`);
         }
       }
       if (fit.position.open.length) {
@@ -1628,7 +1653,8 @@
       }
       recommendations.innerHTML = rows.map((row, index) => {
         const { hero, base, matchup, fit, personal } = row;
-        const counterClass = !state.selected.enemy.length ? "" : matchup.avg >= 0.515 ? "good" : matchup.avg <= 0.485 ? "bad" : "";
+        const counterClass = !state.selected.enemy.length ? "" : matchup.term >= 3.5 ? "good" : matchup.term <= -3.5 ? "bad" : "";
+        const counterImpact = state.selected.enemy.length ? `${matchup.term >= 0 ? "+" : ""}${matchup.term.toFixed(1)}` : "待选择";
         const baseClass = base.rate >= 0.515 ? "good" : base.rate <= 0.485 ? "bad" : "";
         const fitClass = fit.term > 5 ? "good" : fit.term < -3 ? "bad" : "";
         const personalClass = personal.ready ? personal.winRate >= 0.54 ? "good" : personal.winRate <= 0.46 ? "bad" : "" : "";
@@ -1643,6 +1669,7 @@
               <div class="metrics">
                 <span class="metric ${baseClass}">基础 ${pct(base.rate)}</span>
                 <span class="metric ${counterClass}">对位 ${state.selected.enemy.length ? (matchup.ready ? pct(matchup.avg) : matchup.estimated ? `${pct(matchup.avg)}估` : matchup.loading ? "载入中" : "暂无") : "待选择"}</span>
+                <span class="metric ${counterClass}">敌方 ${counterImpact}</span>
                 <span class="metric ${fitClass}">${fit.position.label}</span>
                 <span class="metric ${fitClass}">适配 ${fit.term.toFixed(1)}</span>
                 <span class="metric ${personalClass}">个人 ${personal.ready ? personal.label : "无样本"}</span>
