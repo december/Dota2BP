@@ -1,0 +1,41 @@
+name: Refresh Dota2BP data
+
+on:
+  workflow_dispatch:
+    inputs:
+      include_matchups:
+        description: "Fetch the full opponent matchup matrix"
+        required: false
+        default: "false"
+  schedule:
+    - cron: "17 */6 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Build model snapshot
+        run: |
+          if [ "${{ github.event.inputs.include_matchups }}" = "true" ]; then
+            python scripts/build_model.py --out data/model.json --with-matchups
+          else
+            python scripts/build_model.py --out data/model.json
+          fi
+      - name: Commit updated data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/model.json
+          if git diff --cached --quiet; then
+            echo "No data changes"
+          else
+            git commit -m "Refresh Dota2BP model data"
+            git push
+          fi
