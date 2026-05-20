@@ -718,7 +718,7 @@
           </div>
 
           <div class="notes">
-            <p><strong>当前模型说明：</strong>基础胜率来自 OpenDota heroStats；敌方克制来自 OpenDota hero matchups，并在选择敌方英雄时按需抓取。GitHub Pages 不能常驻后台，因此队友真实双人胜率会通过仓库里的定时训练脚本逐步补齐；当前线上版先使用角色覆盖、阵容缺口和重复核心惩罚估算协同。</p>
+            <p><strong>当前模型说明：</strong>基础胜率来自 OpenDota heroStats；敌方克制优先使用 OpenDota hero matchups，并在选择敌方英雄时按需抓取。真实对位数据尚未返回时，会先用英雄角色、攻击距离和阵容关系做即时估算，避免推荐列表僵住。GitHub Pages 不能常驻后台，因此队友真实双人胜率会通过仓库里的定时训练脚本逐步补齐；当前线上版先使用角色覆盖、阵容缺口、友方协同和重复核心惩罚估算协同。</p>
             <p id="modelNote">尚未载入模型快照。</p>
           </div>
         </div>
@@ -840,6 +840,14 @@
       return new Set([...state.selected.ally, ...state.selected.enemy]);
     }
 
+    function roleSet(hero) {
+      return new Set(hero?.roles || []);
+    }
+
+    function hasRole(hero, role) {
+      return roleSet(hero).has(role);
+    }
+
     function addHero(side, heroId) {
       if (selectedSet().has(heroId)) {
         removeHero(heroId);
@@ -896,20 +904,94 @@
       const counts = roleCounts(state.selected.ally);
       const needed = Object.keys(roleTargets).filter((role) => (counts[role] || 0) < roleTargets[role]);
       const filled = needed.filter((role) => (hero.roles || []).includes(role));
+      const synergy = allySynergyHeuristic(hero);
       let term = (withHero - before) * 42;
       term += filled.reduce((sum, role) => sum + (roleImportance[role] || 1), 0) * 1.8;
-      if ((counts.Carry || 0) >= 2 && (hero.roles || []).includes("Carry")) term -= 8;
+      term += synergy.term;
+      if ((counts.Carry || 0) >= 1 && (hero.roles || []).includes("Carry")) term -= 7;
+      if ((counts.Carry || 0) >= 2 && (hero.roles || []).includes("Carry")) term -= 6;
+      if ((counts.Support || 0) >= 2 && (hero.roles || []).includes("Support")) term -= 4;
       if (state.selected.ally.length >= 3 && (counts.Support || 0) === 0 && !(hero.roles || []).includes("Support")) term -= 5;
       return {
-        term: clamp(term, -14, 18),
+        term: clamp(term, -18, 24),
         filled,
+        synergy,
         quality: withHero
       };
     }
 
+    function allySynergyHeuristic(candidate) {
+      const c = roleSet(candidate);
+      const tags = new Set();
+      let term = 0;
+
+      state.selected.ally.map((id) => state.heroById.get(id)).filter(Boolean).forEach((ally) => {
+        const a = roleSet(ally);
+        const add = (condition, points, tag) => {
+          if (condition) {
+            term += points;
+            tags.add(tag);
+          }
+        };
+
+        add(a.has("Carry") && (c.has("Support") || c.has("Disabler")), 3.2, "保护核心");
+        add(a.has("Carry") && c.has("Initiator"), 1.8, "先手开团");
+        add(a.has("Support") && c.has("Carry"), 2.8, "补核心输出");
+        add(a.has("Support") && c.has("Durable"), 1.5, "补前排");
+        add(a.has("Initiator") && c.has("Nuker"), 2.7, "跟进爆发");
+        add(a.has("Initiator") && c.has("Disabler"), 1.6, "控制衔接");
+        add(a.has("Disabler") && (c.has("Carry") || c.has("Nuker")), 2.1, "吃控制收益");
+        add(a.has("Durable") && c.has("Support"), 1.5, "续航前排");
+        add(a.has("Pusher") && c.has("Pusher"), 1.4, "推进节奏");
+        add(a.has("Carry") && c.has("Carry"), -4.2, "核心过多");
+        add(a.has("Support") && c.has("Support") && state.selected.ally.length < 3, -0.8, "输出不足");
+        add(ally.attack_type && candidate.attack_type && ally.attack_type !== candidate.attack_type, 0.8, "伤害距离混合");
+        add(ally.primary_attr && candidate.primary_attr && ally.primary_attr !== candidate.primary_attr, 0.45, "属性分散");
+      });
+
+      return {
+        term: clamp(term, -9, 12),
+        tags: Array.from(tags).slice(0, 3)
+      };
+    }
+
+    function matchupHeuristic(candidate, enemy) {
+      const c = roleSet(candidate);
+      const e = roleSet(enemy);
+      const tags = new Set();
+      let term = 0;
+      const add = (condition, points, tag) => {
+        if (condition) {
+          term += points;
+          tags.add(tag);
+        }
+      };
+
+      add(e.has("Carry") && c.has("Disabler"), 4.8, "控制核心");
+      add(e.has("Carry") && c.has("Initiator"), 2.7, "先手抓核");
+      add(e.has("Carry") && c.has("Durable"), 1.5, "抗核心输出");
+      add(e.has("Escape") && c.has("Disabler"), 4.5, "限制逃生");
+      add(e.has("Pusher") && (c.has("Initiator") || c.has("Nuker")), 3.0, "打断推进");
+      add(e.has("Support") && c.has("Nuker"), 1.8, "压制辅助");
+      add(e.has("Initiator") && c.has("Disabler"), 2.5, "反手控制");
+      add(e.has("Durable") && c.has("Nuker"), 1.7, "消耗前排");
+      add(enemy.attack_type === "Melee" && candidate.attack_type === "Ranged", 1.1, "远程拉扯");
+      add(enemy.attack_type === "Ranged" && c.has("Initiator"), 1.0, "突进后排");
+      add(c.has("Carry") && e.has("Disabler"), -2.2, "怕控制");
+      add(c.has("Escape") && e.has("Disabler"), -1.8, "逃生受限");
+      add(c.has("Pusher") && e.has("Initiator"), -1.2, "推进风险");
+
+      return {
+        rate: clamp(0.5 + term / 100, 0.42, 0.6),
+        term: clamp(term, -8, 10),
+        tags: Array.from(tags).slice(0, 3)
+      };
+    }
+
     function matchupForCandidate(candidateId) {
+      const candidate = state.heroById.get(candidateId);
       if (!state.selected.enemy.length) {
-        return { ready: true, loading: false, avg: 0.5, games: 0, term: 0, details: [] };
+        return { ready: true, loading: false, estimated: false, avg: 0.5, games: 0, term: 0, details: [], tags: [] };
       }
 
       const details = [];
@@ -917,6 +999,8 @@
       let weightTotal = 0;
       let ready = true;
       let loading = false;
+      let estimated = false;
+      const tags = new Set();
 
       state.selected.enemy.forEach((enemyId) => {
         const enemy = state.heroById.get(enemyId);
@@ -924,14 +1008,22 @@
         if (!cache) {
           ready = false;
           loading = loading || state.matchupLoading.has(enemyId);
-          details.push({ enemy, rate: null, games: 0 });
+          estimated = true;
+          const estimate = matchupHeuristic(candidate, enemy);
+          estimate.tags.forEach((tag) => tags.add(tag));
+          weighted += estimate.rate * 320;
+          weightTotal += 320;
+          details.push({ enemy, rate: estimate.rate, games: 0, estimated: true });
           return;
         }
         const row = cache.get(candidateId);
         if (!row || !row.games_played) {
-          details.push({ enemy, rate: 0.5, games: 0 });
-          weighted += 0.5 * 120;
-          weightTotal += 120;
+          estimated = true;
+          const estimate = matchupHeuristic(candidate, enemy);
+          estimate.tags.forEach((tag) => tags.add(tag));
+          details.push({ enemy, rate: estimate.rate, games: 0, estimated: true });
+          weighted += estimate.rate * 180;
+          weightTotal += 180;
           return;
         }
         const enemyRate = bayesWinRate(row.wins, row.games_played, 0.5, 450);
@@ -946,10 +1038,12 @@
       return {
         ready,
         loading,
+        estimated,
         avg,
         games: details.reduce((sum, item) => sum + (item.games || 0), 0),
         term: clamp((avg - 0.5) * 100, -18, 18),
-        details
+        details,
+        tags: Array.from(tags).slice(0, 3)
       };
     }
 
@@ -969,6 +1063,9 @@
       if (state.selected.enemy.length) {
         if (matchup.ready) {
           why.push(`对敌方均值 ${pct(matchup.avg)}，样本 ${matchup.games.toLocaleString("zh-CN")}`);
+        } else if (matchup.estimated) {
+          const suffix = matchup.loading ? "，等待实时数据" : "";
+          why.push(`对位估算 ${pct(matchup.avg)}${suffix}`);
         } else if (matchup.loading) {
           why.push("对位数据载入中");
         } else {
@@ -976,6 +1073,8 @@
         }
       }
       if (fit.filled.length) why.push(`补足 ${fit.filled.slice(0, 3).join(" / ")}`);
+      if (fit.synergy.tags.length) why.push(`协同 ${fit.synergy.tags.join(" / ")}`);
+      if (matchup.tags.length) why.push(`克制 ${matchup.tags.join(" / ")}`);
       if (!fit.filled.length && state.selected.ally.length) why.push("阵容适配中性");
 
       return {
@@ -1192,7 +1291,7 @@
       }
       recommendations.innerHTML = rows.map((row, index) => {
         const { hero, base, matchup, fit } = row;
-        const counterClass = !state.selected.enemy.length || !matchup.ready ? "" : matchup.avg >= 0.515 ? "good" : matchup.avg <= 0.485 ? "bad" : "";
+        const counterClass = !state.selected.enemy.length ? "" : matchup.avg >= 0.515 ? "good" : matchup.avg <= 0.485 ? "bad" : "";
         const baseClass = base.rate >= 0.515 ? "good" : base.rate <= 0.485 ? "bad" : "";
         const fitClass = fit.term > 5 ? "good" : fit.term < -3 ? "bad" : "";
         return `
@@ -1205,7 +1304,7 @@
               </div>
               <div class="metrics">
                 <span class="metric ${baseClass}">基础 ${pct(base.rate)}</span>
-                <span class="metric ${counterClass}">对位 ${state.selected.enemy.length ? (matchup.ready ? pct(matchup.avg) : matchup.loading ? "载入中" : "暂无") : "待选择"}</span>
+                <span class="metric ${counterClass}">对位 ${state.selected.enemy.length ? (matchup.ready ? pct(matchup.avg) : matchup.estimated ? `${pct(matchup.avg)}估` : matchup.loading ? "载入中" : "暂无") : "待选择"}</span>
                 <span class="metric ${fitClass}">适配 ${fit.term.toFixed(1)}</span>
               </div>
               <p class="why">${row.why.join("；")}</p>

@@ -13,7 +13,8 @@ https://december.github.io/Dota2BP/
 - Scores unpicked heroes from three explainable signals:
   - base win rate,
   - counter-pick value against selected enemies,
-  - ally lineup fit from role coverage and composition balance.
+  - ally lineup fit from role coverage, role synergy, and composition balance.
+- Uses a role/attack-type heuristic immediately while OpenDota matchup requests are still loading, so draft changes affect the ranking without waiting on a slow API response.
 - Runs fully as a static website on GitHub Pages.
 
 ## Data refresh
