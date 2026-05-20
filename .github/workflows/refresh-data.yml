@@ -36,11 +36,22 @@ jobs:
             --steam-profile "https://steamcommunity.com/profiles/76561198182670383/" \
             --out data/player_model.json \
             --max-matches 300
+      - name: Build team model
+        run: |
+          python scripts/build_team_model.py \
+            --player "https://steamcommunity.com/profiles/76561198182670383/" \
+            --player "https://steamcommunity.com/profiles/76561198320148933/" \
+            --player "https://steamcommunity.com/id/amituofo6666/" \
+            --player "https://steamcommunity.com/profiles/76561198146231486/" \
+            --player "https://steamcommunity.com/profiles/76561198106506910/" \
+            --player "https://steamcommunity.com/profiles/76561198343705647/" \
+            --out data/team_model.json \
+            --max-matches 300
       - name: Commit updated data
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/model.json data/player_model.json
+          git add data/model.json data/player_model.json data/team_model.json
           if git diff --cached --quiet; then
             echo "No data changes"
           else

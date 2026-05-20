@@ -402,6 +402,52 @@
       margin: 14px 0;
     }
 
+    .team-panel {
+      display: grid;
+      gap: 12px;
+      margin-bottom: 14px;
+    }
+
+    .roster-list {
+      display: grid;
+      gap: 8px;
+      max-height: 260px;
+      overflow: auto;
+      scrollbar-color: var(--line) transparent;
+    }
+
+    .roster-card {
+      width: 100%;
+      min-height: 74px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 9px;
+      color: var(--ink);
+      background: rgba(255, 255, 255, 0.03);
+      text-align: left;
+    }
+
+    .roster-card.active {
+      border-color: rgba(230, 169, 58, 0.72);
+      background: rgba(230, 169, 58, 0.09);
+    }
+
+    .roster-top {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      align-items: center;
+      font-weight: 900;
+    }
+
+    .roster-meta,
+    .roster-heroes {
+      margin-top: 5px;
+      color: var(--muted);
+      font-size: 11px;
+      line-height: 1.45;
+    }
+
     .range-row {
       display: grid;
       grid-template-columns: 80px 1fr 40px;
@@ -693,6 +739,16 @@
           <span class="pill" id="candidateCount">0 个候选</span>
         </div>
         <div class="side-inner">
+          <div class="team-panel">
+            <div class="field">
+              <label for="playerSelect">为谁推荐</label>
+              <select class="select" id="playerSelect">
+                <option value="">通用推荐</option>
+              </select>
+            </div>
+            <div class="roster-list" id="teamRoster"></div>
+          </div>
+
           <div class="weights">
             <div class="range-row">
               <span>英雄强度</span>
@@ -742,6 +798,7 @@
     const MATCHUP_URL = (heroId) => `https://api.opendota.com/api/heroes/${heroId}/matchups`;
     const MODEL_URL = "data/model.json";
     const PERSONAL_MODEL_URL = "data/player_model.json";
+    const TEAM_MODEL_URL = "data/team_model.json";
     const STEAM_CDN = "https://cdn.cloudflare.steamstatic.com";
     const CACHE_TTL = 1000 * 60 * 60 * 12;
 
@@ -757,6 +814,8 @@
       weights: { meta: 18, counter: 28, team: 34, personal: 20 },
       modelSnapshot: null,
       playerModel: null,
+      teamModel: null,
+      selectedAccountId: null,
       dataSource: "none",
       lastUpdated: null
     };
@@ -866,6 +925,24 @@
 
     function selectedSet() {
       return new Set([...state.selected.ally, ...state.selected.enemy]);
+    }
+
+    function teamPlayers() {
+      return state.teamModel?.players || [];
+    }
+
+    function activePlayerModel() {
+      if (teamPlayers().length) {
+        return teamPlayers().find((player) => String(player.player?.account_id) === String(state.selectedAccountId))
+          || teamPlayers().find((player) => player.status === "ready")
+          || teamPlayers()[0];
+      }
+      return state.playerModel;
+    }
+
+    function activePlayerName() {
+      const player = activePlayerModel()?.player;
+      return player?.personaname || "当前玩家";
     }
 
     function roleSet(hero) {
@@ -1227,7 +1304,8 @@
     }
 
     function personalFit(hero) {
-      const heroStats = state.playerModel?.heroes?.[hero.id] || state.playerModel?.heroes?.[String(hero.id)];
+      const model = activePlayerModel();
+      const heroStats = model?.heroes?.[hero.id] || model?.heroes?.[String(hero.id)];
       if (!heroStats || !heroStats.games) {
         return { ready: false, term: 0, games: 0, winRate: null, confidence: 0, label: "无个人样本" };
       }
@@ -1290,7 +1368,7 @@
       if (fit.filled.length) why.push(`补足 ${fit.filled.slice(0, 3).join(" / ")}`);
       if (fit.synergy.tags.length) why.push(`协同 ${fit.synergy.tags.join(" / ")}`);
       if (matchup.tags.length) why.push(`克制 ${matchup.tags.join(" / ")}`);
-      if (personal.ready) why.push(`个人 ${personal.label}`);
+      if (personal.ready) why.push(`${activePlayerName()} ${personal.label}`);
       if (state.selected.ally.length && (roleCounts(state.selected.ally).Support || 0) >= 2 && fit.position.primary >= 4) why.push("辅助位已偏多，已降权");
       if (!fit.filled.length && state.selected.ally.length) why.push("阵容适配中性");
 
@@ -1361,6 +1439,23 @@
         }
       } catch (error) {
         qs("#personalNote").textContent = "未找到个人模型，将使用通用 BP 推荐。";
+      }
+    }
+
+    async function loadTeamModel() {
+      try {
+        const model = await loadJson(TEAM_MODEL_URL, 8000);
+        state.teamModel = model;
+        const players = teamPlayers();
+        if (players.length && !state.selectedAccountId) {
+          const owner = players.find((player) => Number(player.player?.account_id) === 222404655);
+          state.selectedAccountId = String((owner || players[0]).player.account_id);
+        }
+        const ready = players.filter((player) => player.status === "ready" && player.summary?.games).length;
+        const generated = model.generated_at ? new Date(model.generated_at).toLocaleString("zh-CN") : "未知时间";
+        qs("#personalNote").textContent = `车队模型已载入：${players.length} 人，${ready} 人有公开样本。当前为 ${activePlayerName()} 推荐，生成于 ${generated}。`;
+      } catch (error) {
+        state.teamModel = null;
       }
     }
 
@@ -1443,11 +1538,11 @@
       const updated = state.lastUpdated ? new Date(state.lastUpdated).toLocaleString("zh-CN") : "未知";
       const loading = state.matchupLoading.size;
       const loaded = state.selected.enemy.filter((id) => state.matchupCache.has(id)).length;
-      const personal = state.playerModel?.status === "ready" ? "个人模型" : "通用模型";
+      const personal = teamPlayers().length ? "车队模型" : state.playerModel?.status === "ready" ? "个人模型" : "通用模型";
       statusBar.innerHTML = `
         <span class="pill ${state.heroes.length ? "good" : "warn"}">${state.heroes.length || 0} 个英雄</span>
         <span class="pill">${data}</span>
-        <span class="pill ${state.playerModel?.status === "ready" ? "good" : ""}">${personal}</span>
+        <span class="pill ${teamPlayers().length || state.playerModel?.status === "ready" ? "good" : ""}">${personal}</span>
         <span class="pill">更新 ${updated}</span>
         <span class="pill ${loading ? "warn" : "good"}">对位 ${loaded}/${state.selected.enemy.length}${loading ? " 载入中" : ""}</span>
       `;
@@ -1559,6 +1654,51 @@
       }).join("");
     }
 
+    function renderTeamControls() {
+      const select = qs("#playerSelect");
+      const roster = qs("#teamRoster");
+      const players = teamPlayers();
+      if (!players.length) {
+        select.innerHTML = `<option value="">通用推荐</option>`;
+        roster.innerHTML = `<div class="empty-state">尚未载入车队模型。</div>`;
+        return;
+      }
+
+      select.innerHTML = players.map((player) => {
+        const accountId = String(player.player.account_id);
+        const positions = (player.common_positions || []).map((position) => position.label.replace("号位", "")).join(" / ") || "暂无位置样本";
+        const sample = player.summary?.games ? `${player.summary.games}局` : "暂无样本";
+        return `<option value="${accountId}">${player.player.personaname || accountId} · ${positions} · ${sample}</option>`;
+      }).join("");
+      select.value = String(state.selectedAccountId || players[0].player.account_id);
+
+      roster.innerHTML = players.map((player) => {
+        const accountId = String(player.player.account_id);
+        const active = accountId === String(state.selectedAccountId);
+        const positions = (player.common_positions || []).map((position) => `${position.label} ${(position.share * 100).toFixed(0)}%`).join(" / ") || "暂无位置样本";
+        const heroes = (player.top_heroes || []).slice(0, 4).map((hero) => `${hero.name} ${hero.games}局 ${pct(hero.win_rate, 0)}`).join("，") || "暂无公开英雄样本";
+        const summary = player.summary?.games ? `${player.summary.games}局 · ${pct(player.summary.win_rate, 1)} · ${player.summary.heroes}英雄` : "暂无公开样本";
+        return `
+          <button class="roster-card ${active ? "active" : ""}" type="button" data-account="${accountId}">
+            <div class="roster-top">
+              <span>${player.player.personaname || accountId}</span>
+              <span>${summary}</span>
+            </div>
+            <div class="roster-meta">${positions}</div>
+            <div class="roster-heroes">${heroes}</div>
+          </button>
+        `;
+      }).join("");
+
+      roster.querySelectorAll("[data-account]").forEach((button) => {
+        button.addEventListener("click", () => {
+          state.selectedAccountId = button.dataset.account;
+          qs("#personalNote").textContent = `车队模型已载入：当前为 ${activePlayerName()} 推荐。`;
+          render();
+        });
+      });
+    }
+
     function renderWeights() {
       qs("#metaWeightLabel").textContent = `${state.weights.meta}%`;
       qs("#counterWeightLabel").textContent = `${state.weights.counter}%`;
@@ -1570,6 +1710,7 @@
       renderStatus();
       renderSlots("ally");
       renderSlots("enemy");
+      renderTeamControls();
       renderHeroGrid();
       renderRecommendations();
       renderWeights();
@@ -1587,6 +1728,11 @@
       qs("#roleSelect").addEventListener("change", (event) => {
         state.role = event.target.value;
         renderHeroGrid();
+      });
+      qs("#playerSelect").addEventListener("change", (event) => {
+        state.selectedAccountId = event.target.value;
+        qs("#personalNote").textContent = `车队模型已载入：当前为 ${activePlayerName()} 推荐。`;
+        render();
       });
       [["#metaWeight", "meta"], ["#counterWeight", "counter"], ["#teamWeight", "team"], ["#personalWeight", "personal"]].forEach(([selector, key]) => {
         qs(selector).addEventListener("input", (event) => {
@@ -1611,6 +1757,7 @@
       render();
       await loadModelSnapshot();
       await loadPersonalModel();
+      await loadTeamModel();
       render();
       try {
         await loadLiveHeroStats();
