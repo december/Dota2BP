@@ -1192,16 +1192,17 @@
           <div class="field">
             <label for="reviewLimitSelect">最近局数</label>
             <select class="select" id="reviewLimitSelect">
-              <option value="5">最近 5 局</option>
-              <option value="8" selected>最近 8 局</option>
-              <option value="12">最近 12 局</option>
+              <option value="10">最近 10 局</option>
+              <option value="20" selected>最近 20 局</option>
+              <option value="50">最近 50 局</option>
+              <option value="100">最近 100 局</option>
             </select>
           </div>
-          <button class="review-button" id="loadHistoryButton" type="button">抓取并复盘</button>
+          <button class="review-button" id="loadHistoryButton" type="button">实时刷新</button>
         </div>
 
         <div class="review-summary" id="reviewSummary">
-          <div class="empty-state">点击“抓取并复盘”后，会实时读取 OpenDota 最近战绩，分析每局英雄选择、克制关系、阵容适配和最终胜负。</div>
+          <div class="empty-state">正在载入离线复盘快照。快照载入后，切换队友和最近局数会立即出结果。</div>
         </div>
 
         <div class="match-review-list" id="matchReviewList"></div>
@@ -1219,6 +1220,7 @@
     const MODEL_URL = "data/model.json";
     const PERSONAL_MODEL_URL = "data/player_model.json";
     const TEAM_MODEL_URL = "data/team_model.json";
+    const HISTORY_REVIEW_URL = "data/history_review.json";
     const STEAM_CDN = "https://cdn.cloudflare.steamstatic.com";
     const CACHE_TTL = 1000 * 60 * 60 * 12;
     const MATCH_DETAIL_TTL = 1000 * 60 * 60 * 6;
@@ -1267,13 +1269,16 @@
       lastUpdated: null,
       history: {
         accountId: String(OWNER_ACCOUNT_ID),
-        limit: 8,
+        limit: 20,
         loading: false,
         detailLoaded: 0,
         loadedAt: null,
         error: "",
         rows: [],
-        summary: null
+        summary: null,
+        snapshot: null,
+        snapshotStatus: "none",
+        liveAccountId: null
       }
     };
 
@@ -2378,7 +2383,7 @@
       };
     }
 
-    function draftOrderFromMatch(detail, heroId, isRadiant) {
+    function draftOrderFromMatch(detail, heroId, isRadiant, enemyIds = []) {
       const picks = Array.isArray(detail?.picks_bans)
         ? detail.picks_bans
           .map((row, index) => ({
@@ -2397,12 +2402,17 @@
       if (!ownPick) {
         return { known: false, label: "未定位到你的选人手次", beforeEnemyIds: [], afterEnemyIds: [] };
       }
-      const beforeEnemyIds = picks
+      const enemySet = new Set(enemyIds.map(Number));
+      let beforeEnemyIds = picks
         .filter((row) => Number(row.team) !== team && row.orderValue < ownPick.orderValue)
         .map((row) => Number(row.hero_id));
-      const afterEnemyIds = picks
+      let afterEnemyIds = picks
         .filter((row) => Number(row.team) !== team && row.orderValue > ownPick.orderValue)
         .map((row) => Number(row.hero_id));
+      if (enemySet.size) {
+        beforeEnemyIds = beforeEnemyIds.filter((id) => enemySet.has(id));
+        afterEnemyIds = afterEnemyIds.filter((id) => enemySet.has(id));
+      }
       return {
         known: true,
         order: ownPick.orderValue + 1,
@@ -2494,7 +2504,7 @@
       if (hero && lineup.enemyIds.length) await loadReviewHeroMatchups(hero.id);
 
       const won = matchWon(summary, lineup.ownSlot);
-      const draft = draftOrderFromMatch(detail, lineup.heroId, lineup.isRadiant);
+      const draft = draftOrderFromMatch(detail, lineup.heroId, lineup.isRadiant, lineup.enemyIds);
       const base = hero ? heroWinRateForBracket(hero, skill.bracket) : { rate: 0.5, games: 0 };
       const counter = counterReview(hero, lineup.enemyIds, skill);
       const fit = teamFitForReview(hero, lineup.allyIds);
@@ -2609,6 +2619,7 @@
         state.history.rows = rows.filter(Boolean);
         state.history.summary = summarizeHistoryRows(state.history.rows);
         state.history.loadedAt = new Date().toISOString();
+        state.history.liveAccountId = accountId;
       } catch (error) {
         console.error(error);
         state.history.error = "OpenDota 历史战绩暂时不可用，请稍后重试。";
@@ -2616,6 +2627,36 @@
         state.history.loading = false;
         renderHistoryReview();
       }
+    }
+
+    async function loadHistoryReviewSnapshot() {
+      state.history.snapshotStatus = "loading";
+      try {
+        const snapshot = await loadJson(HISTORY_REVIEW_URL, 10000);
+        state.history.snapshot = snapshot;
+        state.history.snapshotStatus = "ready";
+        state.history.loadedAt = snapshot.generated_at || state.history.loadedAt;
+      } catch (error) {
+        state.history.snapshot = null;
+        state.history.snapshotStatus = "missing";
+      }
+    }
+
+    function historySnapshotPlayer(accountId = defaultReviewAccountId()) {
+      const id = String(accountId || "");
+      return (state.history.snapshot?.players || []).find((player) => String(player.account_id) === id) || null;
+    }
+
+    function currentHistoryRows() {
+      const accountId = defaultReviewAccountId();
+      if (state.history.liveAccountId === accountId && state.history.rows.length) {
+        return state.history.rows.slice(0, state.history.limit);
+      }
+      const snapshotPlayer = historySnapshotPlayer(accountId);
+      if (snapshotPlayer?.matches?.length) {
+        return snapshotPlayer.matches.slice(0, state.history.limit);
+      }
+      return state.history.rows.slice(0, state.history.limit);
     }
 
     async function loadModelSnapshot() {
@@ -2966,20 +3007,24 @@
       playerSelect.value = accountId;
       limitSelect.value = String(state.history.limit);
       loadButton.disabled = state.history.loading || !state.heroes.length;
-      loadButton.textContent = state.history.loading ? "正在复盘..." : "抓取并复盘";
+      loadButton.textContent = state.history.loading ? "正在刷新..." : "实时刷新";
 
       const player = playerModelByAccount(accountId);
       const skill = skillBracketForPlayer(player);
+      const rows = currentHistoryRows();
+      const snapshotPlayer = historySnapshotPlayer(accountId);
+      const snapshotReady = state.history.snapshotStatus === "ready";
       const loadedAt = state.history.loadedAt ? new Date(state.history.loadedAt).toLocaleTimeString("zh-CN", { hour: "2-digit", minute: "2-digit" }) : "未抓取";
+      const detailCount = rows.filter((row) => row.hasDetail || row.has_detail).length;
       reviewStatus.innerHTML = `
-        <span class="pill ${state.history.loading ? "warn" : state.history.rows.length ? "good" : ""}">${state.history.loading ? "抓取中" : "历史复盘"}</span>
+        <span class="pill ${state.history.loading ? "warn" : rows.length ? "good" : ""}">${state.history.loading ? "刷新中" : snapshotReady ? "离线快照" : "历史复盘"}</span>
         <span class="pill ${skill.known ? "good" : "warn"}">分段 ${escapeHtml(skill.label)}</span>
-        <span class="pill">详情 ${state.history.detailLoaded}/${state.history.limit}</span>
+        <span class="pill">详情 ${detailCount}/${rows.length || state.history.limit}</span>
         <span class="pill">更新 ${loadedAt}</span>
       `;
 
       if (state.history.loading) {
-        reviewSummary.innerHTML = `<div class="empty-state">正在读取 OpenDota 最近 ${state.history.limit} 局，并尝试解析双方阵容、选人顺序和克制关系。单局详情如果超时，会自动降级为基础复盘。</div>`;
+        reviewSummary.innerHTML = `<div class="empty-state">正在实时读取 OpenDota 最近 ${state.history.limit} 局，并尝试解析双方阵容、选人顺序和克制关系。完成后会临时覆盖当前对象的离线快照展示。</div>`;
         matchReviewList.innerHTML = "";
         return;
       }
@@ -2990,13 +3035,18 @@
         return;
       }
 
-      if (!state.history.rows.length) {
-        reviewSummary.innerHTML = `<div class="empty-state">点击“抓取并复盘”后，会实时读取 OpenDota 最近战绩，分析每局英雄选择、克制关系、阵容适配和最终胜负。</div>`;
+      if (!rows.length) {
+        const emptyText = state.history.snapshotStatus === "loading"
+          ? "正在载入离线复盘快照。"
+          : snapshotPlayer
+            ? "这个账号的公开最近战绩为空；OpenDota 当前没有返回逐局记录。"
+            : "离线复盘快照里没有这个账号的数据，可以点“实时刷新”尝试临时抓取。";
+        reviewSummary.innerHTML = `<div class="empty-state">${emptyText}</div>`;
         matchReviewList.innerHTML = "";
         return;
       }
 
-      const summary = state.history.summary || summarizeHistoryRows(state.history.rows);
+      const summary = summarizeHistoryRows(rows);
       reviewSummary.innerHTML = `
         <div class="review-tile"><span>复盘局数</span><strong>${summary.total} 局</strong></div>
         <div class="review-tile"><span>胜率</span><strong>${pct(summary.winRate, 0)}</strong></div>
@@ -3004,7 +3054,7 @@
         <div class="review-tile"><span>好手 / 压力手</span><strong>${summary.good} / ${summary.bad}</strong></div>
       `;
 
-      matchReviewList.innerHTML = state.history.rows.map(renderHistoryMatchCard).join("");
+      matchReviewList.innerHTML = rows.map(renderHistoryMatchCard).join("");
     }
 
     function renderLineupChips(ids) {
@@ -3016,11 +3066,14 @@
       if (!row || row.error) {
         return `<article class="match-card bad"><div class="match-title">复盘失败</div><p class="match-analysis">这局数据解析失败，稍后可以重新抓取。</p></article>`;
       }
-      const hero = row.hero;
-      const title = `#${row.matchId} ${hero ? hero.localized_name : heroName(row.heroId)}`;
+      const heroId = Number(row.heroId ?? row.hero_id);
+      const matchId = row.matchId ?? row.match_id;
+      const hero = row.hero || state.heroById.get(heroId);
+      const title = `#${matchId} ${hero ? hero.localized_name : row.hero_name || heroName(heroId)}`;
       const kda = `${row.kills}/${row.deaths}/${row.assists}`;
-      const rank = row.averageRank ? `平均分段 ${rankTierInfo(row.averageRank).label}` : "平均分段未知";
-      const detailTag = row.hasDetail ? "完整阵容" : "基础数据";
+      const averageRank = row.averageRank ?? row.average_rank;
+      const rank = averageRank ? `平均分段 ${rankTierInfo(averageRank).label}` : "平均分段未知";
+      const detailTag = (row.hasDetail || row.has_detail) ? "完整阵容" : "基础数据";
       const tags = row.tags.slice(0, 8).map((tag) =>
         `<span class="match-tag ${tag.tone || ""}">${escapeHtml(tag.text)}</span>`
       ).join("");
@@ -3030,7 +3083,7 @@
           <div class="match-top">
             <div>
               <div class="match-title" title="${escapeHtml(title)}">${escapeHtml(title)}</div>
-              <div class="match-subtitle">${formatMatchTime(row.startTime)} · ${formatDuration(row.duration)} · KDA ${kda} · ${laneRoleText(row.laneRole)} · ${rank} · ${detailTag}</div>
+              <div class="match-subtitle">${formatMatchTime(row.startTime ?? row.start_time)} · ${formatDuration(row.duration)} · KDA ${kda} · ${laneRoleText(row.laneRole ?? row.lane_role)} · ${rank} · ${detailTag}</div>
             </div>
             <div class="match-score">${row.score.toFixed(0)}</div>
           </div>
@@ -3050,7 +3103,7 @@
             <div class="lineup-list">${renderLineupChips(row.enemies)}</div>
           </div>
           <p class="match-analysis">${notes}</p>
-          <a class="match-link" href="https://www.opendota.com/matches/${row.matchId}" target="_blank" rel="noreferrer">在 OpenDota 查看这局</a>
+          <a class="match-link" href="https://www.opendota.com/matches/${matchId}" target="_blank" rel="noreferrer">在 OpenDota 查看这局</a>
         </article>
       `;
     }
@@ -3127,6 +3180,7 @@
       await loadModelSnapshot();
       await loadPersonalModel();
       await loadTeamModel();
+      await loadHistoryReviewSnapshot();
       render();
       try {
         await loadLiveHeroStats();

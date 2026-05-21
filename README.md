@@ -18,7 +18,7 @@ https://december.github.io/Dota2BP/
 - Infers position demand for positions 1-5. If allies already contain several supports, the model strongly boosts missing core positions; if the draft is core-heavy, it boosts support/control/frontline picks.
 - Loads a personal aggregate model from `data/player_model.json` and boosts heroes you have strong historical results or recent volume on.
 - Loads a team aggregate model from `data/team_model.json`; choose a teammate in the UI to recommend heroes for that specific player's hero pool and inferred positions.
-- Adds a history-review page that fetches recent OpenDota matches for a selected player, analyzes each picked hero against the visible enemy lineup, draft order, team fit, rank bracket, personal comfort, and win/loss outcome.
+- Adds a history-review page backed by `data/history_review.json`, so teammate and match-count changes render instantly from a precomputed recent-match review snapshot.
 - Runs fully as a static website on GitHub Pages.
 
 ## Data refresh
@@ -58,6 +58,12 @@ Include the full opponent matchup matrix:
 
 ```powershell
 python scripts/build_model.py --out data/model.json --with-matchups
+```
+
+Build the offline history review snapshot:
+
+```powershell
+python scripts/build_history_review.py --matches 100 --out data/history_review.json
 ```
 
 The teammate pair matrix is intentionally left as a data-source extension point. OpenDota exposes opponent matchup aggregates publicly, but it does not expose a no-key teammate-synergy endpoint equivalent to the requested pair matrix. The frontend currently estimates ally synergy from role coverage until a richer source such as STRATZ GraphQL or a custom match parser is wired in.
