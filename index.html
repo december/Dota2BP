@@ -280,12 +280,16 @@
     .select {
       width: 100%;
       min-height: 42px;
+      min-width: 0;
       border: 1px solid var(--line);
       border-radius: 6px;
       padding: 0 12px;
       color: var(--ink);
       background: var(--panel-2);
       outline: none;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
     }
 
     .input:focus,
@@ -419,12 +423,14 @@
     .roster-card {
       width: 100%;
       min-height: 74px;
+      min-width: 0;
       border: 1px solid var(--line);
       border-radius: 8px;
       padding: 9px;
       color: var(--ink);
       background: rgba(255, 255, 255, 0.03);
       text-align: left;
+      overflow: hidden;
     }
 
     .roster-card.active {
@@ -433,11 +439,27 @@
     }
 
     .roster-top {
-      display: flex;
-      justify-content: space-between;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
       gap: 10px;
       align-items: center;
       font-weight: 900;
+    }
+
+    .roster-name,
+    .roster-summary {
+      min-width: 0;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .roster-summary {
+      max-width: 148px;
+      color: var(--soft);
+      font-size: 11px;
+      font-weight: 800;
+      text-align: right;
     }
 
     .roster-meta,
@@ -446,6 +468,17 @@
       color: var(--muted);
       font-size: 11px;
       line-height: 1.45;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+    }
+
+    .roster-meta {
+      -webkit-line-clamp: 1;
+    }
+
+    .roster-heroes {
+      -webkit-line-clamp: 2;
     }
 
     .range-row {
@@ -470,12 +503,14 @@
 
     .rec-card {
       display: grid;
-      grid-template-columns: 82px 1fr;
+      grid-template-columns: 78px minmax(0, 1fr);
       gap: 12px;
+      align-items: start;
       border: 1px solid var(--line);
       border-radius: 8px;
       padding: 10px;
       background: rgba(255, 255, 255, 0.03);
+      overflow: hidden;
     }
 
     .rec-card:first-child {
@@ -484,16 +519,20 @@
     }
 
     .rec-card img {
-      width: 82px;
+      width: 78px;
       aspect-ratio: 16 / 10;
       object-fit: cover;
       border-radius: 6px;
       background: #0d1113;
     }
 
+    .rec-body {
+      min-width: 0;
+    }
+
     .rec-head {
-      display: flex;
-      justify-content: space-between;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
       gap: 10px;
       align-items: start;
     }
@@ -501,31 +540,39 @@
     .rec-name {
       min-width: 0;
       font-weight: 900;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
     }
 
     .score {
       flex: 0 0 auto;
-      min-width: 56px;
-      text-align: right;
+      min-width: 44px;
+      padding: 2px 7px;
+      border-radius: 999px;
+      text-align: center;
       color: var(--accent-2);
-      font-size: 20px;
+      background: rgba(230, 169, 58, 0.11);
+      font-size: 18px;
       font-weight: 900;
     }
 
     .metrics {
-      display: flex;
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
       gap: 6px;
-      flex-wrap: wrap;
       margin: 7px 0;
     }
 
     .metric {
       padding: 3px 6px;
-      border-radius: 999px;
+      border-radius: 6px;
       color: var(--muted);
       background: rgba(255, 255, 255, 0.06);
       font-size: 11px;
       white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
 
     .metric.good {
@@ -543,6 +590,10 @@
       color: var(--muted);
       font-size: 12px;
       line-height: 1.55;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 3;
     }
 
     .empty-state {
@@ -656,7 +707,7 @@
       }
 
       .rec-card {
-        grid-template-columns: 72px 1fr;
+        grid-template-columns: 72px minmax(0, 1fr);
       }
 
       .rec-card img {
@@ -1661,9 +1712,9 @@
         return `
           <article class="rec-card">
             <img src="${imgUrl(hero)}" alt="${hero.localized_name}">
-            <div>
+            <div class="rec-body">
               <div class="rec-head">
-                <div class="rec-name">#${index + 1} ${hero.localized_name}</div>
+                <div class="rec-name" title="${hero.localized_name}">#${index + 1} ${hero.localized_name}</div>
                 <div class="score">${row.total.toFixed(0)}</div>
               </div>
               <div class="metrics">
@@ -1674,7 +1725,7 @@
                 <span class="metric ${fitClass}">适配 ${fit.term.toFixed(1)}</span>
                 <span class="metric ${personalClass}">个人 ${personal.ready ? personal.label : "无样本"}</span>
               </div>
-              <p class="why">${row.why.join("；")}</p>
+              <p class="why" title="${row.why.join("；")}">${row.why.join("；")}</p>
             </div>
           </article>
         `;
@@ -1693,9 +1744,7 @@
 
       select.innerHTML = players.map((player) => {
         const accountId = String(player.player.account_id);
-        const positions = (player.common_positions || []).map((position) => position.label.replace("号位", "")).join(" / ") || "暂无位置样本";
-        const sample = player.summary?.games ? `${player.summary.games}局` : "暂无样本";
-        return `<option value="${accountId}">${player.player.personaname || accountId} · ${positions} · ${sample}</option>`;
+        return `<option value="${accountId}">${player.player.personaname || accountId}</option>`;
       }).join("");
       select.value = String(state.selectedAccountId || players[0].player.account_id);
 
@@ -1706,10 +1755,10 @@
         const heroes = (player.top_heroes || []).slice(0, 4).map((hero) => `${hero.name} ${hero.games}局 ${pct(hero.win_rate, 0)}`).join("，") || "暂无公开英雄样本";
         const summary = player.summary?.games ? `${player.summary.games}局 · ${pct(player.summary.win_rate, 1)} · ${player.summary.heroes}英雄` : "暂无公开样本";
         return `
-          <button class="roster-card ${active ? "active" : ""}" type="button" data-account="${accountId}">
+          <button class="roster-card ${active ? "active" : ""}" type="button" data-account="${accountId}" title="${player.player.personaname || accountId}">
             <div class="roster-top">
-              <span>${player.player.personaname || accountId}</span>
-              <span>${summary}</span>
+              <span class="roster-name">${player.player.personaname || accountId}</span>
+              <span class="roster-summary">${summary}</span>
             </div>
             <div class="roster-meta">${positions}</div>
             <div class="roster-heroes">${heroes}</div>
