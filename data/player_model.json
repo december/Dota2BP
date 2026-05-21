@@ -1,16 +1,16 @@
 {
   "schema": 1,
   "status": "ready",
-  "generated_at": "2026-05-21T10:07:18.495554+00:00",
+  "generated_at": "2026-05-21T15:53:03.954638+00:00",
   "player": {
     "account_id": 222404655,
     "steamid64": "76561198182670383",
-    "personaname": null,
-    "profileurl": null,
-    "avatar": null
+    "personaname": "LouisEX",
+    "profileurl": "https://steamcommunity.com/profiles/76561198182670383/",
+    "avatar": "https://avatars.steamstatic.com/15896e4d49dc88cb268e9a4eb02a08ff5d913838_full.jpg"
   },
   "rank_profile": {
-    "rank_tier": null,
+    "rank_tier": 42,
     "leaderboard_rank": null,
     "mmr_estimate": null
   },
@@ -21,7 +21,7 @@
     "win_rate": 0.50878,
     "heroes": 114,
     "recent_matches": 300,
-    "frequent_peers": 0
+    "frequent_peers": 36
   },
   "heroes": {
     "86": {
@@ -1547,8 +1547,7 @@
     "steam_api": false
   },
   "errors": [
-    "OpenDota profile unavailable: https://api.opendota.com/api/players/222404655: The read operation timed out",
-    "OpenDota peers unavailable: https://api.opendota.com/api/players/222404655/peers: The read operation timed out"
+    "OpenDota wl unavailable: https://api.opendota.com/api/players/222404655/wl: The read operation timed out"
   ],
   "privacy": "Aggregate hero stats only by default; raw match IDs and peer identities are not included."
 }
