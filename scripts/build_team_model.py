@@ -188,6 +188,7 @@ def compact_player_model(player_model: dict[str, Any]) -> dict[str, Any]:
         "status",
         "generated_at",
         "player",
+        "rank_profile",
         "summary",
         "heroes",
         "top_heroes",

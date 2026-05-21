@@ -222,6 +222,7 @@ def build_model(
 
     profile = opendota_data.get("profile") or {}
     player_profile = profile.get("profile") if isinstance(profile, dict) else None
+    mmr_estimate = profile.get("mmr_estimate") if isinstance(profile, dict) else None
     status = "ready" if heroes else "needs_data"
     return {
         "schema": 1,
@@ -233,6 +234,11 @@ def build_model(
             "personaname": (player_profile or {}).get("personaname"),
             "profileurl": (player_profile or {}).get("profileurl"),
             "avatar": (player_profile or {}).get("avatarfull"),
+        },
+        "rank_profile": {
+            "rank_tier": profile.get("rank_tier") if isinstance(profile, dict) else None,
+            "leaderboard_rank": profile.get("leaderboard_rank") if isinstance(profile, dict) else None,
+            "mmr_estimate": (mmr_estimate or {}).get("estimate") if isinstance(mmr_estimate, dict) else None,
         },
         "summary": {
             "games": total_games,

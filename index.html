@@ -859,6 +859,7 @@
           <div class="field">
             <label for="bracketSelect">基础胜率口径</label>
             <select class="select" id="bracketSelect">
+              <option value="auto">自动：按当前队友分段</option>
               <option value="pub">全分段公开比赛</option>
               <option value="7">Divine / Immortal</option>
               <option value="6">Ancient</option>
@@ -961,6 +962,28 @@
     const CACHE_TTL = 1000 * 60 * 60 * 12;
     const DEFAULT_WEIGHTS = { meta: 12, counter: 42, team: 30, personal: 16 };
     const WEIGHT_KEYS = ["meta", "counter", "team", "personal"];
+    const RANK_MEDALS = {
+      1: "Herald",
+      2: "Guardian",
+      3: "Crusader",
+      4: "Archon",
+      5: "Legend",
+      6: "Ancient",
+      7: "Divine",
+      8: "Immortal"
+    };
+    const BRACKET_LABELS = {
+      auto: "自动分段",
+      pub: "全分段",
+      pro: "职业",
+      1: "Herald",
+      2: "Guardian",
+      3: "Crusader",
+      4: "Archon",
+      5: "Legend",
+      6: "Ancient",
+      7: "Divine+"
+    };
 
     const state = {
       heroes: [],
@@ -968,7 +991,7 @@
       selected: { ally: [], enemy: [] },
       matchupCache: new Map(),
       matchupLoading: new Set(),
-      bracket: "pub",
+      bracket: "auto",
       role: "all",
       query: "",
       weights: { ...DEFAULT_WEIGHTS },
@@ -1099,22 +1122,123 @@
       }, {});
     }
 
-    function heroWinRate(hero) {
+    function rankTierInfo(rankTier) {
+      const tier = Number(rankTier) || 0;
+      const medal = Math.floor(tier / 10);
+      const star = tier % 10;
+      if (!medal || !RANK_MEDALS[medal]) {
+        return { known: false, bracket: "pub", label: "未知分段", shortLabel: "未知" };
+      }
+      const bracket = String(clamp(medal, 1, 7));
+      const medalLabel = RANK_MEDALS[medal];
+      const label = medal >= 8 ? medalLabel : `${medalLabel} ${star || ""}`.trim();
+      return {
+        known: true,
+        rankTier: tier,
+        medal,
+        star,
+        bracket,
+        label,
+        shortLabel: medalLabel
+      };
+    }
+
+    function playerRankInfo(player) {
+      const profile = player?.rank_profile || player?.player?.rank_profile || {};
+      return rankTierInfo(profile.rank_tier ?? player?.rank_tier ?? player?.player?.rank_tier);
+    }
+
+    function teamMedianRankInfo() {
+      const ranks = teamPlayers()
+        .map((player) => Number(player.rank_profile?.rank_tier ?? player.player?.rank_tier))
+        .filter((rank) => Number.isFinite(rank) && rank > 0)
+        .sort((a, b) => a - b);
+      if (!ranks.length) return rankTierInfo(null);
+      return rankTierInfo(ranks[Math.floor(ranks.length / 2)]);
+    }
+
+    function bracketLabel(bracket) {
+      return BRACKET_LABELS[bracket] || BRACKET_LABELS[String(bracket)] || "全分段";
+    }
+
+    function resolvedSkillBracket() {
+      if (state.bracket !== "auto") {
+        return {
+          bracket: state.bracket,
+          label: bracketLabel(state.bracket),
+          source: "手动选择",
+          known: true
+        };
+      }
+      const playerRank = playerRankInfo(activePlayerModel());
+      if (playerRank.known) {
+        return {
+          bracket: playerRank.bracket,
+          label: playerRank.label,
+          source: "当前队友分段",
+          known: true
+        };
+      }
+      const teamRank = teamMedianRankInfo();
+      if (teamRank.known) {
+        return {
+          bracket: teamRank.bracket,
+          label: `${teamRank.shortLabel} 车队中位`,
+          source: "车队中位分段",
+          known: true
+        };
+      }
+      return {
+        bracket: "pub",
+        label: "全分段",
+        source: "缺少公开分段",
+        known: false
+      };
+    }
+
+    function heroWinRateForBracket(hero, bracket) {
       if (!hero) return { rate: 0.5, games: 0 };
-      if (state.bracket === "pro") {
+      if (bracket === "pro") {
         return {
           rate: bayesWinRate(hero.pro_win, hero.pro_pick, 0.5, 45),
           games: Number(hero.pro_pick) || 0
         };
       }
-      if (state.bracket !== "pub") {
-        const pick = Number(hero[`${state.bracket}_pick`]) || 0;
-        const win = Number(hero[`${state.bracket}_win`]) || 0;
+      if (bracket !== "pub") {
+        const pick = Number(hero[`${bracket}_pick`]) || 0;
+        const win = Number(hero[`${bracket}_win`]) || 0;
         return { rate: bayesWinRate(win, pick, 0.5, 900), games: pick };
       }
       const pick = Number(hero.pub_pick) || sumRanks(hero, "pick");
       const win = Number(hero.pub_win) || sumRanks(hero, "win");
       return { rate: bayesWinRate(win, pick, 0.5, 1600), games: pick };
+    }
+
+    function heroWinRate(hero) {
+      return heroWinRateForBracket(hero, resolvedSkillBracket().bracket);
+    }
+
+    function segmentMatchupAdjustment(candidate, enemy) {
+      const skill = resolvedSkillBracket();
+      if (!candidate || !enemy || skill.bracket === "pub" || skill.bracket === "pro") {
+        return { delta: 0, skill };
+      }
+      const candidateSegment = heroWinRateForBracket(candidate, skill.bracket);
+      const candidatePub = heroWinRateForBracket(candidate, "pub");
+      const enemySegment = heroWinRateForBracket(enemy, skill.bracket);
+      const enemyPub = heroWinRateForBracket(enemy, "pub");
+      const sampleConfidence = clamp(Math.min(candidateSegment.games, enemySegment.games) / 9000, 0.35, 1);
+      const delta = clamp(
+        ((candidateSegment.rate - candidatePub.rate) * 0.85 - (enemySegment.rate - enemyPub.rate) * 0.45) * sampleConfidence,
+        -0.035,
+        0.035
+      );
+      return { delta, skill };
+    }
+
+    function segmentAdjustedMatchupRate(rate, candidate, enemy) {
+      const adjustment = segmentMatchupAdjustment(candidate, enemy);
+      return clamp(rate + adjustment.delta, 0.38, 0.64);
     }
 
     function sumRanks(hero, suffix) {
@@ -1174,11 +1298,12 @@
       const heroes = playerHeroRows(player);
       const heroCount = Number(player?.summary?.heroes) || heroes.length;
       if (!player || games < 120 || heroes.length < 8) {
+        const rank = playerRankInfo(player);
         return {
           status: "fallback",
           title: "样本不足，使用通用权重",
           weights: { ...DEFAULT_WEIGHTS },
-          tags: ["公开样本不足", "不强行个性化", "通用 BP 权重", "等待更多数据"],
+          tags: [rank.known ? `公开分段 ${rank.label}` : "公开分段未知", "公开样本不足", "通用 BP 权重", "等待更多数据"],
           reason: "这个账号暂时没有足够公开战绩，先保留通用权重，避免少量样本把推荐带偏。"
         };
       }
@@ -1251,6 +1376,7 @@
         style = "位置摇摆型";
       }
       const tags = [
+        `分段 ${playerRankInfo(player).label}`,
         `英雄池 ${heroCount} 个`,
         `有效池 ${effectivePool.toFixed(0)} 个`,
         `Top5 ${(top5Share * 100).toFixed(0)}%`,
@@ -1575,8 +1701,9 @@
       add(c.has("Escape") && e.has("Disabler"), -1.8, "逃生受限");
       add(c.has("Pusher") && e.has("Initiator"), -1.2, "推进风险");
 
+      const rawRate = clamp(0.5 + term / 82, 0.39, 0.63);
       return {
-        rate: clamp(0.5 + term / 82, 0.39, 0.63),
+        rate: segmentAdjustedMatchupRate(rawRate, candidate, enemy),
         term: clamp(term * 1.35, -14, 16),
         tags: Array.from(tags).slice(0, 3)
       };
@@ -1585,7 +1712,7 @@
     function matchupForCandidate(candidateId) {
       const candidate = state.heroById.get(candidateId);
       if (!state.selected.enemy.length) {
-        return { ready: true, loading: false, estimated: false, avg: 0.5, games: 0, term: 0, details: [], tags: [] };
+        return { ready: true, loading: false, estimated: false, avg: 0.5, games: 0, term: 0, details: [], tags: [], skill: resolvedSkillBracket() };
       }
 
       const details = [];
@@ -1621,7 +1748,7 @@
           return;
         }
         const enemyRate = bayesWinRate(row.wins, row.games_played, 0.5, 450);
-        const candidateRate = 1 - enemyRate;
+        const candidateRate = segmentAdjustedMatchupRate(1 - enemyRate, candidate, enemy);
         const weight = Math.min(row.games_played, 6000) + 160;
         weighted += candidateRate * weight;
         weightTotal += weight;
@@ -1645,6 +1772,7 @@
         avg,
         best,
         worst,
+        skill: resolvedSkillBracket(),
         games: details.reduce((sum, item) => sum + (item.games || 0), 0),
         term: clamp((avgTerm + tailTerm) * enemyPressure, -34, 36),
         details,
@@ -1690,6 +1818,7 @@
       const personal = personalFit(hero);
       const weights = normalizedWeights();
       const baseTerm = clamp((base.rate - 0.5) * 100, -12, 12);
+      const skill = resolvedSkillBracket();
       const enemyDraftPressure = state.selected.enemy.length ? 1 + Math.min(state.selected.enemy.length, 5) * 0.08 : 1;
       const stableDamp = state.selected.enemy.length ? 0.92 - Math.min(state.selected.enemy.length, 4) * 0.03 : 1;
       const total = 50
@@ -1699,10 +1828,10 @@
         + weights.personal * personal.term * 1.55 * stableDamp;
 
       const why = [];
-      why.push(`基础胜率 ${pct(base.rate)}`);
+      why.push(`基础胜率 ${pct(base.rate)}（${skill.label}）`);
       if (state.selected.enemy.length) {
         if (matchup.ready) {
-          why.push(`对敌方均值 ${pct(matchup.avg)}，样本 ${matchup.games.toLocaleString("zh-CN")}`);
+          why.push(`对敌方均值 ${pct(matchup.avg)}，样本 ${matchup.games.toLocaleString("zh-CN")}，${skill.label}校准`);
         } else if (matchup.estimated) {
           const suffix = matchup.loading ? "，等待实时数据" : "";
           why.push(`对位估算 ${pct(matchup.avg)}${suffix}`);
@@ -1899,10 +2028,12 @@
       const loading = state.matchupLoading.size;
       const loaded = state.selected.enemy.filter((id) => state.matchupCache.has(id)).length;
       const personal = teamPlayers().length ? "车队模型" : state.playerModel?.status === "ready" ? "个人模型" : "通用模型";
+      const skill = resolvedSkillBracket();
       statusBar.innerHTML = `
         <span class="pill ${state.heroes.length ? "good" : "warn"}">${state.heroes.length || 0} 个英雄</span>
         <span class="pill">${data}</span>
         <span class="pill ${teamPlayers().length || state.playerModel?.status === "ready" ? "good" : ""}">${personal}</span>
+        <span class="pill ${skill.known ? "good" : "warn"}">分段 ${skill.label}</span>
         <span class="pill">更新 ${updated}</span>
         <span class="pill ${loading ? "warn" : "good"}">对位 ${loaded}/${state.selected.enemy.length}${loading ? " 载入中" : ""}</span>
       `;
@@ -2066,7 +2197,7 @@
       if (!container) return;
       const weights = profile.weights;
       const mode = state.weightMode === "manual" ? "手动权重" : "自动权重";
-      const tags = (profile.tags || []).slice(0, 4).map((tag) => `<span class="profile-tag">${tag}</span>`).join("");
+      const tags = (profile.tags || []).slice(0, 6).map((tag) => `<span class="profile-tag">${tag}</span>`).join("");
       container.innerHTML = `
         <div class="profile-head">
           <div class="profile-title" title="${activePlayerName()}：${profile.title}">${activePlayerName()}：${profile.title}</div>
