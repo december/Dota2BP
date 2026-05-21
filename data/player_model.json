@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "status": "ready",
-  "generated_at": "2026-05-21T15:53:03.954638+00:00",
+  "generated_at": "2026-05-21T20:09:19.832456+00:00",
   "player": {
     "account_id": 222404655,
     "steamid64": "76561198182670383",
@@ -15,10 +15,10 @@
     "mmr_estimate": null
   },
   "summary": {
-    "games": 3986,
-    "wins": 2028,
+    "games": 3987,
+    "wins": 2029,
     "losses": 1958,
-    "win_rate": 0.50878,
+    "win_rate": 0.5089,
     "heroes": 114,
     "recent_matches": 300,
     "frequent_peers": 36
@@ -49,13 +49,13 @@
     "40": {
       "hero_id": 40,
       "name": "Venomancer",
-      "games": 173,
-      "wins": 106,
+      "games": 174,
+      "wins": 107,
       "losses": 67,
-      "win_rate": 0.61272,
-      "recent_games": 10,
-      "recent_wins": 7,
-      "kda": 2.968
+      "win_rate": 0.61494,
+      "recent_games": 11,
+      "recent_wins": 8,
+      "kda": 3.144
     },
     "37": {
       "hero_id": 37,
@@ -64,9 +64,9 @@
       "wins": 93,
       "losses": 61,
       "win_rate": 0.6039,
-      "recent_games": 18,
-      "recent_wins": 8,
-      "kda": 2.879
+      "recent_games": 17,
+      "recent_wins": 7,
+      "kda": 2.74
     },
     "102": {
       "hero_id": 102,
@@ -1305,13 +1305,13 @@
     {
       "hero_id": 40,
       "name": "Venomancer",
-      "games": 173,
-      "wins": 106,
+      "games": 174,
+      "wins": 107,
       "losses": 67,
-      "win_rate": 0.61272,
-      "recent_games": 10,
-      "recent_wins": 7,
-      "kda": 2.968
+      "win_rate": 0.61494,
+      "recent_games": 11,
+      "recent_wins": 8,
+      "kda": 3.144
     },
     {
       "hero_id": 37,
@@ -1320,9 +1320,9 @@
       "wins": 93,
       "losses": 61,
       "win_rate": 0.6039,
-      "recent_games": 18,
-      "recent_wins": 8,
-      "kda": 2.879
+      "recent_games": 17,
+      "recent_wins": 7,
+      "kda": 2.74
     },
     {
       "hero_id": 102,
@@ -1498,7 +1498,7 @@
     {
       "hero_id": 37,
       "name": "Warlock",
-      "games": 18
+      "games": 17
     },
     {
       "hero_id": 14,
@@ -1528,7 +1528,7 @@
     {
       "hero_id": 40,
       "name": "Venomancer",
-      "games": 10
+      "games": 11
     },
     {
       "hero_id": 87,
@@ -1546,8 +1546,6 @@
     "opendota": true,
     "steam_api": false
   },
-  "errors": [
-    "OpenDota wl unavailable: https://api.opendota.com/api/players/222404655/wl: The read operation timed out"
-  ],
+  "errors": [],
   "privacy": "Aggregate hero stats only by default; raw match IDs and peer identities are not included."
 }
