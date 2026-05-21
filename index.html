@@ -58,11 +58,11 @@
     .shell {
       max-width: 1440px;
       margin: 0 auto;
-      padding: 24px;
+      padding: 20px 24px 24px;
     }
 
     .hero {
-      min-height: 310px;
+      min-height: 260px;
       display: grid;
       align-items: end;
       border-bottom: 1px solid rgba(255, 255, 255, 0.08);
@@ -74,7 +74,7 @@
     .hero-inner {
       width: min(1440px, 100%);
       margin: 0 auto;
-      padding: 42px 24px 34px;
+      padding: 36px 24px 30px;
     }
 
     .eyebrow {
@@ -102,16 +102,21 @@
 
     .layout {
       display: grid;
-      grid-template-columns: minmax(0, 1fr) 430px;
-      gap: 18px;
-      align-items: start;
+      grid-template-columns: minmax(0, 1fr) minmax(380px, 420px);
+      gap: 16px;
+      align-items: stretch;
+      min-height: 720px;
+      height: calc(100vh - 48px);
     }
 
     .band,
     .side {
+      min-height: 0;
       background: rgba(23, 29, 33, 0.92);
       border: 1px solid rgba(255, 255, 255, 0.08);
       box-shadow: var(--shadow);
+      display: flex;
+      flex-direction: column;
     }
 
     .band {
@@ -120,12 +125,12 @@
     }
 
     .side {
-      position: sticky;
-      top: 16px;
       border-radius: 8px;
+      overflow: hidden;
     }
 
     .section-head {
+      flex: 0 0 auto;
       display: flex;
       justify-content: space-between;
       gap: 12px;
@@ -176,10 +181,11 @@
     }
 
     .draft {
+      flex: 0 0 auto;
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 14px;
-      padding: 18px;
+      gap: 12px;
+      padding: 16px 16px 14px;
     }
 
     .draft-lane {
@@ -259,10 +265,11 @@
     }
 
     .controls {
+      flex: 0 0 auto;
       display: grid;
       grid-template-columns: minmax(220px, 1fr) 190px 170px;
       gap: 10px;
-      padding: 0 18px 18px;
+      padding: 0 16px 14px;
     }
 
     .field {
@@ -299,12 +306,13 @@
     }
 
     .hero-grid {
+      flex: 1 1 auto;
+      min-height: 0;
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(184px, 1fr));
       gap: 10px;
-      max-height: 720px;
       overflow: auto;
-      padding: 0 18px 18px;
+      padding: 0 16px 16px;
       scrollbar-color: var(--line) transparent;
     }
 
@@ -397,7 +405,11 @@
     }
 
     .side-inner {
-      padding: 18px;
+      flex: 1 1 auto;
+      min-height: 0;
+      overflow: auto;
+      padding: 16px;
+      scrollbar-color: var(--line) transparent;
     }
 
     .weights {
@@ -475,13 +487,13 @@
     .team-panel {
       display: grid;
       gap: 12px;
-      margin-bottom: 14px;
+      margin-bottom: 12px;
     }
 
     .roster-list {
       display: grid;
       gap: 8px;
-      max-height: 260px;
+      max-height: clamp(150px, 21vh, 232px);
       overflow: auto;
       scrollbar-color: var(--line) transparent;
     }
@@ -564,7 +576,7 @@
     .recommendations {
       display: grid;
       gap: 10px;
-      margin-top: 16px;
+      margin-top: 14px;
     }
 
     .rec-card {
@@ -672,12 +684,20 @@
     }
 
     .notes {
-      margin-top: 16px;
+      margin-top: 14px;
       border-top: 1px solid var(--line);
-      padding-top: 14px;
+      padding-top: 12px;
       color: var(--muted);
       font-size: 12px;
       line-height: 1.65;
+    }
+
+    .notes p {
+      margin: 0;
+    }
+
+    .notes p + p {
+      margin-top: 8px;
     }
 
     .notes strong {
@@ -734,16 +754,31 @@
     @media (max-width: 1120px) {
       .layout {
         grid-template-columns: 1fr;
+        height: auto;
+        min-height: 0;
       }
 
+      .band,
       .side {
-        position: static;
+        display: block;
+      }
+
+      .side-inner {
+        overflow: visible;
+      }
+
+      .hero-grid {
+        max-height: 680px;
       }
     }
 
     @media (max-width: 720px) {
       .shell {
         padding: 12px;
+      }
+
+      .hero {
+        min-height: 230px;
       }
 
       .hero-inner {
@@ -761,6 +796,7 @@
 
       .hero-grid {
         grid-template-columns: repeat(auto-fill, minmax(152px, 1fr));
+        max-height: min(620px, 70vh);
       }
 
       .section-head {
