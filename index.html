@@ -406,6 +406,72 @@
       margin: 14px 0;
     }
 
+    .weight-profile {
+      margin: -2px 0 14px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 10px;
+      background: rgba(255, 255, 255, 0.025);
+    }
+
+    .profile-head {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 10px;
+      align-items: center;
+      margin-bottom: 8px;
+    }
+
+    .profile-title {
+      min-width: 0;
+      font-size: 12px;
+      font-weight: 900;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .profile-mode {
+      min-height: 28px;
+      border: 1px solid rgba(230, 169, 58, 0.42);
+      border-radius: 6px;
+      padding: 0 9px;
+      color: var(--accent-2);
+      background: rgba(230, 169, 58, 0.08);
+      font-size: 11px;
+      font-weight: 900;
+    }
+
+    .profile-tags {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 6px;
+      margin-bottom: 8px;
+    }
+
+    .profile-tag {
+      min-width: 0;
+      border-radius: 6px;
+      padding: 4px 6px;
+      color: var(--muted);
+      background: rgba(255, 255, 255, 0.06);
+      font-size: 11px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .profile-reason {
+      margin: 0;
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.55;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 3;
+    }
+
     .team-panel {
       display: grid;
       gap: 12px;
@@ -823,6 +889,8 @@
             </div>
           </div>
 
+          <div class="weight-profile" id="weightProfile"></div>
+
           <div class="link-row">
             <button id="refreshButton" type="button">刷新实时数据</button>
             <a href="https://www.opendota.com/api" target="_blank" rel="noreferrer">OpenDota 数据源</a>
@@ -852,6 +920,8 @@
     const TEAM_MODEL_URL = "data/team_model.json";
     const STEAM_CDN = "https://cdn.cloudflare.steamstatic.com";
     const CACHE_TTL = 1000 * 60 * 60 * 12;
+    const DEFAULT_WEIGHTS = { meta: 12, counter: 42, team: 30, personal: 16 };
+    const WEIGHT_KEYS = ["meta", "counter", "team", "personal"];
 
     const state = {
       heroes: [],
@@ -862,7 +932,8 @@
       bracket: "pub",
       role: "all",
       query: "",
-      weights: { meta: 12, counter: 42, team: 30, personal: 16 },
+      weights: { ...DEFAULT_WEIGHTS },
+      weightMode: "auto",
       modelSnapshot: null,
       playerModel: null,
       teamModel: null,
@@ -955,6 +1026,40 @@
       return Math.sign(value) * Math.pow(Math.abs(value), power);
     }
 
+    function entropy(values) {
+      const total = values.reduce((sum, value) => sum + Math.max(0, Number(value) || 0), 0);
+      if (!total) return 0;
+      return values.reduce((sum, value) => {
+        const share = Math.max(0, Number(value) || 0) / total;
+        return share ? sum - share * Math.log(share) : sum;
+      }, 0);
+    }
+
+    function normalizeWeightSet(raw) {
+      const bounded = {
+        meta: clamp(raw.meta, 8, 30),
+        counter: clamp(raw.counter, 18, 56),
+        team: clamp(raw.team, 18, 50),
+        personal: clamp(raw.personal, 10, 52)
+      };
+      const total = WEIGHT_KEYS.reduce((sum, key) => sum + bounded[key], 0) || 1;
+      const parts = WEIGHT_KEYS.map((key) => {
+        const exact = bounded[key] / total * 100;
+        return { key, value: Math.floor(exact), remainder: exact - Math.floor(exact) };
+      });
+      let remaining = 100 - parts.reduce((sum, item) => sum + item.value, 0);
+      parts.sort((a, b) => b.remainder - a.remainder).forEach((item) => {
+        if (remaining > 0) {
+          item.value += 1;
+          remaining -= 1;
+        }
+      });
+      return parts.reduce((weights, item) => {
+        weights[item.key] = item.value;
+        return weights;
+      }, {});
+    }
+
     function heroWinRate(hero) {
       if (!hero) return { rate: 0.5, games: 0 };
       if (state.bracket === "pro") {
@@ -999,6 +1104,144 @@
     function activePlayerName() {
       const player = activePlayerModel()?.player;
       return player?.personaname || "当前玩家";
+    }
+
+    function playerHeroRows(player) {
+      return Object.values(player?.heroes || {})
+        .filter((hero) => Number(hero.games) > 0)
+        .sort((a, b) => (Number(b.games) || 0) - (Number(a.games) || 0));
+    }
+
+    function positionShareRows(player) {
+      const summary = player?.position_summary || {};
+      const rows = [];
+      for (let position = 1; position <= 5; position += 1) {
+        rows.push({
+          position,
+          label: positionLabels[position],
+          share: Number(summary[position]?.share) || 0
+        });
+      }
+      if (rows.some((row) => row.share > 0)) return rows;
+      return (player?.common_positions || []).map((row) => ({
+        position: Number(row.position),
+        label: row.label || positionLabels[row.position],
+        share: Number(row.share) || 0
+      }));
+    }
+
+    function playerWeightProfile(player) {
+      const games = Number(player?.summary?.games) || 0;
+      const heroes = playerHeroRows(player);
+      const heroCount = Number(player?.summary?.heroes) || heroes.length;
+      if (!player || games < 120 || heroes.length < 8) {
+        return {
+          status: "fallback",
+          title: "样本不足，使用通用权重",
+          weights: { ...DEFAULT_WEIGHTS },
+          tags: ["公开样本不足", "不强行个性化", "通用 BP 权重", "等待更多数据"],
+          reason: "这个账号暂时没有足够公开战绩，先保留通用权重，避免少量样本把推荐带偏。"
+        };
+      }
+
+      const totalHeroGames = heroes.reduce((sum, hero) => sum + (Number(hero.games) || 0), 0) || 1;
+      const top5Share = heroes.slice(0, 5).reduce((sum, hero) => sum + (Number(hero.games) || 0), 0) / totalHeroGames;
+      const practiced = heroes.filter((hero) => Number(hero.games) >= 20).length;
+      const proven = heroes.filter((hero) => Number(hero.games) >= 20 && Number(hero.win_rate) >= 0.52).length;
+      const effectivePool = 1 / heroes.reduce((sum, hero) => {
+        const share = (Number(hero.games) || 0) / totalHeroGames;
+        return sum + share * share;
+      }, 0);
+      const heroEntropy = entropy(heroes.map((hero) => Number(hero.games) || 0));
+      const normalizedHeroEntropy = heroCount > 1 ? heroEntropy / Math.log(heroCount) : 0;
+      const positionRows = positionShareRows(player);
+      const topPosition = positionRows.reduce((best, row) => row.share > best.share ? row : best, { share: 0, label: "未知位置" });
+      const positionShare = (position) => positionRows.find((row) => row.position === position)?.share || 0;
+      const coreShare = positionShare(1) + positionShare(2);
+      const offlaneShare = positionShare(3);
+      const supportShare = positionShare(4) + positionShare(5);
+      const positionFlex = clamp(entropy(positionRows.map((row) => row.share)) / Math.log(5), 0, 1);
+      const poolFlex = clamp((effectivePool - 10) / 42, 0, 1) * 0.42
+        + clamp((practiced - 18) / 55, 0, 1) * 0.34
+        + clamp((normalizedHeroEntropy - 0.68) / 0.24, 0, 1) * 0.24;
+      const concentration = clamp((top5Share - 0.28) / 0.34, 0, 1) * 0.62
+        + clamp((18 - effectivePool) / 14, 0, 1) * 0.24
+        + clamp((70 - heroCount) / 35, 0, 1) * 0.14;
+      const winRate = Number(player?.summary?.win_rate) || 0.5;
+      const reliability = clamp((winRate - 0.48) / 0.07, 0, 1) * 0.38
+        + clamp(proven / 16, 0, 1) * 0.36
+        + clamp(games / 2500, 0, 1) * 0.26;
+
+      const raw = {
+        meta: 11 + (1 - reliability) * 6 + concentration * 4,
+        counter: 30 + poolFlex * 20 + reliability * 3 - concentration * 12,
+        team: 22 + positionFlex * 17 + poolFlex * 7 - concentration * 7,
+        personal: 12 + concentration * 24 + (1 - poolFlex) * 10 + reliability * 5
+      };
+      if (poolFlex > 0.65) raw.counter += 5;
+      if (positionFlex > 0.72 && poolFlex > 0.45) raw.team += 5;
+      if (concentration > 0.62) raw.personal += 8;
+      if (supportShare > 0.42) {
+        raw.team += 6;
+        raw.counter -= 3;
+      }
+      if (coreShare > 0.42) {
+        raw.counter += 6;
+        raw.team -= 3;
+      }
+      if (offlaneShare > 0.24) {
+        raw.team += 8;
+        raw.counter -= 3;
+      }
+
+      const weights = normalizeWeightSet(raw);
+      let style = "均衡适配型";
+      if (concentration > 0.58) {
+        style = "绝活稳定型";
+      } else if (poolFlex > 0.62 && coreShare > 0.42) {
+        style = "英雄海反制型";
+      } else if (poolFlex > 0.62 && supportShare > 0.42) {
+        style = "辅助补位型";
+      } else if (poolFlex > 0.62 && offlaneShare > 0.24) {
+        style = "前排补位型";
+      } else if (poolFlex > 0.68 && positionFlex > 0.72) {
+        style = "英雄海补位型";
+      } else if (poolFlex > 0.62) {
+        style = "英雄海反制型";
+      } else if (positionFlex > 0.72) {
+        style = "位置摇摆型";
+      }
+      const tags = [
+        `英雄池 ${heroCount} 个`,
+        `有效池 ${effectivePool.toFixed(0)} 个`,
+        `Top5 ${(top5Share * 100).toFixed(0)}%`,
+        `${topPosition.label} ${(topPosition.share * 100).toFixed(0)}%`
+      ];
+      let reason = "战绩画像比较均衡，推荐会在克制、阵容和个人熟练之间保持接近通用的比例。";
+      if (concentration > 0.58) {
+        reason = "英雄使用高度集中，推荐会更尊重个人熟练和稳定胜率，同时降低过度追求克制导致选到不舒服英雄的风险。";
+      } else if (poolFlex > 0.62 && coreShare > 0.42) {
+        reason = "核心位和中单位英雄池较宽，适合根据敌方核心与中单做反制选择，因此克制对位会成为更强信号。";
+      } else if (poolFlex > 0.62 && supportShare > 0.42) {
+        reason = "辅助位样本较多且英雄池宽，适合围绕队伍缺口补控制、保护和先手，因此阵容适配会略高。";
+      } else if (poolFlex > 0.62 && offlaneShare > 0.24) {
+        reason = "劣单与三四号位样本较多，适合补前排、开团和控制骨架，因此阵容适配权重会更高。";
+      } else if (poolFlex > 0.68) {
+        reason = "英雄池很宽且可用英雄多，推荐会更积极响应敌方出牌和阵容缺口，把个人熟练作为底线而不是唯一主导。";
+      } else if (positionFlex > 0.72) {
+        reason = "位置分布较分散，适合承担阵容补位，推荐会提高阵容适配权重并保留对位反制。";
+      }
+
+      return { status: "ready", title: style, weights, tags, reason, poolFlex, concentration, positionFlex, reliability };
+    }
+
+    function activeWeightProfile() {
+      return playerWeightProfile(activePlayerModel());
+    }
+
+    function applyAutoWeightsForActivePlayer() {
+      state.weights = { ...activeWeightProfile().weights };
+      state.weightMode = "auto";
     }
 
     function roleSet(hero) {
@@ -1508,6 +1751,7 @@
         const heroCount = model.heroes ? Object.keys(model.heroes).length : 0;
         const generated = model.generated_at ? new Date(model.generated_at).toLocaleString("zh-CN") : "未知时间";
         if (model.status === "ready" && heroCount) {
+          if (!teamPlayers().length) applyAutoWeightsForActivePlayer();
           qs("#personalNote").textContent = `个人模型已载入：${player.personaname || "Steam 账号"}，公开样本 ${model.summary?.games || 0} 局，覆盖 ${heroCount} 个英雄，生成于 ${generated}。`;
         } else {
           const reason = (model.errors || []).slice(0, 2).join("；") || "等待公开数据或 Steam Web API key。";
@@ -1527,6 +1771,7 @@
           const owner = players.find((player) => Number(player.player?.account_id) === 222404655);
           state.selectedAccountId = String((owner || players[0]).player.account_id);
         }
+        applyAutoWeightsForActivePlayer();
         const ready = players.filter((player) => player.status === "ready" && player.summary?.games).length;
         const generated = model.generated_at ? new Date(model.generated_at).toLocaleString("zh-CN") : "未知时间";
         qs("#personalNote").textContent = `车队模型已载入：${players.length} 人，${ready} 人有公开样本。当前为 ${activePlayerName()} 推荐，生成于 ${generated}。`;
@@ -1769,17 +2014,42 @@
       roster.querySelectorAll("[data-account]").forEach((button) => {
         button.addEventListener("click", () => {
           state.selectedAccountId = button.dataset.account;
+          applyAutoWeightsForActivePlayer();
           qs("#personalNote").textContent = `车队模型已载入：当前为 ${activePlayerName()} 推荐。`;
           render();
         });
       });
     }
 
+    function renderWeightProfile() {
+      const profile = activeWeightProfile();
+      const container = qs("#weightProfile");
+      if (!container) return;
+      const weights = profile.weights;
+      const mode = state.weightMode === "manual" ? "手动权重" : "自动权重";
+      const tags = (profile.tags || []).slice(0, 4).map((tag) => `<span class="profile-tag">${tag}</span>`).join("");
+      container.innerHTML = `
+        <div class="profile-head">
+          <div class="profile-title" title="${activePlayerName()}：${profile.title}">${activePlayerName()}：${profile.title}</div>
+          <button class="profile-mode" id="autoWeightButton" type="button">${mode}</button>
+        </div>
+        <div class="profile-tags">${tags}</div>
+        <p class="profile-reason" title="${profile.reason}">${profile.reason} 当前默认：强度 ${weights.meta}% / 克制 ${weights.counter}% / 阵容 ${weights.team}% / 熟练 ${weights.personal}%。</p>
+      `;
+      qs("#autoWeightButton")?.addEventListener("click", () => {
+        applyAutoWeightsForActivePlayer();
+        renderRecommendations();
+        renderWeights();
+        showToast(`${activePlayerName()} 的自动权重已套用。`);
+      });
+    }
+
     function renderWeights() {
-      qs("#metaWeightLabel").textContent = `${state.weights.meta}%`;
-      qs("#counterWeightLabel").textContent = `${state.weights.counter}%`;
-      qs("#teamWeightLabel").textContent = `${state.weights.team}%`;
-      qs("#personalWeightLabel").textContent = `${state.weights.personal}%`;
+      WEIGHT_KEYS.forEach((key) => {
+        qs(`#${key}Weight`).value = state.weights[key];
+        qs(`#${key}WeightLabel`).textContent = `${state.weights[key]}%`;
+      });
+      renderWeightProfile();
     }
 
     function render() {
@@ -1807,11 +2077,13 @@
       });
       qs("#playerSelect").addEventListener("change", (event) => {
         state.selectedAccountId = event.target.value;
+        applyAutoWeightsForActivePlayer();
         qs("#personalNote").textContent = `车队模型已载入：当前为 ${activePlayerName()} 推荐。`;
         render();
       });
       [["#metaWeight", "meta"], ["#counterWeight", "counter"], ["#teamWeight", "team"], ["#personalWeight", "personal"]].forEach(([selector, key]) => {
         qs(selector).addEventListener("input", (event) => {
+          state.weightMode = "manual";
           state.weights[key] = Number(event.target.value);
           renderRecommendations();
           renderWeights();
