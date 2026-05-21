@@ -729,6 +729,217 @@
       border-color: rgba(230, 169, 58, 0.45);
     }
 
+    .review-page {
+      margin-top: 16px;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 8px;
+      background: rgba(23, 29, 33, 0.92);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    .review-body {
+      display: grid;
+      gap: 14px;
+      padding: 16px;
+    }
+
+    .review-controls {
+      display: grid;
+      grid-template-columns: minmax(260px, 1fr) 160px auto;
+      gap: 10px;
+      align-items: end;
+    }
+
+    .review-button {
+      min-height: 42px;
+      border: 1px solid rgba(230, 169, 58, 0.48);
+      border-radius: 6px;
+      padding: 0 16px;
+      color: var(--ink);
+      background: rgba(230, 169, 58, 0.1);
+      font-weight: 800;
+      white-space: nowrap;
+    }
+
+    .review-button:disabled {
+      cursor: wait;
+      opacity: 0.55;
+    }
+
+    .review-summary {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 10px;
+    }
+
+    .review-tile {
+      min-width: 0;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 11px;
+      background: rgba(255, 255, 255, 0.025);
+    }
+
+    .review-tile span {
+      display: block;
+      color: var(--muted);
+      font-size: 11px;
+    }
+
+    .review-tile strong {
+      display: block;
+      margin-top: 4px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      color: var(--ink);
+      font-size: 20px;
+    }
+
+    .match-review-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+      gap: 12px;
+    }
+
+    .match-card {
+      min-width: 0;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 12px;
+      background: rgba(255, 255, 255, 0.03);
+      overflow: hidden;
+    }
+
+    .match-card.good {
+      border-color: rgba(101, 185, 110, 0.42);
+      background: rgba(101, 185, 110, 0.06);
+    }
+
+    .match-card.bad {
+      border-color: rgba(214, 79, 60, 0.44);
+      background: rgba(214, 79, 60, 0.06);
+    }
+
+    .match-top {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 10px;
+      align-items: start;
+      margin-bottom: 10px;
+    }
+
+    .match-title {
+      min-width: 0;
+      font-weight: 900;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .match-subtitle {
+      margin-top: 3px;
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.45;
+    }
+
+    .match-score {
+      min-width: 58px;
+      border-radius: 999px;
+      padding: 5px 9px;
+      text-align: center;
+      color: var(--accent-2);
+      background: rgba(230, 169, 58, 0.12);
+      font-size: 18px;
+      font-weight: 900;
+    }
+
+    .match-hero-row {
+      display: grid;
+      grid-template-columns: 96px minmax(0, 1fr);
+      gap: 12px;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .match-hero-row img {
+      width: 96px;
+      aspect-ratio: 16 / 9;
+      border-radius: 6px;
+      object-fit: cover;
+      background: #0d1113;
+    }
+
+    .match-hero-meta {
+      min-width: 0;
+      display: grid;
+      gap: 6px;
+    }
+
+    .match-tags,
+    .lineup-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .match-tag,
+    .lineup-chip {
+      max-width: 100%;
+      border-radius: 6px;
+      padding: 4px 7px;
+      color: var(--muted);
+      background: rgba(255, 255, 255, 0.06);
+      font-size: 11px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .match-tag.good {
+      color: #b9efc0;
+      background: rgba(101, 185, 110, 0.14);
+    }
+
+    .match-tag.bad {
+      color: #f4b2ae;
+      background: rgba(214, 79, 60, 0.14);
+    }
+
+    .match-tag.warn {
+      color: #f5d89e;
+      background: rgba(230, 169, 58, 0.12);
+    }
+
+    .lineup-block {
+      display: grid;
+      gap: 5px;
+      margin-top: 8px;
+    }
+
+    .lineup-title {
+      color: var(--soft);
+      font-size: 11px;
+      font-weight: 800;
+    }
+
+    .match-analysis {
+      margin: 10px 0 0;
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.65;
+    }
+
+    .match-link {
+      display: inline-flex;
+      margin-top: 8px;
+      color: var(--accent-2);
+      font-size: 12px;
+      text-decoration: none;
+    }
+
     .toast {
       position: fixed;
       left: 50%;
@@ -800,6 +1011,20 @@
       .hero-grid {
         grid-template-columns: repeat(auto-fill, minmax(174px, 1fr));
         max-height: min(760px, 78vh);
+      }
+
+      .review-controls,
+      .review-summary,
+      .match-review-list {
+        grid-template-columns: 1fr;
+      }
+
+      .match-hero-row {
+        grid-template-columns: 84px minmax(0, 1fr);
+      }
+
+      .match-hero-row img {
+        width: 84px;
       }
 
       .section-head {
@@ -948,6 +1173,40 @@
         </div>
       </aside>
     </div>
+
+    <section class="review-page" id="historyReview">
+      <div class="section-head">
+        <h2>历史战绩 BP 复盘</h2>
+        <div class="status" id="reviewStatus">
+          <span class="pill warn">等待抓取历史战绩</span>
+        </div>
+      </div>
+      <div class="review-body">
+        <div class="review-controls">
+          <div class="field">
+            <label for="reviewPlayerSelect">复盘对象</label>
+            <select class="select" id="reviewPlayerSelect">
+              <option value="222404655">LouisEX</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="reviewLimitSelect">最近局数</label>
+            <select class="select" id="reviewLimitSelect">
+              <option value="5">最近 5 局</option>
+              <option value="8" selected>最近 8 局</option>
+              <option value="12">最近 12 局</option>
+            </select>
+          </div>
+          <button class="review-button" id="loadHistoryButton" type="button">抓取并复盘</button>
+        </div>
+
+        <div class="review-summary" id="reviewSummary">
+          <div class="empty-state">点击“抓取并复盘”后，会实时读取 OpenDota 最近战绩，分析每局英雄选择、克制关系、阵容适配和最终胜负。</div>
+        </div>
+
+        <div class="match-review-list" id="matchReviewList"></div>
+      </div>
+    </section>
   </main>
 
   <div class="toast" id="toast"></div>
@@ -955,11 +1214,15 @@
   <script>
     const HERO_STATS_URL = "https://api.opendota.com/api/heroStats";
     const MATCHUP_URL = (heroId) => `https://api.opendota.com/api/heroes/${heroId}/matchups`;
+    const PLAYER_MATCHES_URL = (accountId, limit) => `https://api.opendota.com/api/players/${accountId}/matches?limit=${limit}`;
+    const MATCH_DETAIL_URL = (matchId) => `https://api.opendota.com/api/matches/${matchId}`;
     const MODEL_URL = "data/model.json";
     const PERSONAL_MODEL_URL = "data/player_model.json";
     const TEAM_MODEL_URL = "data/team_model.json";
     const STEAM_CDN = "https://cdn.cloudflare.steamstatic.com";
     const CACHE_TTL = 1000 * 60 * 60 * 12;
+    const MATCH_DETAIL_TTL = 1000 * 60 * 60 * 6;
+    const OWNER_ACCOUNT_ID = 222404655;
     const DEFAULT_WEIGHTS = { meta: 12, counter: 42, team: 30, personal: 16 };
     const WEIGHT_KEYS = ["meta", "counter", "team", "personal"];
     const RANK_MEDALS = {
@@ -1001,7 +1264,17 @@
       teamModel: null,
       selectedAccountId: null,
       dataSource: "none",
-      lastUpdated: null
+      lastUpdated: null,
+      history: {
+        accountId: String(OWNER_ACCOUNT_ID),
+        limit: 8,
+        loading: false,
+        detailLoaded: 0,
+        loadedAt: null,
+        error: "",
+        rows: [],
+        summary: null
+      }
     };
 
     const roleTargets = {
@@ -1045,6 +1318,9 @@
     const heroGrid = qs("#heroGrid");
     const recommendations = qs("#recommendations");
     const toast = qs("#toast");
+    const reviewStatus = qs("#reviewStatus");
+    const reviewSummary = qs("#reviewSummary");
+    const matchReviewList = qs("#matchReviewList");
 
     function clamp(value, min, max) {
       return Math.max(min, Math.min(max, value));
@@ -1065,6 +1341,32 @@
       toast.classList.add("show");
       window.clearTimeout(showToast.timer);
       showToast.timer = window.setTimeout(() => toast.classList.remove("show"), 2800);
+    }
+
+    function escapeHtml(value) {
+      return String(value ?? "")
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;")
+        .replace(/'/g, "&#39;");
+    }
+
+    function formatDuration(seconds) {
+      const total = Number(seconds) || 0;
+      const minutes = Math.floor(total / 60);
+      const rest = total % 60;
+      return `${minutes}:${String(rest).padStart(2, "0")}`;
+    }
+
+    function formatMatchTime(startTime) {
+      const value = Number(startTime) || 0;
+      if (!value) return "未知时间";
+      return new Date(value * 1000).toLocaleString("zh-CN", { month: "2-digit", day: "2-digit", hour: "2-digit", minute: "2-digit" });
+    }
+
+    function heroName(heroId) {
+      return state.heroById.get(Number(heroId))?.localized_name || `英雄 ${heroId}`;
     }
 
     function normalizedWeights() {
@@ -1218,8 +1520,7 @@
       return heroWinRateForBracket(hero, resolvedSkillBracket().bracket);
     }
 
-    function segmentMatchupAdjustment(candidate, enemy) {
-      const skill = resolvedSkillBracket();
+    function segmentMatchupAdjustmentForSkill(candidate, enemy, skill = resolvedSkillBracket()) {
       if (!candidate || !enemy || skill.bracket === "pub" || skill.bracket === "pro") {
         return { delta: 0, skill };
       }
@@ -1236,9 +1537,17 @@
       return { delta, skill };
     }
 
-    function segmentAdjustedMatchupRate(rate, candidate, enemy) {
-      const adjustment = segmentMatchupAdjustment(candidate, enemy);
+    function segmentMatchupAdjustment(candidate, enemy) {
+      return segmentMatchupAdjustmentForSkill(candidate, enemy, resolvedSkillBracket());
+    }
+
+    function segmentAdjustedMatchupRateForSkill(rate, candidate, enemy, skill = resolvedSkillBracket()) {
+      const adjustment = segmentMatchupAdjustmentForSkill(candidate, enemy, skill);
       return clamp(rate + adjustment.delta, 0.38, 0.64);
+    }
+
+    function segmentAdjustedMatchupRate(rate, candidate, enemy) {
+      return segmentAdjustedMatchupRateForSkill(rate, candidate, enemy, resolvedSkillBracket());
     }
 
     function sumRanks(hero, suffix) {
@@ -1262,6 +1571,38 @@
           || teamPlayers()[0];
       }
       return state.playerModel;
+    }
+
+    function playerModelByAccount(accountId) {
+      const id = String(accountId || "");
+      return teamPlayers().find((player) => String(player.player?.account_id) === id)
+        || (String(state.playerModel?.player?.account_id) === id ? state.playerModel : null);
+    }
+
+    function defaultReviewAccountId() {
+      return String(state.history.accountId || state.selectedAccountId || OWNER_ACCOUNT_ID);
+    }
+
+    function skillBracketForPlayer(player) {
+      const playerRank = playerRankInfo(player);
+      if (playerRank.known) {
+        return {
+          bracket: playerRank.bracket,
+          label: playerRank.label,
+          source: "复盘对象分段",
+          known: true
+        };
+      }
+      const teamRank = teamMedianRankInfo();
+      if (teamRank.known) {
+        return {
+          bracket: teamRank.bracket,
+          label: `${teamRank.shortLabel} 车队中位`,
+          source: "车队中位分段",
+          known: true
+        };
+      }
+      return { bracket: "pub", label: "全分段", source: "缺少公开分段", known: false };
     }
 
     function activePlayerName() {
@@ -1605,10 +1946,10 @@
       };
     }
 
-    function positionFit(hero) {
+    function positionFitForContext(hero, allyIds = state.selected.ally) {
       const profile = hero.positionProfile || inferPositionProfile(hero);
-      const { occupancy, demand, open } = positionNeeds();
-      if (!state.selected.ally.length) {
+      const { occupancy, demand, open } = positionNeeds(allyIds);
+      if (!allyIds.length) {
         return {
           term: 0,
           fit: 0,
@@ -1640,12 +1981,16 @@
       };
     }
 
-    function allySynergyHeuristic(candidate) {
+    function positionFit(hero) {
+      return positionFitForContext(hero, state.selected.ally);
+    }
+
+    function allySynergyHeuristic(candidate, allyIds = state.selected.ally) {
       const c = roleSet(candidate);
       const tags = new Set();
       let term = 0;
 
-      state.selected.ally.map((id) => state.heroById.get(id)).filter(Boolean).forEach((ally) => {
+      allyIds.map((id) => state.heroById.get(id)).filter(Boolean).forEach((ally) => {
         const a = roleSet(ally);
         const add = (condition, points, tag) => {
           if (condition) {
@@ -1664,7 +2009,7 @@
         add(a.has("Durable") && c.has("Support"), 1.5, "续航前排");
         add(a.has("Pusher") && c.has("Pusher"), 1.4, "推进节奏");
         add(a.has("Carry") && c.has("Carry"), -4.2, "核心过多");
-        add(a.has("Support") && c.has("Support") && state.selected.ally.length < 3, -0.8, "输出不足");
+        add(a.has("Support") && c.has("Support") && allyIds.length < 3, -0.8, "输出不足");
         add(ally.attack_type && candidate.attack_type && ally.attack_type !== candidate.attack_type, 0.8, "伤害距离混合");
         add(ally.primary_attr && candidate.primary_attr && ally.primary_attr !== candidate.primary_attr, 0.45, "属性分散");
       });
@@ -1675,7 +2020,7 @@
       };
     }
 
-    function matchupHeuristic(candidate, enemy) {
+    function matchupHeuristicForSkill(candidate, enemy, skill = resolvedSkillBracket()) {
       const c = roleSet(candidate);
       const e = roleSet(enemy);
       const tags = new Set();
@@ -1703,10 +2048,14 @@
 
       const rawRate = clamp(0.5 + term / 82, 0.39, 0.63);
       return {
-        rate: segmentAdjustedMatchupRate(rawRate, candidate, enemy),
+        rate: segmentAdjustedMatchupRateForSkill(rawRate, candidate, enemy, skill),
         term: clamp(term * 1.35, -14, 16),
         tags: Array.from(tags).slice(0, 3)
       };
+    }
+
+    function matchupHeuristic(candidate, enemy) {
+      return matchupHeuristicForSkill(candidate, enemy, resolvedSkillBracket());
     }
 
     function matchupForCandidate(candidateId) {
@@ -1780,8 +2129,7 @@
       };
     }
 
-    function personalFit(hero) {
-      const model = activePlayerModel();
+    function personalFitForPlayer(hero, model = activePlayerModel()) {
       const heroStats = model?.heroes?.[hero.id] || model?.heroes?.[String(hero.id)];
       if (!heroStats || !heroStats.games) {
         return { ready: false, term: 0, games: 0, winRate: null, confidence: 0, label: "无个人样本" };
@@ -1809,6 +2157,10 @@
         confidence,
         label: `${games}局 ${pct(winRate)}`
       };
+    }
+
+    function personalFit(hero) {
+      return personalFitForPlayer(hero, activePlayerModel());
     }
 
     function scoreHero(hero) {
@@ -1888,6 +2240,381 @@
         return await response.json();
       } finally {
         window.clearTimeout(timer);
+      }
+    }
+
+    function matchDetailCacheKey(matchId) {
+      return `dota2bp:match-detail:${matchId}`;
+    }
+
+    function readCachedMatchDetail(matchId) {
+      try {
+        const raw = localStorage.getItem(matchDetailCacheKey(matchId));
+        if (!raw) return null;
+        const cached = JSON.parse(raw);
+        if (!cached || Date.now() - cached.savedAt > MATCH_DETAIL_TTL) return null;
+        return cached.detail;
+      } catch {
+        return null;
+      }
+    }
+
+    function writeCachedMatchDetail(matchId, detail) {
+      try {
+        localStorage.setItem(matchDetailCacheKey(matchId), JSON.stringify({ savedAt: Date.now(), detail }));
+      } catch {
+        // History review still works without browser storage.
+      }
+    }
+
+    async function loadReviewMatchDetail(matchId) {
+      const cached = readCachedMatchDetail(matchId);
+      if (cached) return cached;
+      const detail = await loadJson(MATCH_DETAIL_URL(matchId), 6500);
+      writeCachedMatchDetail(matchId, detail);
+      return detail;
+    }
+
+    async function loadReviewHeroMatchups(heroId) {
+      if (!heroId || state.matchupCache.has(Number(heroId))) return true;
+      const cached = readCachedMatchups(heroId);
+      if (cached) {
+        state.matchupCache.set(Number(heroId), new Map(cached.map((row) => [Number(row.hero_id), row])));
+        return true;
+      }
+      try {
+        const rows = await loadJson(MATCHUP_URL(heroId), 7000);
+        state.matchupCache.set(Number(heroId), new Map(rows.map((row) => [Number(row.hero_id), row])));
+        writeCachedMatchups(heroId, rows);
+        return true;
+      } catch (error) {
+        console.warn("review matchup load failed", heroId, error);
+        return false;
+      }
+    }
+
+    async function mapWithConcurrency(items, limit, worker, onProgress) {
+      const results = new Array(items.length);
+      let next = 0;
+      let done = 0;
+      const run = async () => {
+        while (next < items.length) {
+          const index = next;
+          next += 1;
+          try {
+            results[index] = await worker(items[index], index);
+          } catch (error) {
+            results[index] = { error };
+          } finally {
+            done += 1;
+            onProgress?.(done, items.length);
+          }
+        }
+      };
+      await Promise.all(Array.from({ length: Math.min(limit, items.length) }, run));
+      return results;
+    }
+
+    function reviewPlayerOptions() {
+      const seen = new Set();
+      const options = [];
+      const add = (accountId, name, player = null) => {
+        const id = String(accountId || "");
+        if (!id || seen.has(id)) return;
+        seen.add(id);
+        options.push({ accountId: id, name: name || id, player });
+      };
+      teamPlayers().forEach((player) => add(player.player?.account_id, player.player?.personaname, player));
+      if (state.playerModel?.player) add(state.playerModel.player.account_id, state.playerModel.player.personaname, state.playerModel);
+      add(OWNER_ACCOUNT_ID, "LouisEX", playerModelByAccount(OWNER_ACCOUNT_ID));
+      return options;
+    }
+
+    function matchWon(summary, playerSlot = summary?.player_slot) {
+      const slot = Number(playerSlot);
+      const isRadiant = slot < 128;
+      return Boolean(summary?.radiant_win) === isRadiant;
+    }
+
+    function laneRoleText(role) {
+      return {
+        1: "优势路",
+        2: "中路",
+        3: "劣势路",
+        4: "打野"
+      }[Number(role)] || "位置未知";
+    }
+
+    function playerEntryFromMatch(detail, summary, accountId) {
+      const players = Array.isArray(detail?.players) ? detail.players : [];
+      const account = Number(accountId);
+      const byAccount = players.find((player) => Number(player.account_id) === account);
+      if (byAccount) return byAccount;
+      return players.find((player) =>
+        Number(player.player_slot) === Number(summary.player_slot)
+        && Number(player.hero_id) === Number(summary.hero_id)
+      ) || summary;
+    }
+
+    function lineupFromMatch(detail, summary, accountId) {
+      const players = Array.isArray(detail?.players) ? detail.players.filter((player) => Number(player.hero_id)) : [];
+      const own = playerEntryFromMatch(detail, summary, accountId);
+      const heroId = Number(own?.hero_id || summary.hero_id);
+      const ownSlot = Number(own?.player_slot ?? summary.player_slot);
+      const isRadiant = ownSlot < 128;
+      const sameTeam = (player) => (Number(player.player_slot) < 128) === isRadiant;
+      const allies = players.filter((player) => sameTeam(player));
+      const enemies = players.filter((player) => !sameTeam(player));
+      return {
+        own,
+        heroId,
+        ownSlot,
+        isRadiant,
+        allyIds: allies.map((player) => Number(player.hero_id)).filter((id) => id && id !== heroId),
+        enemyIds: enemies.map((player) => Number(player.hero_id)).filter(Boolean),
+        allies,
+        enemies,
+        hasDetail: Boolean(players.length)
+      };
+    }
+
+    function draftOrderFromMatch(detail, heroId, isRadiant) {
+      const picks = Array.isArray(detail?.picks_bans)
+        ? detail.picks_bans
+          .map((row, index) => ({
+            ...row,
+            orderValue: Number(row.order ?? index),
+            isPick: Boolean(row.is_pick ?? row.pick)
+          }))
+          .filter((row) => row.isPick && Number(row.hero_id))
+        : [];
+      if (!picks.length) {
+        return { known: false, label: "选人顺序未公开", beforeEnemyIds: [], afterEnemyIds: [] };
+      }
+      const team = isRadiant ? 0 : 1;
+      const ownPick = picks.find((row) => Number(row.hero_id) === Number(heroId) && Number(row.team) === team)
+        || picks.find((row) => Number(row.hero_id) === Number(heroId));
+      if (!ownPick) {
+        return { known: false, label: "未定位到你的选人手次", beforeEnemyIds: [], afterEnemyIds: [] };
+      }
+      const beforeEnemyIds = picks
+        .filter((row) => Number(row.team) !== team && row.orderValue < ownPick.orderValue)
+        .map((row) => Number(row.hero_id));
+      const afterEnemyIds = picks
+        .filter((row) => Number(row.team) !== team && row.orderValue > ownPick.orderValue)
+        .map((row) => Number(row.hero_id));
+      return {
+        known: true,
+        order: ownPick.orderValue + 1,
+        label: `第 ${ownPick.orderValue + 1} 手`,
+        beforeEnemyIds: Array.from(new Set(beforeEnemyIds)),
+        afterEnemyIds: Array.from(new Set(afterEnemyIds))
+      };
+    }
+
+    function matchupRateForPair(candidate, enemy, skill) {
+      const direct = state.matchupCache.get(candidate.id)?.get(enemy.id);
+      if (direct?.games_played) {
+        return {
+          rate: segmentAdjustedMatchupRateForSkill(bayesWinRate(direct.wins, direct.games_played, 0.5, 450), candidate, enemy, skill),
+          games: Number(direct.games_played) || 0,
+          estimated: false
+        };
+      }
+      const reverse = state.matchupCache.get(enemy.id)?.get(candidate.id);
+      if (reverse?.games_played) {
+        return {
+          rate: segmentAdjustedMatchupRateForSkill(1 - bayesWinRate(reverse.wins, reverse.games_played, 0.5, 450), candidate, enemy, skill),
+          games: Number(reverse.games_played) || 0,
+          estimated: false
+        };
+      }
+      const estimate = matchupHeuristicForSkill(candidate, enemy, skill);
+      return { rate: estimate.rate, games: 0, estimated: true, tags: estimate.tags };
+    }
+
+    function counterReview(hero, enemyIds, skill) {
+      const enemies = enemyIds.map((id) => state.heroById.get(id)).filter(Boolean);
+      if (!hero || !enemies.length) {
+        return { avg: null, term: 0, details: [], tags: [], best: null, worst: null };
+      }
+      const details = enemies.map((enemy) => {
+        const rate = matchupRateForPair(hero, enemy, skill);
+        return { enemy, ...rate };
+      });
+      const weighted = details.reduce((sum, item) => sum + item.rate * (Math.min(item.games, 5000) + (item.estimated ? 220 : 420)), 0);
+      const weightTotal = details.reduce((sum, item) => sum + Math.min(item.games, 5000) + (item.estimated ? 220 : 420), 0) || 1;
+      const avg = weighted / weightTotal;
+      const best = details.reduce((current, item) => !current || item.rate > current.rate ? item : current, null);
+      const worst = details.reduce((current, item) => !current || item.rate < current.rate ? item : current, null);
+      const tags = [];
+      if (avg >= 0.535) tags.push({ tone: "good", text: `整体好打 ${pct(avg)}` });
+      if (avg <= 0.475) tags.push({ tone: "bad", text: `整体被压 ${pct(avg)}` });
+      if (best?.rate >= 0.55) tags.push({ tone: "good", text: `克 ${best.enemy.localized_name}` });
+      if (worst?.rate <= 0.465) tags.push({ tone: "bad", text: `怕 ${worst.enemy.localized_name}` });
+      if (details.some((item) => item.estimated)) tags.push({ tone: "warn", text: "部分对位为估算" });
+      return {
+        avg,
+        term: (avg - 0.5) * 100,
+        details,
+        tags,
+        best,
+        worst
+      };
+    }
+
+    function teamFitForReview(hero, allyIds) {
+      if (!hero) return { term: 0, filled: [], position: { label: "未知定位", open: [] }, synergy: { tags: [] }, quality: 0 };
+      const before = compositionQuality(allyIds);
+      const withHero = compositionQuality([...allyIds, hero.id]);
+      const counts = roleCounts(allyIds);
+      const needed = Object.keys(roleTargets).filter((role) => (counts[role] || 0) < roleTargets[role]);
+      const filled = needed.filter((role) => (hero.roles || []).includes(role));
+      const synergy = allySynergyHeuristic(hero, allyIds);
+      const position = positionFitForContext(hero, allyIds);
+      const profile = hero.positionProfile || inferPositionProfile(hero);
+      let term = position.term;
+      if (allyIds.length) {
+        term += (withHero - before) * 22 + filled.reduce((sum, role) => sum + (roleImportance[role] || 1), 0) * 1.05 + synergy.term * 0.7;
+      }
+      const supportProfile = (profile[5] || 0) + (profile[4] || 0) * 0.65;
+      const coreProfile = (profile[1] || 0) + (profile[2] || 0) * 0.8;
+      const frontlineProfile = profile[3] || 0;
+      if (allyIds.length && (counts.Support || 0) >= 2 && supportProfile > 0.34) term -= 16 * supportProfile;
+      if (allyIds.length && (counts.Carry || 0) >= 2 && coreProfile > 0.36) term -= 14 * coreProfile;
+      if (allyIds.length && (counts.Support || 0) >= 2 && coreProfile > 0.3) term += 9 * coreProfile;
+      if (allyIds.length && (counts.Support || 0) >= 2 && frontlineProfile > 0.24) term += 5 * frontlineProfile;
+      return { term: clamp(term, -30, 34), filled, position, synergy, quality: withHero };
+    }
+
+    async function analyzeHistoryMatch(summary, detail, accountId, playerModel) {
+      const lineup = lineupFromMatch(detail, summary, accountId);
+      const hero = state.heroById.get(lineup.heroId);
+      const skill = skillBracketForPlayer(playerModel);
+      if (hero && lineup.enemyIds.length) await loadReviewHeroMatchups(hero.id);
+
+      const won = matchWon(summary, lineup.ownSlot);
+      const draft = draftOrderFromMatch(detail, lineup.heroId, lineup.isRadiant);
+      const base = hero ? heroWinRateForBracket(hero, skill.bracket) : { rate: 0.5, games: 0 };
+      const counter = counterReview(hero, lineup.enemyIds, skill);
+      const fit = teamFitForReview(hero, lineup.allyIds);
+      const personal = hero ? personalFitForPlayer(hero, playerModel) : { ready: false, term: 0, label: "无个人样本" };
+      const baseTerm = (base.rate - 0.5) * 100;
+      const counterTerm = counter.avg === null ? 0 : (counter.avg - 0.5) * 100;
+      const score = clamp(50 + baseTerm * 0.85 + counterTerm * 1.55 + fit.term * 0.42 + personal.term * 0.35, 0, 100);
+      const tone = score >= 60 ? "good" : score <= 44 ? "bad" : "warn";
+      const verdict = tone === "good" ? "这手选得好" : tone === "bad" ? "这手压力较大" : "这手中性";
+      const tags = [
+        { tone, text: verdict },
+        { tone: won ? "good" : "bad", text: won ? "胜利" : "失败" },
+        { tone: base.rate >= 0.515 ? "good" : base.rate <= 0.485 ? "bad" : "", text: `${skill.label} ${pct(base.rate)}` }
+      ];
+      counter.tags.slice(0, 3).forEach((tag) => tags.push(tag));
+      if (fit.term >= 5) tags.push({ tone: "good", text: "阵容适配好" });
+      if (fit.term <= -5) tags.push({ tone: "bad", text: "阵容位置挤压" });
+      if (personal.ready) tags.push({ tone: personal.winRate >= 0.54 ? "good" : personal.winRate <= 0.46 ? "bad" : "", text: `个人 ${personal.label}` });
+
+      const notes = [];
+      notes.push(`基础胜率 ${pct(base.rate)}（${skill.label}），阵容适配 ${fit.term >= 0 ? "+" : ""}${fit.term.toFixed(1)}。`);
+      if (counter.avg !== null) {
+        notes.push(`对敌方阵容均值 ${pct(counter.avg)}；最好打 ${counter.best?.enemy.localized_name || "未知"}，最怕 ${counter.worst?.enemy.localized_name || "未知"}。`);
+      } else {
+        notes.push("这局没有拿到完整敌方阵容，暂时只能做基础胜率和个人熟练判断。");
+      }
+      if (draft.known) {
+        const before = draft.beforeEnemyIds.slice(0, 3).map(heroName).join(" / ") || "无";
+        const after = draft.afterEnemyIds.slice(0, 3).map(heroName).join(" / ") || "无";
+        notes.push(`${draft.label}选出；已看到敌方：${before}；后续敌方：${after}。`);
+      } else {
+        notes.push(draft.label);
+      }
+      if (score >= 60 && won) notes.push("BP 判断和结果一致：这手选人对胜利有正向解释。");
+      if (score <= 44 && !won) notes.push("BP 压力和结果一致：这局可能从选人阶段就比较难受。");
+      if (score >= 60 && !won) notes.push("选人本身不差，但结果没兑现，建议复盘对线、节奏或团战执行。");
+      if (score <= 44 && won) notes.push("这是逆克制赢下的局，说明执行或个人发挥抵消了 BP 压力。");
+
+      return {
+        matchId: summary.match_id,
+        startTime: summary.start_time,
+        duration: summary.duration,
+        won,
+        score,
+        tone,
+        verdict,
+        hero,
+        heroId: lineup.heroId,
+        kills: Number(lineup.own?.kills ?? summary.kills) || 0,
+        deaths: Number(lineup.own?.deaths ?? summary.deaths) || 0,
+        assists: Number(lineup.own?.assists ?? summary.assists) || 0,
+        laneRole: lineup.own?.lane_role,
+        averageRank: summary.average_rank,
+        hasDetail: lineup.hasDetail,
+        allies: lineup.allyIds,
+        enemies: lineup.enemyIds,
+        base,
+        counter,
+        fit,
+        personal,
+        draft,
+        tags,
+        notes
+      };
+    }
+
+    function summarizeHistoryRows(rows) {
+      const valid = rows.filter((row) => row && !row.error);
+      const total = valid.length || 1;
+      const wins = valid.filter((row) => row.won).length;
+      const good = valid.filter((row) => row.tone === "good").length;
+      const bad = valid.filter((row) => row.tone === "bad").length;
+      const avg = valid.reduce((sum, row) => sum + row.score, 0) / total;
+      const aligned = valid.filter((row) => (row.score >= 60 && row.won) || (row.score <= 44 && !row.won)).length;
+      return {
+        total: valid.length,
+        wins,
+        good,
+        bad,
+        avg,
+        aligned,
+        winRate: valid.length ? wins / valid.length : 0
+      };
+    }
+
+    async function refreshHistoryReview() {
+      if (!state.heroes.length) {
+        showToast("英雄数据还在加载，稍后再复盘。");
+        return;
+      }
+      const accountId = defaultReviewAccountId();
+      state.history.accountId = accountId;
+      state.history.loading = true;
+      state.history.error = "";
+      state.history.rows = [];
+      state.history.summary = null;
+      state.history.detailLoaded = 0;
+      renderHistoryReview();
+      try {
+        const matches = await loadJson(PLAYER_MATCHES_URL(accountId, state.history.limit), 30000);
+        const playerModel = playerModelByAccount(accountId) || activePlayerModel();
+        const rows = await mapWithConcurrency(matches || [], 3, async (summary) => {
+          let detail = null;
+          try {
+            detail = await loadReviewMatchDetail(summary.match_id);
+            if (detail?.players?.length) state.history.detailLoaded += 1;
+          } catch (error) {
+            console.warn("match detail unavailable", summary.match_id, error);
+          }
+          return analyzeHistoryMatch(summary, detail, accountId, playerModel);
+        }, () => renderHistoryReview());
+        state.history.rows = rows.filter(Boolean);
+        state.history.summary = summarizeHistoryRows(state.history.rows);
+        state.history.loadedAt = new Date().toISOString();
+      } catch (error) {
+        console.error(error);
+        state.history.error = "OpenDota 历史战绩暂时不可用，请稍后重试。";
+      } finally {
+        state.history.loading = false;
+        renderHistoryReview();
       }
     }
 
@@ -2222,6 +2949,112 @@
       renderWeightProfile();
     }
 
+    function renderHistoryReview() {
+      const playerSelect = qs("#reviewPlayerSelect");
+      const limitSelect = qs("#reviewLimitSelect");
+      const loadButton = qs("#loadHistoryButton");
+      if (!playerSelect || !limitSelect || !loadButton) return;
+
+      const options = reviewPlayerOptions();
+      const accountId = defaultReviewAccountId();
+      playerSelect.innerHTML = options.map((option) =>
+        `<option value="${escapeHtml(option.accountId)}">${escapeHtml(option.name)}</option>`
+      ).join("");
+      if (![...playerSelect.options].some((option) => option.value === accountId)) {
+        playerSelect.innerHTML += `<option value="${escapeHtml(accountId)}">${escapeHtml(accountId)}</option>`;
+      }
+      playerSelect.value = accountId;
+      limitSelect.value = String(state.history.limit);
+      loadButton.disabled = state.history.loading || !state.heroes.length;
+      loadButton.textContent = state.history.loading ? "正在复盘..." : "抓取并复盘";
+
+      const player = playerModelByAccount(accountId);
+      const skill = skillBracketForPlayer(player);
+      const loadedAt = state.history.loadedAt ? new Date(state.history.loadedAt).toLocaleTimeString("zh-CN", { hour: "2-digit", minute: "2-digit" }) : "未抓取";
+      reviewStatus.innerHTML = `
+        <span class="pill ${state.history.loading ? "warn" : state.history.rows.length ? "good" : ""}">${state.history.loading ? "抓取中" : "历史复盘"}</span>
+        <span class="pill ${skill.known ? "good" : "warn"}">分段 ${escapeHtml(skill.label)}</span>
+        <span class="pill">详情 ${state.history.detailLoaded}/${state.history.limit}</span>
+        <span class="pill">更新 ${loadedAt}</span>
+      `;
+
+      if (state.history.loading) {
+        reviewSummary.innerHTML = `<div class="empty-state">正在读取 OpenDota 最近 ${state.history.limit} 局，并尝试解析双方阵容、选人顺序和克制关系。单局详情如果超时，会自动降级为基础复盘。</div>`;
+        matchReviewList.innerHTML = "";
+        return;
+      }
+
+      if (state.history.error) {
+        reviewSummary.innerHTML = `<div class="empty-state">${escapeHtml(state.history.error)}</div>`;
+        matchReviewList.innerHTML = "";
+        return;
+      }
+
+      if (!state.history.rows.length) {
+        reviewSummary.innerHTML = `<div class="empty-state">点击“抓取并复盘”后，会实时读取 OpenDota 最近战绩，分析每局英雄选择、克制关系、阵容适配和最终胜负。</div>`;
+        matchReviewList.innerHTML = "";
+        return;
+      }
+
+      const summary = state.history.summary || summarizeHistoryRows(state.history.rows);
+      reviewSummary.innerHTML = `
+        <div class="review-tile"><span>复盘局数</span><strong>${summary.total} 局</strong></div>
+        <div class="review-tile"><span>胜率</span><strong>${pct(summary.winRate, 0)}</strong></div>
+        <div class="review-tile"><span>平均 BP 分</span><strong>${summary.avg.toFixed(1)}</strong></div>
+        <div class="review-tile"><span>好手 / 压力手</span><strong>${summary.good} / ${summary.bad}</strong></div>
+      `;
+
+      matchReviewList.innerHTML = state.history.rows.map(renderHistoryMatchCard).join("");
+    }
+
+    function renderLineupChips(ids) {
+      if (!ids.length) return `<span class="lineup-chip">未拿到完整阵容</span>`;
+      return ids.slice(0, 5).map((id) => `<span class="lineup-chip">${escapeHtml(heroName(id))}</span>`).join("");
+    }
+
+    function renderHistoryMatchCard(row) {
+      if (!row || row.error) {
+        return `<article class="match-card bad"><div class="match-title">复盘失败</div><p class="match-analysis">这局数据解析失败，稍后可以重新抓取。</p></article>`;
+      }
+      const hero = row.hero;
+      const title = `#${row.matchId} ${hero ? hero.localized_name : heroName(row.heroId)}`;
+      const kda = `${row.kills}/${row.deaths}/${row.assists}`;
+      const rank = row.averageRank ? `平均分段 ${rankTierInfo(row.averageRank).label}` : "平均分段未知";
+      const detailTag = row.hasDetail ? "完整阵容" : "基础数据";
+      const tags = row.tags.slice(0, 8).map((tag) =>
+        `<span class="match-tag ${tag.tone || ""}">${escapeHtml(tag.text)}</span>`
+      ).join("");
+      const notes = row.notes.map(escapeHtml).join(" ");
+      return `
+        <article class="match-card ${row.tone}">
+          <div class="match-top">
+            <div>
+              <div class="match-title" title="${escapeHtml(title)}">${escapeHtml(title)}</div>
+              <div class="match-subtitle">${formatMatchTime(row.startTime)} · ${formatDuration(row.duration)} · KDA ${kda} · ${laneRoleText(row.laneRole)} · ${rank} · ${detailTag}</div>
+            </div>
+            <div class="match-score">${row.score.toFixed(0)}</div>
+          </div>
+          <div class="match-hero-row">
+            ${hero ? `<img src="${imgUrl(hero)}" alt="${escapeHtml(hero.localized_name)}">` : `<div></div>`}
+            <div class="match-hero-meta">
+              <div class="match-tags">${tags}</div>
+              <div class="match-subtitle">${escapeHtml(row.verdict)}，${row.won ? "最终赢下" : "最终输掉"}。</div>
+            </div>
+          </div>
+          <div class="lineup-block">
+            <div class="lineup-title">友方其他英雄</div>
+            <div class="lineup-list">${renderLineupChips(row.allies)}</div>
+          </div>
+          <div class="lineup-block">
+            <div class="lineup-title">敌方英雄</div>
+            <div class="lineup-list">${renderLineupChips(row.enemies)}</div>
+          </div>
+          <p class="match-analysis">${notes}</p>
+          <a class="match-link" href="https://www.opendota.com/matches/${row.matchId}" target="_blank" rel="noreferrer">在 OpenDota 查看这局</a>
+        </article>
+      `;
+    }
+
     function render() {
       renderStatus();
       renderSlots("ally");
@@ -2230,6 +3063,7 @@
       renderHeroGrid();
       renderRecommendations();
       renderWeights();
+      renderHistoryReview();
     }
 
     function bindEvents() {
@@ -2251,6 +3085,20 @@
         qs("#personalNote").textContent = `车队模型已载入：当前为 ${activePlayerName()} 推荐。`;
         render();
       });
+      qs("#reviewPlayerSelect").addEventListener("change", (event) => {
+        state.history.accountId = event.target.value;
+        state.history.rows = [];
+        state.history.summary = null;
+        state.history.error = "";
+        renderHistoryReview();
+      });
+      qs("#reviewLimitSelect").addEventListener("change", (event) => {
+        state.history.limit = Number(event.target.value) || 8;
+        state.history.rows = [];
+        state.history.summary = null;
+        state.history.error = "";
+        renderHistoryReview();
+      });
       [["#metaWeight", "meta"], ["#counterWeight", "counter"], ["#teamWeight", "team"], ["#personalWeight", "personal"]].forEach(([selector, key]) => {
         qs(selector).addEventListener("input", (event) => {
           state.weightMode = "manual";
@@ -2267,6 +3115,9 @@
         });
         ensureEnemyMatchups();
         render();
+      });
+      qs("#loadHistoryButton").addEventListener("click", () => {
+        refreshHistoryReview();
       });
     }
 

@@ -18,6 +18,7 @@ https://december.github.io/Dota2BP/
 - Infers position demand for positions 1-5. If allies already contain several supports, the model strongly boosts missing core positions; if the draft is core-heavy, it boosts support/control/frontline picks.
 - Loads a personal aggregate model from `data/player_model.json` and boosts heroes you have strong historical results or recent volume on.
 - Loads a team aggregate model from `data/team_model.json`; choose a teammate in the UI to recommend heroes for that specific player's hero pool and inferred positions.
+- Adds a history-review page that fetches recent OpenDota matches for a selected player, analyzes each picked hero against the visible enemy lineup, draft order, team fit, rank bracket, personal comfort, and win/loss outcome.
 - Runs fully as a static website on GitHub Pages.
 
 ## Data refresh
