@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "status": "ready",
-  "generated_at": "2026-05-22T15:22:06.509796+00:00",
+  "generated_at": "2026-05-22T20:09:47.782734+00:00",
   "player": {
     "account_id": 222404655,
     "steamid64": "76561198182670383",
@@ -15,10 +15,10 @@
     "mmr_estimate": null
   },
   "summary": {
-    "games": 3988,
+    "games": 3989,
     "wins": 2029,
-    "losses": 1959,
-    "win_rate": 0.50878,
+    "losses": 1960,
+    "win_rate": 0.50865,
     "heroes": 114,
     "recent_matches": 300,
     "frequent_peers": 36
@@ -170,13 +170,13 @@
     "31": {
       "hero_id": 31,
       "name": "Lich",
-      "games": 71,
+      "games": 72,
       "wins": 42,
-      "losses": 29,
-      "win_rate": 0.59155,
-      "recent_games": 12,
+      "losses": 30,
+      "win_rate": 0.58333,
+      "recent_games": 13,
       "recent_wins": 6,
-      "kda": 2.574
+      "kda": 2.479
     },
     "29": {
       "hero_id": 29,
@@ -1142,9 +1142,9 @@
       "wins": 2,
       "losses": 1,
       "win_rate": 0.66667,
-      "recent_games": 1,
+      "recent_games": 0,
       "recent_wins": 0,
-      "kda": 1.5
+      "kda": 0.0
     },
     "10": {
       "hero_id": 10,
@@ -1426,13 +1426,13 @@
     {
       "hero_id": 31,
       "name": "Lich",
-      "games": 71,
+      "games": 72,
       "wins": 42,
-      "losses": 29,
-      "win_rate": 0.59155,
-      "recent_games": 12,
+      "losses": 30,
+      "win_rate": 0.58333,
+      "recent_games": 13,
       "recent_wins": 6,
-      "kda": 2.574
+      "kda": 2.479
     },
     {
       "hero_id": 29,
@@ -1506,14 +1506,14 @@
       "games": 14
     },
     {
-      "hero_id": 102,
-      "name": "Abaddon",
+      "hero_id": 31,
+      "name": "Lich",
       "games": 13
     },
     {
-      "hero_id": 31,
-      "name": "Lich",
-      "games": 12
+      "hero_id": 102,
+      "name": "Abaddon",
+      "games": 13
     },
     {
       "hero_id": 131,
