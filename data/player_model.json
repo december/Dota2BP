@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "status": "ready",
-  "generated_at": "2026-05-22T09:49:07.487192+00:00",
+  "generated_at": "2026-05-22T15:22:06.509796+00:00",
   "player": {
     "account_id": 222404655,
     "steamid64": "76561198182670383",
@@ -15,10 +15,10 @@
     "mmr_estimate": null
   },
   "summary": {
-    "games": 3987,
+    "games": 3988,
     "wins": 2029,
-    "losses": 1958,
-    "win_rate": 0.5089,
+    "losses": 1959,
+    "win_rate": 0.50878,
     "heroes": 114,
     "recent_matches": 300,
     "frequent_peers": 36
@@ -53,9 +53,9 @@
       "wins": 107,
       "losses": 67,
       "win_rate": 0.61494,
-      "recent_games": 11,
+      "recent_games": 10,
       "recent_wins": 8,
-      "kda": 3.144
+      "kda": 3.482
     },
     "37": {
       "hero_id": 37,
@@ -247,13 +247,13 @@
     "75": {
       "hero_id": 75,
       "name": "Silencer",
-      "games": 59,
+      "games": 60,
       "wins": 28,
-      "losses": 31,
-      "win_rate": 0.47458,
-      "recent_games": 4,
+      "losses": 32,
+      "win_rate": 0.46667,
+      "recent_games": 5,
       "recent_wins": 1,
-      "kda": 2.789
+      "kda": 2.595
     },
     "85": {
       "hero_id": 85,
@@ -1309,9 +1309,9 @@
       "wins": 107,
       "losses": 67,
       "win_rate": 0.61494,
-      "recent_games": 11,
+      "recent_games": 10,
       "recent_wins": 8,
-      "kda": 3.144
+      "kda": 3.482
     },
     {
       "hero_id": 37,
@@ -1528,7 +1528,7 @@
     {
       "hero_id": 40,
       "name": "Venomancer",
-      "games": 11
+      "games": 10
     },
     {
       "hero_id": 87,
