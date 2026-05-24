@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "status": "ready",
-  "generated_at": "2026-05-24T13:58:37.104603+00:00",
+  "generated_at": "2026-05-24T19:39:39.702726+00:00",
   "player": {
     "account_id": 222404655,
     "steamid64": "76561198182670383",
@@ -15,9 +15,9 @@
     "mmr_estimate": null
   },
   "summary": {
-    "games": 3990,
-    "wins": 2030,
-    "losses": 1960,
+    "games": 3992,
+    "wins": 2031,
+    "losses": 1961,
     "win_rate": 0.50877,
     "heroes": 114,
     "recent_matches": 300,
@@ -82,13 +82,13 @@
     "84": {
       "hero_id": 84,
       "name": "Ogre Magi",
-      "games": 111,
+      "games": 112,
       "wins": 66,
-      "losses": 45,
-      "win_rate": 0.59459,
-      "recent_games": 24,
+      "losses": 46,
+      "win_rate": 0.58929,
+      "recent_games": 25,
       "recent_wins": 15,
-      "kda": 2.933
+      "kda": 2.785
     },
     "22": {
       "hero_id": 22,
@@ -97,9 +97,9 @@
       "wins": 60,
       "losses": 48,
       "win_rate": 0.55556,
-      "recent_games": 8,
+      "recent_games": 7,
       "recent_wins": 3,
-      "kda": 3.171
+      "kda": 3.533
     },
     "14": {
       "hero_id": 14,
@@ -299,6 +299,17 @@
       "recent_wins": 0,
       "kda": 0.0
     },
+    "71": {
+      "hero_id": 71,
+      "name": "Spirit Breaker",
+      "games": 51,
+      "wins": 27,
+      "losses": 24,
+      "win_rate": 0.52941,
+      "recent_games": 7,
+      "recent_wins": 4,
+      "kda": 2.966
+    },
     "99": {
       "hero_id": 99,
       "name": "Bristleback",
@@ -309,17 +320,6 @@
       "recent_games": 1,
       "recent_wins": 0,
       "kda": 0.5
-    },
-    "71": {
-      "hero_id": 71,
-      "name": "Spirit Breaker",
-      "games": 50,
-      "wins": 26,
-      "losses": 24,
-      "win_rate": 0.52,
-      "recent_games": 6,
-      "recent_wins": 3,
-      "kda": 3.109
     },
     "110": {
       "hero_id": 110,
@@ -339,9 +339,9 @@
       "wins": 23,
       "losses": 25,
       "win_rate": 0.47917,
-      "recent_games": 7,
+      "recent_games": 6,
       "recent_wins": 2,
-      "kda": 1.871
+      "kda": 1.944
     },
     "35": {
       "hero_id": 35,
@@ -1338,13 +1338,13 @@
     {
       "hero_id": 84,
       "name": "Ogre Magi",
-      "games": 111,
+      "games": 112,
       "wins": 66,
-      "losses": 45,
-      "win_rate": 0.59459,
-      "recent_games": 24,
+      "losses": 46,
+      "win_rate": 0.58929,
+      "recent_games": 25,
       "recent_wins": 15,
-      "kda": 2.933
+      "kda": 2.785
     },
     {
       "hero_id": 22,
@@ -1353,9 +1353,9 @@
       "wins": 60,
       "losses": 48,
       "win_rate": 0.55556,
-      "recent_games": 8,
+      "recent_games": 7,
       "recent_wins": 3,
-      "kda": 3.171
+      "kda": 3.533
     },
     {
       "hero_id": 14,
@@ -1493,7 +1493,7 @@
     {
       "hero_id": 84,
       "name": "Ogre Magi",
-      "games": 24
+      "games": 25
     },
     {
       "hero_id": 37,
@@ -1536,9 +1536,9 @@
       "games": 8
     },
     {
-      "hero_id": 22,
-      "name": "Zeus",
-      "games": 8
+      "hero_id": 71,
+      "name": "Spirit Breaker",
+      "games": 7
     }
   ],
   "peers": [],
