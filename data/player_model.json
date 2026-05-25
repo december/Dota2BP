@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "status": "ready",
-  "generated_at": "2026-05-25T15:28:41.229432+00:00",
+  "generated_at": "2026-05-25T19:58:25.146695+00:00",
   "player": {
     "account_id": 222404655,
     "steamid64": "76561198182670383",
@@ -15,10 +15,10 @@
     "mmr_estimate": null
   },
   "summary": {
-    "games": 3992,
-    "wins": 2031,
-    "losses": 1961,
-    "win_rate": 0.50877,
+    "games": 3994,
+    "wins": 2032,
+    "losses": 1962,
+    "win_rate": 0.50876,
     "heroes": 114,
     "recent_matches": 300,
     "frequent_peers": 36
@@ -31,9 +31,9 @@
       "wins": 109,
       "losses": 139,
       "win_rate": 0.43952,
-      "recent_games": 31,
-      "recent_wins": 14,
-      "kda": 2.583
+      "recent_games": 30,
+      "recent_wins": 13,
+      "kda": 2.592
     },
     "45": {
       "hero_id": 45,
@@ -53,9 +53,9 @@
       "wins": 107,
       "losses": 67,
       "win_rate": 0.61494,
-      "recent_games": 10,
+      "recent_games": 9,
       "recent_wins": 8,
-      "kda": 3.482
+      "kda": 3.667
     },
     "37": {
       "hero_id": 37,
@@ -321,6 +321,17 @@
       "recent_wins": 0,
       "kda": 0.5
     },
+    "43": {
+      "hero_id": 43,
+      "name": "Death Prophet",
+      "games": 49,
+      "wins": 24,
+      "losses": 25,
+      "win_rate": 0.4898,
+      "recent_games": 7,
+      "recent_wins": 3,
+      "kda": 2.123
+    },
     "110": {
       "hero_id": 110,
       "name": "Phoenix",
@@ -331,17 +342,6 @@
       "recent_games": 1,
       "recent_wins": 0,
       "kda": 1.6
-    },
-    "43": {
-      "hero_id": 43,
-      "name": "Death Prophet",
-      "games": 48,
-      "wins": 23,
-      "losses": 25,
-      "win_rate": 0.47917,
-      "recent_games": 6,
-      "recent_wins": 2,
-      "kda": 1.944
     },
     "35": {
       "hero_id": 35,
@@ -794,6 +794,17 @@
       "recent_wins": 0,
       "kda": 0.0
     },
+    "131": {
+      "hero_id": 131,
+      "name": "Ring Master",
+      "games": 14,
+      "wins": 5,
+      "losses": 9,
+      "win_rate": 0.35714,
+      "recent_games": 13,
+      "recent_wins": 5,
+      "kda": 2.362
+    },
     "56": {
       "hero_id": 56,
       "name": "Clinkz",
@@ -804,17 +815,6 @@
       "recent_games": 0,
       "recent_wins": 0,
       "kda": 0.0
-    },
-    "131": {
-      "hero_id": 131,
-      "name": "Ring Master",
-      "games": 13,
-      "wins": 5,
-      "losses": 8,
-      "win_rate": 0.38462,
-      "recent_games": 12,
-      "recent_wins": 5,
-      "kda": 2.519
     },
     "81": {
       "hero_id": 81,
@@ -1287,9 +1287,9 @@
       "wins": 109,
       "losses": 139,
       "win_rate": 0.43952,
-      "recent_games": 31,
-      "recent_wins": 14,
-      "kda": 2.583
+      "recent_games": 30,
+      "recent_wins": 13,
+      "kda": 2.592
     },
     {
       "hero_id": 45,
@@ -1309,9 +1309,9 @@
       "wins": 107,
       "losses": 67,
       "win_rate": 0.61494,
-      "recent_games": 10,
+      "recent_games": 9,
       "recent_wins": 8,
-      "kda": 3.482
+      "kda": 3.667
     },
     {
       "hero_id": 37,
@@ -1488,7 +1488,7 @@
     {
       "hero_id": 86,
       "name": "Rubick",
-      "games": 31
+      "games": 30
     },
     {
       "hero_id": 84,
@@ -1506,6 +1506,11 @@
       "games": 14
     },
     {
+      "hero_id": 131,
+      "name": "Ring Master",
+      "games": 13
+    },
+    {
       "hero_id": 31,
       "name": "Lich",
       "games": 13
@@ -1516,11 +1521,6 @@
       "games": 13
     },
     {
-      "hero_id": 131,
-      "name": "Ring Master",
-      "games": 12
-    },
-    {
       "hero_id": 27,
       "name": "Shadow Shaman",
       "games": 12
@@ -1528,7 +1528,7 @@
     {
       "hero_id": 40,
       "name": "Venomancer",
-      "games": 10
+      "games": 9
     },
     {
       "hero_id": 87,
@@ -1536,8 +1536,8 @@
       "games": 8
     },
     {
-      "hero_id": 71,
-      "name": "Spirit Breaker",
+      "hero_id": 43,
+      "name": "Death Prophet",
       "games": 7
     }
   ],
