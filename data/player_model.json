@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "status": "ready",
-  "generated_at": "2026-05-26T10:17:52.763566+00:00",
+  "generated_at": "2026-05-26T16:09:20.473924+00:00",
   "player": {
     "account_id": 222404655,
     "steamid64": "76561198182670383",
@@ -20,7 +20,7 @@
     "losses": 1962,
     "win_rate": 0.50876,
     "heroes": 114,
-    "recent_matches": 300,
+    "recent_matches": 0,
     "frequent_peers": 36
   },
   "heroes": {
@@ -31,9 +31,9 @@
       "wins": 109,
       "losses": 139,
       "win_rate": 0.43952,
-      "recent_games": 30,
-      "recent_wins": 13,
-      "kda": 2.592
+      "recent_games": 0,
+      "recent_wins": 0,
+      "kda": 0.0
     },
     "45": {
       "hero_id": 45,
@@ -42,9 +42,9 @@
       "wins": 106,
       "losses": 89,
       "win_rate": 0.54359,
-      "recent_games": 54,
-      "recent_wins": 33,
-      "kda": 2.744
+      "recent_games": 0,
+      "recent_wins": 0,
+      "kda": 0.0
     },
     "40": {
       "hero_id": 40,
@@ -53,9 +53,9 @@
       "wins": 107,
       "losses": 67,
       "win_rate": 0.61494,
-      "recent_games": 9,
-      "recent_wins": 8,
-      "kda": 3.667
+      "recent_games": 0,
+      "recent_wins": 0,
+      "kda": 0.0
     },
     "37": {
       "hero_id": 37,
@@ -64,9 +64,9 @@
       "wins": 93,
       "losses": 61,
       "win_rate": 0.6039,
-      "recent_games": 17,
-      "recent_wins": 7,
-      "kda": 2.74
+      "recent_games": 0,
+      "recent_wins": 0,
+      "kda": 0.0
     },
     "102": {
       "hero_id": 102,
@@ -75,9 +75,9 @@
       "wins": 68,
       "losses": 48,
       "win_rate": 0.58621,
-      "recent_games": 13,
-      "recent_wins": 9,
-      "kda": 3.587
+      "recent_games": 0,
+      "recent_wins": 0,
+      "kda": 0.0
     },
     "84": {
       "hero_id": 84,
@@ -86,9 +86,9 @@
       "wins": 66,
       "losses": 46,
       "win_rate": 0.58929,
-      "recent_games": 25,
-      "recent_wins": 15,
-      "kda": 2.785
+      "recent_games": 0,
+      "recent_wins": 0,
+      "kda": 0.0
     },
     "22": {
       "hero_id": 22,
@@ -97,9 +97,9 @@
       "wins": 60,
       "losses": 48,
       "win_rate": 0.55556,
-      "recent_games": 7,
-      "recent_wins": 3,
-      "kda": 3.533
+      "recent_games": 0,
+      "recent_wins": 0,
+      "kda": 0.0
     },
     "14": {
       "hero_id": 14,
@@ -108,9 +108,9 @@
       "wins": 46,
       "losses": 57,
       "win_rate": 0.4466,
-      "recent_games": 14,
-      "recent_wins": 7,
-      "kda": 1.915
+      "recent_games": 0,
+      "recent_wins": 0,
+      "kda": 0.0
     },
     "42": {
       "hero_id": 42,
@@ -130,9 +130,9 @@
       "wins": 52,
       "losses": 43,
       "win_rate": 0.54737,
-      "recent_games": 5,
-      "recent_wins": 3,
-      "kda": 2.319
+      "recent_games": 0,
+      "recent_wins": 0,
+      "kda": 0.0
     },
     "30": {
       "hero_id": 30,
@@ -141,9 +141,9 @@
       "wins": 47,
       "losses": 34,
       "win_rate": 0.58025,
-      "recent_games": 7,
-      "recent_wins": 5,
-      "kda": 2.811
+      "recent_games": 0,
+      "recent_wins": 0,
+      "kda": 0.0
     },
     "36": {
       "hero_id": 36,
@@ -152,9 +152,9 @@
       "wins": 43,
       "losses": 36,
       "win_rate": 0.5443,
-      "recent_games": 2,
-      "recent_wins": 2,
-      "kda": 5.1
+      "recent_games": 0,
+      "recent_wins": 0,
+      "kda": 0.0
     },
     "20": {
       "hero_id": 20,
@@ -163,9 +163,9 @@
       "wins": 30,
       "losses": 49,
       "win_rate": 0.37975,
-      "recent_games": 1,
+      "recent_games": 0,
       "recent_wins": 0,
-      "kda": 1.0
+      "kda": 0.0
     },
     "31": {
       "hero_id": 31,
@@ -174,9 +174,9 @@
       "wins": 42,
       "losses": 30,
       "win_rate": 0.58333,
-      "recent_games": 13,
-      "recent_wins": 6,
-      "kda": 2.479
+      "recent_games": 0,
+      "recent_wins": 0,
+      "kda": 0.0
     },
     "29": {
       "hero_id": 29,
@@ -185,9 +185,9 @@
       "wins": 41,
       "losses": 29,
       "win_rate": 0.58571,
-      "recent_games": 2,
-      "recent_wins": 2,
-      "kda": 5.125
+      "recent_games": 0,
+      "recent_wins": 0,
+      "kda": 0.0
     },
     "90": {
       "hero_id": 90,
@@ -196,9 +196,9 @@
       "wins": 33,
       "losses": 34,
       "win_rate": 0.49254,
-      "recent_games": 5,
-      "recent_wins": 1,
-      "kda": 1.48
+      "recent_games": 0,
+      "recent_wins": 0,
+      "kda": 0.0
     },
     "26": {
       "hero_id": 26,
@@ -207,9 +207,9 @@
       "wins": 32,
       "losses": 33,
       "win_rate": 0.49231,
-      "recent_games": 3,
-      "recent_wins": 2,
-      "kda": 1.45
+      "recent_games": 0,
+      "recent_wins": 0,
+      "kda": 0.0
     },
     "83": {
       "hero_id": 83,
@@ -218,9 +218,9 @@
       "wins": 35,
       "losses": 29,
       "win_rate": 0.54688,
-      "recent_games": 4,
-      "recent_wins": 1,
-      "kda": 1.6
+      "recent_games": 0,
+      "recent_wins": 0,
+      "kda": 0.0
     },
     "27": {
       "hero_id": 27,
@@ -229,9 +229,9 @@
       "wins": 31,
       "losses": 32,
       "win_rate": 0.49206,
-      "recent_games": 12,
-      "recent_wins": 5,
-      "kda": 2.089
+      "recent_games": 0,
+      "recent_wins": 0,
+      "kda": 0.0
     },
     "108": {
       "hero_id": 108,
@@ -240,9 +240,9 @@
       "wins": 39,
       "losses": 22,
       "win_rate": 0.63934,
-      "recent_games": 2,
+      "recent_games": 0,
       "recent_wins": 0,
-      "kda": 1.909
+      "kda": 0.0
     },
     "75": {
       "hero_id": 75,
@@ -251,9 +251,9 @@
       "wins": 28,
       "losses": 32,
       "win_rate": 0.46667,
-      "recent_games": 5,
-      "recent_wins": 1,
-      "kda": 2.595
+      "recent_games": 0,
+      "recent_wins": 0,
+      "kda": 0.0
     },
     "85": {
       "hero_id": 85,
@@ -262,9 +262,9 @@
       "wins": 33,
       "losses": 26,
       "win_rate": 0.55932,
-      "recent_games": 1,
-      "recent_wins": 1,
-      "kda": 6.0
+      "recent_games": 0,
+      "recent_wins": 0,
+      "kda": 0.0
     },
     "50": {
       "hero_id": 50,
@@ -273,9 +273,9 @@
       "wins": 29,
       "losses": 29,
       "win_rate": 0.5,
-      "recent_games": 1,
-      "recent_wins": 1,
-      "kda": 3.0
+      "recent_games": 0,
+      "recent_wins": 0,
+      "kda": 0.0
     },
     "2": {
       "hero_id": 2,
@@ -284,9 +284,9 @@
       "wins": 29,
       "losses": 27,
       "win_rate": 0.51786,
-      "recent_games": 1,
+      "recent_games": 0,
       "recent_wins": 0,
-      "kda": 1.0
+      "kda": 0.0
     },
     "67": {
       "hero_id": 67,
@@ -306,9 +306,9 @@
       "wins": 27,
       "losses": 24,
       "win_rate": 0.52941,
-      "recent_games": 7,
-      "recent_wins": 4,
-      "kda": 2.966
+      "recent_games": 0,
+      "recent_wins": 0,
+      "kda": 0.0
     },
     "99": {
       "hero_id": 99,
@@ -317,9 +317,9 @@
       "wins": 15,
       "losses": 35,
       "win_rate": 0.3,
-      "recent_games": 1,
+      "recent_games": 0,
       "recent_wins": 0,
-      "kda": 0.5
+      "kda": 0.0
     },
     "43": {
       "hero_id": 43,
@@ -328,9 +328,9 @@
       "wins": 24,
       "losses": 25,
       "win_rate": 0.4898,
-      "recent_games": 7,
-      "recent_wins": 3,
-      "kda": 2.123
+      "recent_games": 0,
+      "recent_wins": 0,
+      "kda": 0.0
     },
     "110": {
       "hero_id": 110,
@@ -339,9 +339,9 @@
       "wins": 21,
       "losses": 28,
       "win_rate": 0.42857,
-      "recent_games": 1,
+      "recent_games": 0,
       "recent_wins": 0,
-      "kda": 1.6
+      "kda": 0.0
     },
     "35": {
       "hero_id": 35,
@@ -350,9 +350,9 @@
       "wins": 22,
       "losses": 25,
       "win_rate": 0.46809,
-      "recent_games": 2,
+      "recent_games": 0,
       "recent_wins": 0,
-      "kda": 1.478
+      "kda": 0.0
     },
     "112": {
       "hero_id": 112,
@@ -361,9 +361,9 @@
       "wins": 18,
       "losses": 29,
       "win_rate": 0.38298,
-      "recent_games": 1,
-      "recent_wins": 1,
-      "kda": 5.0
+      "recent_games": 0,
+      "recent_wins": 0,
+      "kda": 0.0
     },
     "5": {
       "hero_id": 5,
@@ -372,9 +372,9 @@
       "wins": 32,
       "losses": 14,
       "win_rate": 0.69565,
-      "recent_games": 2,
-      "recent_wins": 1,
-      "kda": 1.778
+      "recent_games": 0,
+      "recent_wins": 0,
+      "kda": 0.0
     },
     "87": {
       "hero_id": 87,
@@ -383,9 +383,9 @@
       "wins": 21,
       "losses": 24,
       "win_rate": 0.46667,
-      "recent_games": 8,
-      "recent_wins": 4,
-      "kda": 2.43
+      "recent_games": 0,
+      "recent_wins": 0,
+      "kda": 0.0
     },
     "49": {
       "hero_id": 49,
@@ -427,9 +427,9 @@
       "wins": 16,
       "losses": 23,
       "win_rate": 0.41026,
-      "recent_games": 2,
+      "recent_games": 0,
       "recent_wins": 0,
-      "kda": 1.222
+      "kda": 0.0
     },
     "79": {
       "hero_id": 79,
@@ -438,9 +438,9 @@
       "wins": 14,
       "losses": 22,
       "win_rate": 0.38889,
-      "recent_games": 1,
+      "recent_games": 0,
       "recent_wins": 0,
-      "kda": 3.6
+      "kda": 0.0
     },
     "68": {
       "hero_id": 68,
@@ -449,9 +449,9 @@
       "wins": 17,
       "losses": 18,
       "win_rate": 0.48571,
-      "recent_games": 1,
-      "recent_wins": 1,
-      "kda": 3.7
+      "recent_games": 0,
+      "recent_wins": 0,
+      "kda": 0.0
     },
     "121": {
       "hero_id": 121,
@@ -460,9 +460,9 @@
       "wins": 18,
       "losses": 16,
       "win_rate": 0.52941,
-      "recent_games": 1,
-      "recent_wins": 1,
-      "kda": 4.667
+      "recent_games": 0,
+      "recent_wins": 0,
+      "kda": 0.0
     },
     "88": {
       "hero_id": 88,
@@ -471,9 +471,9 @@
       "wins": 19,
       "losses": 15,
       "win_rate": 0.55882,
-      "recent_games": 1,
-      "recent_wins": 1,
-      "kda": 2.0
+      "recent_games": 0,
+      "recent_wins": 0,
+      "kda": 0.0
     },
     "3": {
       "hero_id": 3,
@@ -482,9 +482,9 @@
       "wins": 13,
       "losses": 20,
       "win_rate": 0.39394,
-      "recent_games": 2,
+      "recent_games": 0,
       "recent_wins": 0,
-      "kda": 2.733
+      "kda": 0.0
     },
     "21": {
       "hero_id": 21,
@@ -504,9 +504,9 @@
       "wins": 23,
       "losses": 9,
       "win_rate": 0.71875,
-      "recent_games": 1,
-      "recent_wins": 1,
-      "kda": 5.667
+      "recent_games": 0,
+      "recent_wins": 0,
+      "kda": 0.0
     },
     "47": {
       "hero_id": 47,
@@ -548,9 +548,9 @@
       "wins": 16,
       "losses": 13,
       "win_rate": 0.55172,
-      "recent_games": 1,
+      "recent_games": 0,
       "recent_wins": 0,
-      "kda": 0.933
+      "kda": 0.0
     },
     "62": {
       "hero_id": 62,
@@ -570,9 +570,9 @@
       "wins": 14,
       "losses": 13,
       "win_rate": 0.51852,
-      "recent_games": 3,
-      "recent_wins": 1,
-      "kda": 1.188
+      "recent_games": 0,
+      "recent_wins": 0,
+      "kda": 0.0
     },
     "25": {
       "hero_id": 25,
@@ -592,9 +592,9 @@
       "wins": 7,
       "losses": 17,
       "win_rate": 0.29167,
-      "recent_games": 1,
-      "recent_wins": 1,
-      "kda": 4.25
+      "recent_games": 0,
+      "recent_wins": 0,
+      "kda": 0.0
     },
     "44": {
       "hero_id": 44,
@@ -625,9 +625,9 @@
       "wins": 8,
       "losses": 12,
       "win_rate": 0.4,
-      "recent_games": 1,
+      "recent_games": 0,
       "recent_wins": 0,
-      "kda": 0.714
+      "kda": 0.0
     },
     "16": {
       "hero_id": 16,
@@ -647,9 +647,9 @@
       "wins": 10,
       "losses": 9,
       "win_rate": 0.52632,
-      "recent_games": 1,
+      "recent_games": 0,
       "recent_wins": 0,
-      "kda": 1.625
+      "kda": 0.0
     },
     "53": {
       "hero_id": 53,
@@ -669,9 +669,9 @@
       "wins": 9,
       "losses": 9,
       "win_rate": 0.5,
-      "recent_games": 1,
+      "recent_games": 0,
       "recent_wins": 0,
-      "kda": 2.364
+      "kda": 0.0
     },
     "8": {
       "hero_id": 8,
@@ -691,9 +691,9 @@
       "wins": 12,
       "losses": 6,
       "win_rate": 0.66667,
-      "recent_games": 5,
-      "recent_wins": 3,
-      "kda": 2.706
+      "recent_games": 0,
+      "recent_wins": 0,
+      "kda": 0.0
     },
     "101": {
       "hero_id": 101,
@@ -735,9 +735,9 @@
       "wins": 7,
       "losses": 9,
       "win_rate": 0.4375,
-      "recent_games": 1,
+      "recent_games": 0,
       "recent_wins": 0,
-      "kda": 2.0
+      "kda": 0.0
     },
     "17": {
       "hero_id": 17,
@@ -746,9 +746,9 @@
       "wins": 10,
       "losses": 6,
       "win_rate": 0.625,
-      "recent_games": 1,
+      "recent_games": 0,
       "recent_wins": 0,
-      "kda": 0.727
+      "kda": 0.0
     },
     "7": {
       "hero_id": 7,
@@ -801,9 +801,9 @@
       "wins": 5,
       "losses": 9,
       "win_rate": 0.35714,
-      "recent_games": 13,
-      "recent_wins": 5,
-      "kda": 2.362
+      "recent_games": 0,
+      "recent_wins": 0,
+      "kda": 0.0
     },
     "56": {
       "hero_id": 56,
@@ -911,9 +911,9 @@
       "wins": 5,
       "losses": 5,
       "win_rate": 0.5,
-      "recent_games": 1,
+      "recent_games": 0,
       "recent_wins": 0,
-      "kda": 8.0
+      "kda": 0.0
     },
     "65": {
       "hero_id": 65,
@@ -1287,9 +1287,9 @@
       "wins": 109,
       "losses": 139,
       "win_rate": 0.43952,
-      "recent_games": 30,
-      "recent_wins": 13,
-      "kda": 2.592
+      "recent_games": 0,
+      "recent_wins": 0,
+      "kda": 0.0
     },
     {
       "hero_id": 45,
@@ -1298,9 +1298,9 @@
       "wins": 106,
       "losses": 89,
       "win_rate": 0.54359,
-      "recent_games": 54,
-      "recent_wins": 33,
-      "kda": 2.744
+      "recent_games": 0,
+      "recent_wins": 0,
+      "kda": 0.0
     },
     {
       "hero_id": 40,
@@ -1309,9 +1309,9 @@
       "wins": 107,
       "losses": 67,
       "win_rate": 0.61494,
-      "recent_games": 9,
-      "recent_wins": 8,
-      "kda": 3.667
+      "recent_games": 0,
+      "recent_wins": 0,
+      "kda": 0.0
     },
     {
       "hero_id": 37,
@@ -1320,9 +1320,9 @@
       "wins": 93,
       "losses": 61,
       "win_rate": 0.6039,
-      "recent_games": 17,
-      "recent_wins": 7,
-      "kda": 2.74
+      "recent_games": 0,
+      "recent_wins": 0,
+      "kda": 0.0
     },
     {
       "hero_id": 102,
@@ -1331,9 +1331,9 @@
       "wins": 68,
       "losses": 48,
       "win_rate": 0.58621,
-      "recent_games": 13,
-      "recent_wins": 9,
-      "kda": 3.587
+      "recent_games": 0,
+      "recent_wins": 0,
+      "kda": 0.0
     },
     {
       "hero_id": 84,
@@ -1342,9 +1342,9 @@
       "wins": 66,
       "losses": 46,
       "win_rate": 0.58929,
-      "recent_games": 25,
-      "recent_wins": 15,
-      "kda": 2.785
+      "recent_games": 0,
+      "recent_wins": 0,
+      "kda": 0.0
     },
     {
       "hero_id": 22,
@@ -1353,9 +1353,9 @@
       "wins": 60,
       "losses": 48,
       "win_rate": 0.55556,
-      "recent_games": 7,
-      "recent_wins": 3,
-      "kda": 3.533
+      "recent_games": 0,
+      "recent_wins": 0,
+      "kda": 0.0
     },
     {
       "hero_id": 14,
@@ -1364,9 +1364,9 @@
       "wins": 46,
       "losses": 57,
       "win_rate": 0.4466,
-      "recent_games": 14,
-      "recent_wins": 7,
-      "kda": 1.915
+      "recent_games": 0,
+      "recent_wins": 0,
+      "kda": 0.0
     },
     {
       "hero_id": 42,
@@ -1386,9 +1386,9 @@
       "wins": 52,
       "losses": 43,
       "win_rate": 0.54737,
-      "recent_games": 5,
-      "recent_wins": 3,
-      "kda": 2.319
+      "recent_games": 0,
+      "recent_wins": 0,
+      "kda": 0.0
     },
     {
       "hero_id": 30,
@@ -1397,9 +1397,9 @@
       "wins": 47,
       "losses": 34,
       "win_rate": 0.58025,
-      "recent_games": 7,
-      "recent_wins": 5,
-      "kda": 2.811
+      "recent_games": 0,
+      "recent_wins": 0,
+      "kda": 0.0
     },
     {
       "hero_id": 36,
@@ -1408,9 +1408,9 @@
       "wins": 43,
       "losses": 36,
       "win_rate": 0.5443,
-      "recent_games": 2,
-      "recent_wins": 2,
-      "kda": 5.1
+      "recent_games": 0,
+      "recent_wins": 0,
+      "kda": 0.0
     },
     {
       "hero_id": 20,
@@ -1419,9 +1419,9 @@
       "wins": 30,
       "losses": 49,
       "win_rate": 0.37975,
-      "recent_games": 1,
+      "recent_games": 0,
       "recent_wins": 0,
-      "kda": 1.0
+      "kda": 0.0
     },
     {
       "hero_id": 31,
@@ -1430,9 +1430,9 @@
       "wins": 42,
       "losses": 30,
       "win_rate": 0.58333,
-      "recent_games": 13,
-      "recent_wins": 6,
-      "kda": 2.479
+      "recent_games": 0,
+      "recent_wins": 0,
+      "kda": 0.0
     },
     {
       "hero_id": 29,
@@ -1441,9 +1441,9 @@
       "wins": 41,
       "losses": 29,
       "win_rate": 0.58571,
-      "recent_games": 2,
-      "recent_wins": 2,
-      "kda": 5.125
+      "recent_games": 0,
+      "recent_wins": 0,
+      "kda": 0.0
     },
     {
       "hero_id": 90,
@@ -1452,9 +1452,9 @@
       "wins": 33,
       "losses": 34,
       "win_rate": 0.49254,
-      "recent_games": 5,
-      "recent_wins": 1,
-      "kda": 1.48
+      "recent_games": 0,
+      "recent_wins": 0,
+      "kda": 0.0
     },
     {
       "hero_id": 26,
@@ -1463,9 +1463,9 @@
       "wins": 32,
       "losses": 33,
       "win_rate": 0.49231,
-      "recent_games": 3,
-      "recent_wins": 2,
-      "kda": 1.45
+      "recent_games": 0,
+      "recent_wins": 0,
+      "kda": 0.0
     },
     {
       "hero_id": 83,
@@ -1474,78 +1474,19 @@
       "wins": 35,
       "losses": 29,
       "win_rate": 0.54688,
-      "recent_games": 4,
-      "recent_wins": 1,
-      "kda": 1.6
+      "recent_games": 0,
+      "recent_wins": 0,
+      "kda": 0.0
     }
   ],
-  "top_recent_heroes": [
-    {
-      "hero_id": 45,
-      "name": "Pugna",
-      "games": 54
-    },
-    {
-      "hero_id": 86,
-      "name": "Rubick",
-      "games": 30
-    },
-    {
-      "hero_id": 84,
-      "name": "Ogre Magi",
-      "games": 25
-    },
-    {
-      "hero_id": 37,
-      "name": "Warlock",
-      "games": 17
-    },
-    {
-      "hero_id": 14,
-      "name": "Pudge",
-      "games": 14
-    },
-    {
-      "hero_id": 131,
-      "name": "Ring Master",
-      "games": 13
-    },
-    {
-      "hero_id": 31,
-      "name": "Lich",
-      "games": 13
-    },
-    {
-      "hero_id": 102,
-      "name": "Abaddon",
-      "games": 13
-    },
-    {
-      "hero_id": 27,
-      "name": "Shadow Shaman",
-      "games": 12
-    },
-    {
-      "hero_id": 40,
-      "name": "Venomancer",
-      "games": 9
-    },
-    {
-      "hero_id": 87,
-      "name": "Disruptor",
-      "games": 8
-    },
-    {
-      "hero_id": 43,
-      "name": "Death Prophet",
-      "games": 7
-    }
-  ],
+  "top_recent_heroes": [],
   "peers": [],
   "sources": {
     "opendota": true,
     "steam_api": false
   },
-  "errors": [],
+  "errors": [
+    "OpenDota matches unavailable: https://api.opendota.com/api/players/222404655/matches?limit=300: HTTP Error 429: Too Many Requests"
+  ],
   "privacy": "Aggregate hero stats only by default; raw match IDs and peer identities are not included."
 }
