@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "status": "ready",
-  "generated_at": "2026-05-29T16:08:14.892494+00:00",
+  "generated_at": "2026-05-29T20:37:56.267367+00:00",
   "player": {
     "account_id": 222404655,
     "steamid64": "76561198182670383",
@@ -15,10 +15,10 @@
     "mmr_estimate": null
   },
   "summary": {
-    "games": 3998,
-    "wins": 2032,
+    "games": 3999,
+    "wins": 2033,
     "losses": 1966,
-    "win_rate": 0.50825,
+    "win_rate": 0.50838,
     "heroes": 114,
     "recent_matches": 300,
     "frequent_peers": 36
@@ -691,9 +691,9 @@
       "wins": 12,
       "losses": 6,
       "win_rate": 0.66667,
-      "recent_games": 5,
+      "recent_games": 4,
       "recent_wins": 3,
-      "kda": 2.706
+      "kda": 2.833
     },
     "101": {
       "hero_id": 101,
@@ -772,6 +772,17 @@
       "recent_wins": 0,
       "kda": 0.0
     },
+    "131": {
+      "hero_id": 131,
+      "name": "Ring Master",
+      "games": 15,
+      "wins": 6,
+      "losses": 9,
+      "win_rate": 0.4,
+      "recent_games": 13,
+      "recent_wins": 5,
+      "kda": 2.293
+    },
     "1": {
       "hero_id": 1,
       "name": "Anti-Mage",
@@ -793,17 +804,6 @@
       "recent_games": 0,
       "recent_wins": 0,
       "kda": 0.0
-    },
-    "131": {
-      "hero_id": 131,
-      "name": "Ring Master",
-      "games": 14,
-      "wins": 5,
-      "losses": 9,
-      "win_rate": 0.35714,
-      "recent_games": 12,
-      "recent_wins": 4,
-      "kda": 2.189
     },
     "56": {
       "hero_id": 56,
@@ -1513,7 +1513,7 @@
     {
       "hero_id": 131,
       "name": "Ring Master",
-      "games": 12
+      "games": 13
     },
     {
       "hero_id": 31,
