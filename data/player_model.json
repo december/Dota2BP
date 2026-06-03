@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "status": "ready",
-  "generated_at": "2026-06-03T17:17:01.150913+00:00",
+  "generated_at": "2026-06-03T21:29:28.673546+00:00",
   "player": {
     "account_id": 222404655,
     "steamid64": "76561198182670383",
@@ -10,15 +10,15 @@
     "avatar": "https://avatars.steamstatic.com/15896e4d49dc88cb268e9a4eb02a08ff5d913838_full.jpg"
   },
   "rank_profile": {
-    "rank_tier": 42,
+    "rank_tier": 41,
     "leaderboard_rank": null,
     "mmr_estimate": null
   },
   "summary": {
-    "games": 4003,
+    "games": 4004,
     "wins": 2034,
-    "losses": 1969,
-    "win_rate": 0.50812,
+    "losses": 1970,
+    "win_rate": 0.50799,
     "heroes": 114,
     "recent_matches": 300,
     "frequent_peers": 36
@@ -27,13 +27,13 @@
     "86": {
       "hero_id": 86,
       "name": "Rubick",
-      "games": 252,
+      "games": 253,
       "wins": 110,
-      "losses": 142,
-      "win_rate": 0.43651,
-      "recent_games": 33,
+      "losses": 143,
+      "win_rate": 0.43478,
+      "recent_games": 34,
       "recent_wins": 13,
-      "kda": 2.716
+      "kda": 2.659
     },
     "45": {
       "hero_id": 45,
@@ -64,9 +64,9 @@
       "wins": 93,
       "losses": 61,
       "win_rate": 0.6039,
-      "recent_games": 17,
-      "recent_wins": 7,
-      "kda": 2.74
+      "recent_games": 16,
+      "recent_wins": 6,
+      "kda": 2.753
     },
     "102": {
       "hero_id": 102,
@@ -1283,13 +1283,13 @@
     {
       "hero_id": 86,
       "name": "Rubick",
-      "games": 252,
+      "games": 253,
       "wins": 110,
-      "losses": 142,
-      "win_rate": 0.43651,
-      "recent_games": 33,
+      "losses": 143,
+      "win_rate": 0.43478,
+      "recent_games": 34,
       "recent_wins": 13,
-      "kda": 2.716
+      "kda": 2.659
     },
     {
       "hero_id": 45,
@@ -1320,9 +1320,9 @@
       "wins": 93,
       "losses": 61,
       "win_rate": 0.6039,
-      "recent_games": 17,
-      "recent_wins": 7,
-      "kda": 2.74
+      "recent_games": 16,
+      "recent_wins": 6,
+      "kda": 2.753
     },
     {
       "hero_id": 102,
@@ -1488,7 +1488,7 @@
     {
       "hero_id": 86,
       "name": "Rubick",
-      "games": 33
+      "games": 34
     },
     {
       "hero_id": 84,
@@ -1498,7 +1498,7 @@
     {
       "hero_id": 37,
       "name": "Warlock",
-      "games": 17
+      "games": 16
     },
     {
       "hero_id": 102,
