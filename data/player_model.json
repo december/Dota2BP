@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "status": "ready",
-  "generated_at": "2026-06-04T15:42:16.210469+00:00",
+  "generated_at": "2026-06-04T20:24:18.471797+00:00",
   "player": {
     "account_id": 222404655,
     "steamid64": "76561198182670383",
@@ -15,10 +15,10 @@
     "mmr_estimate": null
   },
   "summary": {
-    "games": 4004,
+    "games": 4006,
     "wins": 2034,
-    "losses": 1970,
-    "win_rate": 0.50799,
+    "losses": 1972,
+    "win_rate": 0.50774,
     "heroes": 114,
     "recent_matches": 300,
     "frequent_peers": 36
@@ -27,13 +27,13 @@
     "86": {
       "hero_id": 86,
       "name": "Rubick",
-      "games": 253,
+      "games": 254,
       "wins": 110,
-      "losses": 143,
-      "win_rate": 0.43478,
-      "recent_games": 34,
+      "losses": 144,
+      "win_rate": 0.43307,
+      "recent_games": 35,
       "recent_wins": 13,
-      "kda": 2.659
+      "kda": 2.631
     },
     "45": {
       "hero_id": 45,
@@ -42,9 +42,9 @@
       "wins": 106,
       "losses": 89,
       "win_rate": 0.54359,
-      "recent_games": 54,
+      "recent_games": 53,
       "recent_wins": 33,
-      "kda": 2.744
+      "kda": 2.737
     },
     "40": {
       "hero_id": 40,
@@ -64,9 +64,9 @@
       "wins": 93,
       "losses": 61,
       "win_rate": 0.6039,
-      "recent_games": 16,
+      "recent_games": 15,
       "recent_wins": 6,
-      "kda": 2.753
+      "kda": 2.843
     },
     "102": {
       "hero_id": 102,
@@ -170,13 +170,13 @@
     "31": {
       "hero_id": 31,
       "name": "Lich",
-      "games": 72,
+      "games": 73,
       "wins": 42,
-      "losses": 30,
-      "win_rate": 0.58333,
-      "recent_games": 12,
+      "losses": 31,
+      "win_rate": 0.57534,
+      "recent_games": 13,
       "recent_wins": 5,
-      "kda": 2.272
+      "kda": 2.395
     },
     "29": {
       "hero_id": 29,
@@ -1283,13 +1283,13 @@
     {
       "hero_id": 86,
       "name": "Rubick",
-      "games": 253,
+      "games": 254,
       "wins": 110,
-      "losses": 143,
-      "win_rate": 0.43478,
-      "recent_games": 34,
+      "losses": 144,
+      "win_rate": 0.43307,
+      "recent_games": 35,
       "recent_wins": 13,
-      "kda": 2.659
+      "kda": 2.631
     },
     {
       "hero_id": 45,
@@ -1298,9 +1298,9 @@
       "wins": 106,
       "losses": 89,
       "win_rate": 0.54359,
-      "recent_games": 54,
+      "recent_games": 53,
       "recent_wins": 33,
-      "kda": 2.744
+      "kda": 2.737
     },
     {
       "hero_id": 40,
@@ -1320,9 +1320,9 @@
       "wins": 93,
       "losses": 61,
       "win_rate": 0.6039,
-      "recent_games": 16,
+      "recent_games": 15,
       "recent_wins": 6,
-      "kda": 2.753
+      "kda": 2.843
     },
     {
       "hero_id": 102,
@@ -1426,13 +1426,13 @@
     {
       "hero_id": 31,
       "name": "Lich",
-      "games": 72,
+      "games": 73,
       "wins": 42,
-      "losses": 30,
-      "win_rate": 0.58333,
-      "recent_games": 12,
+      "losses": 31,
+      "win_rate": 0.57534,
+      "recent_games": 13,
       "recent_wins": 5,
-      "kda": 2.272
+      "kda": 2.395
     },
     {
       "hero_id": 29,
@@ -1483,12 +1483,12 @@
     {
       "hero_id": 45,
       "name": "Pugna",
-      "games": 54
+      "games": 53
     },
     {
       "hero_id": 86,
       "name": "Rubick",
-      "games": 34
+      "games": 35
     },
     {
       "hero_id": 84,
@@ -1498,7 +1498,7 @@
     {
       "hero_id": 37,
       "name": "Warlock",
-      "games": 16
+      "games": 15
     },
     {
       "hero_id": 102,
@@ -1511,13 +1511,13 @@
       "games": 14
     },
     {
-      "hero_id": 131,
-      "name": "Ring Master",
-      "games": 12
-    },
-    {
       "hero_id": 31,
       "name": "Lich",
+      "games": 13
+    },
+    {
+      "hero_id": 131,
+      "name": "Ring Master",
       "games": 12
     },
     {
