@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "status": "ready",
-  "generated_at": "2026-06-05T15:27:32.567498+00:00",
+  "generated_at": "2026-06-05T20:12:06.720223+00:00",
   "player": {
     "account_id": 222404655,
     "steamid64": "76561198182670383",
@@ -10,15 +10,15 @@
     "avatar": "https://avatars.steamstatic.com/15896e4d49dc88cb268e9a4eb02a08ff5d913838_full.jpg"
   },
   "rank_profile": {
-    "rank_tier": 41,
+    "rank_tier": 35,
     "leaderboard_rank": null,
     "mmr_estimate": null
   },
   "summary": {
-    "games": 4006,
-    "wins": 2034,
-    "losses": 1972,
-    "win_rate": 0.50774,
+    "games": 4009,
+    "wins": 2035,
+    "losses": 1974,
+    "win_rate": 0.50761,
     "heroes": 114,
     "recent_matches": 300,
     "frequent_peers": 36
@@ -27,13 +27,13 @@
     "86": {
       "hero_id": 86,
       "name": "Rubick",
-      "games": 254,
-      "wins": 110,
-      "losses": 144,
-      "win_rate": 0.43307,
-      "recent_games": 35,
-      "recent_wins": 13,
-      "kda": 2.631
+      "games": 256,
+      "wins": 111,
+      "losses": 145,
+      "win_rate": 0.43359,
+      "recent_games": 36,
+      "recent_wins": 14,
+      "kda": 2.681
     },
     "45": {
       "hero_id": 45,
@@ -42,9 +42,9 @@
       "wins": 106,
       "losses": 89,
       "win_rate": 0.54359,
-      "recent_games": 53,
-      "recent_wins": 33,
-      "kda": 2.737
+      "recent_games": 52,
+      "recent_wins": 32,
+      "kda": 2.72
     },
     "40": {
       "hero_id": 40,
@@ -71,13 +71,13 @@
     "102": {
       "hero_id": 102,
       "name": "Abaddon",
-      "games": 117,
+      "games": 118,
       "wins": 68,
-      "losses": 49,
-      "win_rate": 0.5812,
-      "recent_games": 14,
+      "losses": 50,
+      "win_rate": 0.57627,
+      "recent_games": 15,
       "recent_wins": 9,
-      "kda": 3.386
+      "kda": 3.231
     },
     "84": {
       "hero_id": 84,
@@ -779,9 +779,9 @@
       "wins": 6,
       "losses": 9,
       "win_rate": 0.4,
-      "recent_games": 12,
+      "recent_games": 11,
       "recent_wins": 4,
-      "kda": 2.189
+      "kda": 2.14
     },
     "1": {
       "hero_id": 1,
@@ -1283,13 +1283,13 @@
     {
       "hero_id": 86,
       "name": "Rubick",
-      "games": 254,
-      "wins": 110,
-      "losses": 144,
-      "win_rate": 0.43307,
-      "recent_games": 35,
-      "recent_wins": 13,
-      "kda": 2.631
+      "games": 256,
+      "wins": 111,
+      "losses": 145,
+      "win_rate": 0.43359,
+      "recent_games": 36,
+      "recent_wins": 14,
+      "kda": 2.681
     },
     {
       "hero_id": 45,
@@ -1298,9 +1298,9 @@
       "wins": 106,
       "losses": 89,
       "win_rate": 0.54359,
-      "recent_games": 53,
-      "recent_wins": 33,
-      "kda": 2.737
+      "recent_games": 52,
+      "recent_wins": 32,
+      "kda": 2.72
     },
     {
       "hero_id": 40,
@@ -1327,13 +1327,13 @@
     {
       "hero_id": 102,
       "name": "Abaddon",
-      "games": 117,
+      "games": 118,
       "wins": 68,
-      "losses": 49,
-      "win_rate": 0.5812,
-      "recent_games": 14,
+      "losses": 50,
+      "win_rate": 0.57627,
+      "recent_games": 15,
       "recent_wins": 9,
-      "kda": 3.386
+      "kda": 3.231
     },
     {
       "hero_id": 84,
@@ -1483,12 +1483,12 @@
     {
       "hero_id": 45,
       "name": "Pugna",
-      "games": 53
+      "games": 52
     },
     {
       "hero_id": 86,
       "name": "Rubick",
-      "games": 35
+      "games": 36
     },
     {
       "hero_id": 84,
@@ -1496,14 +1496,14 @@
       "games": 26
     },
     {
-      "hero_id": 37,
-      "name": "Warlock",
+      "hero_id": 102,
+      "name": "Abaddon",
       "games": 15
     },
     {
-      "hero_id": 102,
-      "name": "Abaddon",
-      "games": 14
+      "hero_id": 37,
+      "name": "Warlock",
+      "games": 15
     },
     {
       "hero_id": 14,
@@ -1516,14 +1516,14 @@
       "games": 13
     },
     {
-      "hero_id": 131,
-      "name": "Ring Master",
-      "games": 12
-    },
-    {
       "hero_id": 27,
       "name": "Shadow Shaman",
       "games": 12
+    },
+    {
+      "hero_id": 131,
+      "name": "Ring Master",
+      "games": 11
     },
     {
       "hero_id": 40,
