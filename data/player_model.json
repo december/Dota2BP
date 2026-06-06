@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "status": "ready",
-  "generated_at": "2026-06-06T14:07:20.582631+00:00",
+  "generated_at": "2026-06-06T19:46:15.328420+00:00",
   "player": {
     "account_id": 222404655,
     "steamid64": "76561198182670383",
@@ -15,10 +15,10 @@
     "mmr_estimate": null
   },
   "summary": {
-    "games": 4009,
+    "games": 4010,
     "wins": 2035,
-    "losses": 1974,
-    "win_rate": 0.50761,
+    "losses": 1975,
+    "win_rate": 0.50748,
     "heroes": 114,
     "recent_matches": 300,
     "frequent_peers": 36
@@ -97,9 +97,9 @@
       "wins": 60,
       "losses": 48,
       "win_rate": 0.55556,
-      "recent_games": 4,
+      "recent_games": 3,
       "recent_wins": 2,
-      "kda": 3.394
+      "kda": 4.2
     },
     "14": {
       "hero_id": 14,
@@ -137,13 +137,13 @@
     "30": {
       "hero_id": 30,
       "name": "Witch Doctor",
-      "games": 81,
+      "games": 82,
       "wins": 47,
-      "losses": 34,
-      "win_rate": 0.58025,
-      "recent_games": 7,
+      "losses": 35,
+      "win_rate": 0.57317,
+      "recent_games": 8,
       "recent_wins": 5,
-      "kda": 2.811
+      "kda": 2.643
     },
     "36": {
       "hero_id": 36,
@@ -1353,9 +1353,9 @@
       "wins": 60,
       "losses": 48,
       "win_rate": 0.55556,
-      "recent_games": 4,
+      "recent_games": 3,
       "recent_wins": 2,
-      "kda": 3.394
+      "kda": 4.2
     },
     {
       "hero_id": 14,
@@ -1393,13 +1393,13 @@
     {
       "hero_id": 30,
       "name": "Witch Doctor",
-      "games": 81,
+      "games": 82,
       "wins": 47,
-      "losses": 34,
-      "win_rate": 0.58025,
-      "recent_games": 7,
+      "losses": 35,
+      "win_rate": 0.57317,
+      "recent_games": 8,
       "recent_wins": 5,
-      "kda": 2.811
+      "kda": 2.643
     },
     {
       "hero_id": 36,
@@ -1536,9 +1536,9 @@
       "games": 9
     },
     {
-      "hero_id": 43,
-      "name": "Death Prophet",
-      "games": 7
+      "hero_id": 30,
+      "name": "Witch Doctor",
+      "games": 8
     }
   ],
   "peers": [],
