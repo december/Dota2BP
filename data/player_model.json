@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "status": "ready",
-  "generated_at": "2026-06-07T14:19:25.017342+00:00",
+  "generated_at": "2026-06-07T19:45:35.427799+00:00",
   "player": {
     "account_id": 222404655,
     "steamid64": "76561198182670383",
@@ -15,10 +15,10 @@
     "mmr_estimate": null
   },
   "summary": {
-    "games": 4010,
-    "wins": 2035,
+    "games": 4011,
+    "wins": 2036,
     "losses": 1975,
-    "win_rate": 0.50748,
+    "win_rate": 0.5076,
     "heroes": 114,
     "recent_matches": 300,
     "frequent_peers": 36
@@ -86,9 +86,9 @@
       "wins": 66,
       "losses": 47,
       "win_rate": 0.58407,
-      "recent_games": 26,
+      "recent_games": 25,
       "recent_wins": 15,
-      "kda": 2.646
+      "kda": 2.715
     },
     "22": {
       "hero_id": 22,
@@ -739,6 +739,17 @@
       "recent_wins": 0,
       "kda": 2.0
     },
+    "131": {
+      "hero_id": 131,
+      "name": "Ring Master",
+      "games": 16,
+      "wins": 7,
+      "losses": 9,
+      "win_rate": 0.4375,
+      "recent_games": 12,
+      "recent_wins": 5,
+      "kda": 2.286
+    },
     "17": {
       "hero_id": 17,
       "name": "Storm Spirit",
@@ -771,17 +782,6 @@
       "recent_games": 0,
       "recent_wins": 0,
       "kda": 0.0
-    },
-    "131": {
-      "hero_id": 131,
-      "name": "Ring Master",
-      "games": 15,
-      "wins": 6,
-      "losses": 9,
-      "win_rate": 0.4,
-      "recent_games": 11,
-      "recent_wins": 4,
-      "kda": 2.14
     },
     "1": {
       "hero_id": 1,
@@ -1342,9 +1342,9 @@
       "wins": 66,
       "losses": 47,
       "win_rate": 0.58407,
-      "recent_games": 26,
+      "recent_games": 25,
       "recent_wins": 15,
-      "kda": 2.646
+      "kda": 2.715
     },
     {
       "hero_id": 22,
@@ -1493,7 +1493,7 @@
     {
       "hero_id": 84,
       "name": "Ogre Magi",
-      "games": 26
+      "games": 25
     },
     {
       "hero_id": 102,
@@ -1516,14 +1516,14 @@
       "games": 13
     },
     {
-      "hero_id": 27,
-      "name": "Shadow Shaman",
+      "hero_id": 131,
+      "name": "Ring Master",
       "games": 12
     },
     {
-      "hero_id": 131,
-      "name": "Ring Master",
-      "games": 11
+      "hero_id": 27,
+      "name": "Shadow Shaman",
+      "games": 12
     },
     {
       "hero_id": 40,
