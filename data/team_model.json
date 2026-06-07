@@ -1,60 +1,12 @@
 {
   "schema": 1,
   "status": "ready",
-  "generated_at": "2026-06-06T19:46:28.510607+00:00",
+  "generated_at": "2026-06-07T04:55:30.243701+00:00",
   "source": "OpenDota public aggregate endpoints plus public Steam profile pages",
   "players": [
     {
-      "generated_at": "2026-06-06T19:46:16.464475+00:00",
-      "summary": {
-        "games": 4010,
-        "wins": 2035,
-        "losses": 1975,
-        "win_rate": 0.50748,
-        "heroes": 114,
-        "recent_matches": 300,
-        "frequent_peers": 36
-      },
-      "common_positions": [
-        {
-          "position": 5,
-          "label": "5号位辅助",
-          "share": 0.2802
-        },
-        {
-          "position": 4,
-          "label": "4号位游走",
-          "share": 0.2365
-        }
-      ],
       "status": "ready",
-      "position_summary": {
-        "1": {
-          "label": "1号位核心",
-          "share": 0.1196,
-          "weighted_games": 479.7
-        },
-        "2": {
-          "label": "2号位中单",
-          "share": 0.1533,
-          "weighted_games": 614.6
-        },
-        "3": {
-          "label": "3号位劣单",
-          "share": 0.2103,
-          "weighted_games": 843.4
-        },
-        "4": {
-          "label": "4号位游走",
-          "share": 0.2365,
-          "weighted_games": 948.5
-        },
-        "5": {
-          "label": "5号位辅助",
-          "share": 0.2802,
-          "weighted_games": 1123.8
-        }
-      },
+      "errors": [],
       "heroes": {
         "86": {
           "hero_id": 86,
@@ -1952,6 +1904,7 @@
           "primary_position": 5
         }
       },
+      "generated_at": "2026-06-07T04:55:19.587479+00:00",
       "top_recent_heroes": [
         {
           "hero_id": 45,
@@ -2014,18 +1967,65 @@
           "games": 8
         }
       ],
-      "errors": [],
-      "rank_profile": {
-        "rank_tier": 35,
-        "leaderboard_rank": null,
-        "mmr_estimate": null
-      },
       "player": {
         "account_id": 222404655,
         "steamid64": "76561198182670383",
         "personaname": "LouisEX",
         "profileurl": "https://steamcommunity.com/profiles/76561198182670383/",
         "avatar": "https://avatars.steamstatic.com/15896e4d49dc88cb268e9a4eb02a08ff5d913838_full.jpg"
+      },
+      "common_positions": [
+        {
+          "position": 5,
+          "label": "5号位辅助",
+          "share": 0.2802
+        },
+        {
+          "position": 4,
+          "label": "4号位游走",
+          "share": 0.2365
+        }
+      ],
+      "summary": {
+        "games": 4010,
+        "wins": 2035,
+        "losses": 1975,
+        "win_rate": 0.50748,
+        "heroes": 114,
+        "recent_matches": 300,
+        "frequent_peers": 36
+      },
+      "rank_profile": {
+        "rank_tier": 35,
+        "leaderboard_rank": null,
+        "mmr_estimate": null
+      },
+      "position_summary": {
+        "1": {
+          "label": "1号位核心",
+          "share": 0.1196,
+          "weighted_games": 479.7
+        },
+        "2": {
+          "label": "2号位中单",
+          "share": 0.1533,
+          "weighted_games": 614.6
+        },
+        "3": {
+          "label": "3号位劣单",
+          "share": 0.2103,
+          "weighted_games": 843.4
+        },
+        "4": {
+          "label": "4号位游走",
+          "share": 0.2365,
+          "weighted_games": 948.5
+        },
+        "5": {
+          "label": "5号位辅助",
+          "share": 0.2802,
+          "weighted_games": 1123.8
+        }
       },
       "top_heroes": [
         {
@@ -2330,15 +2330,17 @@
       ]
     },
     {
-      "generated_at": "2026-06-06T19:46:17.506543+00:00",
-      "summary": {
-        "games": 0,
-        "wins": 0,
-        "losses": 0,
-        "win_rate": null,
-        "heroes": 0,
-        "recent_matches": 0,
-        "frequent_peers": 0
+      "status": "needs_data",
+      "errors": [],
+      "heroes": {},
+      "generated_at": "2026-06-07T04:55:20.523167+00:00",
+      "top_recent_heroes": [],
+      "player": {
+        "account_id": 359883205,
+        "steamid64": "76561198320148933",
+        "personaname": "super magicdry",
+        "profileurl": "https://steamcommunity.com/profiles/76561198320148933/",
+        "avatar": "https://avatars.steamstatic.com/fef49e7fa7e1997310d705b2a6158ff8dc1cdfeb_full.jpg"
       },
       "common_positions": [
         {
@@ -2352,102 +2354,52 @@
           "share": 0.0
         }
       ],
-      "status": "needs_data",
-      "position_summary": {
-        "1": {
-          "label": "1号位核心",
-          "share": 0.0,
-          "weighted_games": 0.0
-        },
-        "2": {
-          "label": "2号位中单",
-          "share": 0.0,
-          "weighted_games": 0.0
-        },
-        "3": {
-          "label": "3号位劣单",
-          "share": 0.0,
-          "weighted_games": 0.0
-        },
-        "4": {
-          "label": "4号位游走",
-          "share": 0.0,
-          "weighted_games": 0.0
-        },
-        "5": {
-          "label": "5号位辅助",
-          "share": 0.0,
-          "weighted_games": 0.0
-        }
+      "summary": {
+        "games": 0,
+        "wins": 0,
+        "losses": 0,
+        "win_rate": null,
+        "heroes": 0,
+        "recent_matches": 0,
+        "frequent_peers": 0
       },
-      "heroes": {},
-      "top_recent_heroes": [],
-      "errors": [],
       "rank_profile": {
         "rank_tier": 44,
         "leaderboard_rank": null,
         "mmr_estimate": null
       },
-      "player": {
-        "account_id": 359883205,
-        "steamid64": "76561198320148933",
-        "personaname": "super magicdry",
-        "profileurl": "https://steamcommunity.com/profiles/76561198320148933/",
-        "avatar": "https://avatars.steamstatic.com/fef49e7fa7e1997310d705b2a6158ff8dc1cdfeb_full.jpg"
+      "position_summary": {
+        "1": {
+          "label": "1号位核心",
+          "share": 0.0,
+          "weighted_games": 0.0
+        },
+        "2": {
+          "label": "2号位中单",
+          "share": 0.0,
+          "weighted_games": 0.0
+        },
+        "3": {
+          "label": "3号位劣单",
+          "share": 0.0,
+          "weighted_games": 0.0
+        },
+        "4": {
+          "label": "4号位游走",
+          "share": 0.0,
+          "weighted_games": 0.0
+        },
+        "5": {
+          "label": "5号位辅助",
+          "share": 0.0,
+          "weighted_games": 0.0
+        }
       },
       "top_heroes": []
     },
     {
-      "generated_at": "2026-06-06T19:46:19.911396+00:00",
-      "summary": {
-        "games": 5037,
-        "wins": 2482,
-        "losses": 2555,
-        "win_rate": 0.49275,
-        "heroes": 127,
-        "recent_matches": 300,
-        "frequent_peers": 56
-      },
-      "common_positions": [
-        {
-          "position": 4,
-          "label": "4号位游走",
-          "share": 0.2608
-        },
-        {
-          "position": 3,
-          "label": "3号位劣单",
-          "share": 0.1987
-        }
-      ],
       "status": "ready",
-      "position_summary": {
-        "1": {
-          "label": "1号位核心",
-          "share": 0.1698,
-          "weighted_games": 855.5
-        },
-        "2": {
-          "label": "2号位中单",
-          "share": 0.1758,
-          "weighted_games": 885.7
-        },
-        "3": {
-          "label": "3号位劣单",
-          "share": 0.1987,
-          "weighted_games": 1000.7
-        },
-        "4": {
-          "label": "4号位游走",
-          "share": 0.2608,
-          "weighted_games": 1313.9
-        },
-        "5": {
-          "label": "5号位辅助",
-          "share": 0.1948,
-          "weighted_games": 981.2
-        }
-      },
+      "errors": [],
       "heroes": {
         "86": {
           "hero_id": 86,
@@ -4561,6 +4513,7 @@
           "primary_position": 1
         }
       },
+      "generated_at": "2026-06-07T04:55:22.841111+00:00",
       "top_recent_heroes": [
         {
           "hero_id": 86,
@@ -4623,18 +4576,65 @@
           "games": 5
         }
       ],
-      "errors": [],
-      "rank_profile": {
-        "rank_tier": 80,
-        "leaderboard_rank": null,
-        "mmr_estimate": null
-      },
       "player": {
         "account_id": 326880468,
         "steamid64": "76561198287146196",
         "personaname": "magicdry",
         "profileurl": "https://steamcommunity.com/profiles/76561198287146196/",
         "avatar": "https://avatars.steamstatic.com/e52e0559a9f4d861bd4caa9063788c89027d0fc3_full.jpg"
+      },
+      "common_positions": [
+        {
+          "position": 4,
+          "label": "4号位游走",
+          "share": 0.2608
+        },
+        {
+          "position": 3,
+          "label": "3号位劣单",
+          "share": 0.1987
+        }
+      ],
+      "summary": {
+        "games": 5037,
+        "wins": 2482,
+        "losses": 2555,
+        "win_rate": 0.49275,
+        "heroes": 127,
+        "recent_matches": 300,
+        "frequent_peers": 56
+      },
+      "rank_profile": {
+        "rank_tier": 80,
+        "leaderboard_rank": null,
+        "mmr_estimate": null
+      },
+      "position_summary": {
+        "1": {
+          "label": "1号位核心",
+          "share": 0.1698,
+          "weighted_games": 855.5
+        },
+        "2": {
+          "label": "2号位中单",
+          "share": 0.1758,
+          "weighted_games": 885.7
+        },
+        "3": {
+          "label": "3号位劣单",
+          "share": 0.1987,
+          "weighted_games": 1000.7
+        },
+        "4": {
+          "label": "4号位游走",
+          "share": 0.2608,
+          "weighted_games": 1313.9
+        },
+        "5": {
+          "label": "5号位辅助",
+          "share": 0.1948,
+          "weighted_games": 981.2
+        }
       },
       "top_heroes": [
         {
@@ -4939,56 +4939,8 @@
       ]
     },
     {
-      "generated_at": "2026-06-06T19:46:22.108330+00:00",
-      "summary": {
-        "games": 2712,
-        "wins": 1314,
-        "losses": 1398,
-        "win_rate": 0.48451,
-        "heroes": 58,
-        "recent_matches": 300,
-        "frequent_peers": 24
-      },
-      "common_positions": [
-        {
-          "position": 1,
-          "label": "1号位核心",
-          "share": 0.5292
-        },
-        {
-          "position": 2,
-          "label": "2号位中单",
-          "share": 0.2087
-        }
-      ],
       "status": "ready",
-      "position_summary": {
-        "1": {
-          "label": "1号位核心",
-          "share": 0.5292,
-          "weighted_games": 1435.2
-        },
-        "2": {
-          "label": "2号位中单",
-          "share": 0.2087,
-          "weighted_games": 565.9
-        },
-        "3": {
-          "label": "3号位劣单",
-          "share": 0.1474,
-          "weighted_games": 399.8
-        },
-        "4": {
-          "label": "4号位游走",
-          "share": 0.0793,
-          "weighted_games": 214.9
-        },
-        "5": {
-          "label": "5号位辅助",
-          "share": 0.0355,
-          "weighted_games": 96.2
-        }
-      },
+      "errors": [],
       "heroes": {
         "67": {
           "hero_id": 67,
@@ -5962,6 +5914,7 @@
           "primary_position": 2
         }
       },
+      "generated_at": "2026-06-07T04:55:24.649405+00:00",
       "top_recent_heroes": [
         {
           "hero_id": 94,
@@ -6024,18 +5977,65 @@
           "games": 1
         }
       ],
-      "errors": [],
-      "rank_profile": {
-        "rank_tier": 33,
-        "leaderboard_rank": null,
-        "mmr_estimate": null
-      },
       "player": {
         "account_id": 470899787,
         "steamid64": "76561198431165515",
         "personaname": "南无阿弥佗佛",
         "profileurl": "https://steamcommunity.com/id/amituofo6666/",
         "avatar": "https://avatars.steamstatic.com/bd0428ded3332e57fb8f304742bf49e0b3a3a9fb_full.jpg"
+      },
+      "common_positions": [
+        {
+          "position": 1,
+          "label": "1号位核心",
+          "share": 0.5292
+        },
+        {
+          "position": 2,
+          "label": "2号位中单",
+          "share": 0.2087
+        }
+      ],
+      "summary": {
+        "games": 2712,
+        "wins": 1314,
+        "losses": 1398,
+        "win_rate": 0.48451,
+        "heroes": 58,
+        "recent_matches": 300,
+        "frequent_peers": 24
+      },
+      "rank_profile": {
+        "rank_tier": 33,
+        "leaderboard_rank": null,
+        "mmr_estimate": null
+      },
+      "position_summary": {
+        "1": {
+          "label": "1号位核心",
+          "share": 0.5292,
+          "weighted_games": 1435.2
+        },
+        "2": {
+          "label": "2号位中单",
+          "share": 0.2087,
+          "weighted_games": 565.9
+        },
+        "3": {
+          "label": "3号位劣单",
+          "share": 0.1474,
+          "weighted_games": 399.8
+        },
+        "4": {
+          "label": "4号位游走",
+          "share": 0.0793,
+          "weighted_games": 214.9
+        },
+        "5": {
+          "label": "5号位辅助",
+          "share": 0.0355,
+          "weighted_games": 96.2
+        }
       },
       "top_heroes": [
         {
@@ -6335,56 +6335,8 @@
       ]
     },
     {
-      "generated_at": "2026-06-06T19:46:24.738651+00:00",
-      "summary": {
-        "games": 5547,
-        "wins": 2683,
-        "losses": 2864,
-        "win_rate": 0.48368,
-        "heroes": 122,
-        "recent_matches": 300,
-        "frequent_peers": 53
-      },
-      "common_positions": [
-        {
-          "position": 2,
-          "label": "2号位中单",
-          "share": 0.2992
-        },
-        {
-          "position": 1,
-          "label": "1号位核心",
-          "share": 0.2195
-        }
-      ],
       "status": "ready",
-      "position_summary": {
-        "1": {
-          "label": "1号位核心",
-          "share": 0.2195,
-          "weighted_games": 1217.3
-        },
-        "2": {
-          "label": "2号位中单",
-          "share": 0.2992,
-          "weighted_games": 1659.5
-        },
-        "3": {
-          "label": "3号位劣单",
-          "share": 0.1813,
-          "weighted_games": 1005.8
-        },
-        "4": {
-          "label": "4号位游走",
-          "share": 0.1984,
-          "weighted_games": 1100.6
-        },
-        "5": {
-          "label": "5号位辅助",
-          "share": 0.1016,
-          "weighted_games": 563.8
-        }
-      },
+      "errors": [],
       "heroes": {
         "74": {
           "hero_id": 74,
@@ -8415,6 +8367,7 @@
           "primary_position": 2
         }
       },
+      "generated_at": "2026-06-07T04:55:26.833235+00:00",
       "top_recent_heroes": [
         {
           "hero_id": 74,
@@ -8477,18 +8430,65 @@
           "games": 6
         }
       ],
-      "errors": [],
-      "rank_profile": {
-        "rank_tier": 44,
-        "leaderboard_rank": null,
-        "mmr_estimate": null
-      },
       "player": {
         "account_id": 185965758,
         "steamid64": "76561198146231486",
         "personaname": "yoyo",
         "profileurl": "https://steamcommunity.com/profiles/76561198146231486/",
         "avatar": "https://avatars.steamstatic.com/0276b81b9df0556b37c9f1f7fcd113d6d9fb843c_full.jpg"
+      },
+      "common_positions": [
+        {
+          "position": 2,
+          "label": "2号位中单",
+          "share": 0.2992
+        },
+        {
+          "position": 1,
+          "label": "1号位核心",
+          "share": 0.2195
+        }
+      ],
+      "summary": {
+        "games": 5547,
+        "wins": 2683,
+        "losses": 2864,
+        "win_rate": 0.48368,
+        "heroes": 122,
+        "recent_matches": 300,
+        "frequent_peers": 53
+      },
+      "rank_profile": {
+        "rank_tier": 44,
+        "leaderboard_rank": null,
+        "mmr_estimate": null
+      },
+      "position_summary": {
+        "1": {
+          "label": "1号位核心",
+          "share": 0.2195,
+          "weighted_games": 1217.3
+        },
+        "2": {
+          "label": "2号位中单",
+          "share": 0.2992,
+          "weighted_games": 1659.5
+        },
+        "3": {
+          "label": "3号位劣单",
+          "share": 0.1813,
+          "weighted_games": 1005.8
+        },
+        "4": {
+          "label": "4号位游走",
+          "share": 0.1984,
+          "weighted_games": 1100.6
+        },
+        "5": {
+          "label": "5号位辅助",
+          "share": 0.1016,
+          "weighted_games": 563.8
+        }
       },
       "top_heroes": [
         {
@@ -8795,56 +8795,8 @@
       ]
     },
     {
-      "generated_at": "2026-06-06T19:46:26.915965+00:00",
-      "summary": {
-        "games": 4328,
-        "wins": 2170,
-        "losses": 2158,
-        "win_rate": 0.50139,
-        "heroes": 125,
-        "recent_matches": 300,
-        "frequent_peers": 48
-      },
-      "common_positions": [
-        {
-          "position": 3,
-          "label": "3号位劣单",
-          "share": 0.2722
-        },
-        {
-          "position": 4,
-          "label": "4号位游走",
-          "share": 0.2029
-        }
-      ],
       "status": "ready",
-      "position_summary": {
-        "1": {
-          "label": "1号位核心",
-          "share": 0.1942,
-          "weighted_games": 840.7
-        },
-        "2": {
-          "label": "2号位中单",
-          "share": 0.1681,
-          "weighted_games": 727.6
-        },
-        "3": {
-          "label": "3号位劣单",
-          "share": 0.2722,
-          "weighted_games": 1177.9
-        },
-        "4": {
-          "label": "4号位游走",
-          "share": 0.2029,
-          "weighted_games": 878.4
-        },
-        "5": {
-          "label": "5号位辅助",
-          "share": 0.1625,
-          "weighted_games": 703.5
-        }
-      },
+      "errors": [],
       "heroes": {
         "96": {
           "hero_id": 96,
@@ -10924,6 +10876,7 @@
           "primary_position": 2
         }
       },
+      "generated_at": "2026-06-07T04:55:28.756744+00:00",
       "top_recent_heroes": [
         {
           "hero_id": 29,
@@ -10986,18 +10939,65 @@
           "games": 7
         }
       ],
-      "errors": [],
-      "rank_profile": {
-        "rank_tier": 43,
-        "leaderboard_rank": null,
-        "mmr_estimate": null
-      },
       "player": {
         "account_id": 146241182,
         "steamid64": "76561198106506910",
         "personaname": "ball",
         "profileurl": "https://steamcommunity.com/profiles/76561198106506910/",
         "avatar": "https://avatars.steamstatic.com/986ceac7e19a5cd45f6ac813cf45dec3c77605df_full.jpg"
+      },
+      "common_positions": [
+        {
+          "position": 3,
+          "label": "3号位劣单",
+          "share": 0.2722
+        },
+        {
+          "position": 4,
+          "label": "4号位游走",
+          "share": 0.2029
+        }
+      ],
+      "summary": {
+        "games": 4328,
+        "wins": 2170,
+        "losses": 2158,
+        "win_rate": 0.50139,
+        "heroes": 125,
+        "recent_matches": 300,
+        "frequent_peers": 48
+      },
+      "rank_profile": {
+        "rank_tier": 43,
+        "leaderboard_rank": null,
+        "mmr_estimate": null
+      },
+      "position_summary": {
+        "1": {
+          "label": "1号位核心",
+          "share": 0.1942,
+          "weighted_games": 840.7
+        },
+        "2": {
+          "label": "2号位中单",
+          "share": 0.1681,
+          "weighted_games": 727.6
+        },
+        "3": {
+          "label": "3号位劣单",
+          "share": 0.2722,
+          "weighted_games": 1177.9
+        },
+        "4": {
+          "label": "4号位游走",
+          "share": 0.2029,
+          "weighted_games": 878.4
+        },
+        "5": {
+          "label": "5号位辅助",
+          "share": 0.1625,
+          "weighted_games": 703.5
+        }
       },
       "top_heroes": [
         {
@@ -11301,15 +11301,17 @@
       ]
     },
     {
-      "generated_at": "2026-06-06T19:46:27.910406+00:00",
-      "summary": {
-        "games": 0,
-        "wins": 0,
-        "losses": 0,
-        "win_rate": null,
-        "heroes": 0,
-        "recent_matches": 0,
-        "frequent_peers": 0
+      "status": "needs_data",
+      "errors": [],
+      "heroes": {},
+      "generated_at": "2026-06-07T04:55:29.643504+00:00",
+      "top_recent_heroes": [],
+      "player": {
+        "account_id": 383439919,
+        "steamid64": "76561198343705647",
+        "personaname": "唐到头了就是宋",
+        "profileurl": "https://steamcommunity.com/profiles/76561198343705647/",
+        "avatar": "https://avatars.steamstatic.com/e5061496d6567cf00c59fc211875a85b261d7764_full.jpg"
       },
       "common_positions": [
         {
@@ -11323,7 +11325,20 @@
           "share": 0.0
         }
       ],
-      "status": "needs_data",
+      "summary": {
+        "games": 0,
+        "wins": 0,
+        "losses": 0,
+        "win_rate": null,
+        "heroes": 0,
+        "recent_matches": 0,
+        "frequent_peers": 0
+      },
+      "rank_profile": {
+        "rank_tier": 35,
+        "leaderboard_rank": null,
+        "mmr_estimate": null
+      },
       "position_summary": {
         "1": {
           "label": "1号位核心",
@@ -11350,21 +11365,6 @@
           "share": 0.0,
           "weighted_games": 0.0
         }
-      },
-      "heroes": {},
-      "top_recent_heroes": [],
-      "errors": [],
-      "rank_profile": {
-        "rank_tier": 35,
-        "leaderboard_rank": null,
-        "mmr_estimate": null
-      },
-      "player": {
-        "account_id": 383439919,
-        "steamid64": "76561198343705647",
-        "personaname": "唐到头了就是宋",
-        "profileurl": "https://steamcommunity.com/profiles/76561198343705647/",
-        "avatar": "https://avatars.steamstatic.com/e5061496d6567cf00c59fc211875a85b261d7764_full.jpg"
       },
       "top_heroes": []
     }
