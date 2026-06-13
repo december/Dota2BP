@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "status": "ready",
-  "generated_at": "2026-06-13T14:24:39.997486+00:00",
+  "generated_at": "2026-06-13T19:54:14.152089+00:00",
   "player": {
     "account_id": 222404655,
     "steamid64": "76561198182670383",
@@ -10,15 +10,15 @@
     "avatar": "https://avatars.steamstatic.com/15896e4d49dc88cb268e9a4eb02a08ff5d913838_full.jpg"
   },
   "rank_profile": {
-    "rank_tier": 35,
+    "rank_tier": 34,
     "leaderboard_rank": null,
     "mmr_estimate": null
   },
   "summary": {
-    "games": 4013,
+    "games": 4017,
     "wins": 2037,
-    "losses": 1976,
-    "win_rate": 0.5076,
+    "losses": 1980,
+    "win_rate": 0.50709,
     "heroes": 114,
     "recent_matches": 300,
     "frequent_peers": 36
@@ -27,24 +27,24 @@
     "86": {
       "hero_id": 86,
       "name": "Rubick",
-      "games": 256,
+      "games": 257,
       "wins": 111,
-      "losses": 145,
-      "win_rate": 0.43359,
-      "recent_games": 36,
+      "losses": 146,
+      "win_rate": 0.43191,
+      "recent_games": 37,
       "recent_wins": 14,
-      "kda": 2.681
+      "kda": 2.673
     },
     "45": {
       "hero_id": 45,
       "name": "Pugna",
-      "games": 195,
+      "games": 196,
       "wins": 106,
-      "losses": 89,
-      "win_rate": 0.54359,
-      "recent_games": 52,
-      "recent_wins": 32,
-      "kda": 2.72
+      "losses": 90,
+      "win_rate": 0.54082,
+      "recent_games": 51,
+      "recent_wins": 31,
+      "kda": 2.724
     },
     "40": {
       "hero_id": 40,
@@ -60,13 +60,13 @@
     "37": {
       "hero_id": 37,
       "name": "Warlock",
-      "games": 154,
+      "games": 155,
       "wins": 93,
-      "losses": 61,
-      "win_rate": 0.6039,
-      "recent_games": 14,
+      "losses": 62,
+      "win_rate": 0.6,
+      "recent_games": 15,
       "recent_wins": 6,
-      "kda": 2.782
+      "kda": 2.722
     },
     "102": {
       "hero_id": 102,
@@ -108,9 +108,9 @@
       "wins": 47,
       "losses": 57,
       "win_rate": 0.45192,
-      "recent_games": 15,
+      "recent_games": 14,
       "recent_wins": 8,
-      "kda": 1.949
+      "kda": 1.966
     },
     "42": {
       "hero_id": 42,
@@ -181,13 +181,13 @@
     "29": {
       "hero_id": 29,
       "name": "Tidehunter",
-      "games": 70,
+      "games": 71,
       "wins": 41,
-      "losses": 29,
-      "win_rate": 0.58571,
-      "recent_games": 2,
+      "losses": 30,
+      "win_rate": 0.57746,
+      "recent_games": 3,
       "recent_wins": 2,
-      "kda": 5.125
+      "kda": 4.231
     },
     "90": {
       "hero_id": 90,
@@ -229,9 +229,9 @@
       "wins": 31,
       "losses": 32,
       "win_rate": 0.49206,
-      "recent_games": 12,
+      "recent_games": 11,
       "recent_wins": 5,
-      "kda": 2.089
+      "kda": 2.188
     },
     "108": {
       "hero_id": 108,
@@ -1283,24 +1283,24 @@
     {
       "hero_id": 86,
       "name": "Rubick",
-      "games": 256,
+      "games": 257,
       "wins": 111,
-      "losses": 145,
-      "win_rate": 0.43359,
-      "recent_games": 36,
+      "losses": 146,
+      "win_rate": 0.43191,
+      "recent_games": 37,
       "recent_wins": 14,
-      "kda": 2.681
+      "kda": 2.673
     },
     {
       "hero_id": 45,
       "name": "Pugna",
-      "games": 195,
+      "games": 196,
       "wins": 106,
-      "losses": 89,
-      "win_rate": 0.54359,
-      "recent_games": 52,
-      "recent_wins": 32,
-      "kda": 2.72
+      "losses": 90,
+      "win_rate": 0.54082,
+      "recent_games": 51,
+      "recent_wins": 31,
+      "kda": 2.724
     },
     {
       "hero_id": 40,
@@ -1316,13 +1316,13 @@
     {
       "hero_id": 37,
       "name": "Warlock",
-      "games": 154,
+      "games": 155,
       "wins": 93,
-      "losses": 61,
-      "win_rate": 0.6039,
-      "recent_games": 14,
+      "losses": 62,
+      "win_rate": 0.6,
+      "recent_games": 15,
       "recent_wins": 6,
-      "kda": 2.782
+      "kda": 2.722
     },
     {
       "hero_id": 102,
@@ -1364,9 +1364,9 @@
       "wins": 47,
       "losses": 57,
       "win_rate": 0.45192,
-      "recent_games": 15,
+      "recent_games": 14,
       "recent_wins": 8,
-      "kda": 1.949
+      "kda": 1.966
     },
     {
       "hero_id": 42,
@@ -1437,13 +1437,13 @@
     {
       "hero_id": 29,
       "name": "Tidehunter",
-      "games": 70,
+      "games": 71,
       "wins": 41,
-      "losses": 29,
-      "win_rate": 0.58571,
-      "recent_games": 2,
+      "losses": 30,
+      "win_rate": 0.57746,
+      "recent_games": 3,
       "recent_wins": 2,
-      "kda": 5.125
+      "kda": 4.231
     },
     {
       "hero_id": 90,
@@ -1483,12 +1483,12 @@
     {
       "hero_id": 45,
       "name": "Pugna",
-      "games": 52
+      "games": 51
     },
     {
       "hero_id": 86,
       "name": "Rubick",
-      "games": 36
+      "games": 37
     },
     {
       "hero_id": 84,
@@ -1496,18 +1496,18 @@
       "games": 25
     },
     {
+      "hero_id": 37,
+      "name": "Warlock",
+      "games": 15
+    },
+    {
       "hero_id": 14,
       "name": "Pudge",
-      "games": 15
+      "games": 14
     },
     {
       "hero_id": 102,
       "name": "Abaddon",
-      "games": 14
-    },
-    {
-      "hero_id": 37,
-      "name": "Warlock",
       "games": 14
     },
     {
@@ -1523,7 +1523,7 @@
     {
       "hero_id": 27,
       "name": "Shadow Shaman",
-      "games": 12
+      "games": 11
     },
     {
       "hero_id": 40,
