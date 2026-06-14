@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "status": "ready",
-  "generated_at": "2026-06-14T14:27:27.812669+00:00",
+  "generated_at": "2026-06-14T19:57:29.394542+00:00",
   "player": {
     "account_id": 222404655,
     "steamid64": "76561198182670383",
@@ -15,10 +15,10 @@
     "mmr_estimate": null
   },
   "summary": {
-    "games": 4017,
-    "wins": 2037,
+    "games": 4018,
+    "wins": 2038,
     "losses": 1980,
-    "win_rate": 0.50709,
+    "win_rate": 0.50722,
     "heroes": 114,
     "recent_matches": 300,
     "frequent_peers": 36
@@ -49,13 +49,13 @@
     "40": {
       "hero_id": 40,
       "name": "Venomancer",
-      "games": 175,
-      "wins": 107,
+      "games": 176,
+      "wins": 108,
       "losses": 68,
-      "win_rate": 0.61143,
-      "recent_games": 10,
-      "recent_wins": 8,
-      "kda": 3.088
+      "win_rate": 0.61364,
+      "recent_games": 11,
+      "recent_wins": 9,
+      "kda": 3.157
     },
     "37": {
       "hero_id": 37,
@@ -75,9 +75,9 @@
       "wins": 68,
       "losses": 50,
       "win_rate": 0.57627,
-      "recent_games": 14,
+      "recent_games": 13,
       "recent_wins": 8,
-      "kda": 3.488
+      "kda": 3.649
     },
     "84": {
       "hero_id": 84,
@@ -1305,13 +1305,13 @@
     {
       "hero_id": 40,
       "name": "Venomancer",
-      "games": 175,
-      "wins": 107,
+      "games": 176,
+      "wins": 108,
       "losses": 68,
-      "win_rate": 0.61143,
-      "recent_games": 10,
-      "recent_wins": 8,
-      "kda": 3.088
+      "win_rate": 0.61364,
+      "recent_games": 11,
+      "recent_wins": 9,
+      "kda": 3.157
     },
     {
       "hero_id": 37,
@@ -1331,9 +1331,9 @@
       "wins": 68,
       "losses": 50,
       "win_rate": 0.57627,
-      "recent_games": 14,
+      "recent_games": 13,
       "recent_wins": 8,
-      "kda": 3.488
+      "kda": 3.649
     },
     {
       "hero_id": 84,
@@ -1506,13 +1506,13 @@
       "games": 14
     },
     {
-      "hero_id": 102,
-      "name": "Abaddon",
-      "games": 14
-    },
-    {
       "hero_id": 131,
       "name": "Ring Master",
+      "games": 13
+    },
+    {
+      "hero_id": 102,
+      "name": "Abaddon",
       "games": 13
     },
     {
@@ -1521,14 +1521,14 @@
       "games": 13
     },
     {
-      "hero_id": 27,
-      "name": "Shadow Shaman",
+      "hero_id": 40,
+      "name": "Venomancer",
       "games": 11
     },
     {
-      "hero_id": 40,
-      "name": "Venomancer",
-      "games": 10
+      "hero_id": 27,
+      "name": "Shadow Shaman",
+      "games": 11
     },
     {
       "hero_id": 87,
