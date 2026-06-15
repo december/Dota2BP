@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "status": "ready",
-  "generated_at": "2026-06-15T12:41:34.534805+00:00",
+  "generated_at": "2026-06-15T21:24:17.154316+00:00",
   "player": {
     "account_id": 222404655,
     "steamid64": "76561198182670383",
@@ -15,10 +15,10 @@
     "mmr_estimate": null
   },
   "summary": {
-    "games": 4018,
+    "games": 4020,
     "wins": 2038,
-    "losses": 1980,
-    "win_rate": 0.50722,
+    "losses": 1982,
+    "win_rate": 0.50697,
     "heroes": 114,
     "recent_matches": 300,
     "frequent_peers": 36
@@ -31,9 +31,9 @@
       "wins": 111,
       "losses": 146,
       "win_rate": 0.43191,
-      "recent_games": 37,
+      "recent_games": 36,
       "recent_wins": 14,
-      "kda": 2.673
+      "kda": 2.757
     },
     "45": {
       "hero_id": 45,
@@ -64,9 +64,9 @@
       "wins": 93,
       "losses": 62,
       "win_rate": 0.6,
-      "recent_games": 15,
+      "recent_games": 14,
       "recent_wins": 6,
-      "kda": 2.722
+      "kda": 2.672
     },
     "102": {
       "hero_id": 102,
@@ -104,13 +104,13 @@
     "14": {
       "hero_id": 14,
       "name": "Pudge",
-      "games": 104,
+      "games": 105,
       "wins": 47,
-      "losses": 57,
-      "win_rate": 0.45192,
-      "recent_games": 14,
+      "losses": 58,
+      "win_rate": 0.44762,
+      "recent_games": 15,
       "recent_wins": 8,
-      "kda": 1.966
+      "kda": 1.916
     },
     "42": {
       "hero_id": 42,
@@ -684,6 +684,17 @@
       "recent_wins": 0,
       "kda": 0.0
     },
+    "131": {
+      "hero_id": 131,
+      "name": "Ring Master",
+      "games": 18,
+      "wins": 7,
+      "losses": 11,
+      "win_rate": 0.38889,
+      "recent_games": 14,
+      "recent_wins": 5,
+      "kda": 2.229
+    },
     "128": {
       "hero_id": 128,
       "name": "Snapfire",
@@ -694,17 +705,6 @@
       "recent_games": 4,
       "recent_wins": 3,
       "kda": 2.833
-    },
-    "131": {
-      "hero_id": 131,
-      "name": "Ring Master",
-      "games": 17,
-      "wins": 7,
-      "losses": 10,
-      "win_rate": 0.41176,
-      "recent_games": 13,
-      "recent_wins": 5,
-      "kda": 2.269
     },
     "101": {
       "hero_id": 101,
@@ -1287,9 +1287,9 @@
       "wins": 111,
       "losses": 146,
       "win_rate": 0.43191,
-      "recent_games": 37,
+      "recent_games": 36,
       "recent_wins": 14,
-      "kda": 2.673
+      "kda": 2.757
     },
     {
       "hero_id": 45,
@@ -1320,9 +1320,9 @@
       "wins": 93,
       "losses": 62,
       "win_rate": 0.6,
-      "recent_games": 15,
+      "recent_games": 14,
       "recent_wins": 6,
-      "kda": 2.722
+      "kda": 2.672
     },
     {
       "hero_id": 102,
@@ -1360,13 +1360,13 @@
     {
       "hero_id": 14,
       "name": "Pudge",
-      "games": 104,
+      "games": 105,
       "wins": 47,
-      "losses": 57,
-      "win_rate": 0.45192,
-      "recent_games": 14,
+      "losses": 58,
+      "win_rate": 0.44762,
+      "recent_games": 15,
       "recent_wins": 8,
-      "kda": 1.966
+      "kda": 1.916
     },
     {
       "hero_id": 42,
@@ -1488,7 +1488,7 @@
     {
       "hero_id": 86,
       "name": "Rubick",
-      "games": 37
+      "games": 36
     },
     {
       "hero_id": 84,
@@ -1496,19 +1496,19 @@
       "games": 25
     },
     {
-      "hero_id": 37,
-      "name": "Warlock",
-      "games": 15
-    },
-    {
       "hero_id": 14,
       "name": "Pudge",
-      "games": 14
+      "games": 15
     },
     {
       "hero_id": 131,
       "name": "Ring Master",
-      "games": 13
+      "games": 14
+    },
+    {
+      "hero_id": 37,
+      "name": "Warlock",
+      "games": 14
     },
     {
       "hero_id": 102,
