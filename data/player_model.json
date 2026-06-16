@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "status": "ready",
-  "generated_at": "2026-06-16T17:20:20.764434+00:00",
+  "generated_at": "2026-06-16T21:18:29.006126+00:00",
   "player": {
     "account_id": 222404655,
     "steamid64": "76561198182670383",
@@ -15,10 +15,10 @@
     "mmr_estimate": null
   },
   "summary": {
-    "games": 4021,
-    "wins": 2038,
+    "games": 4022,
+    "wins": 2039,
     "losses": 1983,
-    "win_rate": 0.50684,
+    "win_rate": 0.50696,
     "heroes": 114,
     "recent_matches": 300,
     "frequent_peers": 36
@@ -31,9 +31,9 @@
       "wins": 111,
       "losses": 146,
       "win_rate": 0.43191,
-      "recent_games": 36,
+      "recent_games": 35,
       "recent_wins": 14,
-      "kda": 2.757
+      "kda": 2.677
     },
     "45": {
       "hero_id": 45,
@@ -71,13 +71,13 @@
     "102": {
       "hero_id": 102,
       "name": "Abaddon",
-      "games": 118,
-      "wins": 68,
+      "games": 119,
+      "wins": 69,
       "losses": 50,
-      "win_rate": 0.57627,
-      "recent_games": 13,
-      "recent_wins": 8,
-      "kda": 3.649
+      "win_rate": 0.57983,
+      "recent_games": 14,
+      "recent_wins": 9,
+      "kda": 3.675
     },
     "84": {
       "hero_id": 84,
@@ -1287,9 +1287,9 @@
       "wins": 111,
       "losses": 146,
       "win_rate": 0.43191,
-      "recent_games": 36,
+      "recent_games": 35,
       "recent_wins": 14,
-      "kda": 2.757
+      "kda": 2.677
     },
     {
       "hero_id": 45,
@@ -1327,13 +1327,13 @@
     {
       "hero_id": 102,
       "name": "Abaddon",
-      "games": 118,
-      "wins": 68,
+      "games": 119,
+      "wins": 69,
       "losses": 50,
-      "win_rate": 0.57627,
-      "recent_games": 13,
-      "recent_wins": 8,
-      "kda": 3.649
+      "win_rate": 0.57983,
+      "recent_games": 14,
+      "recent_wins": 9,
+      "kda": 3.675
     },
     {
       "hero_id": 84,
@@ -1488,7 +1488,7 @@
     {
       "hero_id": 86,
       "name": "Rubick",
-      "games": 36
+      "games": 35
     },
     {
       "hero_id": 84,
@@ -1501,6 +1501,11 @@
       "games": 15
     },
     {
+      "hero_id": 102,
+      "name": "Abaddon",
+      "games": 14
+    },
+    {
       "hero_id": 131,
       "name": "Ring Master",
       "games": 14
@@ -1509,11 +1514,6 @@
       "hero_id": 37,
       "name": "Warlock",
       "games": 14
-    },
-    {
-      "hero_id": 102,
-      "name": "Abaddon",
-      "games": 13
     },
     {
       "hero_id": 31,
