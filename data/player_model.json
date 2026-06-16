@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "status": "ready",
-  "generated_at": "2026-06-16T11:33:26.428194+00:00",
+  "generated_at": "2026-06-16T17:20:20.764434+00:00",
   "player": {
     "account_id": 222404655,
     "steamid64": "76561198182670383",
@@ -15,10 +15,10 @@
     "mmr_estimate": null
   },
   "summary": {
-    "games": 4020,
+    "games": 4021,
     "wins": 2038,
-    "losses": 1982,
-    "win_rate": 0.50697,
+    "losses": 1983,
+    "win_rate": 0.50684,
     "heroes": 114,
     "recent_matches": 300,
     "frequent_peers": 36
@@ -662,6 +662,17 @@
       "recent_wins": 0,
       "kda": 0.0
     },
+    "131": {
+      "hero_id": 131,
+      "name": "Ring Master",
+      "games": 19,
+      "wins": 7,
+      "losses": 12,
+      "win_rate": 0.36842,
+      "recent_games": 14,
+      "recent_wins": 4,
+      "kda": 1.948
+    },
     "33": {
       "hero_id": 33,
       "name": "Enigma",
@@ -683,17 +694,6 @@
       "recent_games": 0,
       "recent_wins": 0,
       "kda": 0.0
-    },
-    "131": {
-      "hero_id": 131,
-      "name": "Ring Master",
-      "games": 18,
-      "wins": 7,
-      "losses": 11,
-      "win_rate": 0.38889,
-      "recent_games": 14,
-      "recent_wins": 5,
-      "kda": 2.229
     },
     "128": {
       "hero_id": 128,
