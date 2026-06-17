@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "status": "ready",
-  "generated_at": "2026-06-17T16:02:58.400327+00:00",
+  "generated_at": "2026-06-17T20:29:36.010750+00:00",
   "player": {
     "account_id": 222404655,
     "steamid64": "76561198182670383",
@@ -15,10 +15,10 @@
     "mmr_estimate": null
   },
   "summary": {
-    "games": 4022,
+    "games": 4024,
     "wins": 2039,
-    "losses": 1983,
-    "win_rate": 0.50696,
+    "losses": 1985,
+    "win_rate": 0.50671,
     "heroes": 114,
     "recent_matches": 300,
     "frequent_peers": 36
@@ -42,9 +42,9 @@
       "wins": 106,
       "losses": 90,
       "win_rate": 0.54082,
-      "recent_games": 51,
+      "recent_games": 50,
       "recent_wins": 31,
-      "kda": 2.724
+      "kda": 2.756
     },
     "40": {
       "hero_id": 40,
@@ -64,9 +64,9 @@
       "wins": 93,
       "losses": 62,
       "win_rate": 0.6,
-      "recent_games": 14,
-      "recent_wins": 6,
-      "kda": 2.672
+      "recent_games": 13,
+      "recent_wins": 5,
+      "kda": 2.385
     },
     "102": {
       "hero_id": 102,
@@ -302,13 +302,13 @@
     "71": {
       "hero_id": 71,
       "name": "Spirit Breaker",
-      "games": 51,
+      "games": 52,
       "wins": 27,
-      "losses": 24,
-      "win_rate": 0.52941,
-      "recent_games": 7,
+      "losses": 25,
+      "win_rate": 0.51923,
+      "recent_games": 8,
       "recent_wins": 4,
-      "kda": 2.966
+      "kda": 2.8
     },
     "99": {
       "hero_id": 99,
@@ -343,6 +343,17 @@
       "recent_wins": 0,
       "kda": 1.6
     },
+    "87": {
+      "hero_id": 87,
+      "name": "Disruptor",
+      "games": 47,
+      "wins": 21,
+      "losses": 26,
+      "win_rate": 0.44681,
+      "recent_games": 10,
+      "recent_wins": 4,
+      "kda": 2.13
+    },
     "35": {
       "hero_id": 35,
       "name": "Sniper",
@@ -375,17 +386,6 @@
       "recent_games": 2,
       "recent_wins": 1,
       "kda": 1.778
-    },
-    "87": {
-      "hero_id": 87,
-      "name": "Disruptor",
-      "games": 46,
-      "wins": 21,
-      "losses": 25,
-      "win_rate": 0.45652,
-      "recent_games": 9,
-      "recent_wins": 4,
-      "kda": 2.194
     },
     "49": {
       "hero_id": 49,
@@ -1298,9 +1298,9 @@
       "wins": 106,
       "losses": 90,
       "win_rate": 0.54082,
-      "recent_games": 51,
+      "recent_games": 50,
       "recent_wins": 31,
-      "kda": 2.724
+      "kda": 2.756
     },
     {
       "hero_id": 40,
@@ -1320,9 +1320,9 @@
       "wins": 93,
       "losses": 62,
       "win_rate": 0.6,
-      "recent_games": 14,
-      "recent_wins": 6,
-      "kda": 2.672
+      "recent_games": 13,
+      "recent_wins": 5,
+      "kda": 2.385
     },
     {
       "hero_id": 102,
@@ -1483,7 +1483,7 @@
     {
       "hero_id": 45,
       "name": "Pugna",
-      "games": 51
+      "games": 50
     },
     {
       "hero_id": 86,
@@ -1513,7 +1513,7 @@
     {
       "hero_id": 37,
       "name": "Warlock",
-      "games": 14
+      "games": 13
     },
     {
       "hero_id": 31,
@@ -1533,11 +1533,11 @@
     {
       "hero_id": 87,
       "name": "Disruptor",
-      "games": 9
+      "games": 10
     },
     {
-      "hero_id": 30,
-      "name": "Witch Doctor",
+      "hero_id": 71,
+      "name": "Spirit Breaker",
       "games": 8
     }
   ],
