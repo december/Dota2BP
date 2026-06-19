@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "status": "ready",
-  "generated_at": "2026-06-19T15:41:59.387907+00:00",
+  "generated_at": "2026-06-19T20:02:37.056470+00:00",
   "player": {
     "account_id": 222404655,
     "steamid64": "76561198182670383",
@@ -15,9 +15,9 @@
     "mmr_estimate": null
   },
   "summary": {
-    "games": 4024,
-    "wins": 2039,
-    "losses": 1985,
+    "games": 4026,
+    "wins": 2040,
+    "losses": 1986,
     "win_rate": 0.50671,
     "heroes": 114,
     "recent_matches": 300,
@@ -38,24 +38,24 @@
     "45": {
       "hero_id": 45,
       "name": "Pugna",
-      "games": 196,
-      "wins": 106,
+      "games": 197,
+      "wins": 107,
       "losses": 90,
-      "win_rate": 0.54082,
-      "recent_games": 50,
-      "recent_wins": 31,
-      "kda": 2.756
+      "win_rate": 0.54315,
+      "recent_games": 51,
+      "recent_wins": 32,
+      "kda": 2.761
     },
     "40": {
       "hero_id": 40,
       "name": "Venomancer",
-      "games": 176,
+      "games": 177,
       "wins": 108,
-      "losses": 68,
-      "win_rate": 0.61364,
-      "recent_games": 11,
+      "losses": 69,
+      "win_rate": 0.61017,
+      "recent_games": 12,
       "recent_wins": 9,
-      "kda": 3.157
+      "kda": 2.956
     },
     "37": {
       "hero_id": 37,
@@ -141,9 +141,9 @@
       "wins": 47,
       "losses": 35,
       "win_rate": 0.57317,
-      "recent_games": 8,
-      "recent_wins": 5,
-      "kda": 2.643
+      "recent_games": 7,
+      "recent_wins": 4,
+      "kda": 2.39
     },
     "36": {
       "hero_id": 36,
@@ -229,9 +229,9 @@
       "wins": 31,
       "losses": 32,
       "win_rate": 0.49206,
-      "recent_games": 11,
+      "recent_games": 10,
       "recent_wins": 5,
-      "kda": 2.188
+      "kda": 2.404
     },
     "108": {
       "hero_id": 108,
@@ -1294,24 +1294,24 @@
     {
       "hero_id": 45,
       "name": "Pugna",
-      "games": 196,
-      "wins": 106,
+      "games": 197,
+      "wins": 107,
       "losses": 90,
-      "win_rate": 0.54082,
-      "recent_games": 50,
-      "recent_wins": 31,
-      "kda": 2.756
+      "win_rate": 0.54315,
+      "recent_games": 51,
+      "recent_wins": 32,
+      "kda": 2.761
     },
     {
       "hero_id": 40,
       "name": "Venomancer",
-      "games": 176,
+      "games": 177,
       "wins": 108,
-      "losses": 68,
-      "win_rate": 0.61364,
-      "recent_games": 11,
+      "losses": 69,
+      "win_rate": 0.61017,
+      "recent_games": 12,
       "recent_wins": 9,
-      "kda": 3.157
+      "kda": 2.956
     },
     {
       "hero_id": 37,
@@ -1397,9 +1397,9 @@
       "wins": 47,
       "losses": 35,
       "win_rate": 0.57317,
-      "recent_games": 8,
-      "recent_wins": 5,
-      "kda": 2.643
+      "recent_games": 7,
+      "recent_wins": 4,
+      "kda": 2.39
     },
     {
       "hero_id": 36,
@@ -1483,7 +1483,7 @@
     {
       "hero_id": 45,
       "name": "Pugna",
-      "games": 50
+      "games": 51
     },
     {
       "hero_id": 86,
@@ -1523,16 +1523,16 @@
     {
       "hero_id": 40,
       "name": "Venomancer",
-      "games": 11
-    },
-    {
-      "hero_id": 27,
-      "name": "Shadow Shaman",
-      "games": 11
+      "games": 12
     },
     {
       "hero_id": 87,
       "name": "Disruptor",
+      "games": 10
+    },
+    {
+      "hero_id": 27,
+      "name": "Shadow Shaman",
       "games": 10
     },
     {
