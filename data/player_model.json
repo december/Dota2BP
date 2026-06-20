@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "status": "ready",
-  "generated_at": "2026-06-20T09:38:16.385300+00:00",
+  "generated_at": "2026-06-20T14:29:03.452873+00:00",
   "player": {
     "account_id": 222404655,
     "steamid64": "76561198182670383",
@@ -15,10 +15,10 @@
     "mmr_estimate": null
   },
   "summary": {
-    "games": 4026,
-    "wins": 2040,
-    "losses": 1986,
-    "win_rate": 0.50671,
+    "games": 4031,
+    "wins": 2043,
+    "losses": 1988,
+    "win_rate": 0.50682,
     "heroes": 114,
     "recent_matches": 300,
     "frequent_peers": 36
@@ -27,13 +27,13 @@
     "86": {
       "hero_id": 86,
       "name": "Rubick",
-      "games": 257,
-      "wins": 111,
+      "games": 258,
+      "wins": 112,
       "losses": 146,
-      "win_rate": 0.43191,
-      "recent_games": 35,
-      "recent_wins": 14,
-      "kda": 2.677
+      "win_rate": 0.43411,
+      "recent_games": 36,
+      "recent_wins": 15,
+      "kda": 2.764
     },
     "45": {
       "hero_id": 45,
@@ -71,13 +71,13 @@
     "102": {
       "hero_id": 102,
       "name": "Abaddon",
-      "games": 119,
-      "wins": 69,
+      "games": 120,
+      "wins": 70,
       "losses": 50,
-      "win_rate": 0.57983,
+      "win_rate": 0.58333,
       "recent_games": 14,
       "recent_wins": 9,
-      "kda": 3.675
+      "kda": 3.5
     },
     "84": {
       "hero_id": 84,
@@ -104,13 +104,13 @@
     "14": {
       "hero_id": 14,
       "name": "Pudge",
-      "games": 105,
-      "wins": 47,
+      "games": 106,
+      "wins": 48,
       "losses": 58,
-      "win_rate": 0.44762,
+      "win_rate": 0.45283,
       "recent_games": 15,
       "recent_wins": 8,
-      "kda": 1.916
+      "kda": 1.898
     },
     "42": {
       "hero_id": 42,
@@ -170,13 +170,13 @@
     "31": {
       "hero_id": 31,
       "name": "Lich",
-      "games": 73,
+      "games": 74,
       "wins": 42,
-      "losses": 31,
-      "win_rate": 0.57534,
-      "recent_games": 13,
+      "losses": 32,
+      "win_rate": 0.56757,
+      "recent_games": 14,
       "recent_wins": 5,
-      "kda": 2.395
+      "kda": 2.27
     },
     "29": {
       "hero_id": 29,
@@ -196,9 +196,9 @@
       "wins": 33,
       "losses": 34,
       "win_rate": 0.49254,
-      "recent_games": 5,
+      "recent_games": 4,
       "recent_wins": 1,
-      "kda": 1.48
+      "kda": 1.73
     },
     "26": {
       "hero_id": 26,
@@ -302,13 +302,13 @@
     "71": {
       "hero_id": 71,
       "name": "Spirit Breaker",
-      "games": 52,
+      "games": 53,
       "wins": 27,
-      "losses": 25,
-      "win_rate": 0.51923,
-      "recent_games": 8,
+      "losses": 26,
+      "win_rate": 0.50943,
+      "recent_games": 9,
       "recent_wins": 4,
-      "kda": 2.8
+      "kda": 2.614
     },
     "99": {
       "hero_id": 99,
@@ -317,9 +317,9 @@
       "wins": 15,
       "losses": 35,
       "win_rate": 0.3,
-      "recent_games": 1,
+      "recent_games": 0,
       "recent_wins": 0,
-      "kda": 0.5
+      "kda": 0.0
     },
     "43": {
       "hero_id": 43,
@@ -350,9 +350,9 @@
       "wins": 21,
       "losses": 26,
       "win_rate": 0.44681,
-      "recent_games": 10,
+      "recent_games": 9,
       "recent_wins": 4,
-      "kda": 2.13
+      "kda": 2.329
     },
     "35": {
       "hero_id": 35,
@@ -1283,13 +1283,13 @@
     {
       "hero_id": 86,
       "name": "Rubick",
-      "games": 257,
-      "wins": 111,
+      "games": 258,
+      "wins": 112,
       "losses": 146,
-      "win_rate": 0.43191,
-      "recent_games": 35,
-      "recent_wins": 14,
-      "kda": 2.677
+      "win_rate": 0.43411,
+      "recent_games": 36,
+      "recent_wins": 15,
+      "kda": 2.764
     },
     {
       "hero_id": 45,
@@ -1327,13 +1327,13 @@
     {
       "hero_id": 102,
       "name": "Abaddon",
-      "games": 119,
-      "wins": 69,
+      "games": 120,
+      "wins": 70,
       "losses": 50,
-      "win_rate": 0.57983,
+      "win_rate": 0.58333,
       "recent_games": 14,
       "recent_wins": 9,
-      "kda": 3.675
+      "kda": 3.5
     },
     {
       "hero_id": 84,
@@ -1360,13 +1360,13 @@
     {
       "hero_id": 14,
       "name": "Pudge",
-      "games": 105,
-      "wins": 47,
+      "games": 106,
+      "wins": 48,
       "losses": 58,
-      "win_rate": 0.44762,
+      "win_rate": 0.45283,
       "recent_games": 15,
       "recent_wins": 8,
-      "kda": 1.916
+      "kda": 1.898
     },
     {
       "hero_id": 42,
@@ -1426,13 +1426,13 @@
     {
       "hero_id": 31,
       "name": "Lich",
-      "games": 73,
+      "games": 74,
       "wins": 42,
-      "losses": 31,
-      "win_rate": 0.57534,
-      "recent_games": 13,
+      "losses": 32,
+      "win_rate": 0.56757,
+      "recent_games": 14,
       "recent_wins": 5,
-      "kda": 2.395
+      "kda": 2.27
     },
     {
       "hero_id": 29,
@@ -1452,9 +1452,9 @@
       "wins": 33,
       "losses": 34,
       "win_rate": 0.49254,
-      "recent_games": 5,
+      "recent_games": 4,
       "recent_wins": 1,
-      "kda": 1.48
+      "kda": 1.73
     },
     {
       "hero_id": 26,
@@ -1488,7 +1488,7 @@
     {
       "hero_id": 86,
       "name": "Rubick",
-      "games": 35
+      "games": 36
     },
     {
       "hero_id": 84,
@@ -1499,6 +1499,11 @@
       "hero_id": 14,
       "name": "Pudge",
       "games": 15
+    },
+    {
+      "hero_id": 31,
+      "name": "Lich",
+      "games": 14
     },
     {
       "hero_id": 102,
@@ -1516,19 +1521,9 @@
       "games": 13
     },
     {
-      "hero_id": 31,
-      "name": "Lich",
-      "games": 13
-    },
-    {
       "hero_id": 40,
       "name": "Venomancer",
       "games": 12
-    },
-    {
-      "hero_id": 87,
-      "name": "Disruptor",
-      "games": 10
     },
     {
       "hero_id": 27,
@@ -1538,7 +1533,12 @@
     {
       "hero_id": 71,
       "name": "Spirit Breaker",
-      "games": 8
+      "games": 9
+    },
+    {
+      "hero_id": 87,
+      "name": "Disruptor",
+      "games": 9
     }
   ],
   "peers": [],

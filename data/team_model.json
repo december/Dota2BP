@@ -1,117 +1,77 @@
 {
   "schema": 1,
   "status": "ready",
-  "generated_at": "2026-06-20T09:38:28.375424+00:00",
+  "generated_at": "2026-06-20T14:29:15.119779+00:00",
   "source": "OpenDota public aggregate endpoints plus public Steam profile pages",
   "players": [
     {
-      "rank_profile": {
-        "rank_tier": 34,
-        "leaderboard_rank": null,
-        "mmr_estimate": null
-      },
-      "status": "ready",
+      "common_positions": [
+        {
+          "position": 5,
+          "label": "5号位辅助",
+          "share": 0.2806
+        },
+        {
+          "position": 4,
+          "label": "4号位游走",
+          "share": 0.2366
+        }
+      ],
       "position_summary": {
         "1": {
           "label": "1号位核心",
           "share": 0.1193,
-          "weighted_games": 480.5
+          "weighted_games": 480.8
         },
         "2": {
           "label": "2号位中单",
-          "share": 0.1532,
-          "weighted_games": 616.6
+          "share": 0.1531,
+          "weighted_games": 617.2
         },
         "3": {
           "label": "3号位劣单",
-          "share": 0.2103,
-          "weighted_games": 846.8
+          "share": 0.2104,
+          "weighted_games": 848.0
         },
         "4": {
           "label": "4号位游走",
           "share": 0.2366,
-          "weighted_games": 952.5
+          "weighted_games": 953.9
         },
         "5": {
           "label": "5号位辅助",
           "share": 0.2806,
-          "weighted_games": 1129.6
+          "weighted_games": 1131.2
         }
       },
-      "top_recent_heroes": [
-        {
-          "hero_id": 45,
-          "name": "Pugna",
-          "games": 51
-        },
-        {
-          "hero_id": 86,
-          "name": "Rubick",
-          "games": 35
-        },
-        {
-          "hero_id": 84,
-          "name": "Ogre Magi",
-          "games": 25
-        },
-        {
-          "hero_id": 14,
-          "name": "Pudge",
-          "games": 15
-        },
-        {
-          "hero_id": 102,
-          "name": "Abaddon",
-          "games": 14
-        },
-        {
-          "hero_id": 131,
-          "name": "Ring Master",
-          "games": 14
-        },
-        {
-          "hero_id": 37,
-          "name": "Warlock",
-          "games": 13
-        },
-        {
-          "hero_id": 31,
-          "name": "Lich",
-          "games": 13
-        },
-        {
-          "hero_id": 40,
-          "name": "Venomancer",
-          "games": 12
-        },
-        {
-          "hero_id": 87,
-          "name": "Disruptor",
-          "games": 10
-        },
-        {
-          "hero_id": 27,
-          "name": "Shadow Shaman",
-          "games": 10
-        },
-        {
-          "hero_id": 71,
-          "name": "Spirit Breaker",
-          "games": 8
-        }
-      ],
-      "errors": [],
+      "player": {
+        "account_id": 222404655,
+        "steamid64": "76561198182670383",
+        "personaname": "LouisEX",
+        "profileurl": "https://steamcommunity.com/profiles/76561198182670383/",
+        "avatar": "https://avatars.steamstatic.com/15896e4d49dc88cb268e9a4eb02a08ff5d913838_full.jpg"
+      },
+      "generated_at": "2026-06-20T14:29:04.379801+00:00",
+      "summary": {
+        "games": 4031,
+        "wins": 2043,
+        "losses": 1988,
+        "win_rate": 0.50682,
+        "heroes": 114,
+        "recent_matches": 300,
+        "frequent_peers": 36
+      },
       "top_heroes": [
         {
           "hero_id": 86,
           "name": "Rubick",
-          "games": 257,
-          "wins": 111,
+          "games": 258,
+          "wins": 112,
           "losses": 146,
-          "win_rate": 0.43191,
-          "recent_games": 35,
-          "recent_wins": 14,
-          "kda": 2.677,
+          "win_rate": 0.43411,
+          "recent_games": 36,
+          "recent_wins": 15,
+          "kda": 2.764,
           "positions": {
             "4": 0.4692,
             "5": 0.4334
@@ -171,13 +131,13 @@
         {
           "hero_id": 102,
           "name": "Abaddon",
-          "games": 119,
-          "wins": 69,
+          "games": 120,
+          "wins": 70,
           "losses": 50,
-          "win_rate": 0.57983,
+          "win_rate": 0.58333,
           "recent_games": 14,
           "recent_wins": 9,
-          "kda": 3.675,
+          "kda": 3.5,
           "positions": {
             "1": 0.1254,
             "3": 0.3806,
@@ -221,13 +181,13 @@
         {
           "hero_id": 14,
           "name": "Pudge",
-          "games": 105,
-          "wins": 47,
+          "games": 106,
+          "wins": 48,
           "losses": 58,
-          "win_rate": 0.44762,
+          "win_rate": 0.45283,
           "recent_games": 15,
           "recent_wins": 8,
-          "kda": 1.916,
+          "kda": 1.898,
           "positions": {
             "2": 0.2803,
             "3": 0.3611,
@@ -320,13 +280,13 @@
         {
           "hero_id": 31,
           "name": "Lich",
-          "games": 73,
+          "games": 74,
           "wins": 42,
-          "losses": 31,
-          "win_rate": 0.57534,
-          "recent_games": 13,
+          "losses": 32,
+          "win_rate": 0.56757,
+          "recent_games": 14,
           "recent_wins": 5,
-          "kda": 2.395,
+          "kda": 2.27,
           "positions": {
             "2": 0.1212,
             "4": 0.1928,
@@ -359,9 +319,9 @@
           "wins": 33,
           "losses": 34,
           "win_rate": 0.49254,
-          "recent_games": 5,
+          "recent_games": 4,
           "recent_wins": 1,
-          "kda": 1.48,
+          "kda": 1.73,
           "positions": {
             "4": 0.4692,
             "5": 0.4334
@@ -402,17 +362,79 @@
           "primary_position": 4
         }
       ],
+      "top_recent_heroes": [
+        {
+          "hero_id": 45,
+          "name": "Pugna",
+          "games": 51
+        },
+        {
+          "hero_id": 86,
+          "name": "Rubick",
+          "games": 36
+        },
+        {
+          "hero_id": 84,
+          "name": "Ogre Magi",
+          "games": 25
+        },
+        {
+          "hero_id": 14,
+          "name": "Pudge",
+          "games": 15
+        },
+        {
+          "hero_id": 31,
+          "name": "Lich",
+          "games": 14
+        },
+        {
+          "hero_id": 102,
+          "name": "Abaddon",
+          "games": 14
+        },
+        {
+          "hero_id": 131,
+          "name": "Ring Master",
+          "games": 14
+        },
+        {
+          "hero_id": 37,
+          "name": "Warlock",
+          "games": 13
+        },
+        {
+          "hero_id": 40,
+          "name": "Venomancer",
+          "games": 12
+        },
+        {
+          "hero_id": 27,
+          "name": "Shadow Shaman",
+          "games": 10
+        },
+        {
+          "hero_id": 71,
+          "name": "Spirit Breaker",
+          "games": 9
+        },
+        {
+          "hero_id": 87,
+          "name": "Disruptor",
+          "games": 9
+        }
+      ],
       "heroes": {
         "86": {
           "hero_id": 86,
           "name": "Rubick",
-          "games": 257,
-          "wins": 111,
+          "games": 258,
+          "wins": 112,
           "losses": 146,
-          "win_rate": 0.43191,
-          "recent_games": 35,
-          "recent_wins": 14,
-          "kda": 2.677,
+          "win_rate": 0.43411,
+          "recent_games": 36,
+          "recent_wins": 15,
+          "kda": 2.764,
           "positions": {
             "4": 0.4692,
             "5": 0.4334
@@ -472,13 +494,13 @@
         "102": {
           "hero_id": 102,
           "name": "Abaddon",
-          "games": 119,
-          "wins": 69,
+          "games": 120,
+          "wins": 70,
           "losses": 50,
-          "win_rate": 0.57983,
+          "win_rate": 0.58333,
           "recent_games": 14,
           "recent_wins": 9,
-          "kda": 3.675,
+          "kda": 3.5,
           "positions": {
             "1": 0.1254,
             "3": 0.3806,
@@ -522,13 +544,13 @@
         "14": {
           "hero_id": 14,
           "name": "Pudge",
-          "games": 105,
-          "wins": 47,
+          "games": 106,
+          "wins": 48,
           "losses": 58,
-          "win_rate": 0.44762,
+          "win_rate": 0.45283,
           "recent_games": 15,
           "recent_wins": 8,
-          "kda": 1.916,
+          "kda": 1.898,
           "positions": {
             "2": 0.2803,
             "3": 0.3611,
@@ -621,13 +643,13 @@
         "31": {
           "hero_id": 31,
           "name": "Lich",
-          "games": 73,
+          "games": 74,
           "wins": 42,
-          "losses": 31,
-          "win_rate": 0.57534,
-          "recent_games": 13,
+          "losses": 32,
+          "win_rate": 0.56757,
+          "recent_games": 14,
           "recent_wins": 5,
-          "kda": 2.395,
+          "kda": 2.27,
           "positions": {
             "2": 0.1212,
             "4": 0.1928,
@@ -660,9 +682,9 @@
           "wins": 33,
           "losses": 34,
           "win_rate": 0.49254,
-          "recent_games": 5,
+          "recent_games": 4,
           "recent_wins": 1,
-          "kda": 1.48,
+          "kda": 1.73,
           "positions": {
             "4": 0.4692,
             "5": 0.4334
@@ -824,13 +846,13 @@
         "71": {
           "hero_id": 71,
           "name": "Spirit Breaker",
-          "games": 52,
+          "games": 53,
           "wins": 27,
-          "losses": 25,
-          "win_rate": 0.51923,
-          "recent_games": 8,
+          "losses": 26,
+          "win_rate": 0.50943,
+          "recent_games": 9,
           "recent_wins": 4,
-          "kda": 2.8,
+          "kda": 2.614,
           "positions": {
             "1": 0.1351,
             "3": 0.4284,
@@ -845,9 +867,9 @@
           "wins": 15,
           "losses": 35,
           "win_rate": 0.3,
-          "recent_games": 1,
+          "recent_games": 0,
           "recent_wins": 0,
-          "kda": 0.5,
+          "kda": 0.0,
           "positions": {
             "1": 0.1657,
             "2": 0.1538,
@@ -895,9 +917,9 @@
           "wins": 21,
           "losses": 26,
           "win_rate": 0.44681,
-          "recent_games": 10,
+          "recent_games": 9,
           "recent_wins": 4,
-          "kda": 2.13,
+          "kda": 2.329,
           "positions": {
             "3": 0.1242,
             "4": 0.2525,
@@ -2299,43 +2321,27 @@
           "primary_position": 5
         }
       },
-      "generated_at": "2026-06-20T09:38:17.398503+00:00",
-      "common_positions": [
-        {
-          "position": 5,
-          "label": "5号位辅助",
-          "share": 0.2806
-        },
-        {
-          "position": 4,
-          "label": "4号位游走",
-          "share": 0.2366
-        }
-      ],
-      "summary": {
-        "games": 4026,
-        "wins": 2040,
-        "losses": 1986,
-        "win_rate": 0.50671,
-        "heroes": 114,
-        "recent_matches": 300,
-        "frequent_peers": 36
-      },
-      "player": {
-        "account_id": 222404655,
-        "steamid64": "76561198182670383",
-        "personaname": "LouisEX",
-        "profileurl": "https://steamcommunity.com/profiles/76561198182670383/",
-        "avatar": "https://avatars.steamstatic.com/15896e4d49dc88cb268e9a4eb02a08ff5d913838_full.jpg"
-      }
-    },
-    {
       "rank_profile": {
-        "rank_tier": 45,
+        "rank_tier": 34,
         "leaderboard_rank": null,
         "mmr_estimate": null
       },
-      "status": "needs_data",
+      "errors": [],
+      "status": "ready"
+    },
+    {
+      "common_positions": [
+        {
+          "position": 1,
+          "label": "1号位核心",
+          "share": 0.0
+        },
+        {
+          "position": 2,
+          "label": "2号位中单",
+          "share": 0.0
+        }
+      ],
       "position_summary": {
         "1": {
           "label": "1号位核心",
@@ -2363,23 +2369,14 @@
           "weighted_games": 0.0
         }
       },
-      "top_recent_heroes": [],
-      "errors": [],
-      "top_heroes": [],
-      "heroes": {},
-      "generated_at": "2026-06-20T09:38:18.341012+00:00",
-      "common_positions": [
-        {
-          "position": 1,
-          "label": "1号位核心",
-          "share": 0.0
-        },
-        {
-          "position": 2,
-          "label": "2号位中单",
-          "share": 0.0
-        }
-      ],
+      "player": {
+        "account_id": 359883205,
+        "steamid64": "76561198320148933",
+        "personaname": "super magicdry",
+        "profileurl": "https://steamcommunity.com/profiles/76561198320148933/",
+        "avatar": "https://avatars.steamstatic.com/fef49e7fa7e1997310d705b2a6158ff8dc1cdfeb_full.jpg"
+      },
+      "generated_at": "2026-06-20T14:29:05.347454+00:00",
       "summary": {
         "games": 0,
         "wins": 0,
@@ -2389,21 +2386,30 @@
         "recent_matches": 0,
         "frequent_peers": 0
       },
-      "player": {
-        "account_id": 359883205,
-        "steamid64": "76561198320148933",
-        "personaname": "super magicdry",
-        "profileurl": "https://steamcommunity.com/profiles/76561198320148933/",
-        "avatar": "https://avatars.steamstatic.com/fef49e7fa7e1997310d705b2a6158ff8dc1cdfeb_full.jpg"
-      }
-    },
-    {
+      "top_heroes": [],
+      "top_recent_heroes": [],
+      "heroes": {},
       "rank_profile": {
-        "rank_tier": 80,
+        "rank_tier": 45,
         "leaderboard_rank": null,
         "mmr_estimate": null
       },
-      "status": "ready",
+      "errors": [],
+      "status": "needs_data"
+    },
+    {
+      "common_positions": [
+        {
+          "position": 4,
+          "label": "4号位游走",
+          "share": 0.2609
+        },
+        {
+          "position": 3,
+          "label": "3号位劣单",
+          "share": 0.1987
+        }
+      ],
       "position_summary": {
         "1": {
           "label": "1号位核心",
@@ -2431,69 +2437,23 @@
           "weighted_games": 981.9
         }
       },
-      "top_recent_heroes": [
-        {
-          "hero_id": 86,
-          "name": "Rubick",
-          "games": 12
-        },
-        {
-          "hero_id": 62,
-          "name": "Bounty Hunter",
-          "games": 11
-        },
-        {
-          "hero_id": 88,
-          "name": "Nyx Assassin",
-          "games": 10
-        },
-        {
-          "hero_id": 26,
-          "name": "Lion",
-          "games": 9
-        },
-        {
-          "hero_id": 85,
-          "name": "Undying",
-          "games": 9
-        },
-        {
-          "hero_id": 7,
-          "name": "Earthshaker",
-          "games": 9
-        },
-        {
-          "hero_id": 40,
-          "name": "Venomancer",
-          "games": 7
-        },
-        {
-          "hero_id": 35,
-          "name": "Sniper",
-          "games": 6
-        },
-        {
-          "hero_id": 39,
-          "name": "Queen of Pain",
-          "games": 6
-        },
-        {
-          "hero_id": 21,
-          "name": "Windranger",
-          "games": 6
-        },
-        {
-          "hero_id": 99,
-          "name": "Bristleback",
-          "games": 5
-        },
-        {
-          "hero_id": 100,
-          "name": "Tusk",
-          "games": 5
-        }
-      ],
-      "errors": [],
+      "player": {
+        "account_id": 326880468,
+        "steamid64": "76561198287146196",
+        "personaname": "magicdry",
+        "profileurl": "https://steamcommunity.com/profiles/76561198287146196/",
+        "avatar": "https://avatars.steamstatic.com/e52e0559a9f4d861bd4caa9063788c89027d0fc3_full.jpg"
+      },
+      "generated_at": "2026-06-20T14:29:07.611444+00:00",
+      "summary": {
+        "games": 5041,
+        "wins": 2484,
+        "losses": 2557,
+        "win_rate": 0.49276,
+        "heroes": 127,
+        "recent_matches": 300,
+        "frequent_peers": 56
+      },
       "top_heroes": [
         {
           "hero_id": 86,
@@ -2793,6 +2753,68 @@
             "5": 0.4334
           },
           "primary_position": 4
+        }
+      ],
+      "top_recent_heroes": [
+        {
+          "hero_id": 86,
+          "name": "Rubick",
+          "games": 12
+        },
+        {
+          "hero_id": 62,
+          "name": "Bounty Hunter",
+          "games": 11
+        },
+        {
+          "hero_id": 88,
+          "name": "Nyx Assassin",
+          "games": 10
+        },
+        {
+          "hero_id": 26,
+          "name": "Lion",
+          "games": 9
+        },
+        {
+          "hero_id": 85,
+          "name": "Undying",
+          "games": 9
+        },
+        {
+          "hero_id": 7,
+          "name": "Earthshaker",
+          "games": 9
+        },
+        {
+          "hero_id": 40,
+          "name": "Venomancer",
+          "games": 7
+        },
+        {
+          "hero_id": 35,
+          "name": "Sniper",
+          "games": 6
+        },
+        {
+          "hero_id": 39,
+          "name": "Queen of Pain",
+          "games": 6
+        },
+        {
+          "hero_id": 21,
+          "name": "Windranger",
+          "games": 6
+        },
+        {
+          "hero_id": 99,
+          "name": "Bristleback",
+          "games": 5
+        },
+        {
+          "hero_id": 100,
+          "name": "Tusk",
+          "games": 5
         }
       ],
       "heroes": {
@@ -4908,133 +4930,71 @@
           "primary_position": 1
         }
       },
-      "generated_at": "2026-06-20T09:38:20.552738+00:00",
-      "common_positions": [
-        {
-          "position": 4,
-          "label": "4号位游走",
-          "share": 0.2609
-        },
-        {
-          "position": 3,
-          "label": "3号位劣单",
-          "share": 0.1987
-        }
-      ],
-      "summary": {
-        "games": 5041,
-        "wins": 2484,
-        "losses": 2557,
-        "win_rate": 0.49276,
-        "heroes": 127,
-        "recent_matches": 300,
-        "frequent_peers": 56
-      },
-      "player": {
-        "account_id": 326880468,
-        "steamid64": "76561198287146196",
-        "personaname": "magicdry",
-        "profileurl": "https://steamcommunity.com/profiles/76561198287146196/",
-        "avatar": "https://avatars.steamstatic.com/e52e0559a9f4d861bd4caa9063788c89027d0fc3_full.jpg"
-      }
-    },
-    {
       "rank_profile": {
-        "rank_tier": 33,
+        "rank_tier": 80,
         "leaderboard_rank": null,
         "mmr_estimate": null
       },
-      "status": "ready",
+      "errors": [],
+      "status": "ready"
+    },
+    {
+      "common_positions": [
+        {
+          "position": 1,
+          "label": "1号位核心",
+          "share": 0.529
+        },
+        {
+          "position": 2,
+          "label": "2号位中单",
+          "share": 0.2093
+        }
+      ],
       "position_summary": {
         "1": {
           "label": "1号位核心",
-          "share": 0.5294,
-          "weighted_games": 1442.5
+          "share": 0.529,
+          "weighted_games": 1443.8
         },
         "2": {
           "label": "2号位中单",
-          "share": 0.2088,
-          "weighted_games": 569.0
+          "share": 0.2093,
+          "weighted_games": 571.2
         },
         "3": {
           "label": "3号位劣单",
-          "share": 0.1474,
-          "weighted_games": 401.6
+          "share": 0.1473,
+          "weighted_games": 401.9
         },
         "4": {
           "label": "4号位游走",
-          "share": 0.0791,
-          "weighted_games": 215.4
+          "share": 0.079,
+          "weighted_games": 215.7
         },
         "5": {
           "label": "5号位辅助",
-          "share": 0.0354,
-          "weighted_games": 96.4
+          "share": 0.0353,
+          "weighted_games": 96.5
         }
       },
-      "top_recent_heroes": [
-        {
-          "hero_id": 94,
-          "name": "Medusa",
-          "games": 66
-        },
-        {
-          "hero_id": 35,
-          "name": "Sniper",
-          "games": 51
-        },
-        {
-          "hero_id": 6,
-          "name": "Drow Ranger",
-          "games": 38
-        },
-        {
-          "hero_id": 67,
-          "name": "Spectre",
-          "games": 33
-        },
-        {
-          "hero_id": 1,
-          "name": "Anti-Mage",
-          "games": 32
-        },
-        {
-          "hero_id": 44,
-          "name": "Phantom Assassin",
-          "games": 24
-        },
-        {
-          "hero_id": 8,
-          "name": "Juggernaut",
-          "games": 18
-        },
-        {
-          "hero_id": 49,
-          "name": "Dragon Knight",
-          "games": 15
-        },
-        {
-          "hero_id": 105,
-          "name": "Techies",
-          "games": 11
-        },
-        {
-          "hero_id": 11,
-          "name": "Shadow Fiend",
-          "games": 9
-        },
-        {
-          "hero_id": 109,
-          "name": "Terrorblade",
-          "games": 2
-        },
-        {
-          "hero_id": 18,
-          "name": "Sven",
-          "games": 1
-        }
-      ],
-      "errors": [],
+      "player": {
+        "account_id": 470899787,
+        "steamid64": "76561198431165515",
+        "personaname": "南无阿弥佗佛",
+        "profileurl": "https://steamcommunity.com/id/amituofo6666/",
+        "avatar": "https://avatars.steamstatic.com/bd0428ded3332e57fb8f304742bf49e0b3a3a9fb_full.jpg"
+      },
+      "generated_at": "2026-06-20T14:29:09.520877+00:00",
+      "summary": {
+        "games": 2729,
+        "wins": 1324,
+        "losses": 1405,
+        "win_rate": 0.48516,
+        "heroes": 58,
+        "recent_matches": 300,
+        "frequent_peers": 24
+      },
       "top_heroes": [
         {
           "hero_id": 67,
@@ -5056,13 +5016,13 @@
         {
           "hero_id": 6,
           "name": "Drow Ranger",
-          "games": 412,
-          "wins": 219,
+          "games": 413,
+          "wins": 220,
           "losses": 193,
-          "win_rate": 0.53155,
+          "win_rate": 0.53269,
           "recent_games": 38,
           "recent_wins": 17,
-          "kda": 2.797,
+          "kda": 2.771,
           "positions": {
             "1": 0.6427,
             "3": 0.1392
@@ -5076,9 +5036,9 @@
           "wins": 162,
           "losses": 174,
           "win_rate": 0.48214,
-          "recent_games": 51,
-          "recent_wins": 26,
-          "kda": 3.858,
+          "recent_games": 49,
+          "recent_wins": 24,
+          "kda": 3.819,
           "positions": {
             "1": 0.4557,
             "2": 0.4663
@@ -5249,6 +5209,22 @@
           "primary_position": 1
         },
         {
+          "hero_id": 11,
+          "name": "Shadow Fiend",
+          "games": 36,
+          "wins": 19,
+          "losses": 17,
+          "win_rate": 0.52778,
+          "recent_games": 11,
+          "recent_wins": 4,
+          "kda": 2.474,
+          "positions": {
+            "1": 0.19,
+            "2": 0.6939
+          },
+          "primary_position": 2
+        },
+        {
           "hero_id": 32,
           "name": "Riki",
           "games": 35,
@@ -5279,22 +5255,6 @@
             "4": 0.697
           },
           "primary_position": 4
-        },
-        {
-          "hero_id": 11,
-          "name": "Shadow Fiend",
-          "games": 33,
-          "wins": 18,
-          "losses": 15,
-          "win_rate": 0.54545,
-          "recent_games": 9,
-          "recent_wins": 3,
-          "kda": 2.338,
-          "positions": {
-            "1": 0.19,
-            "2": 0.6939
-          },
-          "primary_position": 2
         },
         {
           "hero_id": 75,
@@ -5331,6 +5291,68 @@
           "primary_position": 4
         }
       ],
+      "top_recent_heroes": [
+        {
+          "hero_id": 94,
+          "name": "Medusa",
+          "games": 66
+        },
+        {
+          "hero_id": 35,
+          "name": "Sniper",
+          "games": 49
+        },
+        {
+          "hero_id": 6,
+          "name": "Drow Ranger",
+          "games": 38
+        },
+        {
+          "hero_id": 67,
+          "name": "Spectre",
+          "games": 33
+        },
+        {
+          "hero_id": 1,
+          "name": "Anti-Mage",
+          "games": 32
+        },
+        {
+          "hero_id": 44,
+          "name": "Phantom Assassin",
+          "games": 24
+        },
+        {
+          "hero_id": 8,
+          "name": "Juggernaut",
+          "games": 18
+        },
+        {
+          "hero_id": 49,
+          "name": "Dragon Knight",
+          "games": 15
+        },
+        {
+          "hero_id": 11,
+          "name": "Shadow Fiend",
+          "games": 11
+        },
+        {
+          "hero_id": 105,
+          "name": "Techies",
+          "games": 11
+        },
+        {
+          "hero_id": 109,
+          "name": "Terrorblade",
+          "games": 2
+        },
+        {
+          "hero_id": 18,
+          "name": "Sven",
+          "games": 1
+        }
+      ],
       "heroes": {
         "67": {
           "hero_id": 67,
@@ -5352,13 +5374,13 @@
         "6": {
           "hero_id": 6,
           "name": "Drow Ranger",
-          "games": 412,
-          "wins": 219,
+          "games": 413,
+          "wins": 220,
           "losses": 193,
-          "win_rate": 0.53155,
+          "win_rate": 0.53269,
           "recent_games": 38,
           "recent_wins": 17,
-          "kda": 2.797,
+          "kda": 2.771,
           "positions": {
             "1": 0.6427,
             "3": 0.1392
@@ -5372,9 +5394,9 @@
           "wins": 162,
           "losses": 174,
           "win_rate": 0.48214,
-          "recent_games": 51,
-          "recent_wins": 26,
-          "kda": 3.858,
+          "recent_games": 49,
+          "recent_wins": 24,
+          "kda": 3.819,
           "positions": {
             "1": 0.4557,
             "2": 0.4663
@@ -5544,6 +5566,22 @@
           },
           "primary_position": 1
         },
+        "11": {
+          "hero_id": 11,
+          "name": "Shadow Fiend",
+          "games": 36,
+          "wins": 19,
+          "losses": 17,
+          "win_rate": 0.52778,
+          "recent_games": 11,
+          "recent_wins": 4,
+          "kda": 2.474,
+          "positions": {
+            "1": 0.19,
+            "2": 0.6939
+          },
+          "primary_position": 2
+        },
         "32": {
           "hero_id": 32,
           "name": "Riki",
@@ -5575,22 +5613,6 @@
             "4": 0.697
           },
           "primary_position": 4
-        },
-        "11": {
-          "hero_id": 11,
-          "name": "Shadow Fiend",
-          "games": 33,
-          "wins": 18,
-          "losses": 15,
-          "win_rate": 0.54545,
-          "recent_games": 9,
-          "recent_wins": 3,
-          "kda": 2.338,
-          "positions": {
-            "1": 0.19,
-            "2": 0.6939
-          },
-          "primary_position": 2
         },
         "75": {
           "hero_id": 75,
@@ -6304,144 +6326,82 @@
           "primary_position": 2
         }
       },
-      "generated_at": "2026-06-20T09:38:22.642715+00:00",
-      "common_positions": [
-        {
-          "position": 1,
-          "label": "1号位核心",
-          "share": 0.5294
-        },
-        {
-          "position": 2,
-          "label": "2号位中单",
-          "share": 0.2088
-        }
-      ],
-      "summary": {
-        "games": 2725,
-        "wins": 1322,
-        "losses": 1403,
-        "win_rate": 0.48514,
-        "heroes": 58,
-        "recent_matches": 300,
-        "frequent_peers": 24
-      },
-      "player": {
-        "account_id": 470899787,
-        "steamid64": "76561198431165515",
-        "personaname": "南无阿弥佗佛",
-        "profileurl": "https://steamcommunity.com/id/amituofo6666/",
-        "avatar": "https://avatars.steamstatic.com/bd0428ded3332e57fb8f304742bf49e0b3a3a9fb_full.jpg"
-      }
-    },
-    {
       "rank_profile": {
-        "rank_tier": 43,
+        "rank_tier": 33,
         "leaderboard_rank": null,
         "mmr_estimate": null
       },
-      "status": "ready",
+      "errors": [],
+      "status": "ready"
+    },
+    {
+      "common_positions": [
+        {
+          "position": 2,
+          "label": "2号位中单",
+          "share": 0.299
+        },
+        {
+          "position": 1,
+          "label": "1号位核心",
+          "share": 0.2195
+        }
+      ],
       "position_summary": {
         "1": {
           "label": "1号位核心",
-          "share": 0.2196,
-          "weighted_games": 1222.5
+          "share": 0.2195,
+          "weighted_games": 1223.2
         },
         "2": {
           "label": "2号位中单",
           "share": 0.299,
-          "weighted_games": 1664.7
+          "weighted_games": 1666.2
         },
         "3": {
           "label": "3号位劣单",
-          "share": 0.1811,
-          "weighted_games": 1008.3
+          "share": 0.181,
+          "weighted_games": 1008.5
         },
         "4": {
           "label": "4号位游走",
           "share": 0.1985,
-          "weighted_games": 1104.8
+          "weighted_games": 1106.3
         },
         "5": {
           "label": "5号位辅助",
-          "share": 0.1018,
-          "weighted_games": 566.7
+          "share": 0.1019,
+          "weighted_games": 567.8
         }
       },
-      "top_recent_heroes": [
-        {
-          "hero_id": 74,
-          "name": "Invoker",
-          "games": 54
-        },
-        {
-          "hero_id": 93,
-          "name": "Slark",
-          "games": 24
-        },
-        {
-          "hero_id": 145,
-          "name": "Kez",
-          "games": 23
-        },
-        {
-          "hero_id": 105,
-          "name": "Techies",
-          "games": 17
-        },
-        {
-          "hero_id": 97,
-          "name": "Magnus",
-          "games": 13
-        },
-        {
-          "hero_id": 86,
-          "name": "Rubick",
-          "games": 12
-        },
-        {
-          "hero_id": 106,
-          "name": "Ember Spirit",
-          "games": 11
-        },
-        {
-          "hero_id": 11,
-          "name": "Shadow Fiend",
-          "games": 11
-        },
-        {
-          "hero_id": 39,
-          "name": "Queen of Pain",
-          "games": 10
-        },
-        {
-          "hero_id": 114,
-          "name": "Monkey King",
-          "games": 8
-        },
-        {
-          "hero_id": 17,
-          "name": "Storm Spirit",
-          "games": 7
-        },
-        {
-          "hero_id": 1,
-          "name": "Anti-Mage",
-          "games": 7
-        }
-      ],
-      "errors": [],
+      "player": {
+        "account_id": 185965758,
+        "steamid64": "76561198146231486",
+        "personaname": "yoyo",
+        "profileurl": "https://steamcommunity.com/profiles/76561198146231486/",
+        "avatar": "https://avatars.steamstatic.com/0276b81b9df0556b37c9f1f7fcd113d6d9fb843c_full.jpg"
+      },
+      "generated_at": "2026-06-20T14:29:11.561133+00:00",
+      "summary": {
+        "games": 5572,
+        "wins": 2694,
+        "losses": 2878,
+        "win_rate": 0.48349,
+        "heroes": 122,
+        "recent_matches": 300,
+        "frequent_peers": 53
+      },
       "top_heroes": [
         {
           "hero_id": 74,
           "name": "Invoker",
-          "games": 582,
-          "wins": 292,
+          "games": 583,
+          "wins": 293,
           "losses": 290,
-          "win_rate": 0.50172,
-          "recent_games": 54,
-          "recent_wins": 30,
-          "kda": 2.862,
+          "win_rate": 0.50257,
+          "recent_games": 55,
+          "recent_wins": 31,
+          "kda": 2.863,
           "positions": {
             "1": 0.1989,
             "2": 0.5396
@@ -6501,13 +6461,13 @@
         {
           "hero_id": 86,
           "name": "Rubick",
-          "games": 192,
-          "wins": 75,
+          "games": 193,
+          "wins": 76,
           "losses": 117,
-          "win_rate": 0.39062,
-          "recent_games": 12,
-          "recent_wins": 6,
-          "kda": 2.824,
+          "win_rate": 0.39378,
+          "recent_games": 13,
+          "recent_wins": 7,
+          "kda": 2.777,
           "positions": {
             "4": 0.4692,
             "5": 0.4334
@@ -6572,9 +6532,9 @@
           "wins": 52,
           "losses": 74,
           "win_rate": 0.4127,
-          "recent_games": 6,
-          "recent_wins": 2,
-          "kda": 2.689,
+          "recent_games": 5,
+          "recent_wins": 1,
+          "kda": 2.556,
           "positions": {
             "2": 0.5982,
             "3": 0.1432,
@@ -6589,9 +6549,9 @@
           "wins": 45,
           "losses": 62,
           "win_rate": 0.42056,
-          "recent_games": 8,
+          "recent_games": 7,
           "recent_wins": 2,
-          "kda": 1.972,
+          "kda": 1.984,
           "positions": {
             "1": 0.4015,
             "2": 0.3662,
@@ -6606,9 +6566,9 @@
           "wins": 51,
           "losses": 43,
           "win_rate": 0.54255,
-          "recent_games": 7,
+          "recent_games": 6,
           "recent_wins": 5,
-          "kda": 3.452,
+          "kda": 4.061,
           "positions": {
             "1": 0.6424,
             "2": 0.2541
@@ -6622,9 +6582,9 @@
           "wins": 35,
           "losses": 59,
           "win_rate": 0.37234,
-          "recent_games": 13,
+          "recent_games": 12,
           "recent_wins": 4,
-          "kda": 3.275,
+          "kda": 3.282,
           "positions": {
             "2": 0.1709,
             "3": 0.5704,
@@ -6639,9 +6599,9 @@
           "wins": 41,
           "losses": 48,
           "win_rate": 0.46067,
-          "recent_games": 10,
+          "recent_games": 9,
           "recent_wins": 3,
-          "kda": 2.646,
+          "kda": 2.712,
           "positions": {
             "1": 0.2071,
             "2": 0.6894
@@ -6684,6 +6644,22 @@
           "primary_position": 2
         },
         {
+          "hero_id": 62,
+          "name": "Bounty Hunter",
+          "games": 85,
+          "wins": 44,
+          "losses": 41,
+          "win_rate": 0.51765,
+          "recent_games": 3,
+          "recent_wins": 1,
+          "kda": 1.702,
+          "positions": {
+            "2": 0.2492,
+            "4": 0.697
+          },
+          "primary_position": 4
+        },
+        {
           "hero_id": 75,
           "name": "Silencer",
           "games": 84,
@@ -6702,22 +6678,6 @@
           "primary_position": 5
         },
         {
-          "hero_id": 62,
-          "name": "Bounty Hunter",
-          "games": 84,
-          "wins": 44,
-          "losses": 40,
-          "win_rate": 0.52381,
-          "recent_games": 2,
-          "recent_wins": 1,
-          "kda": 1.2,
-          "positions": {
-            "2": 0.2492,
-            "4": 0.697
-          },
-          "primary_position": 4
-        },
-        {
           "hero_id": 100,
           "name": "Tusk",
           "games": 80,
@@ -6734,17 +6694,79 @@
           "primary_position": 4
         }
       ],
+      "top_recent_heroes": [
+        {
+          "hero_id": 74,
+          "name": "Invoker",
+          "games": 55
+        },
+        {
+          "hero_id": 93,
+          "name": "Slark",
+          "games": 24
+        },
+        {
+          "hero_id": 145,
+          "name": "Kez",
+          "games": 23
+        },
+        {
+          "hero_id": 105,
+          "name": "Techies",
+          "games": 17
+        },
+        {
+          "hero_id": 86,
+          "name": "Rubick",
+          "games": 13
+        },
+        {
+          "hero_id": 97,
+          "name": "Magnus",
+          "games": 12
+        },
+        {
+          "hero_id": 106,
+          "name": "Ember Spirit",
+          "games": 11
+        },
+        {
+          "hero_id": 11,
+          "name": "Shadow Fiend",
+          "games": 11
+        },
+        {
+          "hero_id": 39,
+          "name": "Queen of Pain",
+          "games": 9
+        },
+        {
+          "hero_id": 17,
+          "name": "Storm Spirit",
+          "games": 7
+        },
+        {
+          "hero_id": 114,
+          "name": "Monkey King",
+          "games": 7
+        },
+        {
+          "hero_id": 19,
+          "name": "Tiny",
+          "games": 6
+        }
+      ],
       "heroes": {
         "74": {
           "hero_id": 74,
           "name": "Invoker",
-          "games": 582,
-          "wins": 292,
+          "games": 583,
+          "wins": 293,
           "losses": 290,
-          "win_rate": 0.50172,
-          "recent_games": 54,
-          "recent_wins": 30,
-          "kda": 2.862,
+          "win_rate": 0.50257,
+          "recent_games": 55,
+          "recent_wins": 31,
+          "kda": 2.863,
           "positions": {
             "1": 0.1989,
             "2": 0.5396
@@ -6804,13 +6826,13 @@
         "86": {
           "hero_id": 86,
           "name": "Rubick",
-          "games": 192,
-          "wins": 75,
+          "games": 193,
+          "wins": 76,
           "losses": 117,
-          "win_rate": 0.39062,
-          "recent_games": 12,
-          "recent_wins": 6,
-          "kda": 2.824,
+          "win_rate": 0.39378,
+          "recent_games": 13,
+          "recent_wins": 7,
+          "kda": 2.777,
           "positions": {
             "4": 0.4692,
             "5": 0.4334
@@ -6875,9 +6897,9 @@
           "wins": 52,
           "losses": 74,
           "win_rate": 0.4127,
-          "recent_games": 6,
-          "recent_wins": 2,
-          "kda": 2.689,
+          "recent_games": 5,
+          "recent_wins": 1,
+          "kda": 2.556,
           "positions": {
             "2": 0.5982,
             "3": 0.1432,
@@ -6892,9 +6914,9 @@
           "wins": 45,
           "losses": 62,
           "win_rate": 0.42056,
-          "recent_games": 8,
+          "recent_games": 7,
           "recent_wins": 2,
-          "kda": 1.972,
+          "kda": 1.984,
           "positions": {
             "1": 0.4015,
             "2": 0.3662,
@@ -6909,9 +6931,9 @@
           "wins": 51,
           "losses": 43,
           "win_rate": 0.54255,
-          "recent_games": 7,
+          "recent_games": 6,
           "recent_wins": 5,
-          "kda": 3.452,
+          "kda": 4.061,
           "positions": {
             "1": 0.6424,
             "2": 0.2541
@@ -6925,9 +6947,9 @@
           "wins": 35,
           "losses": 59,
           "win_rate": 0.37234,
-          "recent_games": 13,
+          "recent_games": 12,
           "recent_wins": 4,
-          "kda": 3.275,
+          "kda": 3.282,
           "positions": {
             "2": 0.1709,
             "3": 0.5704,
@@ -6942,9 +6964,9 @@
           "wins": 41,
           "losses": 48,
           "win_rate": 0.46067,
-          "recent_games": 10,
+          "recent_games": 9,
           "recent_wins": 3,
-          "kda": 2.646,
+          "kda": 2.712,
           "positions": {
             "1": 0.2071,
             "2": 0.6894
@@ -6989,13 +7011,13 @@
         "62": {
           "hero_id": 62,
           "name": "Bounty Hunter",
-          "games": 84,
+          "games": 85,
           "wins": 44,
-          "losses": 40,
-          "win_rate": 0.52381,
-          "recent_games": 2,
+          "losses": 41,
+          "win_rate": 0.51765,
+          "recent_games": 3,
           "recent_wins": 1,
-          "kda": 1.2,
+          "kda": 1.702,
           "positions": {
             "2": 0.2492,
             "4": 0.697
@@ -7305,13 +7327,13 @@
         "46": {
           "hero_id": 46,
           "name": "Templar Assassin",
-          "games": 47,
+          "games": 48,
           "wins": 22,
-          "losses": 25,
-          "win_rate": 0.46809,
-          "recent_games": 0,
+          "losses": 26,
+          "win_rate": 0.45833,
+          "recent_games": 1,
           "recent_wins": 0,
-          "kda": 0.0,
+          "kda": 1.727,
           "positions": {
             "1": 0.5018,
             "2": 0.4577
@@ -7582,6 +7604,22 @@
           },
           "primary_position": 1
         },
+        "68": {
+          "hero_id": 68,
+          "name": "Ancient Apparition",
+          "games": 29,
+          "wins": 11,
+          "losses": 18,
+          "win_rate": 0.37931,
+          "recent_games": 1,
+          "recent_wins": 1,
+          "kda": 3.0,
+          "positions": {
+            "4": 0.2413,
+            "5": 0.6195
+          },
+          "primary_position": 5
+        },
         "90": {
           "hero_id": 90,
           "name": "Keeper of the Light",
@@ -7613,22 +7651,6 @@
             "3": 0.22
           },
           "primary_position": 1
-        },
-        "68": {
-          "hero_id": 68,
-          "name": "Ancient Apparition",
-          "games": 28,
-          "wins": 10,
-          "losses": 18,
-          "win_rate": 0.35714,
-          "recent_games": 0,
-          "recent_wins": 0,
-          "kda": 0.0,
-          "positions": {
-            "4": 0.2413,
-            "5": 0.6195
-          },
-          "primary_position": 5
         },
         "73": {
           "hero_id": 73,
@@ -8764,133 +8786,71 @@
           "primary_position": 2
         }
       },
-      "generated_at": "2026-06-20T09:38:24.724788+00:00",
-      "common_positions": [
-        {
-          "position": 2,
-          "label": "2号位中单",
-          "share": 0.299
-        },
-        {
-          "position": 1,
-          "label": "1号位核心",
-          "share": 0.2196
-        }
-      ],
-      "summary": {
-        "games": 5567,
-        "wins": 2691,
-        "losses": 2876,
-        "win_rate": 0.48338,
-        "heroes": 122,
-        "recent_matches": 300,
-        "frequent_peers": 53
-      },
-      "player": {
-        "account_id": 185965758,
-        "steamid64": "76561198146231486",
-        "personaname": "yoyo",
-        "profileurl": "https://steamcommunity.com/profiles/76561198146231486/",
-        "avatar": "https://avatars.steamstatic.com/0276b81b9df0556b37c9f1f7fcd113d6d9fb843c_full.jpg"
-      }
-    },
-    {
       "rank_profile": {
         "rank_tier": 43,
         "leaderboard_rank": null,
         "mmr_estimate": null
       },
-      "status": "ready",
+      "errors": [],
+      "status": "ready"
+    },
+    {
+      "common_positions": [
+        {
+          "position": 3,
+          "label": "3号位劣单",
+          "share": 0.2725
+        },
+        {
+          "position": 4,
+          "label": "4号位游走",
+          "share": 0.2029
+        }
+      ],
       "position_summary": {
         "1": {
           "label": "1号位核心",
           "share": 0.194,
-          "weighted_games": 842.6
+          "weighted_games": 843.7
         },
         "2": {
           "label": "2号位中单",
-          "share": 0.1682,
-          "weighted_games": 730.4
+          "share": 0.1681,
+          "weighted_games": 731.0
         },
         "3": {
           "label": "3号位劣单",
           "share": 0.2725,
-          "weighted_games": 1183.4
+          "weighted_games": 1185.0
         },
         "4": {
           "label": "4号位游走",
           "share": 0.2029,
-          "weighted_games": 881.2
+          "weighted_games": 882.2
         },
         "5": {
           "label": "5号位辅助",
           "share": 0.1624,
-          "weighted_games": 705.4
+          "weighted_games": 706.2
         }
       },
-      "top_recent_heroes": [
-        {
-          "hero_id": 2,
-          "name": "Axe",
-          "games": 30
-        },
-        {
-          "hero_id": 29,
-          "name": "Tidehunter",
-          "games": 27
-        },
-        {
-          "hero_id": 96,
-          "name": "Centaur Warrunner",
-          "games": 24
-        },
-        {
-          "hero_id": 57,
-          "name": "Omniknight",
-          "games": 18
-        },
-        {
-          "hero_id": 7,
-          "name": "Earthshaker",
-          "games": 17
-        },
-        {
-          "hero_id": 155,
-          "name": "Largo",
-          "games": 14
-        },
-        {
-          "hero_id": 108,
-          "name": "Underlord",
-          "games": 13
-        },
-        {
-          "hero_id": 85,
-          "name": "Undying",
-          "games": 11
-        },
-        {
-          "hero_id": 135,
-          "name": "Dawnbreaker",
-          "games": 11
-        },
-        {
-          "hero_id": 1,
-          "name": "Anti-Mage",
-          "games": 8
-        },
-        {
-          "hero_id": 104,
-          "name": "Legion Commander",
-          "games": 8
-        },
-        {
-          "hero_id": 41,
-          "name": "Faceless Void",
-          "games": 6
-        }
-      ],
-      "errors": [],
+      "player": {
+        "account_id": 146241182,
+        "steamid64": "76561198106506910",
+        "personaname": "ball",
+        "profileurl": "https://steamcommunity.com/profiles/76561198106506910/",
+        "avatar": "https://avatars.steamstatic.com/986ceac7e19a5cd45f6ac813cf45dec3c77605df_full.jpg"
+      },
+      "generated_at": "2026-06-20T14:29:13.643758+00:00",
+      "summary": {
+        "games": 4348,
+        "wins": 2179,
+        "losses": 2169,
+        "win_rate": 0.50115,
+        "heroes": 125,
+        "recent_matches": 300,
+        "frequent_peers": 48
+      },
       "top_heroes": [
         {
           "hero_id": 96,
@@ -8916,9 +8876,9 @@
           "wins": 85,
           "losses": 59,
           "win_rate": 0.59028,
-          "recent_games": 27,
-          "recent_wins": 14,
-          "kda": 4.006,
+          "recent_games": 25,
+          "recent_wins": 12,
+          "kda": 3.938,
           "positions": {
             "1": 0.1461,
             "2": 0.1357,
@@ -9109,6 +9069,22 @@
           "primary_position": 3
         },
         {
+          "hero_id": 8,
+          "name": "Juggernaut",
+          "games": 64,
+          "wins": 39,
+          "losses": 25,
+          "win_rate": 0.60938,
+          "recent_games": 5,
+          "recent_wins": 3,
+          "kda": 3.6,
+          "positions": {
+            "1": 0.7164,
+            "2": 0.1565
+          },
+          "primary_position": 1
+        },
+        {
           "hero_id": 1,
           "name": "Anti-Mage",
           "games": 64,
@@ -9121,22 +9097,6 @@
           "positions": {
             "1": 0.6424,
             "2": 0.2541
-          },
-          "primary_position": 1
-        },
-        {
-          "hero_id": 8,
-          "name": "Juggernaut",
-          "games": 63,
-          "wins": 38,
-          "losses": 25,
-          "win_rate": 0.60317,
-          "recent_games": 4,
-          "recent_wins": 2,
-          "kda": 3.059,
-          "positions": {
-            "1": 0.7164,
-            "2": 0.1565
           },
           "primary_position": 1
         },
@@ -9191,6 +9151,68 @@
           "primary_position": 3
         }
       ],
+      "top_recent_heroes": [
+        {
+          "hero_id": 2,
+          "name": "Axe",
+          "games": 30
+        },
+        {
+          "hero_id": 29,
+          "name": "Tidehunter",
+          "games": 25
+        },
+        {
+          "hero_id": 96,
+          "name": "Centaur Warrunner",
+          "games": 24
+        },
+        {
+          "hero_id": 57,
+          "name": "Omniknight",
+          "games": 19
+        },
+        {
+          "hero_id": 7,
+          "name": "Earthshaker",
+          "games": 17
+        },
+        {
+          "hero_id": 155,
+          "name": "Largo",
+          "games": 14
+        },
+        {
+          "hero_id": 108,
+          "name": "Underlord",
+          "games": 13
+        },
+        {
+          "hero_id": 85,
+          "name": "Undying",
+          "games": 11
+        },
+        {
+          "hero_id": 135,
+          "name": "Dawnbreaker",
+          "games": 11
+        },
+        {
+          "hero_id": 1,
+          "name": "Anti-Mage",
+          "games": 8
+        },
+        {
+          "hero_id": 104,
+          "name": "Legion Commander",
+          "games": 8
+        },
+        {
+          "hero_id": 20,
+          "name": "Vengeful Spirit",
+          "games": 6
+        }
+      ],
       "heroes": {
         "96": {
           "hero_id": 96,
@@ -9216,9 +9238,9 @@
           "wins": 85,
           "losses": 59,
           "win_rate": 0.59028,
-          "recent_games": 27,
-          "recent_wins": 14,
-          "kda": 4.006,
+          "recent_games": 25,
+          "recent_wins": 12,
+          "kda": 3.938,
           "positions": {
             "1": 0.1461,
             "2": 0.1357,
@@ -9427,13 +9449,13 @@
         "8": {
           "hero_id": 8,
           "name": "Juggernaut",
-          "games": 63,
-          "wins": 38,
+          "games": 64,
+          "wins": 39,
           "losses": 25,
-          "win_rate": 0.60317,
-          "recent_games": 4,
-          "recent_wins": 2,
-          "kda": 3.059,
+          "win_rate": 0.60938,
+          "recent_games": 5,
+          "recent_wins": 3,
+          "kda": 3.6,
           "positions": {
             "1": 0.7164,
             "2": 0.1565
@@ -9524,6 +9546,22 @@
           },
           "primary_position": 1
         },
+        "57": {
+          "hero_id": 57,
+          "name": "Omniknight",
+          "games": 57,
+          "wins": 32,
+          "losses": 25,
+          "win_rate": 0.5614,
+          "recent_games": 19,
+          "recent_wins": 10,
+          "kda": 2.544,
+          "positions": {
+            "3": 0.3832,
+            "5": 0.4095
+          },
+          "primary_position": 5
+        },
         "64": {
           "hero_id": 64,
           "name": "Jakiro",
@@ -9537,22 +9575,6 @@
           "positions": {
             "4": 0.2162,
             "5": 0.5717
-          },
-          "primary_position": 5
-        },
-        "57": {
-          "hero_id": 57,
-          "name": "Omniknight",
-          "games": 56,
-          "wins": 31,
-          "losses": 25,
-          "win_rate": 0.55357,
-          "recent_games": 18,
-          "recent_wins": 9,
-          "kda": 2.406,
-          "positions": {
-            "3": 0.3832,
-            "5": 0.4095
           },
           "primary_position": 5
         },
@@ -9581,9 +9603,9 @@
           "wins": 29,
           "losses": 25,
           "win_rate": 0.53704,
-          "recent_games": 2,
-          "recent_wins": 1,
-          "kda": 2.056,
+          "recent_games": 1,
+          "recent_wins": 0,
+          "kda": 0.583,
           "positions": {
             "1": 0.1455,
             "2": 0.1785,
@@ -9591,6 +9613,23 @@
             "5": 0.1355
           },
           "primary_position": 4
+        },
+        "71": {
+          "hero_id": 71,
+          "name": "Spirit Breaker",
+          "games": 54,
+          "wins": 29,
+          "losses": 25,
+          "win_rate": 0.53704,
+          "recent_games": 5,
+          "recent_wins": 3,
+          "kda": 3.234,
+          "positions": {
+            "1": 0.1351,
+            "3": 0.4284,
+            "4": 0.3257
+          },
+          "primary_position": 3
         },
         "21": {
           "hero_id": 21,
@@ -9608,23 +9647,6 @@
             "4": 0.2964
           },
           "primary_position": 2
-        },
-        "71": {
-          "hero_id": 71,
-          "name": "Spirit Breaker",
-          "games": 53,
-          "wins": 29,
-          "losses": 24,
-          "win_rate": 0.54717,
-          "recent_games": 4,
-          "recent_wins": 3,
-          "kda": 3.158,
-          "positions": {
-            "1": 0.1351,
-            "3": 0.4284,
-            "4": 0.3257
-          },
-          "primary_position": 3
         },
         "5": {
           "hero_id": 5,
@@ -9801,9 +9823,9 @@
           "wins": 24,
           "losses": 24,
           "win_rate": 0.5,
-          "recent_games": 3,
+          "recent_games": 2,
           "recent_wins": 1,
-          "kda": 2.923,
+          "kda": 3.118,
           "positions": {
             "1": 0.3337,
             "3": 0.3933,
@@ -9928,6 +9950,22 @@
           },
           "primary_position": 4
         },
+        "20": {
+          "hero_id": 20,
+          "name": "Vengeful Spirit",
+          "games": 39,
+          "wins": 24,
+          "losses": 15,
+          "win_rate": 0.61538,
+          "recent_games": 6,
+          "recent_wins": 3,
+          "kda": 1.988,
+          "positions": {
+            "4": 0.426,
+            "5": 0.3658
+          },
+          "primary_position": 4
+        },
         "23": {
           "hero_id": 23,
           "name": "Kunkka",
@@ -9945,22 +9983,6 @@
             "4": 0.1834
           },
           "primary_position": 2
-        },
-        "20": {
-          "hero_id": 20,
-          "name": "Vengeful Spirit",
-          "games": 38,
-          "wins": 23,
-          "losses": 15,
-          "win_rate": 0.60526,
-          "recent_games": 5,
-          "recent_wins": 2,
-          "kda": 2.015,
-          "positions": {
-            "4": 0.426,
-            "5": 0.3658
-          },
-          "primary_position": 4
         },
         "87": {
           "hero_id": 87,
@@ -10079,6 +10101,23 @@
           },
           "primary_position": 1
         },
+        "99": {
+          "hero_id": 99,
+          "name": "Bristleback",
+          "games": 33,
+          "wins": 12,
+          "losses": 21,
+          "win_rate": 0.36364,
+          "recent_games": 1,
+          "recent_wins": 0,
+          "kda": 2.75,
+          "positions": {
+            "1": 0.1657,
+            "2": 0.1538,
+            "3": 0.5937
+          },
+          "primary_position": 3
+        },
         "60": {
           "hero_id": 60,
           "name": "Night Stalker",
@@ -10112,23 +10151,6 @@
             "2": 0.5943
           },
           "primary_position": 2
-        },
-        "99": {
-          "hero_id": 99,
-          "name": "Bristleback",
-          "games": 32,
-          "wins": 12,
-          "losses": 20,
-          "win_rate": 0.375,
-          "recent_games": 0,
-          "recent_wins": 0,
-          "kda": 0.0,
-          "positions": {
-            "1": 0.1657,
-            "2": 0.1538,
-            "3": 0.5937
-          },
-          "primary_position": 3
         },
         "16": {
           "hero_id": 16,
@@ -10582,9 +10604,9 @@
           "wins": 10,
           "losses": 10,
           "win_rate": 0.5,
-          "recent_games": 1,
+          "recent_games": 0,
           "recent_wins": 0,
-          "kda": 2.25,
+          "kda": 0.0,
           "positions": {
             "1": 0.61,
             "3": 0.195
@@ -11270,43 +11292,27 @@
           "primary_position": 2
         }
       },
-      "generated_at": "2026-06-20T09:38:26.848171+00:00",
-      "common_positions": [
-        {
-          "position": 3,
-          "label": "3号位劣单",
-          "share": 0.2725
-        },
-        {
-          "position": 4,
-          "label": "4号位游走",
-          "share": 0.2029
-        }
-      ],
-      "summary": {
-        "games": 4343,
-        "wins": 2176,
-        "losses": 2167,
-        "win_rate": 0.50104,
-        "heroes": 125,
-        "recent_matches": 300,
-        "frequent_peers": 48
-      },
-      "player": {
-        "account_id": 146241182,
-        "steamid64": "76561198106506910",
-        "personaname": "ball",
-        "profileurl": "https://steamcommunity.com/profiles/76561198106506910/",
-        "avatar": "https://avatars.steamstatic.com/986ceac7e19a5cd45f6ac813cf45dec3c77605df_full.jpg"
-      }
-    },
-    {
       "rank_profile": {
-        "rank_tier": 35,
+        "rank_tier": 43,
         "leaderboard_rank": null,
         "mmr_estimate": null
       },
-      "status": "needs_data",
+      "errors": [],
+      "status": "ready"
+    },
+    {
+      "common_positions": [
+        {
+          "position": 1,
+          "label": "1号位核心",
+          "share": 0.0
+        },
+        {
+          "position": 2,
+          "label": "2号位中单",
+          "share": 0.0
+        }
+      ],
       "position_summary": {
         "1": {
           "label": "1号位核心",
@@ -11334,23 +11340,14 @@
           "weighted_games": 0.0
         }
       },
-      "top_recent_heroes": [],
-      "errors": [],
-      "top_heroes": [],
-      "heroes": {},
-      "generated_at": "2026-06-20T09:38:27.775141+00:00",
-      "common_positions": [
-        {
-          "position": 1,
-          "label": "1号位核心",
-          "share": 0.0
-        },
-        {
-          "position": 2,
-          "label": "2号位中单",
-          "share": 0.0
-        }
-      ],
+      "player": {
+        "account_id": 383439919,
+        "steamid64": "76561198343705647",
+        "personaname": "唐到头了就是宋",
+        "profileurl": "https://steamcommunity.com/profiles/76561198343705647/",
+        "avatar": "https://avatars.steamstatic.com/e5061496d6567cf00c59fc211875a85b261d7764_full.jpg"
+      },
+      "generated_at": "2026-06-20T14:29:14.519526+00:00",
       "summary": {
         "games": 0,
         "wins": 0,
@@ -11360,13 +11357,16 @@
         "recent_matches": 0,
         "frequent_peers": 0
       },
-      "player": {
-        "account_id": 383439919,
-        "steamid64": "76561198343705647",
-        "personaname": "唐到头了就是宋",
-        "profileurl": "https://steamcommunity.com/profiles/76561198343705647/",
-        "avatar": "https://avatars.steamstatic.com/e5061496d6567cf00c59fc211875a85b261d7764_full.jpg"
-      }
+      "top_heroes": [],
+      "top_recent_heroes": [],
+      "heroes": {},
+      "rank_profile": {
+        "rank_tier": 35,
+        "leaderboard_rank": null,
+        "mmr_estimate": null
+      },
+      "errors": [],
+      "status": "needs_data"
     }
   ],
   "privacy": "Explicit team model: publishes provided teammates' Steam account IDs, nicknames, aggregate hero stats, and inferred position preferences. Raw match IDs are not included."
