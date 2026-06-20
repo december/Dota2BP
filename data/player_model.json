@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "status": "ready",
-  "generated_at": "2026-06-20T14:29:03.452873+00:00",
+  "generated_at": "2026-06-20T19:55:41.945262+00:00",
   "player": {
     "account_id": 222404655,
     "steamid64": "76561198182670383",
@@ -15,10 +15,10 @@
     "mmr_estimate": null
   },
   "summary": {
-    "games": 4031,
-    "wins": 2043,
+    "games": 4032,
+    "wins": 2044,
     "losses": 1988,
-    "win_rate": 0.50682,
+    "win_rate": 0.50694,
     "heroes": 114,
     "recent_matches": 300,
     "frequent_peers": 36
@@ -27,13 +27,13 @@
     "86": {
       "hero_id": 86,
       "name": "Rubick",
-      "games": 258,
-      "wins": 112,
+      "games": 259,
+      "wins": 113,
       "losses": 146,
-      "win_rate": 0.43411,
-      "recent_games": 36,
-      "recent_wins": 15,
-      "kda": 2.764
+      "win_rate": 0.43629,
+      "recent_games": 37,
+      "recent_wins": 16,
+      "kda": 2.819
     },
     "45": {
       "hero_id": 45,
@@ -196,9 +196,9 @@
       "wins": 33,
       "losses": 34,
       "win_rate": 0.49254,
-      "recent_games": 4,
+      "recent_games": 3,
       "recent_wins": 1,
-      "kda": 1.73
+      "kda": 2.417
     },
     "26": {
       "hero_id": 26,
@@ -1283,13 +1283,13 @@
     {
       "hero_id": 86,
       "name": "Rubick",
-      "games": 258,
-      "wins": 112,
+      "games": 259,
+      "wins": 113,
       "losses": 146,
-      "win_rate": 0.43411,
-      "recent_games": 36,
-      "recent_wins": 15,
-      "kda": 2.764
+      "win_rate": 0.43629,
+      "recent_games": 37,
+      "recent_wins": 16,
+      "kda": 2.819
     },
     {
       "hero_id": 45,
@@ -1452,9 +1452,9 @@
       "wins": 33,
       "losses": 34,
       "win_rate": 0.49254,
-      "recent_games": 4,
+      "recent_games": 3,
       "recent_wins": 1,
-      "kda": 1.73
+      "kda": 2.417
     },
     {
       "hero_id": 26,
@@ -1488,7 +1488,7 @@
     {
       "hero_id": 86,
       "name": "Rubick",
-      "games": 36
+      "games": 37
     },
     {
       "hero_id": 84,
