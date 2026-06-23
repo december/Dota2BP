@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "status": "ready",
-  "generated_at": "2026-06-22T12:25:15.970565+00:00",
+  "generated_at": "2026-06-23T04:19:24.607230+00:00",
   "player": {
     "account_id": 222404655,
     "steamid64": "76561198182670383",
@@ -10,15 +10,15 @@
     "avatar": "https://avatars.steamstatic.com/15896e4d49dc88cb268e9a4eb02a08ff5d913838_full.jpg"
   },
   "rank_profile": {
-    "rank_tier": 34,
+    "rank_tier": 35,
     "leaderboard_rank": null,
     "mmr_estimate": null
   },
   "summary": {
-    "games": 4032,
-    "wins": 2044,
-    "losses": 1988,
-    "win_rate": 0.50694,
+    "games": 4035,
+    "wins": 2046,
+    "losses": 1989,
+    "win_rate": 0.50706,
     "heroes": 114,
     "recent_matches": 300,
     "frequent_peers": 36
@@ -27,13 +27,13 @@
     "86": {
       "hero_id": 86,
       "name": "Rubick",
-      "games": 259,
+      "games": 260,
       "wins": 113,
-      "losses": 146,
-      "win_rate": 0.43629,
-      "recent_games": 37,
+      "losses": 147,
+      "win_rate": 0.43462,
+      "recent_games": 38,
       "recent_wins": 16,
-      "kda": 2.819
+      "kda": 2.782
     },
     "45": {
       "hero_id": 45,
@@ -71,24 +71,24 @@
     "102": {
       "hero_id": 102,
       "name": "Abaddon",
-      "games": 120,
-      "wins": 70,
+      "games": 121,
+      "wins": 71,
       "losses": 50,
-      "win_rate": 0.58333,
-      "recent_games": 14,
-      "recent_wins": 9,
-      "kda": 3.5
+      "win_rate": 0.58678,
+      "recent_games": 15,
+      "recent_wins": 10,
+      "kda": 3.63
     },
     "84": {
       "hero_id": 84,
       "name": "Ogre Magi",
-      "games": 113,
-      "wins": 66,
+      "games": 114,
+      "wins": 67,
       "losses": 47,
-      "win_rate": 0.58407,
-      "recent_games": 25,
-      "recent_wins": 15,
-      "kda": 2.715
+      "win_rate": 0.58772,
+      "recent_games": 26,
+      "recent_wins": 16,
+      "kda": 2.777
     },
     "22": {
       "hero_id": 22,
@@ -174,9 +174,9 @@
       "wins": 42,
       "losses": 32,
       "win_rate": 0.56757,
-      "recent_games": 14,
-      "recent_wins": 5,
-      "kda": 2.27
+      "recent_games": 13,
+      "recent_wins": 4,
+      "kda": 2.152
     },
     "29": {
       "hero_id": 29,
@@ -229,9 +229,9 @@
       "wins": 31,
       "losses": 32,
       "win_rate": 0.49206,
-      "recent_games": 10,
+      "recent_games": 9,
       "recent_wins": 5,
-      "kda": 2.404
+      "kda": 2.484
     },
     "108": {
       "hero_id": 108,
@@ -284,9 +284,9 @@
       "wins": 29,
       "losses": 27,
       "win_rate": 0.51786,
-      "recent_games": 1,
+      "recent_games": 0,
       "recent_wins": 0,
-      "kda": 1.0
+      "kda": 0.0
     },
     "67": {
       "hero_id": 67,
@@ -1283,13 +1283,13 @@
     {
       "hero_id": 86,
       "name": "Rubick",
-      "games": 259,
+      "games": 260,
       "wins": 113,
-      "losses": 146,
-      "win_rate": 0.43629,
-      "recent_games": 37,
+      "losses": 147,
+      "win_rate": 0.43462,
+      "recent_games": 38,
       "recent_wins": 16,
-      "kda": 2.819
+      "kda": 2.782
     },
     {
       "hero_id": 45,
@@ -1327,24 +1327,24 @@
     {
       "hero_id": 102,
       "name": "Abaddon",
-      "games": 120,
-      "wins": 70,
+      "games": 121,
+      "wins": 71,
       "losses": 50,
-      "win_rate": 0.58333,
-      "recent_games": 14,
-      "recent_wins": 9,
-      "kda": 3.5
+      "win_rate": 0.58678,
+      "recent_games": 15,
+      "recent_wins": 10,
+      "kda": 3.63
     },
     {
       "hero_id": 84,
       "name": "Ogre Magi",
-      "games": 113,
-      "wins": 66,
+      "games": 114,
+      "wins": 67,
       "losses": 47,
-      "win_rate": 0.58407,
-      "recent_games": 25,
-      "recent_wins": 15,
-      "kda": 2.715
+      "win_rate": 0.58772,
+      "recent_games": 26,
+      "recent_wins": 16,
+      "kda": 2.777
     },
     {
       "hero_id": 22,
@@ -1430,9 +1430,9 @@
       "wins": 42,
       "losses": 32,
       "win_rate": 0.56757,
-      "recent_games": 14,
-      "recent_wins": 5,
-      "kda": 2.27
+      "recent_games": 13,
+      "recent_wins": 4,
+      "kda": 2.152
     },
     {
       "hero_id": 29,
@@ -1488,12 +1488,17 @@
     {
       "hero_id": 86,
       "name": "Rubick",
-      "games": 37
+      "games": 38
     },
     {
       "hero_id": 84,
       "name": "Ogre Magi",
-      "games": 25
+      "games": 26
+    },
+    {
+      "hero_id": 102,
+      "name": "Abaddon",
+      "games": 15
     },
     {
       "hero_id": 14,
@@ -1501,19 +1506,14 @@
       "games": 15
     },
     {
-      "hero_id": 31,
-      "name": "Lich",
-      "games": 14
-    },
-    {
-      "hero_id": 102,
-      "name": "Abaddon",
-      "games": 14
-    },
-    {
       "hero_id": 131,
       "name": "Ring Master",
       "games": 14
+    },
+    {
+      "hero_id": 31,
+      "name": "Lich",
+      "games": 13
     },
     {
       "hero_id": 37,
@@ -1526,11 +1526,6 @@
       "games": 12
     },
     {
-      "hero_id": 27,
-      "name": "Shadow Shaman",
-      "games": 10
-    },
-    {
       "hero_id": 71,
       "name": "Spirit Breaker",
       "games": 9
@@ -1538,6 +1533,11 @@
     {
       "hero_id": 87,
       "name": "Disruptor",
+      "games": 9
+    },
+    {
+      "hero_id": 27,
+      "name": "Shadow Shaman",
       "games": 9
     }
   ],
