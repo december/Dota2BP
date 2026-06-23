@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "status": "ready",
-  "generated_at": "2026-06-23T15:23:40.500376+00:00",
+  "generated_at": "2026-06-23T20:21:36.134524+00:00",
   "player": {
     "account_id": 222404655,
     "steamid64": "76561198182670383",
@@ -15,10 +15,10 @@
     "mmr_estimate": null
   },
   "summary": {
-    "games": 4035,
-    "wins": 2046,
+    "games": 4036,
+    "wins": 2047,
     "losses": 1989,
-    "win_rate": 0.50706,
+    "win_rate": 0.50719,
     "heroes": 114,
     "recent_matches": 300,
     "frequent_peers": 36
@@ -38,13 +38,13 @@
     "45": {
       "hero_id": 45,
       "name": "Pugna",
-      "games": 197,
-      "wins": 107,
+      "games": 198,
+      "wins": 108,
       "losses": 90,
-      "win_rate": 0.54315,
+      "win_rate": 0.54545,
       "recent_games": 51,
       "recent_wins": 32,
-      "kda": 2.761
+      "kda": 2.689
     },
     "40": {
       "hero_id": 40,
@@ -1294,13 +1294,13 @@
     {
       "hero_id": 45,
       "name": "Pugna",
-      "games": 197,
-      "wins": 107,
+      "games": 198,
+      "wins": 108,
       "losses": 90,
-      "win_rate": 0.54315,
+      "win_rate": 0.54545,
       "recent_games": 51,
       "recent_wins": 32,
-      "kda": 2.761
+      "kda": 2.689
     },
     {
       "hero_id": 40,
