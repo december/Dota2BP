@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "status": "ready",
-  "generated_at": "2026-06-26T14:46:46.620328+00:00",
+  "generated_at": "2026-06-26T20:07:48.150720+00:00",
   "player": {
     "account_id": 222404655,
     "steamid64": "76561198182670383",
@@ -15,10 +15,10 @@
     "mmr_estimate": null
   },
   "summary": {
-    "games": 4040,
-    "wins": 2049,
+    "games": 4041,
+    "wins": 2050,
     "losses": 1991,
-    "win_rate": 0.50718,
+    "win_rate": 0.5073,
     "heroes": 114,
     "recent_matches": 300,
     "frequent_peers": 36
@@ -42,9 +42,9 @@
       "wins": 108,
       "losses": 90,
       "win_rate": 0.54545,
-      "recent_games": 51,
+      "recent_games": 50,
       "recent_wins": 32,
-      "kda": 2.689
+      "kda": 2.715
     },
     "40": {
       "hero_id": 40,
@@ -82,13 +82,13 @@
     "84": {
       "hero_id": 84,
       "name": "Ogre Magi",
-      "games": 114,
-      "wins": 67,
+      "games": 115,
+      "wins": 68,
       "losses": 47,
-      "win_rate": 0.58772,
-      "recent_games": 25,
-      "recent_wins": 15,
-      "kda": 2.658
+      "win_rate": 0.5913,
+      "recent_games": 26,
+      "recent_wins": 16,
+      "kda": 2.596
     },
     "22": {
       "hero_id": 22,
@@ -1298,9 +1298,9 @@
       "wins": 108,
       "losses": 90,
       "win_rate": 0.54545,
-      "recent_games": 51,
+      "recent_games": 50,
       "recent_wins": 32,
-      "kda": 2.689
+      "kda": 2.715
     },
     {
       "hero_id": 40,
@@ -1338,13 +1338,13 @@
     {
       "hero_id": 84,
       "name": "Ogre Magi",
-      "games": 114,
-      "wins": 67,
+      "games": 115,
+      "wins": 68,
       "losses": 47,
-      "win_rate": 0.58772,
-      "recent_games": 25,
-      "recent_wins": 15,
-      "kda": 2.658
+      "win_rate": 0.5913,
+      "recent_games": 26,
+      "recent_wins": 16,
+      "kda": 2.596
     },
     {
       "hero_id": 22,
@@ -1483,7 +1483,7 @@
     {
       "hero_id": 45,
       "name": "Pugna",
-      "games": 51
+      "games": 50
     },
     {
       "hero_id": 86,
@@ -1493,7 +1493,7 @@
     {
       "hero_id": 84,
       "name": "Ogre Magi",
-      "games": 25
+      "games": 26
     },
     {
       "hero_id": 102,
