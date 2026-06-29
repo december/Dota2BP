@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "status": "ready",
-  "generated_at": "2026-06-29T16:09:55.420893+00:00",
+  "generated_at": "2026-06-29T20:15:32.227225+00:00",
   "player": {
     "account_id": 222404655,
     "steamid64": "76561198182670383",
@@ -15,10 +15,10 @@
     "mmr_estimate": null
   },
   "summary": {
-    "games": 4042,
-    "wins": 2051,
+    "games": 4043,
+    "wins": 2052,
     "losses": 1991,
-    "win_rate": 0.50742,
+    "win_rate": 0.50754,
     "heroes": 114,
     "recent_matches": 300,
     "frequent_peers": 36
@@ -174,9 +174,9 @@
       "wins": 42,
       "losses": 33,
       "win_rate": 0.56,
-      "recent_games": 14,
-      "recent_wins": 4,
-      "kda": 2.12
+      "recent_games": 13,
+      "recent_wins": 3,
+      "kda": 1.91
     },
     "29": {
       "hero_id": 29,
@@ -236,13 +236,13 @@
     "108": {
       "hero_id": 108,
       "name": "Underlord",
-      "games": 61,
-      "wins": 39,
+      "games": 62,
+      "wins": 40,
       "losses": 22,
-      "win_rate": 0.63934,
-      "recent_games": 2,
-      "recent_wins": 0,
-      "kda": 1.909
+      "win_rate": 0.64516,
+      "recent_games": 3,
+      "recent_wins": 1,
+      "kda": 2.6
     },
     "75": {
       "hero_id": 75,
@@ -1430,9 +1430,9 @@
       "wins": 42,
       "losses": 33,
       "win_rate": 0.56,
-      "recent_games": 14,
-      "recent_wins": 4,
-      "kda": 2.12
+      "recent_games": 13,
+      "recent_wins": 3,
+      "kda": 1.91
     },
     {
       "hero_id": 29,
@@ -1506,14 +1506,14 @@
       "games": 15
     },
     {
-      "hero_id": 31,
-      "name": "Lich",
-      "games": 14
-    },
-    {
       "hero_id": 131,
       "name": "Ring Master",
       "games": 14
+    },
+    {
+      "hero_id": 31,
+      "name": "Lich",
+      "games": 13
     },
     {
       "hero_id": 37,
