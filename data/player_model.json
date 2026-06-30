@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "status": "ready",
-  "generated_at": "2026-06-30T14:42:30.440795+00:00",
+  "generated_at": "2026-06-30T20:17:49.093133+00:00",
   "player": {
     "account_id": 222404655,
     "steamid64": "76561198182670383",
@@ -15,9 +15,9 @@
     "mmr_estimate": null
   },
   "summary": {
-    "games": 4043,
-    "wins": 2052,
-    "losses": 1991,
+    "games": 4045,
+    "wins": 2053,
+    "losses": 1992,
     "win_rate": 0.50754,
     "heroes": 114,
     "recent_matches": 300,
@@ -31,9 +31,9 @@
       "wins": 113,
       "losses": 147,
       "win_rate": 0.43462,
-      "recent_games": 37,
+      "recent_games": 36,
       "recent_wins": 16,
-      "kda": 2.832
+      "kda": 2.923
     },
     "45": {
       "hero_id": 45,
@@ -71,13 +71,13 @@
     "102": {
       "hero_id": 102,
       "name": "Abaddon",
-      "games": 122,
+      "games": 123,
       "wins": 72,
-      "losses": 50,
-      "win_rate": 0.59016,
-      "recent_games": 15,
+      "losses": 51,
+      "win_rate": 0.58537,
+      "recent_games": 16,
       "recent_wins": 10,
-      "kda": 3.573
+      "kda": 3.389
     },
     "84": {
       "hero_id": 84,
@@ -108,9 +108,9 @@
       "wins": 48,
       "losses": 58,
       "win_rate": 0.45283,
-      "recent_games": 15,
-      "recent_wins": 8,
-      "kda": 1.898
+      "recent_games": 14,
+      "recent_wins": 7,
+      "kda": 1.83
     },
     "42": {
       "hero_id": 42,
@@ -145,6 +145,17 @@
       "recent_wins": 4,
       "kda": 2.39
     },
+    "20": {
+      "hero_id": 20,
+      "name": "Vengeful Spirit",
+      "games": 80,
+      "wins": 31,
+      "losses": 49,
+      "win_rate": 0.3875,
+      "recent_games": 2,
+      "recent_wins": 1,
+      "kda": 1.304
+    },
     "36": {
       "hero_id": 36,
       "name": "Necrophos",
@@ -155,17 +166,6 @@
       "recent_games": 2,
       "recent_wins": 2,
       "kda": 5.1
-    },
-    "20": {
-      "hero_id": 20,
-      "name": "Vengeful Spirit",
-      "games": 79,
-      "wins": 30,
-      "losses": 49,
-      "win_rate": 0.37975,
-      "recent_games": 1,
-      "recent_wins": 0,
-      "kda": 1.0
     },
     "31": {
       "hero_id": 31,
@@ -1287,9 +1287,9 @@
       "wins": 113,
       "losses": 147,
       "win_rate": 0.43462,
-      "recent_games": 37,
+      "recent_games": 36,
       "recent_wins": 16,
-      "kda": 2.832
+      "kda": 2.923
     },
     {
       "hero_id": 45,
@@ -1327,13 +1327,13 @@
     {
       "hero_id": 102,
       "name": "Abaddon",
-      "games": 122,
+      "games": 123,
       "wins": 72,
-      "losses": 50,
-      "win_rate": 0.59016,
-      "recent_games": 15,
+      "losses": 51,
+      "win_rate": 0.58537,
+      "recent_games": 16,
       "recent_wins": 10,
-      "kda": 3.573
+      "kda": 3.389
     },
     {
       "hero_id": 84,
@@ -1364,9 +1364,9 @@
       "wins": 48,
       "losses": 58,
       "win_rate": 0.45283,
-      "recent_games": 15,
-      "recent_wins": 8,
-      "kda": 1.898
+      "recent_games": 14,
+      "recent_wins": 7,
+      "kda": 1.83
     },
     {
       "hero_id": 42,
@@ -1402,6 +1402,17 @@
       "kda": 2.39
     },
     {
+      "hero_id": 20,
+      "name": "Vengeful Spirit",
+      "games": 80,
+      "wins": 31,
+      "losses": 49,
+      "win_rate": 0.3875,
+      "recent_games": 2,
+      "recent_wins": 1,
+      "kda": 1.304
+    },
+    {
       "hero_id": 36,
       "name": "Necrophos",
       "games": 79,
@@ -1411,17 +1422,6 @@
       "recent_games": 2,
       "recent_wins": 2,
       "kda": 5.1
-    },
-    {
-      "hero_id": 20,
-      "name": "Vengeful Spirit",
-      "games": 79,
-      "wins": 30,
-      "losses": 49,
-      "win_rate": 0.37975,
-      "recent_games": 1,
-      "recent_wins": 0,
-      "kda": 1.0
     },
     {
       "hero_id": 31,
@@ -1488,7 +1488,7 @@
     {
       "hero_id": 86,
       "name": "Rubick",
-      "games": 37
+      "games": 36
     },
     {
       "hero_id": 84,
@@ -1498,12 +1498,12 @@
     {
       "hero_id": 102,
       "name": "Abaddon",
-      "games": 15
+      "games": 16
     },
     {
       "hero_id": 14,
       "name": "Pudge",
-      "games": 15
+      "games": 14
     },
     {
       "hero_id": 131,
