@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "status": "ready",
-  "generated_at": "2026-07-04T13:56:34.004298+00:00",
+  "generated_at": "2026-07-04T19:35:29.148876+00:00",
   "player": {
     "account_id": 222404655,
     "steamid64": "76561198182670383",
@@ -15,10 +15,10 @@
     "mmr_estimate": null
   },
   "summary": {
-    "games": 4046,
-    "wins": 2053,
+    "games": 4049,
+    "wins": 2056,
     "losses": 1993,
-    "win_rate": 0.50741,
+    "win_rate": 0.50778,
     "heroes": 114,
     "recent_matches": 300,
     "frequent_peers": 36
@@ -27,13 +27,13 @@
     "86": {
       "hero_id": 86,
       "name": "Rubick",
-      "games": 261,
-      "wins": 113,
+      "games": 262,
+      "wins": 114,
       "losses": 148,
-      "win_rate": 0.43295,
+      "win_rate": 0.43511,
       "recent_games": 37,
-      "recent_wins": 16,
-      "kda": 2.952
+      "recent_wins": 17,
+      "kda": 3.052
     },
     "45": {
       "hero_id": 45,
@@ -64,9 +64,9 @@
       "wins": 93,
       "losses": 62,
       "win_rate": 0.6,
-      "recent_games": 13,
+      "recent_games": 12,
       "recent_wins": 5,
-      "kda": 2.385
+      "kda": 2.537
     },
     "102": {
       "hero_id": 102,
@@ -207,9 +207,9 @@
       "wins": 32,
       "losses": 33,
       "win_rate": 0.49231,
-      "recent_games": 3,
+      "recent_games": 2,
       "recent_wins": 2,
-      "kda": 1.45
+      "kda": 2.143
     },
     "83": {
       "hero_id": 83,
@@ -247,13 +247,13 @@
     "75": {
       "hero_id": 75,
       "name": "Silencer",
-      "games": 60,
-      "wins": 28,
+      "games": 61,
+      "wins": 29,
       "losses": 32,
-      "win_rate": 0.46667,
-      "recent_games": 5,
-      "recent_wins": 1,
-      "kda": 2.595
+      "win_rate": 0.47541,
+      "recent_games": 6,
+      "recent_wins": 2,
+      "kda": 3.04
     },
     "85": {
       "hero_id": 85,
@@ -346,13 +346,13 @@
     "87": {
       "hero_id": 87,
       "name": "Disruptor",
-      "games": 47,
-      "wins": 21,
+      "games": 48,
+      "wins": 22,
       "losses": 26,
-      "win_rate": 0.44681,
-      "recent_games": 9,
-      "recent_wins": 4,
-      "kda": 2.329
+      "win_rate": 0.45833,
+      "recent_games": 10,
+      "recent_wins": 5,
+      "kda": 2.484
     },
     "35": {
       "hero_id": 35,
@@ -1283,13 +1283,13 @@
     {
       "hero_id": 86,
       "name": "Rubick",
-      "games": 261,
-      "wins": 113,
+      "games": 262,
+      "wins": 114,
       "losses": 148,
-      "win_rate": 0.43295,
+      "win_rate": 0.43511,
       "recent_games": 37,
-      "recent_wins": 16,
-      "kda": 2.952
+      "recent_wins": 17,
+      "kda": 3.052
     },
     {
       "hero_id": 45,
@@ -1320,9 +1320,9 @@
       "wins": 93,
       "losses": 62,
       "win_rate": 0.6,
-      "recent_games": 13,
+      "recent_games": 12,
       "recent_wins": 5,
-      "kda": 2.385
+      "kda": 2.537
     },
     {
       "hero_id": 102,
@@ -1463,9 +1463,9 @@
       "wins": 32,
       "losses": 33,
       "win_rate": 0.49231,
-      "recent_games": 3,
+      "recent_games": 2,
       "recent_wins": 2,
-      "kda": 1.45
+      "kda": 2.143
     },
     {
       "hero_id": 83,
@@ -1516,24 +1516,24 @@
       "games": 13
     },
     {
-      "hero_id": 37,
-      "name": "Warlock",
-      "games": 13
-    },
-    {
       "hero_id": 40,
       "name": "Venomancer",
       "games": 12
     },
     {
-      "hero_id": 71,
-      "name": "Spirit Breaker",
-      "games": 10
+      "hero_id": 37,
+      "name": "Warlock",
+      "games": 12
     },
     {
       "hero_id": 87,
       "name": "Disruptor",
-      "games": 9
+      "games": 10
+    },
+    {
+      "hero_id": 71,
+      "name": "Spirit Breaker",
+      "games": 10
     },
     {
       "hero_id": 27,
