@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "status": "ready",
-  "generated_at": "2026-07-05T14:11:03.039558+00:00",
+  "generated_at": "2026-07-05T19:40:57.339671+00:00",
   "player": {
     "account_id": 222404655,
     "steamid64": "76561198182670383",
@@ -1546,8 +1546,6 @@
     "opendota": true,
     "steam_api": false
   },
-  "errors": [
-    "OpenDota wl unavailable: https://api.opendota.com/api/players/222404655/wl: The read operation timed out"
-  ],
+  "errors": [],
   "privacy": "Aggregate hero stats only by default; raw match IDs and peer identities are not included."
 }
