@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "status": "ready",
-  "generated_at": "2026-07-06T15:53:49.759784+00:00",
+  "generated_at": "2026-07-06T20:13:38.176309+00:00",
   "player": {
     "account_id": 222404655,
     "steamid64": "76561198182670383",
@@ -15,10 +15,10 @@
     "mmr_estimate": null
   },
   "summary": {
-    "games": 4049,
+    "games": 4051,
     "wins": 2056,
-    "losses": 1993,
-    "win_rate": 0.50778,
+    "losses": 1995,
+    "win_rate": 0.50753,
     "heroes": 114,
     "recent_matches": 300,
     "frequent_peers": 36
@@ -42,9 +42,9 @@
       "wins": 109,
       "losses": 90,
       "win_rate": 0.54774,
-      "recent_games": 51,
-      "recent_wins": 33,
-      "kda": 2.737
+      "recent_games": 50,
+      "recent_wins": 32,
+      "kda": 2.717
     },
     "40": {
       "hero_id": 40,
@@ -75,9 +75,9 @@
       "wins": 72,
       "losses": 51,
       "win_rate": 0.58537,
-      "recent_games": 16,
+      "recent_games": 15,
       "recent_wins": 10,
-      "kda": 3.389
+      "kda": 3.5
     },
     "84": {
       "hero_id": 84,
@@ -233,6 +233,17 @@
       "recent_wins": 5,
       "kda": 2.474
     },
+    "75": {
+      "hero_id": 75,
+      "name": "Silencer",
+      "games": 62,
+      "wins": 29,
+      "losses": 33,
+      "win_rate": 0.46774,
+      "recent_games": 7,
+      "recent_wins": 2,
+      "kda": 3.14
+    },
     "108": {
       "hero_id": 108,
       "name": "Underlord",
@@ -243,17 +254,6 @@
       "recent_games": 3,
       "recent_wins": 1,
       "kda": 2.6
-    },
-    "75": {
-      "hero_id": 75,
-      "name": "Silencer",
-      "games": 61,
-      "wins": 29,
-      "losses": 32,
-      "win_rate": 0.47541,
-      "recent_games": 6,
-      "recent_wins": 2,
-      "kda": 3.04
     },
     "85": {
       "hero_id": 85,
@@ -332,6 +332,17 @@
       "recent_wins": 3,
       "kda": 2.123
     },
+    "87": {
+      "hero_id": 87,
+      "name": "Disruptor",
+      "games": 49,
+      "wins": 22,
+      "losses": 27,
+      "win_rate": 0.44898,
+      "recent_games": 11,
+      "recent_wins": 5,
+      "kda": 2.385
+    },
     "110": {
       "hero_id": 110,
       "name": "Phoenix",
@@ -342,17 +353,6 @@
       "recent_games": 1,
       "recent_wins": 0,
       "kda": 1.6
-    },
-    "87": {
-      "hero_id": 87,
-      "name": "Disruptor",
-      "games": 48,
-      "wins": 22,
-      "losses": 26,
-      "win_rate": 0.45833,
-      "recent_games": 10,
-      "recent_wins": 5,
-      "kda": 2.484
     },
     "35": {
       "hero_id": 35,
@@ -1298,9 +1298,9 @@
       "wins": 109,
       "losses": 90,
       "win_rate": 0.54774,
-      "recent_games": 51,
-      "recent_wins": 33,
-      "kda": 2.737
+      "recent_games": 50,
+      "recent_wins": 32,
+      "kda": 2.717
     },
     {
       "hero_id": 40,
@@ -1331,9 +1331,9 @@
       "wins": 72,
       "losses": 51,
       "win_rate": 0.58537,
-      "recent_games": 16,
+      "recent_games": 15,
       "recent_wins": 10,
-      "kda": 3.389
+      "kda": 3.5
     },
     {
       "hero_id": 84,
@@ -1483,7 +1483,7 @@
     {
       "hero_id": 45,
       "name": "Pugna",
-      "games": 51
+      "games": 50
     },
     {
       "hero_id": 86,
@@ -1498,7 +1498,7 @@
     {
       "hero_id": 102,
       "name": "Abaddon",
-      "games": 16
+      "games": 15
     },
     {
       "hero_id": 14,
@@ -1528,7 +1528,7 @@
     {
       "hero_id": 87,
       "name": "Disruptor",
-      "games": 10
+      "games": 11
     },
     {
       "hero_id": 71,
