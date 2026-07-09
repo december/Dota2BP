@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "status": "ready",
-  "generated_at": "2026-07-09T15:32:07.138357+00:00",
+  "generated_at": "2026-07-09T20:02:55.292186+00:00",
   "player": {
     "account_id": 222404655,
     "steamid64": "76561198182670383",
@@ -15,10 +15,10 @@
     "mmr_estimate": null
   },
   "summary": {
-    "games": 4051,
-    "wins": 2056,
-    "losses": 1995,
-    "win_rate": 0.50753,
+    "games": 4054,
+    "wins": 2057,
+    "losses": 1997,
+    "win_rate": 0.5074,
     "heroes": 114,
     "recent_matches": 300,
     "frequent_peers": 36
@@ -42,9 +42,9 @@
       "wins": 109,
       "losses": 90,
       "win_rate": 0.54774,
-      "recent_games": 50,
-      "recent_wins": 32,
-      "kda": 2.717
+      "recent_games": 49,
+      "recent_wins": 31,
+      "kda": 2.689
     },
     "40": {
       "hero_id": 40,
@@ -60,13 +60,13 @@
     "37": {
       "hero_id": 37,
       "name": "Warlock",
-      "games": 155,
-      "wins": 93,
+      "games": 156,
+      "wins": 94,
       "losses": 62,
-      "win_rate": 0.6,
-      "recent_games": 12,
-      "recent_wins": 5,
-      "kda": 2.537
+      "win_rate": 0.60256,
+      "recent_games": 13,
+      "recent_wins": 6,
+      "kda": 2.637
     },
     "102": {
       "hero_id": 102,
@@ -126,24 +126,24 @@
     "64": {
       "hero_id": 64,
       "name": "Jakiro",
-      "games": 95,
+      "games": 96,
       "wins": 52,
-      "losses": 43,
-      "win_rate": 0.54737,
-      "recent_games": 5,
+      "losses": 44,
+      "win_rate": 0.54167,
+      "recent_games": 6,
       "recent_wins": 3,
-      "kda": 2.319
+      "kda": 2.232
     },
     "30": {
       "hero_id": 30,
       "name": "Witch Doctor",
-      "games": 82,
+      "games": 83,
       "wins": 47,
-      "losses": 35,
-      "win_rate": 0.57317,
-      "recent_games": 7,
+      "losses": 36,
+      "win_rate": 0.56627,
+      "recent_games": 8,
       "recent_wins": 4,
-      "kda": 2.39
+      "kda": 2.148
     },
     "20": {
       "hero_id": 20,
@@ -702,9 +702,9 @@
       "wins": 12,
       "losses": 6,
       "win_rate": 0.66667,
-      "recent_games": 4,
-      "recent_wins": 3,
-      "kda": 2.833
+      "recent_games": 2,
+      "recent_wins": 1,
+      "kda": 1.667
     },
     "101": {
       "hero_id": 101,
@@ -1298,9 +1298,9 @@
       "wins": 109,
       "losses": 90,
       "win_rate": 0.54774,
-      "recent_games": 50,
-      "recent_wins": 32,
-      "kda": 2.717
+      "recent_games": 49,
+      "recent_wins": 31,
+      "kda": 2.689
     },
     {
       "hero_id": 40,
@@ -1316,13 +1316,13 @@
     {
       "hero_id": 37,
       "name": "Warlock",
-      "games": 155,
-      "wins": 93,
+      "games": 156,
+      "wins": 94,
       "losses": 62,
-      "win_rate": 0.6,
-      "recent_games": 12,
-      "recent_wins": 5,
-      "kda": 2.537
+      "win_rate": 0.60256,
+      "recent_games": 13,
+      "recent_wins": 6,
+      "kda": 2.637
     },
     {
       "hero_id": 102,
@@ -1382,24 +1382,24 @@
     {
       "hero_id": 64,
       "name": "Jakiro",
-      "games": 95,
+      "games": 96,
       "wins": 52,
-      "losses": 43,
-      "win_rate": 0.54737,
-      "recent_games": 5,
+      "losses": 44,
+      "win_rate": 0.54167,
+      "recent_games": 6,
       "recent_wins": 3,
-      "kda": 2.319
+      "kda": 2.232
     },
     {
       "hero_id": 30,
       "name": "Witch Doctor",
-      "games": 82,
+      "games": 83,
       "wins": 47,
-      "losses": 35,
-      "win_rate": 0.57317,
-      "recent_games": 7,
+      "losses": 36,
+      "win_rate": 0.56627,
+      "recent_games": 8,
       "recent_wins": 4,
-      "kda": 2.39
+      "kda": 2.148
     },
     {
       "hero_id": 20,
@@ -1483,7 +1483,7 @@
     {
       "hero_id": 45,
       "name": "Pugna",
-      "games": 50
+      "games": 49
     },
     {
       "hero_id": 86,
@@ -1511,6 +1511,11 @@
       "games": 14
     },
     {
+      "hero_id": 37,
+      "name": "Warlock",
+      "games": 13
+    },
+    {
       "hero_id": 31,
       "name": "Lich",
       "games": 13
@@ -1518,11 +1523,6 @@
     {
       "hero_id": 40,
       "name": "Venomancer",
-      "games": 12
-    },
-    {
-      "hero_id": 37,
-      "name": "Warlock",
       "games": 12
     },
     {
@@ -1536,8 +1536,8 @@
       "games": 10
     },
     {
-      "hero_id": 27,
-      "name": "Shadow Shaman",
+      "hero_id": 30,
+      "name": "Witch Doctor",
       "games": 8
     }
   ],
