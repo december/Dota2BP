@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "status": "ready",
-  "generated_at": "2026-07-12T03:55:25.117151+00:00",
+  "generated_at": "2026-07-12T19:29:42.106749+00:00",
   "player": {
     "account_id": 222404655,
     "steamid64": "76561198182670383",
@@ -15,10 +15,10 @@
     "mmr_estimate": null
   },
   "summary": {
-    "games": 4056,
-    "wins": 2058,
+    "games": 4058,
+    "wins": 2060,
     "losses": 1998,
-    "win_rate": 0.5074,
+    "win_rate": 0.50764,
     "heroes": 114,
     "recent_matches": 300,
     "frequent_peers": 36
@@ -27,13 +27,13 @@
     "86": {
       "hero_id": 86,
       "name": "Rubick",
-      "games": 262,
-      "wins": 114,
+      "games": 263,
+      "wins": 115,
       "losses": 148,
-      "win_rate": 0.43511,
-      "recent_games": 37,
-      "recent_wins": 17,
-      "kda": 3.052
+      "win_rate": 0.43726,
+      "recent_games": 38,
+      "recent_wins": 18,
+      "kda": 3.015
     },
     "45": {
       "hero_id": 45,
@@ -42,9 +42,9 @@
       "wins": 109,
       "losses": 91,
       "win_rate": 0.545,
-      "recent_games": 50,
-      "recent_wins": 31,
-      "kda": 2.661
+      "recent_games": 48,
+      "recent_wins": 29,
+      "kda": 2.629
     },
     "40": {
       "hero_id": 40,
@@ -211,6 +211,17 @@
       "recent_wins": 1,
       "kda": 1.533
     },
+    "27": {
+      "hero_id": 27,
+      "name": "Shadow Shaman",
+      "games": 64,
+      "wins": 32,
+      "losses": 32,
+      "win_rate": 0.5,
+      "recent_games": 8,
+      "recent_wins": 5,
+      "kda": 2.468
+    },
     "83": {
       "hero_id": 83,
       "name": "Treant Protector",
@@ -221,17 +232,6 @@
       "recent_games": 3,
       "recent_wins": 1,
       "kda": 1.407
-    },
-    "27": {
-      "hero_id": 27,
-      "name": "Shadow Shaman",
-      "games": 63,
-      "wins": 31,
-      "losses": 32,
-      "win_rate": 0.49206,
-      "recent_games": 7,
-      "recent_wins": 4,
-      "kda": 2.311
     },
     "75": {
       "hero_id": 75,
@@ -1283,13 +1283,13 @@
     {
       "hero_id": 86,
       "name": "Rubick",
-      "games": 262,
-      "wins": 114,
+      "games": 263,
+      "wins": 115,
       "losses": 148,
-      "win_rate": 0.43511,
-      "recent_games": 37,
-      "recent_wins": 17,
-      "kda": 3.052
+      "win_rate": 0.43726,
+      "recent_games": 38,
+      "recent_wins": 18,
+      "kda": 3.015
     },
     {
       "hero_id": 45,
@@ -1298,9 +1298,9 @@
       "wins": 109,
       "losses": 91,
       "win_rate": 0.545,
-      "recent_games": 50,
-      "recent_wins": 31,
-      "kda": 2.661
+      "recent_games": 48,
+      "recent_wins": 29,
+      "kda": 2.629
     },
     {
       "hero_id": 40,
@@ -1483,12 +1483,12 @@
     {
       "hero_id": 45,
       "name": "Pugna",
-      "games": 50
+      "games": 48
     },
     {
       "hero_id": 86,
       "name": "Rubick",
-      "games": 37
+      "games": 38
     },
     {
       "hero_id": 84,
@@ -1536,8 +1536,8 @@
       "games": 10
     },
     {
-      "hero_id": 30,
-      "name": "Witch Doctor",
+      "hero_id": 27,
+      "name": "Shadow Shaman",
       "games": 8
     }
   ],
