@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "status": "ready",
-  "generated_at": "2026-07-13T09:46:37.257685+00:00",
+  "generated_at": "2026-07-13T19:48:01.706701+00:00",
   "player": {
     "account_id": 222404655,
     "steamid64": "76561198182670383",
@@ -10,15 +10,15 @@
     "avatar": "https://avatars.steamstatic.com/15896e4d49dc88cb268e9a4eb02a08ff5d913838_full.jpg"
   },
   "rank_profile": {
-    "rank_tier": 41,
+    "rank_tier": 42,
     "leaderboard_rank": null,
     "mmr_estimate": null
   },
   "summary": {
-    "games": 4058,
+    "games": 4060,
     "wins": 2060,
-    "losses": 1998,
-    "win_rate": 0.50764,
+    "losses": 2000,
+    "win_rate": 0.50739,
     "heroes": 114,
     "recent_matches": 300,
     "frequent_peers": 36
@@ -42,9 +42,9 @@
       "wins": 109,
       "losses": 91,
       "win_rate": 0.545,
-      "recent_games": 48,
+      "recent_games": 46,
       "recent_wins": 29,
-      "kda": 2.629
+      "kda": 2.713
     },
     "40": {
       "hero_id": 40,
@@ -126,13 +126,13 @@
     "64": {
       "hero_id": 64,
       "name": "Jakiro",
-      "games": 96,
+      "games": 97,
       "wins": 52,
-      "losses": 44,
-      "win_rate": 0.54167,
-      "recent_games": 6,
+      "losses": 45,
+      "win_rate": 0.53608,
+      "recent_games": 7,
       "recent_wins": 3,
-      "kda": 2.232
+      "kda": 2.135
     },
     "30": {
       "hero_id": 30,
@@ -148,13 +148,13 @@
     "20": {
       "hero_id": 20,
       "name": "Vengeful Spirit",
-      "games": 80,
+      "games": 81,
       "wins": 31,
-      "losses": 49,
-      "win_rate": 0.3875,
-      "recent_games": 2,
+      "losses": 50,
+      "win_rate": 0.38272,
+      "recent_games": 3,
       "recent_wins": 1,
-      "kda": 1.304
+      "kda": 0.973
     },
     "36": {
       "hero_id": 36,
@@ -1298,9 +1298,9 @@
       "wins": 109,
       "losses": 91,
       "win_rate": 0.545,
-      "recent_games": 48,
+      "recent_games": 46,
       "recent_wins": 29,
-      "kda": 2.629
+      "kda": 2.713
     },
     {
       "hero_id": 40,
@@ -1382,13 +1382,13 @@
     {
       "hero_id": 64,
       "name": "Jakiro",
-      "games": 96,
+      "games": 97,
       "wins": 52,
-      "losses": 44,
-      "win_rate": 0.54167,
-      "recent_games": 6,
+      "losses": 45,
+      "win_rate": 0.53608,
+      "recent_games": 7,
       "recent_wins": 3,
-      "kda": 2.232
+      "kda": 2.135
     },
     {
       "hero_id": 30,
@@ -1404,13 +1404,13 @@
     {
       "hero_id": 20,
       "name": "Vengeful Spirit",
-      "games": 80,
+      "games": 81,
       "wins": 31,
-      "losses": 49,
-      "win_rate": 0.3875,
-      "recent_games": 2,
+      "losses": 50,
+      "win_rate": 0.38272,
+      "recent_games": 3,
       "recent_wins": 1,
-      "kda": 1.304
+      "kda": 0.973
     },
     {
       "hero_id": 36,
@@ -1483,7 +1483,7 @@
     {
       "hero_id": 45,
       "name": "Pugna",
-      "games": 48
+      "games": 46
     },
     {
       "hero_id": 86,
