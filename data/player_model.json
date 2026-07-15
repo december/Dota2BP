@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "status": "ready",
-  "generated_at": "2026-07-15T14:08:01.653975+00:00",
+  "generated_at": "2026-07-15T19:35:02.920720+00:00",
   "player": {
     "account_id": 222404655,
     "steamid64": "76561198182670383",
@@ -15,10 +15,10 @@
     "mmr_estimate": null
   },
   "summary": {
-    "games": 4060,
-    "wins": 2060,
+    "games": 4062,
+    "wins": 2062,
     "losses": 2000,
-    "win_rate": 0.50739,
+    "win_rate": 0.50763,
     "heroes": 114,
     "recent_matches": 300,
     "frequent_peers": 36
@@ -42,9 +42,9 @@
       "wins": 109,
       "losses": 91,
       "win_rate": 0.545,
-      "recent_games": 46,
-      "recent_wins": 29,
-      "kda": 2.713
+      "recent_games": 44,
+      "recent_wins": 27,
+      "kda": 2.622
     },
     "40": {
       "hero_id": 40,
@@ -71,13 +71,13 @@
     "102": {
       "hero_id": 102,
       "name": "Abaddon",
-      "games": 123,
-      "wins": 72,
+      "games": 124,
+      "wins": 73,
       "losses": 51,
-      "win_rate": 0.58537,
-      "recent_games": 15,
-      "recent_wins": 10,
-      "kda": 3.5
+      "win_rate": 0.58871,
+      "recent_games": 16,
+      "recent_wins": 11,
+      "kda": 3.583
     },
     "84": {
       "hero_id": 84,
@@ -214,13 +214,13 @@
     "27": {
       "hero_id": 27,
       "name": "Shadow Shaman",
-      "games": 64,
-      "wins": 32,
+      "games": 65,
+      "wins": 33,
       "losses": 32,
-      "win_rate": 0.5,
-      "recent_games": 8,
-      "recent_wins": 5,
-      "kda": 2.468
+      "win_rate": 0.50769,
+      "recent_games": 9,
+      "recent_wins": 6,
+      "kda": 2.691
     },
     "83": {
       "hero_id": 83,
@@ -1298,9 +1298,9 @@
       "wins": 109,
       "losses": 91,
       "win_rate": 0.545,
-      "recent_games": 46,
-      "recent_wins": 29,
-      "kda": 2.713
+      "recent_games": 44,
+      "recent_wins": 27,
+      "kda": 2.622
     },
     {
       "hero_id": 40,
@@ -1327,13 +1327,13 @@
     {
       "hero_id": 102,
       "name": "Abaddon",
-      "games": 123,
-      "wins": 72,
+      "games": 124,
+      "wins": 73,
       "losses": 51,
-      "win_rate": 0.58537,
-      "recent_games": 15,
-      "recent_wins": 10,
-      "kda": 3.5
+      "win_rate": 0.58871,
+      "recent_games": 16,
+      "recent_wins": 11,
+      "kda": 3.583
     },
     {
       "hero_id": 84,
@@ -1457,6 +1457,17 @@
       "kda": 2.417
     },
     {
+      "hero_id": 27,
+      "name": "Shadow Shaman",
+      "games": 65,
+      "wins": 33,
+      "losses": 32,
+      "win_rate": 0.50769,
+      "recent_games": 9,
+      "recent_wins": 6,
+      "kda": 2.691
+    },
+    {
       "hero_id": 26,
       "name": "Lion",
       "games": 65,
@@ -1466,24 +1477,13 @@
       "recent_games": 1,
       "recent_wins": 1,
       "kda": 1.533
-    },
-    {
-      "hero_id": 83,
-      "name": "Treant Protector",
-      "games": 64,
-      "wins": 35,
-      "losses": 29,
-      "win_rate": 0.54688,
-      "recent_games": 3,
-      "recent_wins": 1,
-      "kda": 1.407
     }
   ],
   "top_recent_heroes": [
     {
       "hero_id": 45,
       "name": "Pugna",
-      "games": 46
+      "games": 44
     },
     {
       "hero_id": 86,
@@ -1496,13 +1496,13 @@
       "games": 26
     },
     {
-      "hero_id": 131,
-      "name": "Ring Master",
-      "games": 15
-    },
-    {
       "hero_id": 102,
       "name": "Abaddon",
+      "games": 16
+    },
+    {
+      "hero_id": 131,
+      "name": "Ring Master",
       "games": 15
     },
     {
@@ -1538,7 +1538,7 @@
     {
       "hero_id": 27,
       "name": "Shadow Shaman",
-      "games": 8
+      "games": 9
     }
   ],
   "peers": [],
