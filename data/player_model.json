@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "status": "ready",
-  "generated_at": "2026-07-17T14:01:30.442760+00:00",
+  "generated_at": "2026-07-17T19:31:07.551231+00:00",
   "player": {
     "account_id": 222404655,
     "steamid64": "76561198182670383",
@@ -15,10 +15,10 @@
     "mmr_estimate": null
   },
   "summary": {
-    "games": 4062,
-    "wins": 2062,
-    "losses": 2000,
-    "win_rate": 0.50763,
+    "games": 4066,
+    "wins": 2064,
+    "losses": 2002,
+    "win_rate": 0.50762,
     "heroes": 114,
     "recent_matches": 300,
     "frequent_peers": 36
@@ -31,9 +31,9 @@
       "wins": 115,
       "losses": 148,
       "win_rate": 0.43726,
-      "recent_games": 38,
-      "recent_wins": 18,
-      "kda": 3.015
+      "recent_games": 37,
+      "recent_wins": 17,
+      "kda": 2.958
     },
     "45": {
       "hero_id": 45,
@@ -42,9 +42,9 @@
       "wins": 109,
       "losses": 91,
       "win_rate": 0.545,
-      "recent_games": 44,
-      "recent_wins": 27,
-      "kda": 2.622
+      "recent_games": 42,
+      "recent_wins": 25,
+      "kda": 2.531
     },
     "40": {
       "hero_id": 40,
@@ -82,24 +82,24 @@
     "84": {
       "hero_id": 84,
       "name": "Ogre Magi",
-      "games": 115,
-      "wins": 68,
+      "games": 116,
+      "wins": 69,
       "losses": 47,
-      "win_rate": 0.5913,
-      "recent_games": 26,
-      "recent_wins": 16,
-      "kda": 2.596
+      "win_rate": 0.59483,
+      "recent_games": 27,
+      "recent_wins": 17,
+      "kda": 2.638
     },
     "22": {
       "hero_id": 22,
       "name": "Zeus",
-      "games": 108,
+      "games": 109,
       "wins": 60,
-      "losses": 48,
-      "win_rate": 0.55556,
-      "recent_games": 1,
+      "losses": 49,
+      "win_rate": 0.55046,
+      "recent_games": 2,
       "recent_wins": 1,
-      "kda": 3.182
+      "kda": 3.733
     },
     "14": {
       "hero_id": 14,
@@ -203,13 +203,13 @@
     "26": {
       "hero_id": 26,
       "name": "Lion",
-      "games": 65,
+      "games": 66,
       "wins": 32,
-      "losses": 33,
-      "win_rate": 0.49231,
-      "recent_games": 1,
+      "losses": 34,
+      "win_rate": 0.48485,
+      "recent_games": 2,
       "recent_wins": 1,
-      "kda": 1.533
+      "kda": 1.222
     },
     "27": {
       "hero_id": 27,
@@ -236,13 +236,13 @@
     "75": {
       "hero_id": 75,
       "name": "Silencer",
-      "games": 62,
-      "wins": 29,
+      "games": 63,
+      "wins": 30,
       "losses": 33,
-      "win_rate": 0.46774,
-      "recent_games": 7,
-      "recent_wins": 2,
-      "kda": 3.14
+      "win_rate": 0.47619,
+      "recent_games": 8,
+      "recent_wins": 3,
+      "kda": 3.175
     },
     "108": {
       "hero_id": 108,
@@ -702,9 +702,9 @@
       "wins": 12,
       "losses": 6,
       "win_rate": 0.66667,
-      "recent_games": 2,
+      "recent_games": 1,
       "recent_wins": 1,
-      "kda": 1.667
+      "kda": 15.0
     },
     "101": {
       "hero_id": 101,
@@ -1287,9 +1287,9 @@
       "wins": 115,
       "losses": 148,
       "win_rate": 0.43726,
-      "recent_games": 38,
-      "recent_wins": 18,
-      "kda": 3.015
+      "recent_games": 37,
+      "recent_wins": 17,
+      "kda": 2.958
     },
     {
       "hero_id": 45,
@@ -1298,9 +1298,9 @@
       "wins": 109,
       "losses": 91,
       "win_rate": 0.545,
-      "recent_games": 44,
-      "recent_wins": 27,
-      "kda": 2.622
+      "recent_games": 42,
+      "recent_wins": 25,
+      "kda": 2.531
     },
     {
       "hero_id": 40,
@@ -1338,24 +1338,24 @@
     {
       "hero_id": 84,
       "name": "Ogre Magi",
-      "games": 115,
-      "wins": 68,
+      "games": 116,
+      "wins": 69,
       "losses": 47,
-      "win_rate": 0.5913,
-      "recent_games": 26,
-      "recent_wins": 16,
-      "kda": 2.596
+      "win_rate": 0.59483,
+      "recent_games": 27,
+      "recent_wins": 17,
+      "kda": 2.638
     },
     {
       "hero_id": 22,
       "name": "Zeus",
-      "games": 108,
+      "games": 109,
       "wins": 60,
-      "losses": 48,
-      "win_rate": 0.55556,
-      "recent_games": 1,
+      "losses": 49,
+      "win_rate": 0.55046,
+      "recent_games": 2,
       "recent_wins": 1,
-      "kda": 3.182
+      "kda": 3.733
     },
     {
       "hero_id": 14,
@@ -1457,6 +1457,17 @@
       "kda": 2.417
     },
     {
+      "hero_id": 26,
+      "name": "Lion",
+      "games": 66,
+      "wins": 32,
+      "losses": 34,
+      "win_rate": 0.48485,
+      "recent_games": 2,
+      "recent_wins": 1,
+      "kda": 1.222
+    },
+    {
       "hero_id": 27,
       "name": "Shadow Shaman",
       "games": 65,
@@ -1466,34 +1477,23 @@
       "recent_games": 9,
       "recent_wins": 6,
       "kda": 2.691
-    },
-    {
-      "hero_id": 26,
-      "name": "Lion",
-      "games": 65,
-      "wins": 32,
-      "losses": 33,
-      "win_rate": 0.49231,
-      "recent_games": 1,
-      "recent_wins": 1,
-      "kda": 1.533
     }
   ],
   "top_recent_heroes": [
     {
       "hero_id": 45,
       "name": "Pugna",
-      "games": 44
+      "games": 42
     },
     {
       "hero_id": 86,
       "name": "Rubick",
-      "games": 38
+      "games": 37
     },
     {
       "hero_id": 84,
       "name": "Ogre Magi",
-      "games": 26
+      "games": 27
     },
     {
       "hero_id": 102,
