@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "status": "ready",
-  "generated_at": "2026-07-18T13:47:16.253583+00:00",
+  "generated_at": "2026-07-18T19:29:35.467584+00:00",
   "player": {
     "account_id": 222404655,
     "steamid64": "76561198182670383",
@@ -15,10 +15,10 @@
     "mmr_estimate": null
   },
   "summary": {
-    "games": 4066,
-    "wins": 2064,
-    "losses": 2002,
-    "win_rate": 0.50762,
+    "games": 4070,
+    "wins": 2065,
+    "losses": 2005,
+    "win_rate": 0.50737,
     "heroes": 114,
     "recent_matches": 300,
     "frequent_peers": 36
@@ -38,13 +38,13 @@
     "45": {
       "hero_id": 45,
       "name": "Pugna",
-      "games": 200,
-      "wins": 109,
+      "games": 201,
+      "wins": 110,
       "losses": 91,
-      "win_rate": 0.545,
-      "recent_games": 42,
-      "recent_wins": 25,
-      "kda": 2.531
+      "win_rate": 0.54726,
+      "recent_games": 39,
+      "recent_wins": 24,
+      "kda": 2.567
     },
     "40": {
       "hero_id": 40,
@@ -71,13 +71,13 @@
     "102": {
       "hero_id": 102,
       "name": "Abaddon",
-      "games": 124,
+      "games": 125,
       "wins": 73,
-      "losses": 51,
-      "win_rate": 0.58871,
-      "recent_games": 16,
+      "losses": 52,
+      "win_rate": 0.584,
+      "recent_games": 17,
       "recent_wins": 11,
-      "kda": 3.583
+      "kda": 3.381
     },
     "84": {
       "hero_id": 84,
@@ -93,13 +93,13 @@
     "22": {
       "hero_id": 22,
       "name": "Zeus",
-      "games": 109,
+      "games": 110,
       "wins": 60,
-      "losses": 49,
-      "win_rate": 0.55046,
-      "recent_games": 2,
+      "losses": 50,
+      "win_rate": 0.54545,
+      "recent_games": 3,
       "recent_wins": 1,
-      "kda": 3.733
+      "kda": 3.318
     },
     "14": {
       "hero_id": 14,
@@ -203,13 +203,13 @@
     "26": {
       "hero_id": 26,
       "name": "Lion",
-      "games": 66,
+      "games": 67,
       "wins": 32,
-      "losses": 34,
-      "win_rate": 0.48485,
-      "recent_games": 2,
+      "losses": 35,
+      "win_rate": 0.47761,
+      "recent_games": 3,
       "recent_wins": 1,
-      "kda": 1.222
+      "kda": 1.179
     },
     "27": {
       "hero_id": 27,
@@ -1294,13 +1294,13 @@
     {
       "hero_id": 45,
       "name": "Pugna",
-      "games": 200,
-      "wins": 109,
+      "games": 201,
+      "wins": 110,
       "losses": 91,
-      "win_rate": 0.545,
-      "recent_games": 42,
-      "recent_wins": 25,
-      "kda": 2.531
+      "win_rate": 0.54726,
+      "recent_games": 39,
+      "recent_wins": 24,
+      "kda": 2.567
     },
     {
       "hero_id": 40,
@@ -1327,13 +1327,13 @@
     {
       "hero_id": 102,
       "name": "Abaddon",
-      "games": 124,
+      "games": 125,
       "wins": 73,
-      "losses": 51,
-      "win_rate": 0.58871,
-      "recent_games": 16,
+      "losses": 52,
+      "win_rate": 0.584,
+      "recent_games": 17,
       "recent_wins": 11,
-      "kda": 3.583
+      "kda": 3.381
     },
     {
       "hero_id": 84,
@@ -1349,13 +1349,13 @@
     {
       "hero_id": 22,
       "name": "Zeus",
-      "games": 109,
+      "games": 110,
       "wins": 60,
-      "losses": 49,
-      "win_rate": 0.55046,
-      "recent_games": 2,
+      "losses": 50,
+      "win_rate": 0.54545,
+      "recent_games": 3,
       "recent_wins": 1,
-      "kda": 3.733
+      "kda": 3.318
     },
     {
       "hero_id": 14,
@@ -1459,13 +1459,13 @@
     {
       "hero_id": 26,
       "name": "Lion",
-      "games": 66,
+      "games": 67,
       "wins": 32,
-      "losses": 34,
-      "win_rate": 0.48485,
-      "recent_games": 2,
+      "losses": 35,
+      "win_rate": 0.47761,
+      "recent_games": 3,
       "recent_wins": 1,
-      "kda": 1.222
+      "kda": 1.179
     },
     {
       "hero_id": 27,
@@ -1483,7 +1483,7 @@
     {
       "hero_id": 45,
       "name": "Pugna",
-      "games": 42
+      "games": 39
     },
     {
       "hero_id": 86,
@@ -1498,7 +1498,7 @@
     {
       "hero_id": 102,
       "name": "Abaddon",
-      "games": 16
+      "games": 17
     },
     {
       "hero_id": 131,
