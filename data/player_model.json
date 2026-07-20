@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "status": "ready",
-  "generated_at": "2026-07-20T04:02:36.415002+00:00",
+  "generated_at": "2026-07-20T19:55:03.470166+00:00",
   "player": {
     "account_id": 222404655,
     "steamid64": "76561198182670383",
@@ -15,10 +15,10 @@
     "mmr_estimate": null
   },
   "summary": {
-    "games": 4070,
-    "wins": 2065,
-    "losses": 2005,
-    "win_rate": 0.50737,
+    "games": 4073,
+    "wins": 2066,
+    "losses": 2007,
+    "win_rate": 0.50724,
     "heroes": 114,
     "recent_matches": 300,
     "frequent_peers": 36
@@ -71,13 +71,13 @@
     "102": {
       "hero_id": 102,
       "name": "Abaddon",
-      "games": 125,
+      "games": 126,
       "wins": 73,
-      "losses": 52,
-      "win_rate": 0.584,
+      "losses": 53,
+      "win_rate": 0.57937,
       "recent_games": 17,
-      "recent_wins": 11,
-      "kda": 3.381
+      "recent_wins": 10,
+      "kda": 3.352
     },
     "84": {
       "hero_id": 84,
@@ -86,9 +86,9 @@
       "wins": 69,
       "losses": 47,
       "win_rate": 0.59483,
-      "recent_games": 27,
-      "recent_wins": 17,
-      "kda": 2.638
+      "recent_games": 26,
+      "recent_wins": 16,
+      "kda": 2.715
     },
     "22": {
       "hero_id": 22,
@@ -218,20 +218,20 @@
       "wins": 33,
       "losses": 32,
       "win_rate": 0.50769,
-      "recent_games": 9,
-      "recent_wins": 6,
-      "kda": 2.691
+      "recent_games": 8,
+      "recent_wins": 5,
+      "kda": 2.575
     },
     "83": {
       "hero_id": 83,
       "name": "Treant Protector",
-      "games": 64,
-      "wins": 35,
+      "games": 65,
+      "wins": 36,
       "losses": 29,
-      "win_rate": 0.54688,
-      "recent_games": 3,
-      "recent_wins": 1,
-      "kda": 1.407
+      "win_rate": 0.55385,
+      "recent_games": 4,
+      "recent_wins": 2,
+      "kda": 2.242
     },
     "75": {
       "hero_id": 75,
@@ -302,13 +302,13 @@
     "71": {
       "hero_id": 71,
       "name": "Spirit Breaker",
-      "games": 54,
+      "games": 55,
       "wins": 27,
-      "losses": 27,
-      "win_rate": 0.5,
-      "recent_games": 10,
+      "losses": 28,
+      "win_rate": 0.49091,
+      "recent_games": 11,
       "recent_wins": 4,
-      "kda": 2.404
+      "kda": 2.472
     },
     "99": {
       "hero_id": 99,
@@ -1327,13 +1327,13 @@
     {
       "hero_id": 102,
       "name": "Abaddon",
-      "games": 125,
+      "games": 126,
       "wins": 73,
-      "losses": 52,
-      "win_rate": 0.584,
+      "losses": 53,
+      "win_rate": 0.57937,
       "recent_games": 17,
-      "recent_wins": 11,
-      "kda": 3.381
+      "recent_wins": 10,
+      "kda": 3.352
     },
     {
       "hero_id": 84,
@@ -1342,9 +1342,9 @@
       "wins": 69,
       "losses": 47,
       "win_rate": 0.59483,
-      "recent_games": 27,
-      "recent_wins": 17,
-      "kda": 2.638
+      "recent_games": 26,
+      "recent_wins": 16,
+      "kda": 2.715
     },
     {
       "hero_id": 22,
@@ -1468,15 +1468,15 @@
       "kda": 1.179
     },
     {
-      "hero_id": 27,
-      "name": "Shadow Shaman",
+      "hero_id": 83,
+      "name": "Treant Protector",
       "games": 65,
-      "wins": 33,
-      "losses": 32,
-      "win_rate": 0.50769,
-      "recent_games": 9,
-      "recent_wins": 6,
-      "kda": 2.691
+      "wins": 36,
+      "losses": 29,
+      "win_rate": 0.55385,
+      "recent_games": 4,
+      "recent_wins": 2,
+      "kda": 2.242
     }
   ],
   "top_recent_heroes": [
@@ -1493,7 +1493,7 @@
     {
       "hero_id": 84,
       "name": "Ogre Magi",
-      "games": 27
+      "games": 26
     },
     {
       "hero_id": 102,
@@ -1526,19 +1526,19 @@
       "games": 12
     },
     {
+      "hero_id": 71,
+      "name": "Spirit Breaker",
+      "games": 11
+    },
+    {
       "hero_id": 87,
       "name": "Disruptor",
       "games": 11
     },
     {
-      "hero_id": 71,
-      "name": "Spirit Breaker",
-      "games": 10
-    },
-    {
-      "hero_id": 27,
-      "name": "Shadow Shaman",
-      "games": 9
+      "hero_id": 75,
+      "name": "Silencer",
+      "games": 8
     }
   ],
   "peers": [],
