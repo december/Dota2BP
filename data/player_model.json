@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "status": "ready",
-  "generated_at": "2026-07-21T14:19:55.112915+00:00",
+  "generated_at": "2026-07-21T19:50:15.108254+00:00",
   "player": {
     "account_id": 222404655,
     "steamid64": "76561198182670383",
@@ -15,10 +15,10 @@
     "mmr_estimate": null
   },
   "summary": {
-    "games": 4073,
-    "wins": 2066,
+    "games": 4074,
+    "wins": 2067,
     "losses": 2007,
-    "win_rate": 0.50724,
+    "win_rate": 0.50736,
     "heroes": 114,
     "recent_matches": 300,
     "frequent_peers": 36
@@ -97,9 +97,9 @@
       "wins": 60,
       "losses": 50,
       "win_rate": 0.54545,
-      "recent_games": 3,
-      "recent_wins": 1,
-      "kda": 3.318
+      "recent_games": 2,
+      "recent_wins": 0,
+      "kda": 3.455
     },
     "14": {
       "hero_id": 14,
@@ -291,13 +291,13 @@
     "67": {
       "hero_id": 67,
       "name": "Spectre",
-      "games": 55,
-      "wins": 35,
+      "games": 56,
+      "wins": 36,
       "losses": 20,
-      "win_rate": 0.63636,
-      "recent_games": 0,
-      "recent_wins": 0,
-      "kda": 0.0
+      "win_rate": 0.64286,
+      "recent_games": 1,
+      "recent_wins": 1,
+      "kda": 4.375
     },
     "71": {
       "hero_id": 71,
@@ -1353,9 +1353,9 @@
       "wins": 60,
       "losses": 50,
       "win_rate": 0.54545,
-      "recent_games": 3,
-      "recent_wins": 1,
-      "kda": 3.318
+      "recent_games": 2,
+      "recent_wins": 0,
+      "kda": 3.455
     },
     {
       "hero_id": 14,
