@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "status": "ready",
-  "generated_at": "2026-07-23T14:29:34.594909+00:00",
+  "generated_at": "2026-07-23T19:44:14.876550+00:00",
   "player": {
     "account_id": 222404655,
     "steamid64": "76561198182670383",
@@ -15,10 +15,10 @@
     "mmr_estimate": null
   },
   "summary": {
-    "games": 4075,
-    "wins": 2068,
-    "losses": 2007,
-    "win_rate": 0.50748,
+    "games": 4078,
+    "wins": 2070,
+    "losses": 2008,
+    "win_rate": 0.5076,
     "heroes": 114,
     "recent_matches": 300,
     "frequent_peers": 36
@@ -27,13 +27,13 @@
     "86": {
       "hero_id": 86,
       "name": "Rubick",
-      "games": 263,
+      "games": 264,
       "wins": 115,
-      "losses": 148,
-      "win_rate": 0.43726,
-      "recent_games": 37,
+      "losses": 149,
+      "win_rate": 0.43561,
+      "recent_games": 38,
       "recent_wins": 17,
-      "kda": 2.958
+      "kda": 2.905
     },
     "45": {
       "hero_id": 45,
@@ -42,9 +42,9 @@
       "wins": 110,
       "losses": 91,
       "win_rate": 0.54726,
-      "recent_games": 38,
-      "recent_wins": 23,
-      "kda": 2.502
+      "recent_games": 36,
+      "recent_wins": 22,
+      "kda": 2.597
     },
     "40": {
       "hero_id": 40,
@@ -218,9 +218,9 @@
       "wins": 33,
       "losses": 32,
       "win_rate": 0.50769,
-      "recent_games": 8,
-      "recent_wins": 5,
-      "kda": 2.575
+      "recent_games": 7,
+      "recent_wins": 4,
+      "kda": 2.897
     },
     "83": {
       "hero_id": 83,
@@ -236,13 +236,13 @@
     "75": {
       "hero_id": 75,
       "name": "Silencer",
-      "games": 63,
-      "wins": 30,
+      "games": 64,
+      "wins": 31,
       "losses": 33,
-      "win_rate": 0.47619,
-      "recent_games": 8,
-      "recent_wins": 3,
-      "kda": 3.175
+      "win_rate": 0.48438,
+      "recent_games": 9,
+      "recent_wins": 4,
+      "kda": 3.133
     },
     "108": {
       "hero_id": 108,
@@ -401,13 +401,13 @@
     "18": {
       "hero_id": 18,
       "name": "Sven",
-      "games": 41,
-      "wins": 18,
+      "games": 42,
+      "wins": 19,
       "losses": 23,
-      "win_rate": 0.43902,
-      "recent_games": 0,
-      "recent_wins": 0,
-      "kda": 0.0
+      "win_rate": 0.45238,
+      "recent_games": 1,
+      "recent_wins": 1,
+      "kda": 3.0
     },
     "73": {
       "hero_id": 73,
@@ -1283,13 +1283,13 @@
     {
       "hero_id": 86,
       "name": "Rubick",
-      "games": 263,
+      "games": 264,
       "wins": 115,
-      "losses": 148,
-      "win_rate": 0.43726,
-      "recent_games": 37,
+      "losses": 149,
+      "win_rate": 0.43561,
+      "recent_games": 38,
       "recent_wins": 17,
-      "kda": 2.958
+      "kda": 2.905
     },
     {
       "hero_id": 45,
@@ -1298,9 +1298,9 @@
       "wins": 110,
       "losses": 91,
       "win_rate": 0.54726,
-      "recent_games": 38,
-      "recent_wins": 23,
-      "kda": 2.502
+      "recent_games": 36,
+      "recent_wins": 22,
+      "kda": 2.597
     },
     {
       "hero_id": 40,
@@ -1481,14 +1481,14 @@
   ],
   "top_recent_heroes": [
     {
-      "hero_id": 45,
-      "name": "Pugna",
+      "hero_id": 86,
+      "name": "Rubick",
       "games": 38
     },
     {
-      "hero_id": 86,
-      "name": "Rubick",
-      "games": 37
+      "hero_id": 45,
+      "name": "Pugna",
+      "games": 36
     },
     {
       "hero_id": 84,
@@ -1538,7 +1538,7 @@
     {
       "hero_id": 75,
       "name": "Silencer",
-      "games": 8
+      "games": 9
     }
   ],
   "peers": [],
