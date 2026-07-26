@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "status": "ready",
-  "generated_at": "2026-07-26T03:53:46.131752+00:00",
+  "generated_at": "2026-07-26T08:38:05.891748+00:00",
   "player": {
     "account_id": 222404655,
     "steamid64": "76561198182670383",
@@ -15,10 +15,10 @@
     "mmr_estimate": null
   },
   "summary": {
-    "games": 4078,
-    "wins": 2070,
+    "games": 4079,
+    "wins": 2071,
     "losses": 2008,
-    "win_rate": 0.5076,
+    "win_rate": 0.50772,
     "heroes": 114,
     "recent_matches": 300,
     "frequent_peers": 36
@@ -31,9 +31,9 @@
       "wins": 115,
       "losses": 149,
       "win_rate": 0.43561,
-      "recent_games": 38,
+      "recent_games": 37,
       "recent_wins": 17,
-      "kda": 2.905
+      "kda": 2.966
     },
     "45": {
       "hero_id": 45,
@@ -170,13 +170,13 @@
     "31": {
       "hero_id": 31,
       "name": "Lich",
-      "games": 75,
-      "wins": 42,
+      "games": 76,
+      "wins": 43,
       "losses": 33,
-      "win_rate": 0.56,
-      "recent_games": 13,
-      "recent_wins": 3,
-      "kda": 1.91
+      "win_rate": 0.56579,
+      "recent_games": 14,
+      "recent_wins": 4,
+      "kda": 1.93
     },
     "29": {
       "hero_id": 29,
@@ -1287,9 +1287,9 @@
       "wins": 115,
       "losses": 149,
       "win_rate": 0.43561,
-      "recent_games": 38,
+      "recent_games": 37,
       "recent_wins": 17,
-      "kda": 2.905
+      "kda": 2.966
     },
     {
       "hero_id": 45,
@@ -1426,13 +1426,13 @@
     {
       "hero_id": 31,
       "name": "Lich",
-      "games": 75,
-      "wins": 42,
+      "games": 76,
+      "wins": 43,
       "losses": 33,
-      "win_rate": 0.56,
-      "recent_games": 13,
-      "recent_wins": 3,
-      "kda": 1.91
+      "win_rate": 0.56579,
+      "recent_games": 14,
+      "recent_wins": 4,
+      "kda": 1.93
     },
     {
       "hero_id": 29,
@@ -1483,7 +1483,7 @@
     {
       "hero_id": 86,
       "name": "Rubick",
-      "games": 38
+      "games": 37
     },
     {
       "hero_id": 45,
@@ -1506,6 +1506,11 @@
       "games": 15
     },
     {
+      "hero_id": 31,
+      "name": "Lich",
+      "games": 14
+    },
+    {
       "hero_id": 14,
       "name": "Pudge",
       "games": 14
@@ -1513,11 +1518,6 @@
     {
       "hero_id": 37,
       "name": "Warlock",
-      "games": 13
-    },
-    {
-      "hero_id": 31,
-      "name": "Lich",
       "games": 13
     },
     {
