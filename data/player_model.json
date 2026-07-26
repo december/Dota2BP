@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "status": "ready",
-  "generated_at": "2026-07-26T08:38:05.891748+00:00",
+  "generated_at": "2026-07-26T19:32:59.110057+00:00",
   "player": {
     "account_id": 222404655,
     "steamid64": "76561198182670383",
@@ -15,10 +15,10 @@
     "mmr_estimate": null
   },
   "summary": {
-    "games": 4079,
-    "wins": 2071,
-    "losses": 2008,
-    "win_rate": 0.50772,
+    "games": 4083,
+    "wins": 2073,
+    "losses": 2010,
+    "win_rate": 0.50771,
     "heroes": 114,
     "recent_matches": 300,
     "frequent_peers": 36
@@ -42,9 +42,9 @@
       "wins": 110,
       "losses": 91,
       "win_rate": 0.54726,
-      "recent_games": 36,
-      "recent_wins": 22,
-      "kda": 2.597
+      "recent_games": 33,
+      "recent_wins": 19,
+      "kda": 2.557
     },
     "40": {
       "hero_id": 40,
@@ -60,13 +60,13 @@
     "37": {
       "hero_id": 37,
       "name": "Warlock",
-      "games": 156,
+      "games": 157,
       "wins": 94,
-      "losses": 62,
-      "win_rate": 0.60256,
-      "recent_games": 13,
+      "losses": 63,
+      "win_rate": 0.59873,
+      "recent_games": 14,
       "recent_wins": 6,
-      "kda": 2.637
+      "kda": 2.463
     },
     "102": {
       "hero_id": 102,
@@ -134,6 +134,17 @@
       "recent_wins": 3,
       "kda": 2.135
     },
+    "20": {
+      "hero_id": 20,
+      "name": "Vengeful Spirit",
+      "games": 83,
+      "wins": 33,
+      "losses": 50,
+      "win_rate": 0.39759,
+      "recent_games": 5,
+      "recent_wins": 3,
+      "kda": 1.426
+    },
     "30": {
       "hero_id": 30,
       "name": "Witch Doctor",
@@ -144,17 +155,6 @@
       "recent_games": 8,
       "recent_wins": 4,
       "kda": 2.148
-    },
-    "20": {
-      "hero_id": 20,
-      "name": "Vengeful Spirit",
-      "games": 82,
-      "wins": 32,
-      "losses": 50,
-      "win_rate": 0.39024,
-      "recent_games": 4,
-      "recent_wins": 2,
-      "kda": 1.311
     },
     "36": {
       "hero_id": 36,
@@ -192,13 +192,13 @@
     "90": {
       "hero_id": 90,
       "name": "Keeper of the Light",
-      "games": 67,
-      "wins": 33,
+      "games": 68,
+      "wins": 34,
       "losses": 34,
-      "win_rate": 0.49254,
-      "recent_games": 3,
-      "recent_wins": 1,
-      "kda": 2.417
+      "win_rate": 0.5,
+      "recent_games": 4,
+      "recent_wins": 2,
+      "kda": 3.63
     },
     "26": {
       "hero_id": 26,
@@ -211,6 +211,17 @@
       "recent_wins": 1,
       "kda": 1.179
     },
+    "83": {
+      "hero_id": 83,
+      "name": "Treant Protector",
+      "games": 66,
+      "wins": 36,
+      "losses": 30,
+      "win_rate": 0.54545,
+      "recent_games": 5,
+      "recent_wins": 2,
+      "kda": 2.381
+    },
     "27": {
       "hero_id": 27,
       "name": "Shadow Shaman",
@@ -221,17 +232,6 @@
       "recent_games": 7,
       "recent_wins": 4,
       "kda": 2.897
-    },
-    "83": {
-      "hero_id": 83,
-      "name": "Treant Protector",
-      "games": 65,
-      "wins": 36,
-      "losses": 29,
-      "win_rate": 0.55385,
-      "recent_games": 4,
-      "recent_wins": 2,
-      "kda": 2.242
     },
     "75": {
       "hero_id": 75,
@@ -339,9 +339,9 @@
       "wins": 22,
       "losses": 27,
       "win_rate": 0.44898,
-      "recent_games": 11,
+      "recent_games": 10,
       "recent_wins": 5,
-      "kda": 2.385
+      "kda": 2.337
     },
     "110": {
       "hero_id": 110,
@@ -1298,9 +1298,9 @@
       "wins": 110,
       "losses": 91,
       "win_rate": 0.54726,
-      "recent_games": 36,
-      "recent_wins": 22,
-      "kda": 2.597
+      "recent_games": 33,
+      "recent_wins": 19,
+      "kda": 2.557
     },
     {
       "hero_id": 40,
@@ -1316,13 +1316,13 @@
     {
       "hero_id": 37,
       "name": "Warlock",
-      "games": 156,
+      "games": 157,
       "wins": 94,
-      "losses": 62,
-      "win_rate": 0.60256,
-      "recent_games": 13,
+      "losses": 63,
+      "win_rate": 0.59873,
+      "recent_games": 14,
       "recent_wins": 6,
-      "kda": 2.637
+      "kda": 2.463
     },
     {
       "hero_id": 102,
@@ -1404,13 +1404,13 @@
     {
       "hero_id": 20,
       "name": "Vengeful Spirit",
-      "games": 82,
-      "wins": 32,
+      "games": 83,
+      "wins": 33,
       "losses": 50,
-      "win_rate": 0.39024,
-      "recent_games": 4,
-      "recent_wins": 2,
-      "kda": 1.311
+      "win_rate": 0.39759,
+      "recent_games": 5,
+      "recent_wins": 3,
+      "kda": 1.426
     },
     {
       "hero_id": 36,
@@ -1448,13 +1448,13 @@
     {
       "hero_id": 90,
       "name": "Keeper of the Light",
-      "games": 67,
-      "wins": 33,
+      "games": 68,
+      "wins": 34,
       "losses": 34,
-      "win_rate": 0.49254,
-      "recent_games": 3,
-      "recent_wins": 1,
-      "kda": 2.417
+      "win_rate": 0.5,
+      "recent_games": 4,
+      "recent_wins": 2,
+      "kda": 3.63
     },
     {
       "hero_id": 26,
@@ -1470,13 +1470,13 @@
     {
       "hero_id": 83,
       "name": "Treant Protector",
-      "games": 65,
+      "games": 66,
       "wins": 36,
-      "losses": 29,
-      "win_rate": 0.55385,
-      "recent_games": 4,
+      "losses": 30,
+      "win_rate": 0.54545,
+      "recent_games": 5,
       "recent_wins": 2,
-      "kda": 2.242
+      "kda": 2.381
     }
   ],
   "top_recent_heroes": [
@@ -1488,7 +1488,7 @@
     {
       "hero_id": 45,
       "name": "Pugna",
-      "games": 36
+      "games": 33
     },
     {
       "hero_id": 84,
@@ -1506,6 +1506,11 @@
       "games": 15
     },
     {
+      "hero_id": 37,
+      "name": "Warlock",
+      "games": 14
+    },
+    {
       "hero_id": 31,
       "name": "Lich",
       "games": 14
@@ -1514,11 +1519,6 @@
       "hero_id": 14,
       "name": "Pudge",
       "games": 14
-    },
-    {
-      "hero_id": 37,
-      "name": "Warlock",
-      "games": 13
     },
     {
       "hero_id": 40,
@@ -1533,7 +1533,7 @@
     {
       "hero_id": 87,
       "name": "Disruptor",
-      "games": 11
+      "games": 10
     },
     {
       "hero_id": 75,
