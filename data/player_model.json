@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "status": "ready",
-  "generated_at": "2026-07-27T15:11:37.649661+00:00",
+  "generated_at": "2026-07-27T19:53:00.866976+00:00",
   "player": {
     "account_id": 222404655,
     "steamid64": "76561198182670383",
@@ -15,10 +15,10 @@
     "mmr_estimate": null
   },
   "summary": {
-    "games": 4083,
-    "wins": 2073,
+    "games": 4085,
+    "wins": 2075,
     "losses": 2010,
-    "win_rate": 0.50771,
+    "win_rate": 0.50796,
     "heroes": 114,
     "recent_matches": 300,
     "frequent_peers": 36
@@ -31,9 +31,9 @@
       "wins": 115,
       "losses": 149,
       "win_rate": 0.43561,
-      "recent_games": 37,
-      "recent_wins": 17,
-      "kda": 2.966
+      "recent_games": 36,
+      "recent_wins": 16,
+      "kda": 2.893
     },
     "45": {
       "hero_id": 45,
@@ -42,20 +42,20 @@
       "wins": 110,
       "losses": 91,
       "win_rate": 0.54726,
-      "recent_games": 33,
-      "recent_wins": 19,
-      "kda": 2.557
+      "recent_games": 32,
+      "recent_wins": 18,
+      "kda": 2.54
     },
     "40": {
       "hero_id": 40,
       "name": "Venomancer",
-      "games": 177,
-      "wins": 108,
+      "games": 178,
+      "wins": 109,
       "losses": 69,
-      "win_rate": 0.61017,
-      "recent_games": 12,
-      "recent_wins": 9,
-      "kda": 2.956
+      "win_rate": 0.61236,
+      "recent_games": 13,
+      "recent_wins": 10,
+      "kda": 3.041
     },
     "37": {
       "hero_id": 37,
@@ -82,13 +82,13 @@
     "84": {
       "hero_id": 84,
       "name": "Ogre Magi",
-      "games": 116,
-      "wins": 69,
+      "games": 117,
+      "wins": 70,
       "losses": 47,
-      "win_rate": 0.59483,
-      "recent_games": 26,
-      "recent_wins": 16,
-      "kda": 2.715
+      "win_rate": 0.59829,
+      "recent_games": 27,
+      "recent_wins": 17,
+      "kda": 2.718
     },
     "22": {
       "hero_id": 22,
@@ -1287,9 +1287,9 @@
       "wins": 115,
       "losses": 149,
       "win_rate": 0.43561,
-      "recent_games": 37,
-      "recent_wins": 17,
-      "kda": 2.966
+      "recent_games": 36,
+      "recent_wins": 16,
+      "kda": 2.893
     },
     {
       "hero_id": 45,
@@ -1298,20 +1298,20 @@
       "wins": 110,
       "losses": 91,
       "win_rate": 0.54726,
-      "recent_games": 33,
-      "recent_wins": 19,
-      "kda": 2.557
+      "recent_games": 32,
+      "recent_wins": 18,
+      "kda": 2.54
     },
     {
       "hero_id": 40,
       "name": "Venomancer",
-      "games": 177,
-      "wins": 108,
+      "games": 178,
+      "wins": 109,
       "losses": 69,
-      "win_rate": 0.61017,
-      "recent_games": 12,
-      "recent_wins": 9,
-      "kda": 2.956
+      "win_rate": 0.61236,
+      "recent_games": 13,
+      "recent_wins": 10,
+      "kda": 3.041
     },
     {
       "hero_id": 37,
@@ -1338,13 +1338,13 @@
     {
       "hero_id": 84,
       "name": "Ogre Magi",
-      "games": 116,
-      "wins": 69,
+      "games": 117,
+      "wins": 70,
       "losses": 47,
-      "win_rate": 0.59483,
-      "recent_games": 26,
-      "recent_wins": 16,
-      "kda": 2.715
+      "win_rate": 0.59829,
+      "recent_games": 27,
+      "recent_wins": 17,
+      "kda": 2.718
     },
     {
       "hero_id": 22,
@@ -1483,17 +1483,17 @@
     {
       "hero_id": 86,
       "name": "Rubick",
-      "games": 37
+      "games": 36
     },
     {
       "hero_id": 45,
       "name": "Pugna",
-      "games": 33
+      "games": 32
     },
     {
       "hero_id": 84,
       "name": "Ogre Magi",
-      "games": 26
+      "games": 27
     },
     {
       "hero_id": 102,
@@ -1523,7 +1523,7 @@
     {
       "hero_id": 40,
       "name": "Venomancer",
-      "games": 12
+      "games": 13
     },
     {
       "hero_id": 71,
