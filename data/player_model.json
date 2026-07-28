@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "status": "ready",
-  "generated_at": "2026-07-28T14:35:02.119139+00:00",
+  "generated_at": "2026-07-28T19:51:45.032425+00:00",
   "player": {
     "account_id": 222404655,
     "steamid64": "76561198182670383",
@@ -15,10 +15,10 @@
     "mmr_estimate": null
   },
   "summary": {
-    "games": 4085,
-    "wins": 2075,
+    "games": 4086,
+    "wins": 2076,
     "losses": 2010,
-    "win_rate": 0.50796,
+    "win_rate": 0.50808,
     "heroes": 114,
     "recent_matches": 300,
     "frequent_peers": 36
@@ -42,9 +42,9 @@
       "wins": 110,
       "losses": 91,
       "win_rate": 0.54726,
-      "recent_games": 32,
+      "recent_games": 31,
       "recent_wins": 18,
-      "kda": 2.54
+      "kda": 2.542
     },
     "40": {
       "hero_id": 40,
@@ -456,13 +456,13 @@
     "121": {
       "hero_id": 121,
       "name": "Grimstroke",
-      "games": 34,
-      "wins": 18,
+      "games": 35,
+      "wins": 19,
       "losses": 16,
-      "win_rate": 0.52941,
-      "recent_games": 1,
-      "recent_wins": 1,
-      "kda": 4.667
+      "win_rate": 0.54286,
+      "recent_games": 2,
+      "recent_wins": 2,
+      "kda": 4.25
     },
     "88": {
       "hero_id": 88,
@@ -1298,9 +1298,9 @@
       "wins": 110,
       "losses": 91,
       "win_rate": 0.54726,
-      "recent_games": 32,
+      "recent_games": 31,
       "recent_wins": 18,
-      "kda": 2.54
+      "kda": 2.542
     },
     {
       "hero_id": 40,
@@ -1488,7 +1488,7 @@
     {
       "hero_id": 45,
       "name": "Pugna",
-      "games": 32
+      "games": 31
     },
     {
       "hero_id": 84,
