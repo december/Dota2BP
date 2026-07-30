@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "status": "ready",
-  "generated_at": "2026-07-30T14:29:56.208878+00:00",
+  "generated_at": "2026-07-30T19:50:09.243167+00:00",
   "player": {
     "account_id": 222404655,
     "steamid64": "76561198182670383",
@@ -15,10 +15,10 @@
     "mmr_estimate": null
   },
   "summary": {
-    "games": 4086,
-    "wins": 2076,
-    "losses": 2010,
-    "win_rate": 0.50808,
+    "games": 4090,
+    "wins": 2077,
+    "losses": 2013,
+    "win_rate": 0.50782,
     "heroes": 114,
     "recent_matches": 300,
     "frequent_peers": 36
@@ -31,9 +31,9 @@
       "wins": 115,
       "losses": 149,
       "win_rate": 0.43561,
-      "recent_games": 36,
-      "recent_wins": 16,
-      "kda": 2.893
+      "recent_games": 34,
+      "recent_wins": 15,
+      "kda": 2.868
     },
     "45": {
       "hero_id": 45,
@@ -42,9 +42,9 @@
       "wins": 110,
       "losses": 91,
       "win_rate": 0.54726,
-      "recent_games": 31,
+      "recent_games": 30,
       "recent_wins": 18,
-      "kda": 2.542
+      "kda": 2.591
     },
     "40": {
       "hero_id": 40,
@@ -86,9 +86,9 @@
       "wins": 70,
       "losses": 47,
       "win_rate": 0.59829,
-      "recent_games": 27,
-      "recent_wins": 17,
-      "kda": 2.718
+      "recent_games": 26,
+      "recent_wins": 16,
+      "kda": 2.678
     },
     "22": {
       "hero_id": 22,
@@ -192,13 +192,13 @@
     "90": {
       "hero_id": 90,
       "name": "Keeper of the Light",
-      "games": 68,
-      "wins": 34,
+      "games": 69,
+      "wins": 35,
       "losses": 34,
-      "win_rate": 0.5,
-      "recent_games": 4,
-      "recent_wins": 2,
-      "kda": 3.63
+      "win_rate": 0.50725,
+      "recent_games": 5,
+      "recent_wins": 3,
+      "kda": 4.207
     },
     "26": {
       "hero_id": 26,
@@ -211,6 +211,17 @@
       "recent_wins": 1,
       "kda": 1.179
     },
+    "27": {
+      "hero_id": 27,
+      "name": "Shadow Shaman",
+      "games": 66,
+      "wins": 33,
+      "losses": 33,
+      "win_rate": 0.5,
+      "recent_games": 8,
+      "recent_wins": 4,
+      "kda": 2.473
+    },
     "83": {
       "hero_id": 83,
       "name": "Treant Protector",
@@ -221,17 +232,6 @@
       "recent_games": 5,
       "recent_wins": 2,
       "kda": 2.381
-    },
-    "27": {
-      "hero_id": 27,
-      "name": "Shadow Shaman",
-      "games": 65,
-      "wins": 33,
-      "losses": 32,
-      "win_rate": 0.50769,
-      "recent_games": 7,
-      "recent_wins": 4,
-      "kda": 2.897
     },
     "75": {
       "hero_id": 75,
@@ -277,6 +277,17 @@
       "recent_wins": 1,
       "kda": 3.0
     },
+    "71": {
+      "hero_id": 71,
+      "name": "Spirit Breaker",
+      "games": 57,
+      "wins": 27,
+      "losses": 30,
+      "win_rate": 0.47368,
+      "recent_games": 13,
+      "recent_wins": 4,
+      "kda": 2.328
+    },
     "2": {
       "hero_id": 2,
       "name": "Axe",
@@ -298,17 +309,6 @@
       "recent_games": 1,
       "recent_wins": 1,
       "kda": 4.375
-    },
-    "71": {
-      "hero_id": 71,
-      "name": "Spirit Breaker",
-      "games": 55,
-      "wins": 27,
-      "losses": 28,
-      "win_rate": 0.49091,
-      "recent_games": 11,
-      "recent_wins": 4,
-      "kda": 2.472
     },
     "99": {
       "hero_id": 99,
@@ -1287,9 +1287,9 @@
       "wins": 115,
       "losses": 149,
       "win_rate": 0.43561,
-      "recent_games": 36,
-      "recent_wins": 16,
-      "kda": 2.893
+      "recent_games": 34,
+      "recent_wins": 15,
+      "kda": 2.868
     },
     {
       "hero_id": 45,
@@ -1298,9 +1298,9 @@
       "wins": 110,
       "losses": 91,
       "win_rate": 0.54726,
-      "recent_games": 31,
+      "recent_games": 30,
       "recent_wins": 18,
-      "kda": 2.542
+      "kda": 2.591
     },
     {
       "hero_id": 40,
@@ -1342,9 +1342,9 @@
       "wins": 70,
       "losses": 47,
       "win_rate": 0.59829,
-      "recent_games": 27,
-      "recent_wins": 17,
-      "kda": 2.718
+      "recent_games": 26,
+      "recent_wins": 16,
+      "kda": 2.678
     },
     {
       "hero_id": 22,
@@ -1448,13 +1448,13 @@
     {
       "hero_id": 90,
       "name": "Keeper of the Light",
-      "games": 68,
-      "wins": 34,
+      "games": 69,
+      "wins": 35,
       "losses": 34,
-      "win_rate": 0.5,
-      "recent_games": 4,
-      "recent_wins": 2,
-      "kda": 3.63
+      "win_rate": 0.50725,
+      "recent_games": 5,
+      "recent_wins": 3,
+      "kda": 4.207
     },
     {
       "hero_id": 26,
@@ -1483,17 +1483,17 @@
     {
       "hero_id": 86,
       "name": "Rubick",
-      "games": 36
+      "games": 34
     },
     {
       "hero_id": 45,
       "name": "Pugna",
-      "games": 31
+      "games": 30
     },
     {
       "hero_id": 84,
       "name": "Ogre Magi",
-      "games": 27
+      "games": 26
     },
     {
       "hero_id": 102,
@@ -1521,14 +1521,14 @@
       "games": 14
     },
     {
-      "hero_id": 40,
-      "name": "Venomancer",
+      "hero_id": 71,
+      "name": "Spirit Breaker",
       "games": 13
     },
     {
-      "hero_id": 71,
-      "name": "Spirit Breaker",
-      "games": 11
+      "hero_id": 40,
+      "name": "Venomancer",
+      "games": 13
     },
     {
       "hero_id": 87,
