@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "status": "ready",
-  "generated_at": "2026-07-31T14:32:52.870079+00:00",
+  "generated_at": "2026-07-31T19:51:20.863280+00:00",
   "player": {
     "account_id": 222404655,
     "steamid64": "76561198182670383",
@@ -15,10 +15,10 @@
     "mmr_estimate": null
   },
   "summary": {
-    "games": 4090,
-    "wins": 2077,
+    "games": 4091,
+    "wins": 2078,
     "losses": 2013,
-    "win_rate": 0.50782,
+    "win_rate": 0.50794,
     "heroes": 114,
     "recent_matches": 300,
     "frequent_peers": 36
@@ -71,13 +71,13 @@
     "102": {
       "hero_id": 102,
       "name": "Abaddon",
-      "games": 126,
-      "wins": 73,
+      "games": 127,
+      "wins": 74,
       "losses": 53,
-      "win_rate": 0.57937,
-      "recent_games": 17,
-      "recent_wins": 10,
-      "kda": 3.352
+      "win_rate": 0.58268,
+      "recent_games": 18,
+      "recent_wins": 11,
+      "kda": 3.256
     },
     "84": {
       "hero_id": 84,
@@ -86,9 +86,9 @@
       "wins": 70,
       "losses": 47,
       "win_rate": 0.59829,
-      "recent_games": 26,
+      "recent_games": 25,
       "recent_wins": 16,
-      "kda": 2.678
+      "kda": 2.667
     },
     "22": {
       "hero_id": 22,
@@ -1327,13 +1327,13 @@
     {
       "hero_id": 102,
       "name": "Abaddon",
-      "games": 126,
-      "wins": 73,
+      "games": 127,
+      "wins": 74,
       "losses": 53,
-      "win_rate": 0.57937,
-      "recent_games": 17,
-      "recent_wins": 10,
-      "kda": 3.352
+      "win_rate": 0.58268,
+      "recent_games": 18,
+      "recent_wins": 11,
+      "kda": 3.256
     },
     {
       "hero_id": 84,
@@ -1342,9 +1342,9 @@
       "wins": 70,
       "losses": 47,
       "win_rate": 0.59829,
-      "recent_games": 26,
+      "recent_games": 25,
       "recent_wins": 16,
-      "kda": 2.678
+      "kda": 2.667
     },
     {
       "hero_id": 22,
@@ -1493,12 +1493,12 @@
     {
       "hero_id": 84,
       "name": "Ogre Magi",
-      "games": 26
+      "games": 25
     },
     {
       "hero_id": 102,
       "name": "Abaddon",
-      "games": 17
+      "games": 18
     },
     {
       "hero_id": 131,
