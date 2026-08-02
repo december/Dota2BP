@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "status": "ready",
-  "generated_at": "2026-08-02T13:52:34.477690+00:00",
+  "generated_at": "2026-08-02T19:32:46.675904+00:00",
   "player": {
     "account_id": 222404655,
     "steamid64": "76561198182670383",
@@ -15,10 +15,10 @@
     "mmr_estimate": null
   },
   "summary": {
-    "games": 4092,
-    "wins": 2078,
+    "games": 4094,
+    "wins": 2080,
     "losses": 2014,
-    "win_rate": 0.50782,
+    "win_rate": 0.50806,
     "heroes": 114,
     "recent_matches": 300,
     "frequent_peers": 36
@@ -42,9 +42,9 @@
       "wins": 110,
       "losses": 91,
       "win_rate": 0.54726,
-      "recent_games": 29,
-      "recent_wins": 18,
-      "kda": 2.667
+      "recent_games": 28,
+      "recent_wins": 17,
+      "kda": 2.619
     },
     "40": {
       "hero_id": 40,
@@ -71,13 +71,13 @@
     "102": {
       "hero_id": 102,
       "name": "Abaddon",
-      "games": 127,
-      "wins": 74,
+      "games": 128,
+      "wins": 75,
       "losses": 53,
-      "win_rate": 0.58268,
-      "recent_games": 18,
-      "recent_wins": 11,
-      "kda": 3.256
+      "win_rate": 0.58594,
+      "recent_games": 19,
+      "recent_wins": 12,
+      "kda": 3.452
     },
     "84": {
       "hero_id": 84,
@@ -174,9 +174,9 @@
       "wins": 43,
       "losses": 33,
       "win_rate": 0.56579,
-      "recent_games": 14,
-      "recent_wins": 4,
-      "kda": 1.93
+      "recent_games": 13,
+      "recent_wins": 3,
+      "kda": 1.835
     },
     "29": {
       "hero_id": 29,
@@ -214,13 +214,13 @@
     "27": {
       "hero_id": 27,
       "name": "Shadow Shaman",
-      "games": 66,
-      "wins": 33,
+      "games": 67,
+      "wins": 34,
       "losses": 33,
-      "win_rate": 0.5,
-      "recent_games": 8,
-      "recent_wins": 4,
-      "kda": 2.473
+      "win_rate": 0.50746,
+      "recent_games": 9,
+      "recent_wins": 5,
+      "kda": 2.568
     },
     "83": {
       "hero_id": 83,
@@ -1298,9 +1298,9 @@
       "wins": 110,
       "losses": 91,
       "win_rate": 0.54726,
-      "recent_games": 29,
-      "recent_wins": 18,
-      "kda": 2.667
+      "recent_games": 28,
+      "recent_wins": 17,
+      "kda": 2.619
     },
     {
       "hero_id": 40,
@@ -1327,13 +1327,13 @@
     {
       "hero_id": 102,
       "name": "Abaddon",
-      "games": 127,
-      "wins": 74,
+      "games": 128,
+      "wins": 75,
       "losses": 53,
-      "win_rate": 0.58268,
-      "recent_games": 18,
-      "recent_wins": 11,
-      "kda": 3.256
+      "win_rate": 0.58594,
+      "recent_games": 19,
+      "recent_wins": 12,
+      "kda": 3.452
     },
     {
       "hero_id": 84,
@@ -1430,9 +1430,9 @@
       "wins": 43,
       "losses": 33,
       "win_rate": 0.56579,
-      "recent_games": 14,
-      "recent_wins": 4,
-      "kda": 1.93
+      "recent_games": 13,
+      "recent_wins": 3,
+      "kda": 1.835
     },
     {
       "hero_id": 29,
@@ -1457,6 +1457,17 @@
       "kda": 4.207
     },
     {
+      "hero_id": 27,
+      "name": "Shadow Shaman",
+      "games": 67,
+      "wins": 34,
+      "losses": 33,
+      "win_rate": 0.50746,
+      "recent_games": 9,
+      "recent_wins": 5,
+      "kda": 2.568
+    },
+    {
       "hero_id": 26,
       "name": "Lion",
       "games": 67,
@@ -1466,17 +1477,6 @@
       "recent_games": 3,
       "recent_wins": 1,
       "kda": 1.179
-    },
-    {
-      "hero_id": 83,
-      "name": "Treant Protector",
-      "games": 66,
-      "wins": 36,
-      "losses": 30,
-      "win_rate": 0.54545,
-      "recent_games": 5,
-      "recent_wins": 2,
-      "kda": 2.381
     }
   ],
   "top_recent_heroes": [
@@ -1488,7 +1488,7 @@
     {
       "hero_id": 45,
       "name": "Pugna",
-      "games": 29
+      "games": 28
     },
     {
       "hero_id": 84,
@@ -1498,7 +1498,7 @@
     {
       "hero_id": 102,
       "name": "Abaddon",
-      "games": 18
+      "games": 19
     },
     {
       "hero_id": 131,
@@ -1508,11 +1508,6 @@
     {
       "hero_id": 37,
       "name": "Warlock",
-      "games": 14
-    },
-    {
-      "hero_id": 31,
-      "name": "Lich",
       "games": 14
     },
     {
@@ -1531,13 +1526,18 @@
       "games": 13
     },
     {
+      "hero_id": 31,
+      "name": "Lich",
+      "games": 13
+    },
+    {
       "hero_id": 87,
       "name": "Disruptor",
       "games": 10
     },
     {
-      "hero_id": 75,
-      "name": "Silencer",
+      "hero_id": 27,
+      "name": "Shadow Shaman",
       "games": 9
     }
   ],
