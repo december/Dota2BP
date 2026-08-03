@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "status": "ready",
-  "generated_at": "2026-08-03T15:13:49.118828+00:00",
+  "generated_at": "2026-08-03T19:55:54.049855+00:00",
   "player": {
     "account_id": 222404655,
     "steamid64": "76561198182670383",
@@ -10,15 +10,15 @@
     "avatar": "https://avatars.steamstatic.com/15896e4d49dc88cb268e9a4eb02a08ff5d913838_full.jpg"
   },
   "rank_profile": {
-    "rank_tier": 42,
+    "rank_tier": 43,
     "leaderboard_rank": null,
     "mmr_estimate": null
   },
   "summary": {
-    "games": 4094,
+    "games": 4095,
     "wins": 2080,
-    "losses": 2014,
-    "win_rate": 0.50806,
+    "losses": 2015,
+    "win_rate": 0.50794,
     "heroes": 114,
     "recent_matches": 300,
     "frequent_peers": 36
@@ -152,9 +152,9 @@
       "wins": 47,
       "losses": 36,
       "win_rate": 0.56627,
-      "recent_games": 8,
-      "recent_wins": 4,
-      "kda": 2.148
+      "recent_games": 7,
+      "recent_wins": 3,
+      "kda": 2.12
     },
     "36": {
       "hero_id": 36,
@@ -236,13 +236,13 @@
     "75": {
       "hero_id": 75,
       "name": "Silencer",
-      "games": 64,
+      "games": 65,
       "wins": 31,
-      "losses": 33,
-      "win_rate": 0.48438,
-      "recent_games": 9,
+      "losses": 34,
+      "win_rate": 0.47692,
+      "recent_games": 10,
       "recent_wins": 4,
-      "kda": 3.133
+      "kda": 3.035
     },
     "108": {
       "hero_id": 108,
@@ -1397,9 +1397,9 @@
       "wins": 47,
       "losses": 36,
       "win_rate": 0.56627,
-      "recent_games": 8,
-      "recent_wins": 4,
-      "kda": 2.148
+      "recent_games": 7,
+      "recent_wins": 3,
+      "kda": 2.12
     },
     {
       "hero_id": 20,
@@ -1531,14 +1531,14 @@
       "games": 13
     },
     {
-      "hero_id": 87,
-      "name": "Disruptor",
+      "hero_id": 75,
+      "name": "Silencer",
       "games": 10
     },
     {
-      "hero_id": 27,
-      "name": "Shadow Shaman",
-      "games": 9
+      "hero_id": 87,
+      "name": "Disruptor",
+      "games": 10
     }
   ],
   "peers": [],
