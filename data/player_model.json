@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "status": "ready",
-  "generated_at": "2026-08-07T13:37:07.245551+00:00",
+  "generated_at": "2026-08-07T19:13:28.197705+00:00",
   "player": {
     "account_id": 222404655,
     "steamid64": "76561198182670383",
@@ -15,10 +15,10 @@
     "mmr_estimate": null
   },
   "summary": {
-    "games": 4099,
-    "wins": 2083,
-    "losses": 2016,
-    "win_rate": 0.50817,
+    "games": 4102,
+    "wins": 2084,
+    "losses": 2018,
+    "win_rate": 0.50804,
     "heroes": 114,
     "recent_matches": 300,
     "frequent_peers": 36
@@ -60,13 +60,13 @@
     "37": {
       "hero_id": 37,
       "name": "Warlock",
-      "games": 157,
-      "wins": 94,
+      "games": 158,
+      "wins": 95,
       "losses": 63,
-      "win_rate": 0.59873,
+      "win_rate": 0.60127,
       "recent_games": 14,
       "recent_wins": 6,
-      "kda": 2.463
+      "kda": 2.634
     },
     "102": {
       "hero_id": 102,
@@ -137,11 +137,11 @@
     "20": {
       "hero_id": 20,
       "name": "Vengeful Spirit",
-      "games": 83,
+      "games": 84,
       "wins": 33,
-      "losses": 50,
-      "win_rate": 0.39759,
-      "recent_games": 5,
+      "losses": 51,
+      "win_rate": 0.39286,
+      "recent_games": 6,
       "recent_wins": 3,
       "kda": 1.426
     },
@@ -152,9 +152,9 @@
       "wins": 47,
       "losses": 36,
       "win_rate": 0.56627,
-      "recent_games": 7,
+      "recent_games": 6,
       "recent_wins": 3,
-      "kda": 2.12
+      "kda": 2.302
     },
     "36": {
       "hero_id": 36,
@@ -174,9 +174,9 @@
       "wins": 43,
       "losses": 33,
       "win_rate": 0.56579,
-      "recent_games": 12,
+      "recent_games": 11,
       "recent_wins": 3,
-      "kda": 1.897
+      "kda": 2.008
     },
     "29": {
       "hero_id": 29,
@@ -192,13 +192,13 @@
     "90": {
       "hero_id": 90,
       "name": "Keeper of the Light",
-      "games": 69,
+      "games": 70,
       "wins": 35,
-      "losses": 34,
-      "win_rate": 0.50725,
-      "recent_games": 5,
+      "losses": 35,
+      "win_rate": 0.5,
+      "recent_games": 6,
       "recent_wins": 3,
-      "kda": 4.207
+      "kda": 3.647
     },
     "26": {
       "hero_id": 26,
@@ -1316,13 +1316,13 @@
     {
       "hero_id": 37,
       "name": "Warlock",
-      "games": 157,
-      "wins": 94,
+      "games": 158,
+      "wins": 95,
       "losses": 63,
-      "win_rate": 0.59873,
+      "win_rate": 0.60127,
       "recent_games": 14,
       "recent_wins": 6,
-      "kda": 2.463
+      "kda": 2.634
     },
     {
       "hero_id": 102,
@@ -1391,26 +1391,26 @@
       "kda": 2.13
     },
     {
+      "hero_id": 20,
+      "name": "Vengeful Spirit",
+      "games": 84,
+      "wins": 33,
+      "losses": 51,
+      "win_rate": 0.39286,
+      "recent_games": 6,
+      "recent_wins": 3,
+      "kda": 1.426
+    },
+    {
       "hero_id": 30,
       "name": "Witch Doctor",
       "games": 83,
       "wins": 47,
       "losses": 36,
       "win_rate": 0.56627,
-      "recent_games": 7,
+      "recent_games": 6,
       "recent_wins": 3,
-      "kda": 2.12
-    },
-    {
-      "hero_id": 20,
-      "name": "Vengeful Spirit",
-      "games": 83,
-      "wins": 33,
-      "losses": 50,
-      "win_rate": 0.39759,
-      "recent_games": 5,
-      "recent_wins": 3,
-      "kda": 1.426
+      "kda": 2.302
     },
     {
       "hero_id": 36,
@@ -1430,9 +1430,9 @@
       "wins": 43,
       "losses": 33,
       "win_rate": 0.56579,
-      "recent_games": 12,
+      "recent_games": 11,
       "recent_wins": 3,
-      "kda": 1.897
+      "kda": 2.008
     },
     {
       "hero_id": 29,
@@ -1448,13 +1448,13 @@
     {
       "hero_id": 90,
       "name": "Keeper of the Light",
-      "games": 69,
+      "games": 70,
       "wins": 35,
-      "losses": 34,
-      "win_rate": 0.50725,
-      "recent_games": 5,
+      "losses": 35,
+      "win_rate": 0.5,
+      "recent_games": 6,
       "recent_wins": 3,
-      "kda": 4.207
+      "kda": 3.647
     },
     {
       "hero_id": 27,
@@ -1528,7 +1528,7 @@
     {
       "hero_id": 31,
       "name": "Lich",
-      "games": 12
+      "games": 11
     },
     {
       "hero_id": 75,
