@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "status": "ready",
-  "generated_at": "2026-08-08T13:10:50.581820+00:00",
+  "generated_at": "2026-08-08T18:56:33.035362+00:00",
   "player": {
     "account_id": 222404655,
     "steamid64": "76561198182670383",
@@ -15,10 +15,10 @@
     "mmr_estimate": null
   },
   "summary": {
-    "games": 4102,
-    "wins": 2084,
-    "losses": 2018,
-    "win_rate": 0.50804,
+    "games": 4105,
+    "wins": 2086,
+    "losses": 2019,
+    "win_rate": 0.50816,
     "heroes": 114,
     "recent_matches": 300,
     "frequent_peers": 36
@@ -42,9 +42,9 @@
       "wins": 110,
       "losses": 91,
       "win_rate": 0.54726,
-      "recent_games": 28,
-      "recent_wins": 17,
-      "kda": 2.619
+      "recent_games": 26,
+      "recent_wins": 16,
+      "kda": 2.55
     },
     "40": {
       "hero_id": 40,
@@ -64,9 +64,9 @@
       "wins": 95,
       "losses": 63,
       "win_rate": 0.60127,
-      "recent_games": 14,
+      "recent_games": 13,
       "recent_wins": 6,
-      "kda": 2.634
+      "kda": 2.643
     },
     "102": {
       "hero_id": 102,
@@ -82,13 +82,13 @@
     "84": {
       "hero_id": 84,
       "name": "Ogre Magi",
-      "games": 119,
-      "wins": 71,
+      "games": 120,
+      "wins": 72,
       "losses": 48,
-      "win_rate": 0.59664,
-      "recent_games": 27,
-      "recent_wins": 17,
-      "kda": 2.668
+      "win_rate": 0.6,
+      "recent_games": 28,
+      "recent_wins": 18,
+      "kda": 2.784
     },
     "22": {
       "hero_id": 22,
@@ -126,13 +126,13 @@
     "64": {
       "hero_id": 64,
       "name": "Jakiro",
-      "games": 99,
+      "games": 100,
       "wins": 53,
-      "losses": 46,
-      "win_rate": 0.53535,
-      "recent_games": 9,
+      "losses": 47,
+      "win_rate": 0.53,
+      "recent_games": 10,
       "recent_wins": 4,
-      "kda": 2.13
+      "kda": 2.009
     },
     "20": {
       "hero_id": 20,
@@ -178,6 +178,17 @@
       "recent_wins": 3,
       "kda": 2.008
     },
+    "90": {
+      "hero_id": 90,
+      "name": "Keeper of the Light",
+      "games": 71,
+      "wins": 36,
+      "losses": 35,
+      "win_rate": 0.50704,
+      "recent_games": 7,
+      "recent_wins": 4,
+      "kda": 3.78
+    },
     "29": {
       "hero_id": 29,
       "name": "Tidehunter",
@@ -188,17 +199,6 @@
       "recent_games": 3,
       "recent_wins": 2,
       "kda": 4.231
-    },
-    "90": {
-      "hero_id": 90,
-      "name": "Keeper of the Light",
-      "games": 70,
-      "wins": 35,
-      "losses": 35,
-      "win_rate": 0.5,
-      "recent_games": 6,
-      "recent_wins": 3,
-      "kda": 3.647
     },
     "26": {
       "hero_id": 26,
@@ -1298,9 +1298,9 @@
       "wins": 110,
       "losses": 91,
       "win_rate": 0.54726,
-      "recent_games": 28,
-      "recent_wins": 17,
-      "kda": 2.619
+      "recent_games": 26,
+      "recent_wins": 16,
+      "kda": 2.55
     },
     {
       "hero_id": 40,
@@ -1320,9 +1320,9 @@
       "wins": 95,
       "losses": 63,
       "win_rate": 0.60127,
-      "recent_games": 14,
+      "recent_games": 13,
       "recent_wins": 6,
-      "kda": 2.634
+      "kda": 2.643
     },
     {
       "hero_id": 102,
@@ -1338,13 +1338,13 @@
     {
       "hero_id": 84,
       "name": "Ogre Magi",
-      "games": 119,
-      "wins": 71,
+      "games": 120,
+      "wins": 72,
       "losses": 48,
-      "win_rate": 0.59664,
-      "recent_games": 27,
-      "recent_wins": 17,
-      "kda": 2.668
+      "win_rate": 0.6,
+      "recent_games": 28,
+      "recent_wins": 18,
+      "kda": 2.784
     },
     {
       "hero_id": 22,
@@ -1382,13 +1382,13 @@
     {
       "hero_id": 64,
       "name": "Jakiro",
-      "games": 99,
+      "games": 100,
       "wins": 53,
-      "losses": 46,
-      "win_rate": 0.53535,
-      "recent_games": 9,
+      "losses": 47,
+      "win_rate": 0.53,
+      "recent_games": 10,
       "recent_wins": 4,
-      "kda": 2.13
+      "kda": 2.009
     },
     {
       "hero_id": 20,
@@ -1448,13 +1448,13 @@
     {
       "hero_id": 90,
       "name": "Keeper of the Light",
-      "games": 70,
-      "wins": 35,
+      "games": 71,
+      "wins": 36,
       "losses": 35,
-      "win_rate": 0.5,
-      "recent_games": 6,
-      "recent_wins": 3,
-      "kda": 3.647
+      "win_rate": 0.50704,
+      "recent_games": 7,
+      "recent_wins": 4,
+      "kda": 3.78
     },
     {
       "hero_id": 27,
@@ -1486,14 +1486,14 @@
       "games": 32
     },
     {
-      "hero_id": 45,
-      "name": "Pugna",
+      "hero_id": 84,
+      "name": "Ogre Magi",
       "games": 28
     },
     {
-      "hero_id": 84,
-      "name": "Ogre Magi",
-      "games": 27
+      "hero_id": 45,
+      "name": "Pugna",
+      "games": 26
     },
     {
       "hero_id": 102,
@@ -1506,14 +1506,14 @@
       "games": 15
     },
     {
-      "hero_id": 37,
-      "name": "Warlock",
-      "games": 14
-    },
-    {
       "hero_id": 14,
       "name": "Pudge",
       "games": 14
+    },
+    {
+      "hero_id": 37,
+      "name": "Warlock",
+      "games": 13
     },
     {
       "hero_id": 71,
@@ -1531,13 +1531,13 @@
       "games": 11
     },
     {
-      "hero_id": 75,
-      "name": "Silencer",
+      "hero_id": 64,
+      "name": "Jakiro",
       "games": 10
     },
     {
-      "hero_id": 87,
-      "name": "Disruptor",
+      "hero_id": 75,
+      "name": "Silencer",
       "games": 10
     }
   ],
