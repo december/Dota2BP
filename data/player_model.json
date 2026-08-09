@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "status": "ready",
-  "generated_at": "2026-08-09T07:14:40.990690+00:00",
+  "generated_at": "2026-08-09T18:59:25.754418+00:00",
   "player": {
     "account_id": 222404655,
     "steamid64": "76561198182670383",
@@ -15,10 +15,10 @@
     "mmr_estimate": null
   },
   "summary": {
-    "games": 4105,
+    "games": 4106,
     "wins": 2086,
-    "losses": 2019,
-    "win_rate": 0.50816,
+    "losses": 2020,
+    "win_rate": 0.50804,
     "heroes": 114,
     "recent_matches": 300,
     "frequent_peers": 36
@@ -42,9 +42,9 @@
       "wins": 110,
       "losses": 91,
       "win_rate": 0.54726,
-      "recent_games": 26,
-      "recent_wins": 16,
-      "kda": 2.55
+      "recent_games": 25,
+      "recent_wins": 15,
+      "kda": 2.5
     },
     "40": {
       "hero_id": 40,
@@ -181,13 +181,13 @@
     "90": {
       "hero_id": 90,
       "name": "Keeper of the Light",
-      "games": 71,
+      "games": 72,
       "wins": 36,
-      "losses": 35,
-      "win_rate": 0.50704,
-      "recent_games": 7,
+      "losses": 36,
+      "win_rate": 0.5,
+      "recent_games": 8,
       "recent_wins": 4,
-      "kda": 3.78
+      "kda": 3.22
     },
     "29": {
       "hero_id": 29,
@@ -1298,9 +1298,9 @@
       "wins": 110,
       "losses": 91,
       "win_rate": 0.54726,
-      "recent_games": 26,
-      "recent_wins": 16,
-      "kda": 2.55
+      "recent_games": 25,
+      "recent_wins": 15,
+      "kda": 2.5
     },
     {
       "hero_id": 40,
@@ -1435,6 +1435,17 @@
       "kda": 2.008
     },
     {
+      "hero_id": 90,
+      "name": "Keeper of the Light",
+      "games": 72,
+      "wins": 36,
+      "losses": 36,
+      "win_rate": 0.5,
+      "recent_games": 8,
+      "recent_wins": 4,
+      "kda": 3.22
+    },
+    {
       "hero_id": 29,
       "name": "Tidehunter",
       "games": 71,
@@ -1444,17 +1455,6 @@
       "recent_games": 3,
       "recent_wins": 2,
       "kda": 4.231
-    },
-    {
-      "hero_id": 90,
-      "name": "Keeper of the Light",
-      "games": 71,
-      "wins": 36,
-      "losses": 35,
-      "win_rate": 0.50704,
-      "recent_games": 7,
-      "recent_wins": 4,
-      "kda": 3.78
     },
     {
       "hero_id": 27,
@@ -1493,7 +1493,7 @@
     {
       "hero_id": 45,
       "name": "Pugna",
-      "games": 26
+      "games": 25
     },
     {
       "hero_id": 102,
