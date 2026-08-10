@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "status": "ready",
-  "generated_at": "2026-08-10T13:42:26.509035+00:00",
+  "generated_at": "2026-08-10T19:15:07.887938+00:00",
   "player": {
     "account_id": 222404655,
     "steamid64": "76561198182670383",
@@ -15,10 +15,10 @@
     "mmr_estimate": null
   },
   "summary": {
-    "games": 4106,
-    "wins": 2086,
-    "losses": 2020,
-    "win_rate": 0.50804,
+    "games": 4109,
+    "wins": 2087,
+    "losses": 2022,
+    "win_rate": 0.50791,
     "heroes": 114,
     "recent_matches": 300,
     "frequent_peers": 36
@@ -42,9 +42,9 @@
       "wins": 110,
       "losses": 91,
       "win_rate": 0.54726,
-      "recent_games": 25,
+      "recent_games": 23,
       "recent_wins": 15,
-      "kda": 2.5
+      "kda": 2.574
     },
     "40": {
       "hero_id": 40,
@@ -112,6 +112,17 @@
       "recent_wins": 7,
       "kda": 1.83
     },
+    "64": {
+      "hero_id": 64,
+      "name": "Jakiro",
+      "games": 101,
+      "wins": 54,
+      "losses": 47,
+      "win_rate": 0.53465,
+      "recent_games": 11,
+      "recent_wins": 5,
+      "kda": 2.04
+    },
     "42": {
       "hero_id": 42,
       "name": "Wraith King",
@@ -122,17 +133,6 @@
       "recent_games": 1,
       "recent_wins": 1,
       "kda": 5.4
-    },
-    "64": {
-      "hero_id": 64,
-      "name": "Jakiro",
-      "games": 100,
-      "wins": 53,
-      "losses": 47,
-      "win_rate": 0.53,
-      "recent_games": 10,
-      "recent_wins": 4,
-      "kda": 2.009
     },
     "20": {
       "hero_id": 20,
@@ -152,9 +152,9 @@
       "wins": 47,
       "losses": 36,
       "win_rate": 0.56627,
-      "recent_games": 6,
-      "recent_wins": 3,
-      "kda": 2.302
+      "recent_games": 5,
+      "recent_wins": 2,
+      "kda": 2.18
     },
     "36": {
       "hero_id": 36,
@@ -181,13 +181,13 @@
     "90": {
       "hero_id": 90,
       "name": "Keeper of the Light",
-      "games": 72,
+      "games": 73,
       "wins": 36,
-      "losses": 36,
-      "win_rate": 0.5,
-      "recent_games": 8,
+      "losses": 37,
+      "win_rate": 0.49315,
+      "recent_games": 9,
       "recent_wins": 4,
-      "kda": 3.22
+      "kda": 3.036
     },
     "29": {
       "hero_id": 29,
@@ -280,13 +280,13 @@
     "71": {
       "hero_id": 71,
       "name": "Spirit Breaker",
-      "games": 57,
+      "games": 58,
       "wins": 27,
-      "losses": 30,
-      "win_rate": 0.47368,
-      "recent_games": 13,
+      "losses": 31,
+      "win_rate": 0.46552,
+      "recent_games": 14,
       "recent_wins": 4,
-      "kda": 2.328
+      "kda": 2.145
     },
     "2": {
       "hero_id": 2,
@@ -1298,9 +1298,9 @@
       "wins": 110,
       "losses": 91,
       "win_rate": 0.54726,
-      "recent_games": 25,
+      "recent_games": 23,
       "recent_wins": 15,
-      "kda": 2.5
+      "kda": 2.574
     },
     {
       "hero_id": 40,
@@ -1369,6 +1369,17 @@
       "kda": 1.83
     },
     {
+      "hero_id": 64,
+      "name": "Jakiro",
+      "games": 101,
+      "wins": 54,
+      "losses": 47,
+      "win_rate": 0.53465,
+      "recent_games": 11,
+      "recent_wins": 5,
+      "kda": 2.04
+    },
+    {
       "hero_id": 42,
       "name": "Wraith King",
       "games": 101,
@@ -1378,17 +1389,6 @@
       "recent_games": 1,
       "recent_wins": 1,
       "kda": 5.4
-    },
-    {
-      "hero_id": 64,
-      "name": "Jakiro",
-      "games": 100,
-      "wins": 53,
-      "losses": 47,
-      "win_rate": 0.53,
-      "recent_games": 10,
-      "recent_wins": 4,
-      "kda": 2.009
     },
     {
       "hero_id": 20,
@@ -1408,9 +1408,9 @@
       "wins": 47,
       "losses": 36,
       "win_rate": 0.56627,
-      "recent_games": 6,
-      "recent_wins": 3,
-      "kda": 2.302
+      "recent_games": 5,
+      "recent_wins": 2,
+      "kda": 2.18
     },
     {
       "hero_id": 36,
@@ -1437,13 +1437,13 @@
     {
       "hero_id": 90,
       "name": "Keeper of the Light",
-      "games": 72,
+      "games": 73,
       "wins": 36,
-      "losses": 36,
-      "win_rate": 0.5,
-      "recent_games": 8,
+      "losses": 37,
+      "win_rate": 0.49315,
+      "recent_games": 9,
       "recent_wins": 4,
-      "kda": 3.22
+      "kda": 3.036
     },
     {
       "hero_id": 29,
@@ -1493,7 +1493,7 @@
     {
       "hero_id": 45,
       "name": "Pugna",
-      "games": 25
+      "games": 23
     },
     {
       "hero_id": 102,
@@ -1506,6 +1506,11 @@
       "games": 15
     },
     {
+      "hero_id": 71,
+      "name": "Spirit Breaker",
+      "games": 14
+    },
+    {
       "hero_id": 14,
       "name": "Pudge",
       "games": 14
@@ -1516,24 +1521,19 @@
       "games": 13
     },
     {
-      "hero_id": 71,
-      "name": "Spirit Breaker",
-      "games": 13
-    },
-    {
       "hero_id": 40,
       "name": "Venomancer",
       "games": 13
     },
     {
-      "hero_id": 31,
-      "name": "Lich",
+      "hero_id": 64,
+      "name": "Jakiro",
       "games": 11
     },
     {
-      "hero_id": 64,
-      "name": "Jakiro",
-      "games": 10
+      "hero_id": 31,
+      "name": "Lich",
+      "games": 11
     },
     {
       "hero_id": 75,
