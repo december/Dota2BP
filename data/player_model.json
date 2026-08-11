@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "status": "ready",
-  "generated_at": "2026-08-11T13:40:54.189090+00:00",
+  "generated_at": "2026-08-11T19:18:16.235674+00:00",
   "player": {
     "account_id": 222404655,
     "steamid64": "76561198182670383",
@@ -15,10 +15,10 @@
     "mmr_estimate": null
   },
   "summary": {
-    "games": 4109,
+    "games": 4113,
     "wins": 2087,
-    "losses": 2022,
-    "win_rate": 0.50791,
+    "losses": 2026,
+    "win_rate": 0.50742,
     "heroes": 114,
     "recent_matches": 300,
     "frequent_peers": 36
@@ -31,9 +31,9 @@
       "wins": 115,
       "losses": 149,
       "win_rate": 0.43561,
-      "recent_games": 32,
+      "recent_games": 31,
       "recent_wins": 15,
-      "kda": 2.912
+      "kda": 2.96
     },
     "45": {
       "hero_id": 45,
@@ -42,9 +42,9 @@
       "wins": 110,
       "losses": 91,
       "win_rate": 0.54726,
-      "recent_games": 23,
+      "recent_games": 22,
       "recent_wins": 15,
-      "kda": 2.574
+      "kda": 2.57
     },
     "40": {
       "hero_id": 40,
@@ -60,24 +60,24 @@
     "37": {
       "hero_id": 37,
       "name": "Warlock",
-      "games": 158,
+      "games": 159,
       "wins": 95,
-      "losses": 63,
-      "win_rate": 0.60127,
+      "losses": 64,
+      "win_rate": 0.59748,
       "recent_games": 13,
-      "recent_wins": 6,
-      "kda": 2.643
+      "recent_wins": 5,
+      "kda": 2.573
     },
     "102": {
       "hero_id": 102,
       "name": "Abaddon",
-      "games": 128,
+      "games": 130,
       "wins": 75,
-      "losses": 53,
-      "win_rate": 0.58594,
-      "recent_games": 19,
+      "losses": 55,
+      "win_rate": 0.57692,
+      "recent_games": 21,
       "recent_wins": 12,
-      "kda": 3.452
+      "kda": 3.097
     },
     "84": {
       "hero_id": 84,
@@ -328,9 +328,9 @@
       "wins": 24,
       "losses": 25,
       "win_rate": 0.4898,
-      "recent_games": 7,
+      "recent_games": 6,
       "recent_wins": 3,
-      "kda": 2.123
+      "kda": 2.179
     },
     "87": {
       "hero_id": 87,
@@ -354,6 +354,17 @@
       "recent_wins": 0,
       "kda": 1.6
     },
+    "112": {
+      "hero_id": 112,
+      "name": "Winter Wyvern",
+      "games": 48,
+      "wins": 18,
+      "losses": 30,
+      "win_rate": 0.375,
+      "recent_games": 2,
+      "recent_wins": 1,
+      "kda": 1.941
+    },
     "35": {
       "hero_id": 35,
       "name": "Sniper",
@@ -364,17 +375,6 @@
       "recent_games": 2,
       "recent_wins": 0,
       "kda": 1.478
-    },
-    "112": {
-      "hero_id": 112,
-      "name": "Winter Wyvern",
-      "games": 47,
-      "wins": 18,
-      "losses": 29,
-      "win_rate": 0.38298,
-      "recent_games": 1,
-      "recent_wins": 1,
-      "kda": 5.0
     },
     "5": {
       "hero_id": 5,
@@ -1287,9 +1287,9 @@
       "wins": 115,
       "losses": 149,
       "win_rate": 0.43561,
-      "recent_games": 32,
+      "recent_games": 31,
       "recent_wins": 15,
-      "kda": 2.912
+      "kda": 2.96
     },
     {
       "hero_id": 45,
@@ -1298,9 +1298,9 @@
       "wins": 110,
       "losses": 91,
       "win_rate": 0.54726,
-      "recent_games": 23,
+      "recent_games": 22,
       "recent_wins": 15,
-      "kda": 2.574
+      "kda": 2.57
     },
     {
       "hero_id": 40,
@@ -1316,24 +1316,24 @@
     {
       "hero_id": 37,
       "name": "Warlock",
-      "games": 158,
+      "games": 159,
       "wins": 95,
-      "losses": 63,
-      "win_rate": 0.60127,
+      "losses": 64,
+      "win_rate": 0.59748,
       "recent_games": 13,
-      "recent_wins": 6,
-      "kda": 2.643
+      "recent_wins": 5,
+      "kda": 2.573
     },
     {
       "hero_id": 102,
       "name": "Abaddon",
-      "games": 128,
+      "games": 130,
       "wins": 75,
-      "losses": 53,
-      "win_rate": 0.58594,
-      "recent_games": 19,
+      "losses": 55,
+      "win_rate": 0.57692,
+      "recent_games": 21,
       "recent_wins": 12,
-      "kda": 3.452
+      "kda": 3.097
     },
     {
       "hero_id": 84,
@@ -1483,7 +1483,7 @@
     {
       "hero_id": 86,
       "name": "Rubick",
-      "games": 32
+      "games": 31
     },
     {
       "hero_id": 84,
@@ -1493,12 +1493,12 @@
     {
       "hero_id": 45,
       "name": "Pugna",
-      "games": 23
+      "games": 22
     },
     {
       "hero_id": 102,
       "name": "Abaddon",
-      "games": 19
+      "games": 21
     },
     {
       "hero_id": 131,
