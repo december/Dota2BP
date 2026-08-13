@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "status": "ready",
-  "generated_at": "2026-08-13T13:45:37.495648+00:00",
+  "generated_at": "2026-08-13T19:18:38.550373+00:00",
   "player": {
     "account_id": 222404655,
     "steamid64": "76561198182670383",
@@ -15,10 +15,10 @@
     "mmr_estimate": null
   },
   "summary": {
-    "games": 4115,
-    "wins": 2089,
+    "games": 4116,
+    "wins": 2090,
     "losses": 2026,
-    "win_rate": 0.50765,
+    "win_rate": 0.50777,
     "heroes": 114,
     "recent_matches": 300,
     "frequent_peers": 36
@@ -203,13 +203,13 @@
     "27": {
       "hero_id": 27,
       "name": "Shadow Shaman",
-      "games": 68,
-      "wins": 35,
+      "games": 69,
+      "wins": 36,
       "losses": 33,
-      "win_rate": 0.51471,
+      "win_rate": 0.52174,
       "recent_games": 9,
-      "recent_wins": 6,
-      "kda": 2.691
+      "recent_wins": 7,
+      "kda": 2.889
     },
     "26": {
       "hero_id": 26,
@@ -1459,13 +1459,13 @@
     {
       "hero_id": 27,
       "name": "Shadow Shaman",
-      "games": 68,
-      "wins": 35,
+      "games": 69,
+      "wins": 36,
       "losses": 33,
-      "win_rate": 0.51471,
+      "win_rate": 0.52174,
       "recent_games": 9,
-      "recent_wins": 6,
-      "kda": 2.691
+      "recent_wins": 7,
+      "kda": 2.889
     },
     {
       "hero_id": 26,
