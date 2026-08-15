@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "status": "ready",
-  "generated_at": "2026-08-15T06:56:06.397004+00:00",
+  "generated_at": "2026-08-15T12:57:36.804911+00:00",
   "player": {
     "account_id": 222404655,
     "steamid64": "76561198182670383",
@@ -15,10 +15,10 @@
     "mmr_estimate": null
   },
   "summary": {
-    "games": 4116,
+    "games": 4117,
     "wins": 2090,
-    "losses": 2026,
-    "win_rate": 0.50777,
+    "losses": 2027,
+    "win_rate": 0.50765,
     "heroes": 114,
     "recent_matches": 300,
     "frequent_peers": 36
@@ -119,9 +119,9 @@
       "wins": 54,
       "losses": 47,
       "win_rate": 0.53465,
-      "recent_games": 11,
-      "recent_wins": 5,
-      "kda": 2.04
+      "recent_games": 10,
+      "recent_wins": 4,
+      "kda": 1.991
     },
     "42": {
       "hero_id": 42,
@@ -181,13 +181,13 @@
     "90": {
       "hero_id": 90,
       "name": "Keeper of the Light",
-      "games": 73,
+      "games": 74,
       "wins": 36,
-      "losses": 37,
-      "win_rate": 0.49315,
-      "recent_games": 9,
+      "losses": 38,
+      "win_rate": 0.48649,
+      "recent_games": 10,
       "recent_wins": 4,
-      "kda": 3.036
+      "kda": 3.288
     },
     "29": {
       "hero_id": 29,
@@ -1375,9 +1375,9 @@
       "wins": 54,
       "losses": 47,
       "win_rate": 0.53465,
-      "recent_games": 11,
-      "recent_wins": 5,
-      "kda": 2.04
+      "recent_games": 10,
+      "recent_wins": 4,
+      "kda": 1.991
     },
     {
       "hero_id": 42,
@@ -1437,13 +1437,13 @@
     {
       "hero_id": 90,
       "name": "Keeper of the Light",
-      "games": 73,
+      "games": 74,
       "wins": 36,
-      "losses": 37,
-      "win_rate": 0.49315,
-      "recent_games": 9,
+      "losses": 38,
+      "win_rate": 0.48649,
+      "recent_games": 10,
       "recent_wins": 4,
-      "kda": 3.036
+      "kda": 3.288
     },
     {
       "hero_id": 29,
@@ -1526,18 +1526,18 @@
       "games": 12
     },
     {
-      "hero_id": 64,
-      "name": "Jakiro",
-      "games": 11
-    },
-    {
       "hero_id": 31,
       "name": "Lich",
       "games": 11
     },
     {
-      "hero_id": 75,
-      "name": "Silencer",
+      "hero_id": 90,
+      "name": "Keeper of the Light",
+      "games": 10
+    },
+    {
+      "hero_id": 64,
+      "name": "Jakiro",
       "games": 10
     }
   ],
