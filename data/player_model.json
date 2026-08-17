@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "status": "ready",
-  "generated_at": "2026-08-17T13:03:50.237150+00:00",
+  "generated_at": "2026-08-17T18:56:12.219685+00:00",
   "player": {
     "account_id": 222404655,
     "steamid64": "76561198182670383",
@@ -15,10 +15,10 @@
     "mmr_estimate": null
   },
   "summary": {
-    "games": 4118,
-    "wins": 2091,
+    "games": 4120,
+    "wins": 2093,
     "losses": 2027,
-    "win_rate": 0.50777,
+    "win_rate": 0.50801,
     "heroes": 114,
     "recent_matches": 300,
     "frequent_peers": 36
@@ -108,9 +108,9 @@
       "wins": 48,
       "losses": 58,
       "win_rate": 0.45283,
-      "recent_games": 14,
-      "recent_wins": 7,
-      "kda": 1.83
+      "recent_games": 12,
+      "recent_wins": 6,
+      "kda": 1.808
     },
     "64": {
       "hero_id": 64,
@@ -181,13 +181,13 @@
     "90": {
       "hero_id": 90,
       "name": "Keeper of the Light",
-      "games": 74,
-      "wins": 36,
+      "games": 75,
+      "wins": 37,
       "losses": 38,
-      "win_rate": 0.48649,
-      "recent_games": 10,
-      "recent_wins": 4,
-      "kda": 3.288
+      "win_rate": 0.49333,
+      "recent_games": 11,
+      "recent_wins": 5,
+      "kda": 3.492
     },
     "29": {
       "hero_id": 29,
@@ -203,13 +203,13 @@
     "27": {
       "hero_id": 27,
       "name": "Shadow Shaman",
-      "games": 69,
-      "wins": 36,
+      "games": 70,
+      "wins": 37,
       "losses": 33,
-      "win_rate": 0.52174,
-      "recent_games": 8,
-      "recent_wins": 7,
-      "kda": 3.188
+      "win_rate": 0.52857,
+      "recent_games": 9,
+      "recent_wins": 8,
+      "kda": 3.21
     },
     "26": {
       "hero_id": 26,
@@ -1364,9 +1364,9 @@
       "wins": 48,
       "losses": 58,
       "win_rate": 0.45283,
-      "recent_games": 14,
-      "recent_wins": 7,
-      "kda": 1.83
+      "recent_games": 12,
+      "recent_wins": 6,
+      "kda": 1.808
     },
     {
       "hero_id": 64,
@@ -1437,13 +1437,13 @@
     {
       "hero_id": 90,
       "name": "Keeper of the Light",
-      "games": 74,
-      "wins": 36,
+      "games": 75,
+      "wins": 37,
       "losses": 38,
-      "win_rate": 0.48649,
-      "recent_games": 10,
-      "recent_wins": 4,
-      "kda": 3.288
+      "win_rate": 0.49333,
+      "recent_games": 11,
+      "recent_wins": 5,
+      "kda": 3.492
     },
     {
       "hero_id": 29,
@@ -1459,13 +1459,13 @@
     {
       "hero_id": 27,
       "name": "Shadow Shaman",
-      "games": 69,
-      "wins": 36,
+      "games": 70,
+      "wins": 37,
       "losses": 33,
-      "win_rate": 0.52174,
-      "recent_games": 8,
-      "recent_wins": 7,
-      "kda": 3.188
+      "win_rate": 0.52857,
+      "recent_games": 9,
+      "recent_wins": 8,
+      "kda": 3.21
     },
     {
       "hero_id": 26,
@@ -1511,11 +1511,6 @@
       "games": 14
     },
     {
-      "hero_id": 14,
-      "name": "Pudge",
-      "games": 14
-    },
-    {
       "hero_id": 40,
       "name": "Venomancer",
       "games": 13
@@ -1526,14 +1521,19 @@
       "games": 12
     },
     {
-      "hero_id": 31,
-      "name": "Lich",
-      "games": 11
+      "hero_id": 14,
+      "name": "Pudge",
+      "games": 12
     },
     {
       "hero_id": 90,
       "name": "Keeper of the Light",
-      "games": 10
+      "games": 11
+    },
+    {
+      "hero_id": 31,
+      "name": "Lich",
+      "games": 11
     },
     {
       "hero_id": 64,
