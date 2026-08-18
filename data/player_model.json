@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "status": "ready",
-  "generated_at": "2026-08-18T13:06:15.793178+00:00",
+  "generated_at": "2026-08-18T18:54:51.964216+00:00",
   "player": {
     "account_id": 222404655,
     "steamid64": "76561198182670383",
@@ -15,10 +15,10 @@
     "mmr_estimate": null
   },
   "summary": {
-    "games": 4120,
+    "games": 4121,
     "wins": 2093,
-    "losses": 2027,
-    "win_rate": 0.50801,
+    "losses": 2028,
+    "win_rate": 0.50789,
     "heroes": 114,
     "recent_matches": 300,
     "frequent_peers": 36
@@ -86,9 +86,9 @@
       "wins": 73,
       "losses": 48,
       "win_rate": 0.60331,
-      "recent_games": 28,
-      "recent_wins": 19,
-      "kda": 2.967
+      "recent_games": 27,
+      "recent_wins": 18,
+      "kda": 2.913
     },
     "22": {
       "hero_id": 22,
@@ -288,6 +288,17 @@
       "recent_wins": 4,
       "kda": 2.145
     },
+    "67": {
+      "hero_id": 67,
+      "name": "Spectre",
+      "games": 57,
+      "wins": 36,
+      "losses": 21,
+      "win_rate": 0.63158,
+      "recent_games": 2,
+      "recent_wins": 1,
+      "kda": 3.5
+    },
     "2": {
       "hero_id": 2,
       "name": "Axe",
@@ -298,17 +309,6 @@
       "recent_games": 0,
       "recent_wins": 0,
       "kda": 0.0
-    },
-    "67": {
-      "hero_id": 67,
-      "name": "Spectre",
-      "games": 56,
-      "wins": 36,
-      "losses": 20,
-      "win_rate": 0.64286,
-      "recent_games": 1,
-      "recent_wins": 1,
-      "kda": 4.375
     },
     "99": {
       "hero_id": 99,
@@ -1342,9 +1342,9 @@
       "wins": 73,
       "losses": 48,
       "win_rate": 0.60331,
-      "recent_games": 28,
-      "recent_wins": 19,
-      "kda": 2.967
+      "recent_games": 27,
+      "recent_wins": 18,
+      "kda": 2.913
     },
     {
       "hero_id": 22,
@@ -1488,7 +1488,7 @@
     {
       "hero_id": 84,
       "name": "Ogre Magi",
-      "games": 28
+      "games": 27
     },
     {
       "hero_id": 45,
