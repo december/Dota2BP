@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "status": "ready",
-  "generated_at": "2026-08-19T13:06:55.083945+00:00",
+  "generated_at": "2026-08-19T18:51:58.211945+00:00",
   "player": {
     "account_id": 222404655,
     "steamid64": "76561198182670383",
@@ -15,10 +15,10 @@
     "mmr_estimate": null
   },
   "summary": {
-    "games": 4121,
-    "wins": 2093,
-    "losses": 2028,
-    "win_rate": 0.50789,
+    "games": 4123,
+    "wins": 2094,
+    "losses": 2029,
+    "win_rate": 0.50788,
     "heroes": 114,
     "recent_matches": 300,
     "frequent_peers": 36
@@ -93,13 +93,13 @@
     "22": {
       "hero_id": 22,
       "name": "Zeus",
-      "games": 111,
+      "games": 112,
       "wins": 61,
-      "losses": 50,
-      "win_rate": 0.54955,
-      "recent_games": 3,
+      "losses": 51,
+      "win_rate": 0.54464,
+      "recent_games": 4,
       "recent_wins": 1,
-      "kda": 4.056
+      "kda": 3.438
     },
     "14": {
       "hero_id": 14,
@@ -108,9 +108,9 @@
       "wins": 48,
       "losses": 58,
       "win_rate": 0.45283,
-      "recent_games": 12,
+      "recent_games": 11,
       "recent_wins": 6,
-      "kda": 1.808
+      "kda": 1.807
     },
     "64": {
       "hero_id": 64,
@@ -189,6 +189,17 @@
       "recent_wins": 5,
       "kda": 3.492
     },
+    "27": {
+      "hero_id": 27,
+      "name": "Shadow Shaman",
+      "games": 71,
+      "wins": 38,
+      "losses": 33,
+      "win_rate": 0.53521,
+      "recent_games": 10,
+      "recent_wins": 9,
+      "kda": 3.372
+    },
     "29": {
       "hero_id": 29,
       "name": "Tidehunter",
@@ -199,17 +210,6 @@
       "recent_games": 3,
       "recent_wins": 2,
       "kda": 4.231
-    },
-    "27": {
-      "hero_id": 27,
-      "name": "Shadow Shaman",
-      "games": 70,
-      "wins": 37,
-      "losses": 33,
-      "win_rate": 0.52857,
-      "recent_games": 9,
-      "recent_wins": 8,
-      "kda": 3.21
     },
     "26": {
       "hero_id": 26,
@@ -339,9 +339,9 @@
       "wins": 22,
       "losses": 27,
       "win_rate": 0.44898,
-      "recent_games": 10,
-      "recent_wins": 5,
-      "kda": 2.337
+      "recent_games": 9,
+      "recent_wins": 4,
+      "kda": 2.464
     },
     "110": {
       "hero_id": 110,
@@ -1349,13 +1349,13 @@
     {
       "hero_id": 22,
       "name": "Zeus",
-      "games": 111,
+      "games": 112,
       "wins": 61,
-      "losses": 50,
-      "win_rate": 0.54955,
-      "recent_games": 3,
+      "losses": 51,
+      "win_rate": 0.54464,
+      "recent_games": 4,
       "recent_wins": 1,
-      "kda": 4.056
+      "kda": 3.438
     },
     {
       "hero_id": 14,
@@ -1364,9 +1364,9 @@
       "wins": 48,
       "losses": 58,
       "win_rate": 0.45283,
-      "recent_games": 12,
+      "recent_games": 11,
       "recent_wins": 6,
-      "kda": 1.808
+      "kda": 1.807
     },
     {
       "hero_id": 64,
@@ -1459,13 +1459,13 @@
     {
       "hero_id": 27,
       "name": "Shadow Shaman",
-      "games": 70,
-      "wins": 37,
+      "games": 71,
+      "wins": 38,
       "losses": 33,
-      "win_rate": 0.52857,
-      "recent_games": 9,
-      "recent_wins": 8,
-      "kda": 3.21
+      "win_rate": 0.53521,
+      "recent_games": 10,
+      "recent_wins": 9,
+      "kda": 3.372
     },
     {
       "hero_id": 26,
@@ -1521,11 +1521,6 @@
       "games": 12
     },
     {
-      "hero_id": 14,
-      "name": "Pudge",
-      "games": 12
-    },
-    {
       "hero_id": 90,
       "name": "Keeper of the Light",
       "games": 11
@@ -1536,8 +1531,13 @@
       "games": 11
     },
     {
-      "hero_id": 64,
-      "name": "Jakiro",
+      "hero_id": 14,
+      "name": "Pudge",
+      "games": 11
+    },
+    {
+      "hero_id": 27,
+      "name": "Shadow Shaman",
       "games": 10
     }
   ],
