@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "status": "ready",
-  "generated_at": "2026-08-20T13:09:45.373996+00:00",
+  "generated_at": "2026-08-20T18:57:41.770334+00:00",
   "player": {
     "account_id": 222404655,
     "steamid64": "76561198182670383",
@@ -15,10 +15,10 @@
     "mmr_estimate": null
   },
   "summary": {
-    "games": 4123,
-    "wins": 2094,
+    "games": 4124,
+    "wins": 2095,
     "losses": 2029,
-    "win_rate": 0.50788,
+    "win_rate": 0.508,
     "heroes": 114,
     "recent_matches": 300,
     "frequent_peers": 36
@@ -321,6 +321,17 @@
       "recent_wins": 0,
       "kda": 0.0
     },
+    "87": {
+      "hero_id": 87,
+      "name": "Disruptor",
+      "games": 50,
+      "wins": 23,
+      "losses": 27,
+      "win_rate": 0.46,
+      "recent_games": 10,
+      "recent_wins": 5,
+      "kda": 2.698
+    },
     "43": {
       "hero_id": 43,
       "name": "Death Prophet",
@@ -331,17 +342,6 @@
       "recent_games": 6,
       "recent_wins": 3,
       "kda": 2.179
-    },
-    "87": {
-      "hero_id": 87,
-      "name": "Disruptor",
-      "games": 49,
-      "wins": 22,
-      "losses": 27,
-      "win_rate": 0.44898,
-      "recent_games": 9,
-      "recent_wins": 4,
-      "kda": 2.464
     },
     "110": {
       "hero_id": 110,
@@ -625,9 +625,9 @@
       "wins": 8,
       "losses": 12,
       "win_rate": 0.4,
-      "recent_games": 1,
+      "recent_games": 0,
       "recent_wins": 0,
-      "kda": 0.714
+      "kda": 0.0
     },
     "131": {
       "hero_id": 131,
@@ -1536,8 +1536,8 @@
       "games": 11
     },
     {
-      "hero_id": 27,
-      "name": "Shadow Shaman",
+      "hero_id": 87,
+      "name": "Disruptor",
       "games": 10
     }
   ],
