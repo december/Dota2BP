@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "status": "ready",
-  "generated_at": "2026-08-21T13:09:07.732988+00:00",
+  "generated_at": "2026-08-21T18:54:43.304464+00:00",
   "player": {
     "account_id": 222404655,
     "steamid64": "76561198182670383",
@@ -10,15 +10,15 @@
     "avatar": "https://avatars.steamstatic.com/15896e4d49dc88cb268e9a4eb02a08ff5d913838_full.jpg"
   },
   "rank_profile": {
-    "rank_tier": 43,
+    "rank_tier": 44,
     "leaderboard_rank": null,
     "mmr_estimate": null
   },
   "summary": {
-    "games": 4124,
-    "wins": 2095,
+    "games": 4127,
+    "wins": 2098,
     "losses": 2029,
-    "win_rate": 0.508,
+    "win_rate": 0.50836,
     "heroes": 114,
     "recent_matches": 300,
     "frequent_peers": 36
@@ -42,9 +42,9 @@
       "wins": 110,
       "losses": 91,
       "win_rate": 0.54726,
-      "recent_games": 22,
-      "recent_wins": 15,
-      "kda": 2.57
+      "recent_games": 20,
+      "recent_wins": 14,
+      "kda": 2.646
     },
     "40": {
       "hero_id": 40,
@@ -82,24 +82,24 @@
     "84": {
       "hero_id": 84,
       "name": "Ogre Magi",
-      "games": 121,
-      "wins": 73,
+      "games": 122,
+      "wins": 74,
       "losses": 48,
-      "win_rate": 0.60331,
-      "recent_games": 27,
-      "recent_wins": 18,
-      "kda": 2.913
+      "win_rate": 0.60656,
+      "recent_games": 28,
+      "recent_wins": 19,
+      "kda": 2.977
     },
     "22": {
       "hero_id": 22,
       "name": "Zeus",
-      "games": 112,
-      "wins": 61,
+      "games": 113,
+      "wins": 62,
       "losses": 51,
-      "win_rate": 0.54464,
-      "recent_games": 4,
-      "recent_wins": 1,
-      "kda": 3.438
+      "win_rate": 0.54867,
+      "recent_games": 5,
+      "recent_wins": 2,
+      "kda": 4.273
     },
     "14": {
       "hero_id": 14,
@@ -218,9 +218,20 @@
       "wins": 32,
       "losses": 35,
       "win_rate": 0.47761,
-      "recent_games": 3,
-      "recent_wins": 1,
-      "kda": 1.179
+      "recent_games": 2,
+      "recent_wins": 0,
+      "kda": 0.958
+    },
+    "75": {
+      "hero_id": 75,
+      "name": "Silencer",
+      "games": 66,
+      "wins": 32,
+      "losses": 34,
+      "win_rate": 0.48485,
+      "recent_games": 11,
+      "recent_wins": 5,
+      "kda": 3.231
     },
     "83": {
       "hero_id": 83,
@@ -232,17 +243,6 @@
       "recent_games": 5,
       "recent_wins": 2,
       "kda": 2.381
-    },
-    "75": {
-      "hero_id": 75,
-      "name": "Silencer",
-      "games": 65,
-      "wins": 31,
-      "losses": 34,
-      "win_rate": 0.47692,
-      "recent_games": 10,
-      "recent_wins": 4,
-      "kda": 3.035
     },
     "108": {
       "hero_id": 108,
@@ -1298,9 +1298,9 @@
       "wins": 110,
       "losses": 91,
       "win_rate": 0.54726,
-      "recent_games": 22,
-      "recent_wins": 15,
-      "kda": 2.57
+      "recent_games": 20,
+      "recent_wins": 14,
+      "kda": 2.646
     },
     {
       "hero_id": 40,
@@ -1338,24 +1338,24 @@
     {
       "hero_id": 84,
       "name": "Ogre Magi",
-      "games": 121,
-      "wins": 73,
+      "games": 122,
+      "wins": 74,
       "losses": 48,
-      "win_rate": 0.60331,
-      "recent_games": 27,
-      "recent_wins": 18,
-      "kda": 2.913
+      "win_rate": 0.60656,
+      "recent_games": 28,
+      "recent_wins": 19,
+      "kda": 2.977
     },
     {
       "hero_id": 22,
       "name": "Zeus",
-      "games": 112,
-      "wins": 61,
+      "games": 113,
+      "wins": 62,
       "losses": 51,
-      "win_rate": 0.54464,
-      "recent_games": 4,
-      "recent_wins": 1,
-      "kda": 3.438
+      "win_rate": 0.54867,
+      "recent_games": 5,
+      "recent_wins": 2,
+      "kda": 4.273
     },
     {
       "hero_id": 14,
@@ -1474,9 +1474,9 @@
       "wins": 32,
       "losses": 35,
       "win_rate": 0.47761,
-      "recent_games": 3,
-      "recent_wins": 1,
-      "kda": 1.179
+      "recent_games": 2,
+      "recent_wins": 0,
+      "kda": 0.958
     }
   ],
   "top_recent_heroes": [
@@ -1488,17 +1488,17 @@
     {
       "hero_id": 84,
       "name": "Ogre Magi",
-      "games": 27
-    },
-    {
-      "hero_id": 45,
-      "name": "Pugna",
-      "games": 22
+      "games": 28
     },
     {
       "hero_id": 102,
       "name": "Abaddon",
       "games": 21
+    },
+    {
+      "hero_id": 45,
+      "name": "Pugna",
+      "games": 20
     },
     {
       "hero_id": 131,
@@ -1521,6 +1521,11 @@
       "games": 12
     },
     {
+      "hero_id": 75,
+      "name": "Silencer",
+      "games": 11
+    },
+    {
       "hero_id": 90,
       "name": "Keeper of the Light",
       "games": 11
@@ -1534,11 +1539,6 @@
       "hero_id": 14,
       "name": "Pudge",
       "games": 11
-    },
-    {
-      "hero_id": 87,
-      "name": "Disruptor",
-      "games": 10
     }
   ],
   "peers": [],
