@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "status": "ready",
-  "generated_at": "2026-08-23T13:00:20.972621+00:00",
+  "generated_at": "2026-08-23T18:47:08.912159+00:00",
   "player": {
     "account_id": 222404655,
     "steamid64": "76561198182670383",
@@ -15,10 +15,10 @@
     "mmr_estimate": null
   },
   "summary": {
-    "games": 4138,
+    "games": 4140,
     "wins": 2104,
-    "losses": 2034,
-    "win_rate": 0.50846,
+    "losses": 2036,
+    "win_rate": 0.50821,
     "heroes": 114,
     "recent_matches": 300,
     "frequent_peers": 36
@@ -86,20 +86,20 @@
       "wins": 75,
       "losses": 48,
       "win_rate": 0.60976,
-      "recent_games": 29,
+      "recent_games": 28,
       "recent_wins": 20,
-      "kda": 3.05
+      "kda": 3.133
     },
     "22": {
       "hero_id": 22,
       "name": "Zeus",
-      "games": 113,
+      "games": 114,
       "wins": 62,
-      "losses": 51,
-      "win_rate": 0.54867,
-      "recent_games": 5,
+      "losses": 52,
+      "win_rate": 0.54386,
+      "recent_games": 6,
       "recent_wins": 2,
-      "kda": 4.273
+      "kda": 4.158
     },
     "14": {
       "hero_id": 14,
@@ -185,9 +185,9 @@
       "wins": 43,
       "losses": 33,
       "win_rate": 0.56579,
-      "recent_games": 11,
+      "recent_games": 10,
       "recent_wins": 3,
-      "kda": 2.008
+      "kda": 2.047
     },
     "27": {
       "hero_id": 27,
@@ -310,6 +310,17 @@
       "recent_wins": 0,
       "kda": 0.0
     },
+    "87": {
+      "hero_id": 87,
+      "name": "Disruptor",
+      "games": 51,
+      "wins": 23,
+      "losses": 28,
+      "win_rate": 0.45098,
+      "recent_games": 11,
+      "recent_wins": 5,
+      "kda": 2.663
+    },
     "99": {
       "hero_id": 99,
       "name": "Bristleback",
@@ -320,17 +331,6 @@
       "recent_games": 0,
       "recent_wins": 0,
       "kda": 0.0
-    },
-    "87": {
-      "hero_id": 87,
-      "name": "Disruptor",
-      "games": 50,
-      "wins": 23,
-      "losses": 27,
-      "win_rate": 0.46,
-      "recent_games": 10,
-      "recent_wins": 5,
-      "kda": 2.698
     },
     "43": {
       "hero_id": 43,
@@ -1342,20 +1342,20 @@
       "wins": 75,
       "losses": 48,
       "win_rate": 0.60976,
-      "recent_games": 29,
+      "recent_games": 28,
       "recent_wins": 20,
-      "kda": 3.05
+      "kda": 3.133
     },
     {
       "hero_id": 22,
       "name": "Zeus",
-      "games": 113,
+      "games": 114,
       "wins": 62,
-      "losses": 51,
-      "win_rate": 0.54867,
-      "recent_games": 5,
+      "losses": 52,
+      "win_rate": 0.54386,
+      "recent_games": 6,
       "recent_wins": 2,
-      "kda": 4.273
+      "kda": 4.158
     },
     {
       "hero_id": 14,
@@ -1430,9 +1430,9 @@
       "wins": 43,
       "losses": 33,
       "win_rate": 0.56579,
-      "recent_games": 11,
+      "recent_games": 10,
       "recent_wins": 3,
-      "kda": 2.008
+      "kda": 2.047
     },
     {
       "hero_id": 90,
@@ -1488,7 +1488,7 @@
     {
       "hero_id": 84,
       "name": "Ogre Magi",
-      "games": 29
+      "games": 28
     },
     {
       "hero_id": 102,
@@ -1526,6 +1526,11 @@
       "games": 12
     },
     {
+      "hero_id": 87,
+      "name": "Disruptor",
+      "games": 11
+    },
+    {
       "hero_id": 27,
       "name": "Shadow Shaman",
       "games": 11
@@ -1533,11 +1538,6 @@
     {
       "hero_id": 64,
       "name": "Jakiro",
-      "games": 11
-    },
-    {
-      "hero_id": 31,
-      "name": "Lich",
       "games": 11
     }
   ],
