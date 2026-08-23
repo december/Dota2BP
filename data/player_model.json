@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "status": "ready",
-  "generated_at": "2026-08-23T01:58:22.839010+00:00",
+  "generated_at": "2026-08-23T13:00:20.972621+00:00",
   "player": {
     "account_id": 222404655,
     "steamid64": "76561198182670383",
@@ -10,15 +10,15 @@
     "avatar": "https://avatars.steamstatic.com/15896e4d49dc88cb268e9a4eb02a08ff5d913838_full.jpg"
   },
   "rank_profile": {
-    "rank_tier": 44,
+    "rank_tier": 45,
     "leaderboard_rank": null,
     "mmr_estimate": null
   },
   "summary": {
-    "games": 4132,
-    "wins": 2101,
-    "losses": 2031,
-    "win_rate": 0.50847,
+    "games": 4138,
+    "wins": 2104,
+    "losses": 2034,
+    "win_rate": 0.50846,
     "heroes": 114,
     "recent_matches": 300,
     "frequent_peers": 36
@@ -31,9 +31,9 @@
       "wins": 115,
       "losses": 149,
       "win_rate": 0.43561,
-      "recent_games": 31,
+      "recent_games": 30,
       "recent_wins": 15,
-      "kda": 2.96
+      "kda": 3.118
     },
     "45": {
       "hero_id": 45,
@@ -53,9 +53,9 @@
       "wins": 109,
       "losses": 69,
       "win_rate": 0.61236,
-      "recent_games": 13,
-      "recent_wins": 10,
-      "kda": 3.041
+      "recent_games": 12,
+      "recent_wins": 9,
+      "kda": 3.152
     },
     "37": {
       "hero_id": 37,
@@ -64,20 +64,20 @@
       "wins": 95,
       "losses": 65,
       "win_rate": 0.59375,
-      "recent_games": 13,
+      "recent_games": 12,
       "recent_wins": 5,
-      "kda": 2.478
+      "kda": 2.477
     },
     "102": {
       "hero_id": 102,
       "name": "Abaddon",
-      "games": 130,
-      "wins": 75,
-      "losses": 55,
-      "win_rate": 0.57692,
-      "recent_games": 20,
-      "recent_wins": 11,
-      "kda": 3.163
+      "games": 132,
+      "wins": 76,
+      "losses": 56,
+      "win_rate": 0.57576,
+      "recent_games": 22,
+      "recent_wins": 12,
+      "kda": 3.284
     },
     "84": {
       "hero_id": 84,
@@ -108,9 +108,9 @@
       "wins": 48,
       "losses": 58,
       "win_rate": 0.45283,
-      "recent_games": 11,
-      "recent_wins": 6,
-      "kda": 1.807
+      "recent_games": 9,
+      "recent_wins": 4,
+      "kda": 1.862
     },
     "64": {
       "hero_id": 64,
@@ -137,13 +137,13 @@
     "20": {
       "hero_id": 20,
       "name": "Vengeful Spirit",
-      "games": 84,
-      "wins": 33,
+      "games": 85,
+      "wins": 34,
       "losses": 51,
-      "win_rate": 0.39286,
-      "recent_games": 6,
-      "recent_wins": 3,
-      "kda": 1.426
+      "win_rate": 0.4,
+      "recent_games": 7,
+      "recent_wins": 4,
+      "kda": 1.797
     },
     "30": {
       "hero_id": 30,
@@ -167,6 +167,17 @@
       "recent_wins": 2,
       "kda": 5.1
     },
+    "90": {
+      "hero_id": 90,
+      "name": "Keeper of the Light",
+      "games": 76,
+      "wins": 37,
+      "losses": 39,
+      "win_rate": 0.48684,
+      "recent_games": 12,
+      "recent_wins": 5,
+      "kda": 3.155
+    },
     "31": {
       "hero_id": 31,
       "name": "Lich",
@@ -177,17 +188,6 @@
       "recent_games": 11,
       "recent_wins": 3,
       "kda": 2.008
-    },
-    "90": {
-      "hero_id": 90,
-      "name": "Keeper of the Light",
-      "games": 75,
-      "wins": 37,
-      "losses": 38,
-      "win_rate": 0.49333,
-      "recent_games": 11,
-      "recent_wins": 5,
-      "kda": 3.492
     },
     "27": {
       "hero_id": 27,
@@ -339,9 +339,9 @@
       "wins": 24,
       "losses": 25,
       "win_rate": 0.4898,
-      "recent_games": 6,
+      "recent_games": 5,
       "recent_wins": 3,
-      "kda": 2.179
+      "kda": 2.489
     },
     "110": {
       "hero_id": 110,
@@ -357,13 +357,13 @@
     "112": {
       "hero_id": 112,
       "name": "Winter Wyvern",
-      "games": 48,
+      "games": 49,
       "wins": 18,
-      "losses": 30,
-      "win_rate": 0.375,
-      "recent_games": 2,
+      "losses": 31,
+      "win_rate": 0.36735,
+      "recent_games": 3,
       "recent_wins": 1,
-      "kda": 1.941
+      "kda": 2.071
     },
     "35": {
       "hero_id": 35,
@@ -442,6 +442,17 @@
       "recent_wins": 2,
       "kda": 3.267
     },
+    "121": {
+      "hero_id": 121,
+      "name": "Grimstroke",
+      "games": 36,
+      "wins": 20,
+      "losses": 16,
+      "win_rate": 0.55556,
+      "recent_games": 3,
+      "recent_wins": 3,
+      "kda": 3.952
+    },
     "79": {
       "hero_id": 79,
       "name": "Shadow Demon",
@@ -452,17 +463,6 @@
       "recent_games": 1,
       "recent_wins": 0,
       "kda": 3.6
-    },
-    "121": {
-      "hero_id": 121,
-      "name": "Grimstroke",
-      "games": 35,
-      "wins": 19,
-      "losses": 16,
-      "win_rate": 0.54286,
-      "recent_games": 2,
-      "recent_wins": 2,
-      "kda": 4.25
     },
     "88": {
       "hero_id": 88,
@@ -1287,9 +1287,9 @@
       "wins": 115,
       "losses": 149,
       "win_rate": 0.43561,
-      "recent_games": 31,
+      "recent_games": 30,
       "recent_wins": 15,
-      "kda": 2.96
+      "kda": 3.118
     },
     {
       "hero_id": 45,
@@ -1309,9 +1309,9 @@
       "wins": 109,
       "losses": 69,
       "win_rate": 0.61236,
-      "recent_games": 13,
-      "recent_wins": 10,
-      "kda": 3.041
+      "recent_games": 12,
+      "recent_wins": 9,
+      "kda": 3.152
     },
     {
       "hero_id": 37,
@@ -1320,20 +1320,20 @@
       "wins": 95,
       "losses": 65,
       "win_rate": 0.59375,
-      "recent_games": 13,
+      "recent_games": 12,
       "recent_wins": 5,
-      "kda": 2.478
+      "kda": 2.477
     },
     {
       "hero_id": 102,
       "name": "Abaddon",
-      "games": 130,
-      "wins": 75,
-      "losses": 55,
-      "win_rate": 0.57692,
-      "recent_games": 20,
-      "recent_wins": 11,
-      "kda": 3.163
+      "games": 132,
+      "wins": 76,
+      "losses": 56,
+      "win_rate": 0.57576,
+      "recent_games": 22,
+      "recent_wins": 12,
+      "kda": 3.284
     },
     {
       "hero_id": 84,
@@ -1364,9 +1364,9 @@
       "wins": 48,
       "losses": 58,
       "win_rate": 0.45283,
-      "recent_games": 11,
-      "recent_wins": 6,
-      "kda": 1.807
+      "recent_games": 9,
+      "recent_wins": 4,
+      "kda": 1.862
     },
     {
       "hero_id": 64,
@@ -1393,13 +1393,13 @@
     {
       "hero_id": 20,
       "name": "Vengeful Spirit",
-      "games": 84,
-      "wins": 33,
+      "games": 85,
+      "wins": 34,
       "losses": 51,
-      "win_rate": 0.39286,
-      "recent_games": 6,
-      "recent_wins": 3,
-      "kda": 1.426
+      "win_rate": 0.4,
+      "recent_games": 7,
+      "recent_wins": 4,
+      "kda": 1.797
     },
     {
       "hero_id": 30,
@@ -1437,13 +1437,13 @@
     {
       "hero_id": 90,
       "name": "Keeper of the Light",
-      "games": 75,
+      "games": 76,
       "wins": 37,
-      "losses": 38,
-      "win_rate": 0.49333,
-      "recent_games": 11,
+      "losses": 39,
+      "win_rate": 0.48684,
+      "recent_games": 12,
       "recent_wins": 5,
-      "kda": 3.492
+      "kda": 3.155
     },
     {
       "hero_id": 27,
@@ -1483,7 +1483,7 @@
     {
       "hero_id": 86,
       "name": "Rubick",
-      "games": 31
+      "games": 30
     },
     {
       "hero_id": 84,
@@ -1493,7 +1493,7 @@
     {
       "hero_id": 102,
       "name": "Abaddon",
-      "games": 20
+      "games": 22
     },
     {
       "hero_id": 45,
@@ -1511,14 +1511,19 @@
       "games": 14
     },
     {
+      "hero_id": 90,
+      "name": "Keeper of the Light",
+      "games": 12
+    },
+    {
       "hero_id": 37,
       "name": "Warlock",
-      "games": 13
+      "games": 12
     },
     {
       "hero_id": 40,
       "name": "Venomancer",
-      "games": 13
+      "games": 12
     },
     {
       "hero_id": 27,
@@ -1528,11 +1533,6 @@
     {
       "hero_id": 64,
       "name": "Jakiro",
-      "games": 11
-    },
-    {
-      "hero_id": 90,
-      "name": "Keeper of the Light",
       "games": 11
     },
     {
