@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "status": "ready",
-  "generated_at": "2026-08-22T18:47:32.197354+00:00",
+  "generated_at": "2026-08-23T01:58:22.839010+00:00",
   "player": {
     "account_id": 222404655,
     "steamid64": "76561198182670383",
@@ -15,10 +15,10 @@
     "mmr_estimate": null
   },
   "summary": {
-    "games": 4131,
-    "wins": 2100,
+    "games": 4132,
+    "wins": 2101,
     "losses": 2031,
-    "win_rate": 0.50835,
+    "win_rate": 0.50847,
     "heroes": 114,
     "recent_matches": 300,
     "frequent_peers": 36
@@ -75,9 +75,9 @@
       "wins": 75,
       "losses": 55,
       "win_rate": 0.57692,
-      "recent_games": 21,
-      "recent_wins": 12,
-      "kda": 3.097
+      "recent_games": 20,
+      "recent_wins": 11,
+      "kda": 3.163
     },
     "84": {
       "hero_id": 84,
@@ -225,13 +225,13 @@
     "75": {
       "hero_id": 75,
       "name": "Silencer",
-      "games": 66,
-      "wins": 32,
+      "games": 67,
+      "wins": 33,
       "losses": 34,
-      "win_rate": 0.48485,
-      "recent_games": 9,
-      "recent_wins": 4,
-      "kda": 3.027
+      "win_rate": 0.49254,
+      "recent_games": 10,
+      "recent_wins": 5,
+      "kda": 3.123
     },
     "83": {
       "hero_id": 83,
@@ -1331,9 +1331,9 @@
       "wins": 75,
       "losses": 55,
       "win_rate": 0.57692,
-      "recent_games": 21,
-      "recent_wins": 12,
-      "kda": 3.097
+      "recent_games": 20,
+      "recent_wins": 11,
+      "kda": 3.163
     },
     {
       "hero_id": 84,
@@ -1468,15 +1468,15 @@
       "kda": 4.231
     },
     {
-      "hero_id": 26,
-      "name": "Lion",
+      "hero_id": 75,
+      "name": "Silencer",
       "games": 67,
-      "wins": 32,
-      "losses": 35,
-      "win_rate": 0.47761,
-      "recent_games": 2,
-      "recent_wins": 0,
-      "kda": 0.958
+      "wins": 33,
+      "losses": 34,
+      "win_rate": 0.49254,
+      "recent_games": 10,
+      "recent_wins": 5,
+      "kda": 3.123
     }
   ],
   "top_recent_heroes": [
@@ -1493,7 +1493,7 @@
     {
       "hero_id": 102,
       "name": "Abaddon",
-      "games": 21
+      "games": 20
     },
     {
       "hero_id": 45,
