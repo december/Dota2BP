@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "status": "ready",
-  "generated_at": "2026-08-24T13:11:19.654007+00:00",
+  "generated_at": "2026-08-24T18:57:31.177882+00:00",
   "player": {
     "account_id": 222404655,
     "steamid64": "76561198182670383",
@@ -15,10 +15,10 @@
     "mmr_estimate": null
   },
   "summary": {
-    "games": 4140,
-    "wins": 2104,
+    "games": 4141,
+    "wins": 2105,
     "losses": 2036,
-    "win_rate": 0.50821,
+    "win_rate": 0.50833,
     "heroes": 114,
     "recent_matches": 300,
     "frequent_peers": 36
@@ -104,13 +104,13 @@
     "14": {
       "hero_id": 14,
       "name": "Pudge",
-      "games": 106,
-      "wins": 48,
+      "games": 107,
+      "wins": 49,
       "losses": 58,
-      "win_rate": 0.45283,
-      "recent_games": 9,
-      "recent_wins": 4,
-      "kda": 1.862
+      "win_rate": 0.45794,
+      "recent_games": 10,
+      "recent_wins": 5,
+      "kda": 1.99
     },
     "64": {
       "hero_id": 64,
@@ -240,9 +240,9 @@
       "wins": 36,
       "losses": 30,
       "win_rate": 0.54545,
-      "recent_games": 5,
+      "recent_games": 4,
       "recent_wins": 2,
-      "kda": 2.381
+      "kda": 3.1
     },
     "108": {
       "hero_id": 108,
@@ -1360,13 +1360,13 @@
     {
       "hero_id": 14,
       "name": "Pudge",
-      "games": 106,
-      "wins": 48,
+      "games": 107,
+      "wins": 49,
       "losses": 58,
-      "win_rate": 0.45283,
-      "recent_games": 9,
-      "recent_wins": 4,
-      "kda": 1.862
+      "win_rate": 0.45794,
+      "recent_games": 10,
+      "recent_wins": 5,
+      "kda": 1.99
     },
     {
       "hero_id": 64,
