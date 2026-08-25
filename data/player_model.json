@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "status": "ready",
-  "generated_at": "2026-08-25T13:09:58.927349+00:00",
+  "generated_at": "2026-08-25T18:55:29.138581+00:00",
   "player": {
     "account_id": 222404655,
     "steamid64": "76561198182670383",
@@ -15,10 +15,10 @@
     "mmr_estimate": null
   },
   "summary": {
-    "games": 4141,
+    "games": 4143,
     "wins": 2105,
-    "losses": 2036,
-    "win_rate": 0.50833,
+    "losses": 2038,
+    "win_rate": 0.50809,
     "heroes": 114,
     "recent_matches": 300,
     "frequent_peers": 36
@@ -82,13 +82,13 @@
     "84": {
       "hero_id": 84,
       "name": "Ogre Magi",
-      "games": 123,
+      "games": 124,
       "wins": 75,
-      "losses": 48,
-      "win_rate": 0.60976,
-      "recent_games": 28,
+      "losses": 49,
+      "win_rate": 0.60484,
+      "recent_games": 29,
       "recent_wins": 20,
-      "kda": 3.133
+      "kda": 3.036
     },
     "22": {
       "hero_id": 22,
@@ -170,13 +170,13 @@
     "90": {
       "hero_id": 90,
       "name": "Keeper of the Light",
-      "games": 76,
+      "games": 77,
       "wins": 37,
-      "losses": 39,
-      "win_rate": 0.48684,
-      "recent_games": 12,
+      "losses": 40,
+      "win_rate": 0.48052,
+      "recent_games": 13,
       "recent_wins": 5,
-      "kda": 3.155
+      "kda": 2.936
     },
     "31": {
       "hero_id": 31,
@@ -273,9 +273,9 @@
       "wins": 29,
       "losses": 29,
       "win_rate": 0.5,
-      "recent_games": 1,
-      "recent_wins": 1,
-      "kda": 3.0
+      "recent_games": 0,
+      "recent_wins": 0,
+      "kda": 0.0
     },
     "71": {
       "hero_id": 71,
@@ -449,9 +449,9 @@
       "wins": 20,
       "losses": 16,
       "win_rate": 0.55556,
-      "recent_games": 3,
-      "recent_wins": 3,
-      "kda": 3.952
+      "recent_games": 2,
+      "recent_wins": 2,
+      "kda": 3.667
     },
     "79": {
       "hero_id": 79,
@@ -1338,13 +1338,13 @@
     {
       "hero_id": 84,
       "name": "Ogre Magi",
-      "games": 123,
+      "games": 124,
       "wins": 75,
-      "losses": 48,
-      "win_rate": 0.60976,
-      "recent_games": 28,
+      "losses": 49,
+      "win_rate": 0.60484,
+      "recent_games": 29,
       "recent_wins": 20,
-      "kda": 3.133
+      "kda": 3.036
     },
     {
       "hero_id": 22,
@@ -1424,6 +1424,17 @@
       "kda": 5.1
     },
     {
+      "hero_id": 90,
+      "name": "Keeper of the Light",
+      "games": 77,
+      "wins": 37,
+      "losses": 40,
+      "win_rate": 0.48052,
+      "recent_games": 13,
+      "recent_wins": 5,
+      "kda": 2.936
+    },
+    {
       "hero_id": 31,
       "name": "Lich",
       "games": 76,
@@ -1433,17 +1444,6 @@
       "recent_games": 10,
       "recent_wins": 3,
       "kda": 2.047
-    },
-    {
-      "hero_id": 90,
-      "name": "Keeper of the Light",
-      "games": 76,
-      "wins": 37,
-      "losses": 39,
-      "win_rate": 0.48684,
-      "recent_games": 12,
-      "recent_wins": 5,
-      "kda": 3.155
     },
     {
       "hero_id": 27,
@@ -1488,7 +1488,7 @@
     {
       "hero_id": 84,
       "name": "Ogre Magi",
-      "games": 28
+      "games": 29
     },
     {
       "hero_id": 102,
@@ -1513,7 +1513,7 @@
     {
       "hero_id": 90,
       "name": "Keeper of the Light",
-      "games": 12
+      "games": 13
     },
     {
       "hero_id": 37,
