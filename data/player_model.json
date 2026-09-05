@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "status": "ready",
-  "generated_at": "2026-09-05T15:11:49.903047+00:00",
+  "generated_at": "2026-09-05T20:18:39.654458+00:00",
   "player": {
     "account_id": 222404655,
     "steamid64": "76561198182670383",
@@ -15,10 +15,10 @@
     "mmr_estimate": null
   },
   "summary": {
-    "games": 4143,
+    "games": 4146,
     "wins": 2105,
-    "losses": 2038,
-    "win_rate": 0.50809,
+    "losses": 2041,
+    "win_rate": 0.50772,
     "heroes": 114,
     "recent_matches": 300,
     "frequent_peers": 36
@@ -82,13 +82,13 @@
     "84": {
       "hero_id": 84,
       "name": "Ogre Magi",
-      "games": 124,
+      "games": 125,
       "wins": 75,
-      "losses": 49,
-      "win_rate": 0.60484,
-      "recent_games": 29,
+      "losses": 50,
+      "win_rate": 0.6,
+      "recent_games": 30,
       "recent_wins": 20,
-      "kda": 3.036
+      "kda": 2.912
     },
     "22": {
       "hero_id": 22,
@@ -170,13 +170,13 @@
     "90": {
       "hero_id": 90,
       "name": "Keeper of the Light",
-      "games": 77,
+      "games": 78,
       "wins": 37,
-      "losses": 40,
-      "win_rate": 0.48052,
-      "recent_games": 13,
+      "losses": 41,
+      "win_rate": 0.47436,
+      "recent_games": 14,
       "recent_wins": 5,
-      "kda": 2.936
+      "kda": 2.705
     },
     "31": {
       "hero_id": 31,
@@ -185,9 +185,9 @@
       "wins": 43,
       "losses": 33,
       "win_rate": 0.56579,
-      "recent_games": 10,
-      "recent_wins": 3,
-      "kda": 2.047
+      "recent_games": 9,
+      "recent_wins": 2,
+      "kda": 1.901
     },
     "27": {
       "hero_id": 27,
@@ -211,6 +211,17 @@
       "recent_wins": 2,
       "kda": 4.231
     },
+    "75": {
+      "hero_id": 75,
+      "name": "Silencer",
+      "games": 68,
+      "wins": 33,
+      "losses": 35,
+      "win_rate": 0.48529,
+      "recent_games": 10,
+      "recent_wins": 5,
+      "kda": 3.104
+    },
     "26": {
       "hero_id": 26,
       "name": "Lion",
@@ -221,17 +232,6 @@
       "recent_games": 2,
       "recent_wins": 0,
       "kda": 0.958
-    },
-    "75": {
-      "hero_id": 75,
-      "name": "Silencer",
-      "games": 67,
-      "wins": 33,
-      "losses": 34,
-      "win_rate": 0.49254,
-      "recent_games": 10,
-      "recent_wins": 5,
-      "kda": 3.123
     },
     "83": {
       "hero_id": 83,
@@ -636,9 +636,9 @@
       "wins": 8,
       "losses": 12,
       "win_rate": 0.4,
-      "recent_games": 15,
+      "recent_games": 14,
       "recent_wins": 5,
-      "kda": 2.096
+      "kda": 2.14
     },
     "16": {
       "hero_id": 16,
@@ -1338,13 +1338,13 @@
     {
       "hero_id": 84,
       "name": "Ogre Magi",
-      "games": 124,
+      "games": 125,
       "wins": 75,
-      "losses": 49,
-      "win_rate": 0.60484,
-      "recent_games": 29,
+      "losses": 50,
+      "win_rate": 0.6,
+      "recent_games": 30,
       "recent_wins": 20,
-      "kda": 3.036
+      "kda": 2.912
     },
     {
       "hero_id": 22,
@@ -1426,13 +1426,13 @@
     {
       "hero_id": 90,
       "name": "Keeper of the Light",
-      "games": 77,
+      "games": 78,
       "wins": 37,
-      "losses": 40,
-      "win_rate": 0.48052,
-      "recent_games": 13,
+      "losses": 41,
+      "win_rate": 0.47436,
+      "recent_games": 14,
       "recent_wins": 5,
-      "kda": 2.936
+      "kda": 2.705
     },
     {
       "hero_id": 31,
@@ -1441,9 +1441,9 @@
       "wins": 43,
       "losses": 33,
       "win_rate": 0.56579,
-      "recent_games": 10,
-      "recent_wins": 3,
-      "kda": 2.047
+      "recent_games": 9,
+      "recent_wins": 2,
+      "kda": 1.901
     },
     {
       "hero_id": 27,
@@ -1470,25 +1470,25 @@
     {
       "hero_id": 75,
       "name": "Silencer",
-      "games": 67,
+      "games": 68,
       "wins": 33,
-      "losses": 34,
-      "win_rate": 0.49254,
+      "losses": 35,
+      "win_rate": 0.48529,
       "recent_games": 10,
       "recent_wins": 5,
-      "kda": 3.123
+      "kda": 3.104
     }
   ],
   "top_recent_heroes": [
     {
-      "hero_id": 86,
-      "name": "Rubick",
+      "hero_id": 84,
+      "name": "Ogre Magi",
       "games": 30
     },
     {
-      "hero_id": 84,
-      "name": "Ogre Magi",
-      "games": 29
+      "hero_id": 86,
+      "name": "Rubick",
+      "games": 30
     },
     {
       "hero_id": 102,
@@ -1501,9 +1501,9 @@
       "games": 19
     },
     {
-      "hero_id": 131,
-      "name": "Ring Master",
-      "games": 15
+      "hero_id": 90,
+      "name": "Keeper of the Light",
+      "games": 14
     },
     {
       "hero_id": 71,
@@ -1511,9 +1511,9 @@
       "games": 14
     },
     {
-      "hero_id": 90,
-      "name": "Keeper of the Light",
-      "games": 13
+      "hero_id": 131,
+      "name": "Ring Master",
+      "games": 14
     },
     {
       "hero_id": 37,
