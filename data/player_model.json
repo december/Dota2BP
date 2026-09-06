@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "status": "ready",
-  "generated_at": "2026-09-06T15:26:47.477465+00:00",
+  "generated_at": "2026-09-06T20:23:13.389203+00:00",
   "player": {
     "account_id": 222404655,
     "steamid64": "76561198182670383",
@@ -15,10 +15,10 @@
     "mmr_estimate": null
   },
   "summary": {
-    "games": 4146,
-    "wins": 2105,
-    "losses": 2041,
-    "win_rate": 0.50772,
+    "games": 4148,
+    "wins": 2106,
+    "losses": 2042,
+    "win_rate": 0.50771,
     "heroes": 114,
     "recent_matches": 300,
     "frequent_peers": 36
@@ -192,13 +192,13 @@
     "27": {
       "hero_id": 27,
       "name": "Shadow Shaman",
-      "games": 72,
-      "wins": 39,
+      "games": 73,
+      "wins": 40,
       "losses": 33,
-      "win_rate": 0.54167,
-      "recent_games": 11,
-      "recent_wins": 10,
-      "kda": 3.25
+      "win_rate": 0.54795,
+      "recent_games": 12,
+      "recent_wins": 11,
+      "kda": 3.095
     },
     "29": {
       "hero_id": 29,
@@ -251,9 +251,9 @@
       "wins": 40,
       "losses": 22,
       "win_rate": 0.64516,
-      "recent_games": 3,
+      "recent_games": 2,
       "recent_wins": 1,
-      "kda": 2.6
+      "kda": 3.0
     },
     "85": {
       "hero_id": 85,
@@ -361,9 +361,9 @@
       "wins": 18,
       "losses": 31,
       "win_rate": 0.36735,
-      "recent_games": 3,
-      "recent_wins": 1,
-      "kda": 2.071
+      "recent_games": 2,
+      "recent_wins": 0,
+      "kda": 1.435
     },
     "35": {
       "hero_id": 35,
@@ -431,6 +431,17 @@
       "recent_wins": 0,
       "kda": 1.222
     },
+    "121": {
+      "hero_id": 121,
+      "name": "Grimstroke",
+      "games": 37,
+      "wins": 20,
+      "losses": 17,
+      "win_rate": 0.54054,
+      "recent_games": 3,
+      "recent_wins": 2,
+      "kda": 3.278
+    },
     "68": {
       "hero_id": 68,
       "name": "Ancient Apparition",
@@ -441,17 +452,6 @@
       "recent_games": 2,
       "recent_wins": 2,
       "kda": 3.267
-    },
-    "121": {
-      "hero_id": 121,
-      "name": "Grimstroke",
-      "games": 36,
-      "wins": 20,
-      "losses": 16,
-      "win_rate": 0.55556,
-      "recent_games": 2,
-      "recent_wins": 2,
-      "kda": 3.667
     },
     "79": {
       "hero_id": 79,
@@ -1448,13 +1448,13 @@
     {
       "hero_id": 27,
       "name": "Shadow Shaman",
-      "games": 72,
-      "wins": 39,
+      "games": 73,
+      "wins": 40,
       "losses": 33,
-      "win_rate": 0.54167,
-      "recent_games": 11,
-      "recent_wins": 10,
-      "kda": 3.25
+      "win_rate": 0.54795,
+      "recent_games": 12,
+      "recent_wins": 11,
+      "kda": 3.095
     },
     {
       "hero_id": 29,
@@ -1516,6 +1516,11 @@
       "games": 14
     },
     {
+      "hero_id": 27,
+      "name": "Shadow Shaman",
+      "games": 12
+    },
+    {
       "hero_id": 37,
       "name": "Warlock",
       "games": 12
@@ -1528,11 +1533,6 @@
     {
       "hero_id": 87,
       "name": "Disruptor",
-      "games": 11
-    },
-    {
-      "hero_id": 27,
-      "name": "Shadow Shaman",
       "games": 11
     },
     {
