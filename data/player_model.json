@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "status": "ready",
-  "generated_at": "2026-09-24T11:43:18.528049+00:00",
+  "generated_at": "2026-09-25T11:48:46.392971+00:00",
   "player": {
     "account_id": 222404655,
     "steamid64": "76561198182670383",
@@ -10,15 +10,15 @@
     "avatar": "https://avatars.steamstatic.com/15896e4d49dc88cb268e9a4eb02a08ff5d913838_full.jpg"
   },
   "rank_profile": {
-    "rank_tier": 45,
+    "rank_tier": 44,
     "leaderboard_rank": null,
     "mmr_estimate": null
   },
   "summary": {
-    "games": 4148,
-    "wins": 2106,
-    "losses": 2042,
-    "win_rate": 0.50771,
+    "games": 4151,
+    "wins": 2108,
+    "losses": 2043,
+    "win_rate": 0.50783,
     "heroes": 114,
     "recent_matches": 300,
     "frequent_peers": 36
@@ -214,13 +214,13 @@
     "75": {
       "hero_id": 75,
       "name": "Silencer",
-      "games": 68,
-      "wins": 33,
+      "games": 69,
+      "wins": 34,
       "losses": 35,
-      "win_rate": 0.48529,
-      "recent_games": 10,
-      "recent_wins": 5,
-      "kda": 3.104
+      "win_rate": 0.49275,
+      "recent_games": 11,
+      "recent_wins": 6,
+      "kda": 3.181
     },
     "26": {
       "hero_id": 26,
@@ -247,13 +247,13 @@
     "108": {
       "hero_id": 108,
       "name": "Underlord",
-      "games": 62,
-      "wins": 40,
+      "games": 63,
+      "wins": 41,
       "losses": 22,
-      "win_rate": 0.64516,
-      "recent_games": 2,
-      "recent_wins": 1,
-      "kda": 3.0
+      "win_rate": 0.65079,
+      "recent_games": 3,
+      "recent_wins": 2,
+      "kda": 3.207
     },
     "85": {
       "hero_id": 85,
@@ -313,13 +313,13 @@
     "87": {
       "hero_id": 87,
       "name": "Disruptor",
-      "games": 51,
+      "games": 52,
       "wins": 23,
-      "losses": 28,
-      "win_rate": 0.45098,
-      "recent_games": 11,
+      "losses": 29,
+      "win_rate": 0.44231,
+      "recent_games": 12,
       "recent_wins": 5,
-      "kda": 2.663
+      "kda": 2.491
     },
     "99": {
       "hero_id": 99,
@@ -427,9 +427,9 @@
       "wins": 16,
       "losses": 23,
       "win_rate": 0.41026,
-      "recent_games": 2,
+      "recent_games": 1,
       "recent_wins": 0,
-      "kda": 1.222
+      "kda": 0.4
     },
     "121": {
       "hero_id": 121,
@@ -471,9 +471,9 @@
       "wins": 19,
       "losses": 15,
       "win_rate": 0.55882,
-      "recent_games": 1,
-      "recent_wins": 1,
-      "kda": 2.0
+      "recent_games": 0,
+      "recent_wins": 0,
+      "kda": 0.0
     },
     "3": {
       "hero_id": 3,
@@ -548,9 +548,9 @@
       "wins": 16,
       "losses": 13,
       "win_rate": 0.55172,
-      "recent_games": 1,
+      "recent_games": 0,
       "recent_wins": 0,
-      "kda": 0.933
+      "kda": 0.0
     },
     "62": {
       "hero_id": 62,
@@ -1470,13 +1470,13 @@
     {
       "hero_id": 75,
       "name": "Silencer",
-      "games": 68,
-      "wins": 33,
+      "games": 69,
+      "wins": 34,
       "losses": 35,
-      "win_rate": 0.48529,
-      "recent_games": 10,
-      "recent_wins": 5,
-      "kda": 3.104
+      "win_rate": 0.49275,
+      "recent_games": 11,
+      "recent_wins": 6,
+      "kda": 3.181
     }
   ],
   "top_recent_heroes": [
@@ -1516,6 +1516,11 @@
       "games": 14
     },
     {
+      "hero_id": 87,
+      "name": "Disruptor",
+      "games": 12
+    },
+    {
       "hero_id": 27,
       "name": "Shadow Shaman",
       "games": 12
@@ -1531,13 +1536,8 @@
       "games": 12
     },
     {
-      "hero_id": 87,
-      "name": "Disruptor",
-      "games": 11
-    },
-    {
-      "hero_id": 64,
-      "name": "Jakiro",
+      "hero_id": 75,
+      "name": "Silencer",
       "games": 11
     }
   ],
