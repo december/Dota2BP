@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "status": "ready",
-  "generated_at": "2026-09-29T12:49:58.860878+00:00",
+  "generated_at": "2026-09-29T22:13:28.718282+00:00",
   "player": {
     "account_id": 222404655,
     "steamid64": "76561198182670383",
@@ -15,9 +15,9 @@
     "mmr_estimate": null
   },
   "summary": {
-    "games": 4158,
-    "wins": 2108,
-    "losses": 2050,
+    "games": 4160,
+    "wins": 2109,
+    "losses": 2051,
     "win_rate": 0.50697,
     "heroes": 114,
     "recent_matches": 300,
@@ -27,13 +27,13 @@
     "86": {
       "hero_id": 86,
       "name": "Rubick",
-      "games": 265,
+      "games": 266,
       "wins": 115,
-      "losses": 150,
-      "win_rate": 0.43396,
-      "recent_games": 31,
+      "losses": 151,
+      "win_rate": 0.43233,
+      "recent_games": 32,
       "recent_wins": 15,
-      "kda": 3.106
+      "kda": 3.011
     },
     "45": {
       "hero_id": 45,
@@ -104,13 +104,13 @@
     "14": {
       "hero_id": 14,
       "name": "Pudge",
-      "games": 108,
-      "wins": 49,
+      "games": 109,
+      "wins": 50,
       "losses": 59,
-      "win_rate": 0.4537,
-      "recent_games": 11,
-      "recent_wins": 5,
-      "kda": 1.843
+      "win_rate": 0.45872,
+      "recent_games": 12,
+      "recent_wins": 6,
+      "kda": 1.904
     },
     "64": {
       "hero_id": 64,
@@ -141,9 +141,9 @@
       "wins": 34,
       "losses": 51,
       "win_rate": 0.4,
-      "recent_games": 7,
+      "recent_games": 6,
       "recent_wins": 4,
-      "kda": 1.797
+      "kda": 1.937
     },
     "30": {
       "hero_id": 30,
@@ -317,9 +317,9 @@
       "wins": 23,
       "losses": 29,
       "win_rate": 0.44231,
-      "recent_games": 12,
+      "recent_games": 11,
       "recent_wins": 5,
-      "kda": 2.491
+      "kda": 2.696
     },
     "99": {
       "hero_id": 99,
@@ -1283,13 +1283,13 @@
     {
       "hero_id": 86,
       "name": "Rubick",
-      "games": 265,
+      "games": 266,
       "wins": 115,
-      "losses": 150,
-      "win_rate": 0.43396,
-      "recent_games": 31,
+      "losses": 151,
+      "win_rate": 0.43233,
+      "recent_games": 32,
       "recent_wins": 15,
-      "kda": 3.106
+      "kda": 3.011
     },
     {
       "hero_id": 45,
@@ -1360,13 +1360,13 @@
     {
       "hero_id": 14,
       "name": "Pudge",
-      "games": 108,
-      "wins": 49,
+      "games": 109,
+      "wins": 50,
       "losses": 59,
-      "win_rate": 0.4537,
-      "recent_games": 11,
-      "recent_wins": 5,
-      "kda": 1.843
+      "win_rate": 0.45872,
+      "recent_games": 12,
+      "recent_wins": 6,
+      "kda": 1.904
     },
     {
       "hero_id": 64,
@@ -1397,9 +1397,9 @@
       "wins": 34,
       "losses": 51,
       "win_rate": 0.4,
-      "recent_games": 7,
+      "recent_games": 6,
       "recent_wins": 4,
-      "kda": 1.797
+      "kda": 1.937
     },
     {
       "hero_id": 30,
@@ -1481,13 +1481,13 @@
   ],
   "top_recent_heroes": [
     {
-      "hero_id": 84,
-      "name": "Ogre Magi",
-      "games": 31
-    },
-    {
       "hero_id": 86,
       "name": "Rubick",
+      "games": 32
+    },
+    {
+      "hero_id": 84,
+      "name": "Ogre Magi",
       "games": 31
     },
     {
@@ -1516,8 +1516,8 @@
       "games": 13
     },
     {
-      "hero_id": 87,
-      "name": "Disruptor",
+      "hero_id": 14,
+      "name": "Pudge",
       "games": 12
     },
     {
@@ -1536,8 +1536,8 @@
       "games": 12
     },
     {
-      "hero_id": 14,
-      "name": "Pudge",
+      "hero_id": 87,
+      "name": "Disruptor",
       "games": 11
     }
   ],
