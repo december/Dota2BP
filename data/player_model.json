@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "status": "ready",
-  "generated_at": "2026-10-01T13:10:27.023123+00:00",
+  "generated_at": "2026-10-01T22:39:42.148350+00:00",
   "player": {
     "account_id": 222404655,
     "steamid64": "76561198182670383",
@@ -15,10 +15,10 @@
     "mmr_estimate": null
   },
   "summary": {
-    "games": 4162,
+    "games": 4164,
     "wins": 2110,
-    "losses": 2052,
-    "win_rate": 0.50697,
+    "losses": 2054,
+    "win_rate": 0.50672,
     "heroes": 114,
     "recent_matches": 300,
     "frequent_peers": 37
@@ -27,24 +27,24 @@
     "86": {
       "hero_id": 86,
       "name": "Rubick",
-      "games": 267,
+      "games": 268,
       "wins": 116,
-      "losses": 151,
-      "win_rate": 0.43446,
-      "recent_games": 33,
+      "losses": 152,
+      "win_rate": 0.43284,
+      "recent_games": 34,
       "recent_wins": 16,
-      "kda": 3.015
+      "kda": 2.972
     },
     "45": {
       "hero_id": 45,
       "name": "Pugna",
-      "games": 201,
+      "games": 202,
       "wins": 110,
-      "losses": 91,
-      "win_rate": 0.54726,
-      "recent_games": 19,
+      "losses": 92,
+      "win_rate": 0.54455,
+      "recent_games": 20,
       "recent_wins": 13,
-      "kda": 2.595
+      "kda": 2.603
     },
     "40": {
       "hero_id": 40,
@@ -460,9 +460,9 @@
       "wins": 14,
       "losses": 22,
       "win_rate": 0.38889,
-      "recent_games": 1,
+      "recent_games": 0,
       "recent_wins": 0,
-      "kda": 3.6
+      "kda": 0.0
     },
     "88": {
       "hero_id": 88,
@@ -482,9 +482,9 @@
       "wins": 13,
       "losses": 20,
       "win_rate": 0.39394,
-      "recent_games": 2,
+      "recent_games": 1,
       "recent_wins": 0,
-      "kda": 2.733
+      "kda": 1.778
     },
     "21": {
       "hero_id": 21,
@@ -1283,24 +1283,24 @@
     {
       "hero_id": 86,
       "name": "Rubick",
-      "games": 267,
+      "games": 268,
       "wins": 116,
-      "losses": 151,
-      "win_rate": 0.43446,
-      "recent_games": 33,
+      "losses": 152,
+      "win_rate": 0.43284,
+      "recent_games": 34,
       "recent_wins": 16,
-      "kda": 3.015
+      "kda": 2.972
     },
     {
       "hero_id": 45,
       "name": "Pugna",
-      "games": 201,
+      "games": 202,
       "wins": 110,
-      "losses": 91,
-      "win_rate": 0.54726,
-      "recent_games": 19,
+      "losses": 92,
+      "win_rate": 0.54455,
+      "recent_games": 20,
       "recent_wins": 13,
-      "kda": 2.595
+      "kda": 2.603
     },
     {
       "hero_id": 40,
@@ -1483,7 +1483,7 @@
     {
       "hero_id": 86,
       "name": "Rubick",
-      "games": 33
+      "games": 34
     },
     {
       "hero_id": 84,
@@ -1498,7 +1498,7 @@
     {
       "hero_id": 45,
       "name": "Pugna",
-      "games": 19
+      "games": 20
     },
     {
       "hero_id": 71,
