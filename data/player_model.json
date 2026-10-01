@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "status": "ready",
-  "generated_at": "2026-09-29T22:13:28.718282+00:00",
+  "generated_at": "2026-10-01T13:10:27.023123+00:00",
   "player": {
     "account_id": 222404655,
     "steamid64": "76561198182670383",
@@ -15,9 +15,9 @@
     "mmr_estimate": null
   },
   "summary": {
-    "games": 4160,
-    "wins": 2109,
-    "losses": 2051,
+    "games": 4162,
+    "wins": 2110,
+    "losses": 2052,
     "win_rate": 0.50697,
     "heroes": 114,
     "recent_matches": 300,
@@ -27,13 +27,13 @@
     "86": {
       "hero_id": 86,
       "name": "Rubick",
-      "games": 266,
-      "wins": 115,
+      "games": 267,
+      "wins": 116,
       "losses": 151,
-      "win_rate": 0.43233,
-      "recent_games": 32,
-      "recent_wins": 15,
-      "kda": 3.011
+      "win_rate": 0.43446,
+      "recent_games": 33,
+      "recent_wins": 16,
+      "kda": 3.015
     },
     "45": {
       "hero_id": 45,
@@ -115,13 +115,13 @@
     "64": {
       "hero_id": 64,
       "name": "Jakiro",
-      "games": 102,
+      "games": 103,
       "wins": 54,
-      "losses": 48,
-      "win_rate": 0.52941,
-      "recent_games": 10,
+      "losses": 49,
+      "win_rate": 0.52427,
+      "recent_games": 11,
       "recent_wins": 3,
-      "kda": 1.831
+      "kda": 1.846
     },
     "42": {
       "hero_id": 42,
@@ -218,9 +218,9 @@
       "wins": 34,
       "losses": 35,
       "win_rate": 0.49275,
-      "recent_games": 11,
+      "recent_games": 10,
       "recent_wins": 6,
-      "kda": 3.181
+      "kda": 3.592
     },
     "26": {
       "hero_id": 26,
@@ -350,9 +350,9 @@
       "wins": 21,
       "losses": 28,
       "win_rate": 0.42857,
-      "recent_games": 1,
+      "recent_games": 0,
       "recent_wins": 0,
-      "kda": 1.6
+      "kda": 0.0
     },
     "112": {
       "hero_id": 112,
@@ -1283,13 +1283,13 @@
     {
       "hero_id": 86,
       "name": "Rubick",
-      "games": 266,
-      "wins": 115,
+      "games": 267,
+      "wins": 116,
       "losses": 151,
-      "win_rate": 0.43233,
-      "recent_games": 32,
-      "recent_wins": 15,
-      "kda": 3.011
+      "win_rate": 0.43446,
+      "recent_games": 33,
+      "recent_wins": 16,
+      "kda": 3.015
     },
     {
       "hero_id": 45,
@@ -1371,13 +1371,13 @@
     {
       "hero_id": 64,
       "name": "Jakiro",
-      "games": 102,
+      "games": 103,
       "wins": 54,
-      "losses": 48,
-      "win_rate": 0.52941,
-      "recent_games": 10,
+      "losses": 49,
+      "win_rate": 0.52427,
+      "recent_games": 11,
       "recent_wins": 3,
-      "kda": 1.831
+      "kda": 1.846
     },
     {
       "hero_id": 42,
@@ -1474,16 +1474,16 @@
       "wins": 34,
       "losses": 35,
       "win_rate": 0.49275,
-      "recent_games": 11,
+      "recent_games": 10,
       "recent_wins": 6,
-      "kda": 3.181
+      "kda": 3.592
     }
   ],
   "top_recent_heroes": [
     {
       "hero_id": 86,
       "name": "Rubick",
-      "games": 32
+      "games": 33
     },
     {
       "hero_id": 84,
@@ -1536,8 +1536,8 @@
       "games": 12
     },
     {
-      "hero_id": 87,
-      "name": "Disruptor",
+      "hero_id": 64,
+      "name": "Jakiro",
       "games": 11
     }
   ],
