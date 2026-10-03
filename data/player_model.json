@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "status": "ready",
-  "generated_at": "2026-10-03T11:37:24.541585+00:00",
+  "generated_at": "2026-10-03T16:16:07.079914+00:00",
   "player": {
     "account_id": 222404655,
     "steamid64": "76561198182670383",
@@ -15,10 +15,10 @@
     "mmr_estimate": null
   },
   "summary": {
-    "games": 4167,
-    "wins": 2112,
+    "games": 4168,
+    "wins": 2113,
     "losses": 2055,
-    "win_rate": 0.50684,
+    "win_rate": 0.50696,
     "heroes": 114,
     "recent_matches": 300,
     "frequent_peers": 37
@@ -93,13 +93,13 @@
     "22": {
       "hero_id": 22,
       "name": "Zeus",
-      "games": 114,
-      "wins": 62,
+      "games": 115,
+      "wins": 63,
       "losses": 52,
-      "win_rate": 0.54386,
-      "recent_games": 6,
-      "recent_wins": 2,
-      "kda": 4.158
+      "win_rate": 0.54783,
+      "recent_games": 7,
+      "recent_wins": 3,
+      "kda": 4.364
     },
     "14": {
       "hero_id": 14,
@@ -658,9 +658,9 @@
       "wins": 10,
       "losses": 9,
       "win_rate": 0.52632,
-      "recent_games": 1,
+      "recent_games": 0,
       "recent_wins": 0,
-      "kda": 1.625
+      "kda": 0.0
     },
     "53": {
       "hero_id": 53,
@@ -1349,13 +1349,13 @@
     {
       "hero_id": 22,
       "name": "Zeus",
-      "games": 114,
-      "wins": 62,
+      "games": 115,
+      "wins": 63,
       "losses": 52,
-      "win_rate": 0.54386,
-      "recent_games": 6,
-      "recent_wins": 2,
-      "kda": 4.158
+      "win_rate": 0.54783,
+      "recent_games": 7,
+      "recent_wins": 3,
+      "kda": 4.364
     },
     {
       "hero_id": 14,
