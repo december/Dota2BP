@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "status": "ready",
-  "generated_at": "2026-10-01T22:39:42.148350+00:00",
+  "generated_at": "2026-10-03T11:37:24.541585+00:00",
   "player": {
     "account_id": 222404655,
     "steamid64": "76561198182670383",
@@ -15,10 +15,10 @@
     "mmr_estimate": null
   },
   "summary": {
-    "games": 4164,
-    "wins": 2110,
-    "losses": 2054,
-    "win_rate": 0.50672,
+    "games": 4167,
+    "wins": 2112,
+    "losses": 2055,
+    "win_rate": 0.50684,
     "heroes": 114,
     "recent_matches": 300,
     "frequent_peers": 37
@@ -38,13 +38,13 @@
     "45": {
       "hero_id": 45,
       "name": "Pugna",
-      "games": 202,
-      "wins": 110,
+      "games": 203,
+      "wins": 111,
       "losses": 92,
-      "win_rate": 0.54455,
-      "recent_games": 20,
-      "recent_wins": 13,
-      "kda": 2.603
+      "win_rate": 0.5468,
+      "recent_games": 21,
+      "recent_wins": 14,
+      "kda": 2.6
     },
     "40": {
       "hero_id": 40,
@@ -60,13 +60,13 @@
     "37": {
       "hero_id": 37,
       "name": "Warlock",
-      "games": 160,
-      "wins": 95,
+      "games": 161,
+      "wins": 96,
       "losses": 65,
-      "win_rate": 0.59375,
-      "recent_games": 12,
-      "recent_wins": 5,
-      "kda": 2.477
+      "win_rate": 0.59627,
+      "recent_games": 13,
+      "recent_wins": 6,
+      "kda": 2.682
     },
     "102": {
       "hero_id": 102,
@@ -284,9 +284,9 @@
       "wins": 27,
       "losses": 31,
       "win_rate": 0.46552,
-      "recent_games": 14,
-      "recent_wins": 4,
-      "kda": 2.145
+      "recent_games": 13,
+      "recent_wins": 3,
+      "kda": 2.116
     },
     "67": {
       "hero_id": 67,
@@ -427,20 +427,20 @@
       "wins": 16,
       "losses": 23,
       "win_rate": 0.41026,
-      "recent_games": 1,
+      "recent_games": 0,
       "recent_wins": 0,
-      "kda": 0.4
+      "kda": 0.0
     },
     "121": {
       "hero_id": 121,
       "name": "Grimstroke",
-      "games": 37,
+      "games": 38,
       "wins": 20,
-      "losses": 17,
-      "win_rate": 0.54054,
-      "recent_games": 3,
+      "losses": 18,
+      "win_rate": 0.52632,
+      "recent_games": 4,
       "recent_wins": 2,
-      "kda": 3.278
+      "kda": 2.808
     },
     "68": {
       "hero_id": 68,
@@ -702,9 +702,9 @@
       "wins": 12,
       "losses": 6,
       "win_rate": 0.66667,
-      "recent_games": 1,
-      "recent_wins": 1,
-      "kda": 15.0
+      "recent_games": 0,
+      "recent_wins": 0,
+      "kda": 0.0
     },
     "101": {
       "hero_id": 101,
@@ -1294,13 +1294,13 @@
     {
       "hero_id": 45,
       "name": "Pugna",
-      "games": 202,
-      "wins": 110,
+      "games": 203,
+      "wins": 111,
       "losses": 92,
-      "win_rate": 0.54455,
-      "recent_games": 20,
-      "recent_wins": 13,
-      "kda": 2.603
+      "win_rate": 0.5468,
+      "recent_games": 21,
+      "recent_wins": 14,
+      "kda": 2.6
     },
     {
       "hero_id": 40,
@@ -1316,13 +1316,13 @@
     {
       "hero_id": 37,
       "name": "Warlock",
-      "games": 160,
-      "wins": 95,
+      "games": 161,
+      "wins": 96,
       "losses": 65,
-      "win_rate": 0.59375,
-      "recent_games": 12,
-      "recent_wins": 5,
-      "kda": 2.477
+      "win_rate": 0.59627,
+      "recent_games": 13,
+      "recent_wins": 6,
+      "kda": 2.682
     },
     {
       "hero_id": 102,
@@ -1498,12 +1498,7 @@
     {
       "hero_id": 45,
       "name": "Pugna",
-      "games": 20
-    },
-    {
-      "hero_id": 71,
-      "name": "Spirit Breaker",
-      "games": 14
+      "games": 21
     },
     {
       "hero_id": 131,
@@ -1511,8 +1506,18 @@
       "games": 14
     },
     {
+      "hero_id": 37,
+      "name": "Warlock",
+      "games": 13
+    },
+    {
       "hero_id": 90,
       "name": "Keeper of the Light",
+      "games": 13
+    },
+    {
+      "hero_id": 71,
+      "name": "Spirit Breaker",
       "games": 13
     },
     {
@@ -1523,11 +1528,6 @@
     {
       "hero_id": 27,
       "name": "Shadow Shaman",
-      "games": 12
-    },
-    {
-      "hero_id": 37,
-      "name": "Warlock",
       "games": 12
     },
     {
