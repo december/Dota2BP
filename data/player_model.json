@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "status": "ready",
-  "generated_at": "2026-10-03T16:16:07.079914+00:00",
+  "generated_at": "2026-10-04T21:24:49.375676+00:00",
   "player": {
     "account_id": 222404655,
     "steamid64": "76561198182670383",
@@ -10,15 +10,15 @@
     "avatar": "https://avatars.steamstatic.com/15896e4d49dc88cb268e9a4eb02a08ff5d913838_full.jpg"
   },
   "rank_profile": {
-    "rank_tier": 44,
+    "rank_tier": 43,
     "leaderboard_rank": null,
     "mmr_estimate": null
   },
   "summary": {
-    "games": 4168,
-    "wins": 2113,
-    "losses": 2055,
-    "win_rate": 0.50696,
+    "games": 4172,
+    "wins": 2114,
+    "losses": 2058,
+    "win_rate": 0.50671,
     "heroes": 114,
     "recent_matches": 300,
     "frequent_peers": 37
@@ -27,13 +27,13 @@
     "86": {
       "hero_id": 86,
       "name": "Rubick",
-      "games": 268,
+      "games": 269,
       "wins": 116,
-      "losses": 152,
-      "win_rate": 0.43284,
+      "losses": 153,
+      "win_rate": 0.43123,
       "recent_games": 34,
-      "recent_wins": 16,
-      "kda": 2.972
+      "recent_wins": 15,
+      "kda": 2.903
     },
     "45": {
       "hero_id": 45,
@@ -82,24 +82,24 @@
     "84": {
       "hero_id": 84,
       "name": "Ogre Magi",
-      "games": 126,
-      "wins": 75,
+      "games": 127,
+      "wins": 76,
       "losses": 51,
-      "win_rate": 0.59524,
+      "win_rate": 0.59843,
       "recent_games": 31,
       "recent_wins": 20,
-      "kda": 2.85
+      "kda": 2.885
     },
     "22": {
       "hero_id": 22,
       "name": "Zeus",
-      "games": 115,
+      "games": 116,
       "wins": 63,
-      "losses": 52,
-      "win_rate": 0.54783,
-      "recent_games": 7,
+      "losses": 53,
+      "win_rate": 0.5431,
+      "recent_games": 8,
       "recent_wins": 3,
-      "kda": 4.364
+      "kda": 4.08
     },
     "14": {
       "hero_id": 14,
@@ -163,9 +163,9 @@
       "wins": 43,
       "losses": 36,
       "win_rate": 0.5443,
-      "recent_games": 2,
-      "recent_wins": 2,
-      "kda": 5.1
+      "recent_games": 1,
+      "recent_wins": 1,
+      "kda": 2.857
     },
     "90": {
       "hero_id": 90,
@@ -332,6 +332,17 @@
       "recent_wins": 0,
       "kda": 0.0
     },
+    "112": {
+      "hero_id": 112,
+      "name": "Winter Wyvern",
+      "games": 50,
+      "wins": 18,
+      "losses": 32,
+      "win_rate": 0.36,
+      "recent_games": 3,
+      "recent_wins": 0,
+      "kda": 1.621
+    },
     "43": {
       "hero_id": 43,
       "name": "Death Prophet",
@@ -353,17 +364,6 @@
       "recent_games": 0,
       "recent_wins": 0,
       "kda": 0.0
-    },
-    "112": {
-      "hero_id": 112,
-      "name": "Winter Wyvern",
-      "games": 49,
-      "wins": 18,
-      "losses": 31,
-      "win_rate": 0.36735,
-      "recent_games": 2,
-      "recent_wins": 0,
-      "kda": 1.435
     },
     "35": {
       "hero_id": 35,
@@ -482,9 +482,9 @@
       "wins": 13,
       "losses": 20,
       "win_rate": 0.39394,
-      "recent_games": 1,
+      "recent_games": 0,
       "recent_wins": 0,
-      "kda": 1.778
+      "kda": 0.0
     },
     "21": {
       "hero_id": 21,
@@ -1283,13 +1283,13 @@
     {
       "hero_id": 86,
       "name": "Rubick",
-      "games": 268,
+      "games": 269,
       "wins": 116,
-      "losses": 152,
-      "win_rate": 0.43284,
+      "losses": 153,
+      "win_rate": 0.43123,
       "recent_games": 34,
-      "recent_wins": 16,
-      "kda": 2.972
+      "recent_wins": 15,
+      "kda": 2.903
     },
     {
       "hero_id": 45,
@@ -1338,24 +1338,24 @@
     {
       "hero_id": 84,
       "name": "Ogre Magi",
-      "games": 126,
-      "wins": 75,
+      "games": 127,
+      "wins": 76,
       "losses": 51,
-      "win_rate": 0.59524,
+      "win_rate": 0.59843,
       "recent_games": 31,
       "recent_wins": 20,
-      "kda": 2.85
+      "kda": 2.885
     },
     {
       "hero_id": 22,
       "name": "Zeus",
-      "games": 115,
+      "games": 116,
       "wins": 63,
-      "losses": 52,
-      "win_rate": 0.54783,
-      "recent_games": 7,
+      "losses": 53,
+      "win_rate": 0.5431,
+      "recent_games": 8,
       "recent_wins": 3,
-      "kda": 4.364
+      "kda": 4.08
     },
     {
       "hero_id": 14,
@@ -1419,9 +1419,9 @@
       "wins": 43,
       "losses": 36,
       "win_rate": 0.5443,
-      "recent_games": 2,
-      "recent_wins": 2,
-      "kda": 5.1
+      "recent_games": 1,
+      "recent_wins": 1,
+      "kda": 2.857
     },
     {
       "hero_id": 90,
