@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "status": "ready",
-  "generated_at": "2026-10-06T00:01:42.700833+00:00",
+  "generated_at": "2026-10-07T23:03:55.079802+00:00",
   "player": {
     "account_id": 222404655,
     "steamid64": "76561198182670383",
@@ -15,10 +15,10 @@
     "mmr_estimate": null
   },
   "summary": {
-    "games": 4172,
-    "wins": 2114,
-    "losses": 2058,
-    "win_rate": 0.50671,
+    "games": 4175,
+    "wins": 2115,
+    "losses": 2060,
+    "win_rate": 0.50659,
     "heroes": 114,
     "recent_matches": 300,
     "frequent_peers": 37
@@ -71,13 +71,13 @@
     "102": {
       "hero_id": 102,
       "name": "Abaddon",
-      "games": 134,
+      "games": 135,
       "wins": 76,
-      "losses": 58,
-      "win_rate": 0.56716,
-      "recent_games": 24,
+      "losses": 59,
+      "win_rate": 0.56296,
+      "recent_games": 25,
       "recent_wins": 12,
-      "kda": 3.093
+      "kda": 3.05
     },
     "84": {
       "hero_id": 84,
@@ -148,24 +148,24 @@
     "30": {
       "hero_id": 30,
       "name": "Witch Doctor",
-      "games": 83,
+      "games": 84,
       "wins": 47,
-      "losses": 36,
-      "win_rate": 0.56627,
-      "recent_games": 5,
+      "losses": 37,
+      "win_rate": 0.55952,
+      "recent_games": 6,
       "recent_wins": 2,
-      "kda": 2.18
+      "kda": 1.859
     },
     "36": {
       "hero_id": 36,
       "name": "Necrophos",
-      "games": 79,
-      "wins": 43,
+      "games": 80,
+      "wins": 44,
       "losses": 36,
-      "win_rate": 0.5443,
-      "recent_games": 1,
-      "recent_wins": 1,
-      "kda": 2.857
+      "win_rate": 0.55,
+      "recent_games": 2,
+      "recent_wins": 2,
+      "kda": 4.667
     },
     "90": {
       "hero_id": 90,
@@ -196,9 +196,9 @@
       "wins": 40,
       "losses": 33,
       "win_rate": 0.54795,
-      "recent_games": 12,
-      "recent_wins": 11,
-      "kda": 3.095
+      "recent_games": 11,
+      "recent_wins": 10,
+      "kda": 3.306
     },
     "29": {
       "hero_id": 29,
@@ -350,9 +350,9 @@
       "wins": 24,
       "losses": 25,
       "win_rate": 0.4898,
-      "recent_games": 5,
-      "recent_wins": 3,
-      "kda": 2.489
+      "recent_games": 4,
+      "recent_wins": 2,
+      "kda": 2.474
     },
     "110": {
       "hero_id": 110,
@@ -636,9 +636,9 @@
       "wins": 8,
       "losses": 12,
       "win_rate": 0.4,
-      "recent_games": 14,
+      "recent_games": 13,
       "recent_wins": 5,
-      "kda": 2.14
+      "kda": 2.155
     },
     "16": {
       "hero_id": 16,
@@ -1327,13 +1327,13 @@
     {
       "hero_id": 102,
       "name": "Abaddon",
-      "games": 134,
+      "games": 135,
       "wins": 76,
-      "losses": 58,
-      "win_rate": 0.56716,
-      "recent_games": 24,
+      "losses": 59,
+      "win_rate": 0.56296,
+      "recent_games": 25,
       "recent_wins": 12,
-      "kda": 3.093
+      "kda": 3.05
     },
     {
       "hero_id": 84,
@@ -1404,24 +1404,24 @@
     {
       "hero_id": 30,
       "name": "Witch Doctor",
-      "games": 83,
+      "games": 84,
       "wins": 47,
-      "losses": 36,
-      "win_rate": 0.56627,
-      "recent_games": 5,
+      "losses": 37,
+      "win_rate": 0.55952,
+      "recent_games": 6,
       "recent_wins": 2,
-      "kda": 2.18
+      "kda": 1.859
     },
     {
       "hero_id": 36,
       "name": "Necrophos",
-      "games": 79,
-      "wins": 43,
+      "games": 80,
+      "wins": 44,
       "losses": 36,
-      "win_rate": 0.5443,
-      "recent_games": 1,
-      "recent_wins": 1,
-      "kda": 2.857
+      "win_rate": 0.55,
+      "recent_games": 2,
+      "recent_wins": 2,
+      "kda": 4.667
     },
     {
       "hero_id": 90,
@@ -1452,9 +1452,9 @@
       "wins": 40,
       "losses": 33,
       "win_rate": 0.54795,
-      "recent_games": 12,
-      "recent_wins": 11,
-      "kda": 3.095
+      "recent_games": 11,
+      "recent_wins": 10,
+      "kda": 3.306
     },
     {
       "hero_id": 29,
@@ -1493,17 +1493,12 @@
     {
       "hero_id": 102,
       "name": "Abaddon",
-      "games": 24
+      "games": 25
     },
     {
       "hero_id": 45,
       "name": "Pugna",
       "games": 21
-    },
-    {
-      "hero_id": 131,
-      "name": "Ring Master",
-      "games": 14
     },
     {
       "hero_id": 37,
@@ -1521,13 +1516,13 @@
       "games": 13
     },
     {
-      "hero_id": 14,
-      "name": "Pudge",
-      "games": 12
+      "hero_id": 131,
+      "name": "Ring Master",
+      "games": 13
     },
     {
-      "hero_id": 27,
-      "name": "Shadow Shaman",
+      "hero_id": 14,
+      "name": "Pudge",
       "games": 12
     },
     {
@@ -1538,6 +1533,11 @@
     {
       "hero_id": 64,
       "name": "Jakiro",
+      "games": 11
+    },
+    {
+      "hero_id": 87,
+      "name": "Disruptor",
       "games": 11
     }
   ],
