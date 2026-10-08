@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "status": "ready",
-  "generated_at": "2026-10-08T13:26:17.681812+00:00",
+  "generated_at": "2026-10-08T23:19:40.306898+00:00",
   "player": {
     "account_id": 222404655,
     "steamid64": "76561198182670383",
@@ -15,10 +15,10 @@
     "mmr_estimate": null
   },
   "summary": {
-    "games": 4175,
-    "wins": 2115,
+    "games": 4176,
+    "wins": 2116,
     "losses": 2060,
-    "win_rate": 0.50659,
+    "win_rate": 0.5067,
     "heroes": 114,
     "recent_matches": 300,
     "frequent_peers": 37
@@ -38,13 +38,13 @@
     "45": {
       "hero_id": 45,
       "name": "Pugna",
-      "games": 203,
-      "wins": 111,
+      "games": 204,
+      "wins": 112,
       "losses": 92,
-      "win_rate": 0.5468,
-      "recent_games": 21,
-      "recent_wins": 14,
-      "kda": 2.6
+      "win_rate": 0.54902,
+      "recent_games": 22,
+      "recent_wins": 15,
+      "kda": 2.695
     },
     "40": {
       "hero_id": 40,
@@ -174,9 +174,9 @@
       "wins": 37,
       "losses": 41,
       "win_rate": 0.47436,
-      "recent_games": 13,
-      "recent_wins": 5,
-      "kda": 2.785
+      "recent_games": 12,
+      "recent_wins": 4,
+      "kda": 2.533
     },
     "31": {
       "hero_id": 31,
@@ -1294,13 +1294,13 @@
     {
       "hero_id": 45,
       "name": "Pugna",
-      "games": 203,
-      "wins": 111,
+      "games": 204,
+      "wins": 112,
       "losses": 92,
-      "win_rate": 0.5468,
-      "recent_games": 21,
-      "recent_wins": 14,
-      "kda": 2.6
+      "win_rate": 0.54902,
+      "recent_games": 22,
+      "recent_wins": 15,
+      "kda": 2.695
     },
     {
       "hero_id": 40,
@@ -1430,9 +1430,9 @@
       "wins": 37,
       "losses": 41,
       "win_rate": 0.47436,
-      "recent_games": 13,
-      "recent_wins": 5,
-      "kda": 2.785
+      "recent_games": 12,
+      "recent_wins": 4,
+      "kda": 2.533
     },
     {
       "hero_id": 31,
@@ -1498,16 +1498,11 @@
     {
       "hero_id": 45,
       "name": "Pugna",
-      "games": 21
+      "games": 22
     },
     {
       "hero_id": 37,
       "name": "Warlock",
-      "games": 13
-    },
-    {
-      "hero_id": 90,
-      "name": "Keeper of the Light",
       "games": 13
     },
     {
@@ -1523,6 +1518,11 @@
     {
       "hero_id": 14,
       "name": "Pudge",
+      "games": 12
+    },
+    {
+      "hero_id": 90,
+      "name": "Keeper of the Light",
       "games": 12
     },
     {
