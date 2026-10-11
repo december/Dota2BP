@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "status": "ready",
-  "generated_at": "2026-10-10T05:50:06.396481+00:00",
+  "generated_at": "2026-10-11T05:43:53.284695+00:00",
   "player": {
     "account_id": 222404655,
     "steamid64": "76561198182670383",
@@ -15,9 +15,9 @@
     "mmr_estimate": null
   },
   "summary": {
-    "games": 4176,
-    "wins": 2116,
-    "losses": 2060,
+    "games": 4178,
+    "wins": 2117,
+    "losses": 2061,
     "win_rate": 0.5067,
     "heroes": 114,
     "recent_matches": 300,
@@ -42,20 +42,20 @@
       "wins": 112,
       "losses": 92,
       "win_rate": 0.54902,
-      "recent_games": 22,
-      "recent_wins": 15,
-      "kda": 2.695
+      "recent_games": 21,
+      "recent_wins": 14,
+      "kda": 2.737
     },
     "40": {
       "hero_id": 40,
       "name": "Venomancer",
-      "games": 178,
-      "wins": 109,
+      "games": 179,
+      "wins": 110,
       "losses": 69,
-      "win_rate": 0.61236,
-      "recent_games": 12,
-      "recent_wins": 9,
-      "kda": 3.152
+      "win_rate": 0.61453,
+      "recent_games": 13,
+      "recent_wins": 10,
+      "kda": 3.22
     },
     "37": {
       "hero_id": 37,
@@ -93,13 +93,13 @@
     "22": {
       "hero_id": 22,
       "name": "Zeus",
-      "games": 116,
+      "games": 117,
       "wins": 63,
-      "losses": 53,
-      "win_rate": 0.5431,
-      "recent_games": 8,
+      "losses": 54,
+      "win_rate": 0.53846,
+      "recent_games": 9,
       "recent_wins": 3,
-      "kda": 4.08
+      "kda": 3.78
     },
     "14": {
       "hero_id": 14,
@@ -504,9 +504,9 @@
       "wins": 23,
       "losses": 9,
       "win_rate": 0.71875,
-      "recent_games": 1,
-      "recent_wins": 1,
-      "kda": 5.667
+      "recent_games": 0,
+      "recent_wins": 0,
+      "kda": 0.0
     },
     "47": {
       "hero_id": 47,
@@ -1298,20 +1298,20 @@
       "wins": 112,
       "losses": 92,
       "win_rate": 0.54902,
-      "recent_games": 22,
-      "recent_wins": 15,
-      "kda": 2.695
+      "recent_games": 21,
+      "recent_wins": 14,
+      "kda": 2.737
     },
     {
       "hero_id": 40,
       "name": "Venomancer",
-      "games": 178,
-      "wins": 109,
+      "games": 179,
+      "wins": 110,
       "losses": 69,
-      "win_rate": 0.61236,
-      "recent_games": 12,
-      "recent_wins": 9,
-      "kda": 3.152
+      "win_rate": 0.61453,
+      "recent_games": 13,
+      "recent_wins": 10,
+      "kda": 3.22
     },
     {
       "hero_id": 37,
@@ -1349,13 +1349,13 @@
     {
       "hero_id": 22,
       "name": "Zeus",
-      "games": 116,
+      "games": 117,
       "wins": 63,
-      "losses": 53,
-      "win_rate": 0.5431,
-      "recent_games": 8,
+      "losses": 54,
+      "win_rate": 0.53846,
+      "recent_games": 9,
       "recent_wins": 3,
-      "kda": 4.08
+      "kda": 3.78
     },
     {
       "hero_id": 14,
@@ -1498,7 +1498,12 @@
     {
       "hero_id": 45,
       "name": "Pugna",
-      "games": 22
+      "games": 21
+    },
+    {
+      "hero_id": 40,
+      "name": "Venomancer",
+      "games": 13
     },
     {
       "hero_id": 37,
@@ -1523,11 +1528,6 @@
     {
       "hero_id": 90,
       "name": "Keeper of the Light",
-      "games": 12
-    },
-    {
-      "hero_id": 40,
-      "name": "Venomancer",
       "games": 12
     },
     {
