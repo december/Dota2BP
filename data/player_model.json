@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "status": "ready",
-  "generated_at": "2026-10-11T12:46:48.969222+00:00",
+  "generated_at": "2026-10-12T15:20:20.378545+00:00",
   "player": {
     "account_id": 222404655,
     "steamid64": "76561198182670383",
@@ -15,10 +15,10 @@
     "mmr_estimate": null
   },
   "summary": {
-    "games": 4178,
-    "wins": 2117,
-    "losses": 2061,
-    "win_rate": 0.5067,
+    "games": 4181,
+    "wins": 2118,
+    "losses": 2063,
+    "win_rate": 0.50658,
     "heroes": 114,
     "recent_matches": 300,
     "frequent_peers": 37
@@ -64,31 +64,31 @@
       "wins": 96,
       "losses": 65,
       "win_rate": 0.59627,
-      "recent_games": 13,
-      "recent_wins": 6,
-      "kda": 2.682
+      "recent_games": 12,
+      "recent_wins": 5,
+      "kda": 2.55
     },
     "102": {
       "hero_id": 102,
       "name": "Abaddon",
-      "games": 135,
+      "games": 136,
       "wins": 76,
-      "losses": 59,
-      "win_rate": 0.56296,
-      "recent_games": 25,
+      "losses": 60,
+      "win_rate": 0.55882,
+      "recent_games": 26,
       "recent_wins": 12,
-      "kda": 3.05
+      "kda": 2.995
     },
     "84": {
       "hero_id": 84,
       "name": "Ogre Magi",
-      "games": 127,
-      "wins": 76,
+      "games": 128,
+      "wins": 77,
       "losses": 51,
-      "win_rate": 0.59843,
-      "recent_games": 31,
-      "recent_wins": 20,
-      "kda": 2.885
+      "win_rate": 0.60156,
+      "recent_games": 32,
+      "recent_wins": 21,
+      "kda": 2.915
     },
     "22": {
       "hero_id": 22,
@@ -192,13 +192,13 @@
     "27": {
       "hero_id": 27,
       "name": "Shadow Shaman",
-      "games": 73,
+      "games": 74,
       "wins": 40,
-      "losses": 33,
-      "win_rate": 0.54795,
-      "recent_games": 11,
+      "losses": 34,
+      "win_rate": 0.54054,
+      "recent_games": 12,
       "recent_wins": 10,
-      "kda": 3.306
+      "kda": 3.035
     },
     "29": {
       "hero_id": 29,
@@ -262,9 +262,9 @@
       "wins": 33,
       "losses": 26,
       "win_rate": 0.55932,
-      "recent_games": 1,
-      "recent_wins": 1,
-      "kda": 6.0
+      "recent_games": 0,
+      "recent_wins": 0,
+      "kda": 0.0
     },
     "50": {
       "hero_id": 50,
@@ -680,9 +680,9 @@
       "wins": 9,
       "losses": 9,
       "win_rate": 0.5,
-      "recent_games": 1,
+      "recent_games": 0,
       "recent_wins": 0,
-      "kda": 2.364
+      "kda": 0.0
     },
     "8": {
       "hero_id": 8,
@@ -1320,31 +1320,31 @@
       "wins": 96,
       "losses": 65,
       "win_rate": 0.59627,
-      "recent_games": 13,
-      "recent_wins": 6,
-      "kda": 2.682
+      "recent_games": 12,
+      "recent_wins": 5,
+      "kda": 2.55
     },
     {
       "hero_id": 102,
       "name": "Abaddon",
-      "games": 135,
+      "games": 136,
       "wins": 76,
-      "losses": 59,
-      "win_rate": 0.56296,
-      "recent_games": 25,
+      "losses": 60,
+      "win_rate": 0.55882,
+      "recent_games": 26,
       "recent_wins": 12,
-      "kda": 3.05
+      "kda": 2.995
     },
     {
       "hero_id": 84,
       "name": "Ogre Magi",
-      "games": 127,
-      "wins": 76,
+      "games": 128,
+      "wins": 77,
       "losses": 51,
-      "win_rate": 0.59843,
-      "recent_games": 31,
-      "recent_wins": 20,
-      "kda": 2.885
+      "win_rate": 0.60156,
+      "recent_games": 32,
+      "recent_wins": 21,
+      "kda": 2.915
     },
     {
       "hero_id": 22,
@@ -1448,13 +1448,13 @@
     {
       "hero_id": 27,
       "name": "Shadow Shaman",
-      "games": 73,
+      "games": 74,
       "wins": 40,
-      "losses": 33,
-      "win_rate": 0.54795,
-      "recent_games": 11,
+      "losses": 34,
+      "win_rate": 0.54054,
+      "recent_games": 12,
       "recent_wins": 10,
-      "kda": 3.306
+      "kda": 3.035
     },
     {
       "hero_id": 29,
@@ -1488,12 +1488,12 @@
     {
       "hero_id": 84,
       "name": "Ogre Magi",
-      "games": 31
+      "games": 32
     },
     {
       "hero_id": 102,
       "name": "Abaddon",
-      "games": 25
+      "games": 26
     },
     {
       "hero_id": 45,
@@ -1506,11 +1506,6 @@
       "games": 13
     },
     {
-      "hero_id": 37,
-      "name": "Warlock",
-      "games": 13
-    },
-    {
       "hero_id": 71,
       "name": "Spirit Breaker",
       "games": 13
@@ -1519,6 +1514,16 @@
       "hero_id": 131,
       "name": "Ring Master",
       "games": 13
+    },
+    {
+      "hero_id": 27,
+      "name": "Shadow Shaman",
+      "games": 12
+    },
+    {
+      "hero_id": 37,
+      "name": "Warlock",
+      "games": 12
     },
     {
       "hero_id": 14,
@@ -1533,11 +1538,6 @@
     {
       "hero_id": 64,
       "name": "Jakiro",
-      "games": 11
-    },
-    {
-      "hero_id": 87,
-      "name": "Disruptor",
       "games": 11
     }
   ],
