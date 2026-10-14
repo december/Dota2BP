@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "status": "ready",
-  "generated_at": "2026-10-12T15:20:20.378545+00:00",
+  "generated_at": "2026-10-14T11:49:02.430919+00:00",
   "player": {
     "account_id": 222404655,
     "steamid64": "76561198182670383",
@@ -15,10 +15,10 @@
     "mmr_estimate": null
   },
   "summary": {
-    "games": 4181,
-    "wins": 2118,
+    "games": 4182,
+    "wins": 2119,
     "losses": 2063,
-    "win_rate": 0.50658,
+    "win_rate": 0.5067,
     "heroes": 114,
     "recent_matches": 300,
     "frequent_peers": 37
@@ -86,9 +86,9 @@
       "wins": 77,
       "losses": 51,
       "win_rate": 0.60156,
-      "recent_games": 32,
-      "recent_wins": 21,
-      "kda": 2.915
+      "recent_games": 31,
+      "recent_wins": 20,
+      "kda": 2.867
     },
     "22": {
       "hero_id": 22,
@@ -236,13 +236,13 @@
     "83": {
       "hero_id": 83,
       "name": "Treant Protector",
-      "games": 66,
-      "wins": 36,
+      "games": 67,
+      "wins": 37,
       "losses": 30,
-      "win_rate": 0.54545,
-      "recent_games": 3,
-      "recent_wins": 1,
-      "kda": 3.217
+      "win_rate": 0.55224,
+      "recent_games": 4,
+      "recent_wins": 2,
+      "kda": 3.179
     },
     "108": {
       "hero_id": 108,
@@ -1342,9 +1342,9 @@
       "wins": 77,
       "losses": 51,
       "win_rate": 0.60156,
-      "recent_games": 32,
-      "recent_wins": 21,
-      "kda": 2.915
+      "recent_games": 31,
+      "recent_wins": 20,
+      "kda": 2.867
     },
     {
       "hero_id": 22,
@@ -1488,7 +1488,7 @@
     {
       "hero_id": 84,
       "name": "Ogre Magi",
-      "games": 32
+      "games": 31
     },
     {
       "hero_id": 102,
