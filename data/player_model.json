@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "status": "ready",
-  "generated_at": "2026-10-18T04:30:09.511944+00:00",
+  "generated_at": "2026-10-18T15:50:17.916860+00:00",
   "player": {
     "account_id": 222404655,
     "steamid64": "76561198182670383",
@@ -15,10 +15,10 @@
     "mmr_estimate": null
   },
   "summary": {
-    "games": 4185,
-    "wins": 2122,
+    "games": 4186,
+    "wins": 2123,
     "losses": 2063,
-    "win_rate": 0.50705,
+    "win_rate": 0.50717,
     "heroes": 114,
     "recent_matches": 300,
     "frequent_peers": 37
@@ -618,6 +618,17 @@
       "recent_wins": 0,
       "kda": 0.0
     },
+    "131": {
+      "hero_id": 131,
+      "name": "Ring Master",
+      "games": 21,
+      "wins": 9,
+      "losses": 12,
+      "win_rate": 0.42857,
+      "recent_games": 14,
+      "recent_wins": 6,
+      "kda": 2.211
+    },
     "96": {
       "hero_id": 96,
       "name": "Centaur Warrunner",
@@ -628,17 +639,6 @@
       "recent_games": 0,
       "recent_wins": 0,
       "kda": 0.0
-    },
-    "131": {
-      "hero_id": 131,
-      "name": "Ring Master",
-      "games": 20,
-      "wins": 8,
-      "losses": 12,
-      "win_rate": 0.4,
-      "recent_games": 13,
-      "recent_wins": 5,
-      "kda": 2.155
     },
     "16": {
       "hero_id": 16,
@@ -757,9 +757,9 @@
       "wins": 10,
       "losses": 6,
       "win_rate": 0.625,
-      "recent_games": 1,
+      "recent_games": 0,
       "recent_wins": 0,
-      "kda": 0.727
+      "kda": 0.0
     },
     "7": {
       "hero_id": 7,
@@ -1501,13 +1501,13 @@
       "games": 22
     },
     {
-      "hero_id": 71,
-      "name": "Spirit Breaker",
-      "games": 13
-    },
-    {
       "hero_id": 131,
       "name": "Ring Master",
+      "games": 14
+    },
+    {
+      "hero_id": 71,
+      "name": "Spirit Breaker",
       "games": 13
     },
     {
