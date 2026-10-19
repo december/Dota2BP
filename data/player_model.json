@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "status": "ready",
-  "generated_at": "2026-10-18T15:50:17.916860+00:00",
+  "generated_at": "2026-10-19T13:10:15.501704+00:00",
   "player": {
     "account_id": 222404655,
     "steamid64": "76561198182670383",
@@ -15,10 +15,10 @@
     "mmr_estimate": null
   },
   "summary": {
-    "games": 4186,
-    "wins": 2123,
+    "games": 4187,
+    "wins": 2124,
     "losses": 2063,
-    "win_rate": 0.50717,
+    "win_rate": 0.50728,
     "heroes": 114,
     "recent_matches": 300,
     "frequent_peers": 37
@@ -31,9 +31,9 @@
       "wins": 116,
       "losses": 153,
       "win_rate": 0.43123,
-      "recent_games": 34,
-      "recent_wins": 15,
-      "kda": 2.903
+      "recent_games": 33,
+      "recent_wins": 14,
+      "kda": 2.797
     },
     "45": {
       "hero_id": 45,
@@ -258,13 +258,13 @@
     "85": {
       "hero_id": 85,
       "name": "Undying",
-      "games": 60,
-      "wins": 34,
+      "games": 61,
+      "wins": 35,
       "losses": 26,
-      "win_rate": 0.56667,
-      "recent_games": 1,
-      "recent_wins": 1,
-      "kda": 5.25
+      "win_rate": 0.57377,
+      "recent_games": 2,
+      "recent_wins": 2,
+      "kda": 5.455
     },
     "50": {
       "hero_id": 50,
@@ -1287,9 +1287,9 @@
       "wins": 116,
       "losses": 153,
       "win_rate": 0.43123,
-      "recent_games": 34,
-      "recent_wins": 15,
-      "kda": 2.903
+      "recent_games": 33,
+      "recent_wins": 14,
+      "kda": 2.797
     },
     {
       "hero_id": 45,
@@ -1483,7 +1483,7 @@
     {
       "hero_id": 86,
       "name": "Rubick",
-      "games": 34
+      "games": 33
     },
     {
       "hero_id": 84,
